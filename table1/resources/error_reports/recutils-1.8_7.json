@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "lib/regexec.c", "procedure": "expand_bkref_cache", "line": 3229 }, "exp": null },
+    "sink": { "node": { "filename": "lib/regexec.c", "procedure": "expand_bkref_cache", "line": 3230 }, "exp": null }
+}

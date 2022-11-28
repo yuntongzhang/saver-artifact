@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "p11-kit/modules.c", "procedure": "managed_C_Initialize", "line": 1568 }, "exp": null },
+    "sink": { "node": { "filename": "p11-kit/modules.c", "procedure": "managed_C_Initialize", "line": 1581 }, "exp": null }
+}

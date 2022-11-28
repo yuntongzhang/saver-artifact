@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "tools/lxc_execute.c", "procedure": "main", "line": 242 }, "exp": null },
+    "sink"  : { "node": { "filename": "tools/lxc_execute.c", "procedure": "main", "line": 250 }, "exp": null }
+}

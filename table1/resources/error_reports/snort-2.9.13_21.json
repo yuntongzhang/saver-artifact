@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/file-process/file_service.c", "procedure": "create_file_context", "line": 413 }, "exp": null },
+    "sink": { "node": { "filename": "src/file-process/file_service.c", "procedure": "create_file_context", "line": 413 }, "exp": null }
+}

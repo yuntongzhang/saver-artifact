@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swReactorPoll_create", "line": 50 }, "exp": null },
+    "sink": { "node": { "procedure": "swReactorPoll_create", "line": 59 }, "exp": null }
+}
+

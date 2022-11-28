@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/sfutil/sfportobject.c", "procedure": "PortObjectAppend", "line": 1471 }, "exp": null },
+    "sink": { "node": { "filename": "src/sfutil/sfportobject.c", "procedure": "PortObjectAppend", "line": 1478 }, "exp": null }
+}

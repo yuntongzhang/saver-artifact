@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "common/constants.c", "procedure": "p11_constant_reverse", "line": 674 }, "exp": null },
+    "sink": { "node": { "filename": "common/constants.c", "procedure": "p11_constant_reverse", "line": 686 }, "exp": null }
+}

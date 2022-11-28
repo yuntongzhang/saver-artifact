@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/detection-plugins/sp_flowbits.c", "procedure": "processFlowbits", "line": 566 }, "exp": null },
+    "sink": { "node": { "filename": "src/detection-plugins/sp_flowbits.c", "procedure": "processFlowbits", "line": 585 }, "exp": null }
+}

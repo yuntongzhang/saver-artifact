@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/appid/service_plugins/service_dcerpc.c", "procedure": "dcerpc_tcp_validate", "line": 108 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/appid/service_plugins/service_dcerpc.c", "procedure": "dcerpc_tcp_validate", "line": 140 }, "exp": null }
+}

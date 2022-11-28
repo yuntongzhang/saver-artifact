@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swAio_dns_lookup", "line": 331 }, "exp": null },
+    "sink": { "node": { "procedure": "swAio_dns_lookup", "line": 347 }, "exp": null }
+}

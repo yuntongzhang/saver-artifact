@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "grub-core/bus/usb/usbtrans.c", "procedure": "grub_usb_control_msg", "line": 205 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/bus/usb/usbtrans.c", "procedure": "grub_usb_control_msg", "line": 208 }, "exp": null }
+}

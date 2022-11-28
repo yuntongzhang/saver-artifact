@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/sfutil/ipobj.c", "procedure": "ipset_add", "line": 123 }, "exp": null },
+    "sink": { "node": { "filename": "src/sfutil/ipobj.c", "procedure": "ipset_add", "line": 131 }, "exp": null }
+}

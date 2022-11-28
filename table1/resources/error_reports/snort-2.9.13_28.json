@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/preprocessors/Stream6/snort_stream_tcp.c", "procedure": "registerPortForReassembly", "line": 11924 }, "exp": null },
+    "sink": { "node": { "filename": "src/preprocessors/Stream6/snort_stream_tcp.c", "procedure": "registerPortForReassembly", "line": 11927 }, "exp": null }
+}

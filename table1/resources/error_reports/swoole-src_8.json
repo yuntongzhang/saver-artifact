@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swTimer_add", "line": 115 }, "exp": null },
+    "sink": { "node": { "procedure": "swTimer_add", "line": 125 }, "exp": null }
+}
+

@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "lib/regexec.c", "procedure": "push_fail_stack", "line": 1350 }, "exp": null },
+    "sink": { "node": { "filename": "lib/regexec.c", "procedure": "push_fail_stack", "line": 1354 }, "exp": null }
+}

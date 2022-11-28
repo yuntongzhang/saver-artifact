@@ -1,0 +1,335 @@
+{
+  "grub-df-1":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "2fb8cd2",
+    "build-commit" : "5298187",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make libgrubmods.a -j4"],
+    "compile-directory": "."
+  },
+  "grub-df-2":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "944f752",
+    "build-commit" : "5298187",
+    "preprocess-commands": ["sed -i '68i \\ \\ free ((char *) orig_path);' util\/probe.c"],
+    "compile-commands": ["make clean", "cd grub-core/gnulib", "make -j4", "cd ../..", "infer run -g --headers --check-nullable-only -- make grub-probe -j4"],
+    "compile-directory": "."
+  },
+  "grub-df-3":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "343dad4",
+    "build-commit" : "f07784e",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make libgrubmods.a -j4"],
+    "compile-directory": "."
+  },
+  "grub-df-4":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "06eadf5",
+    "build-commit" : "ebb3d95",
+    "preprocess-commands": [],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make net.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-df-5":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "fc535b3",
+    "build-commit" : "e27fdbd",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make libgrubkern.a -j4"],
+    "compile-directory": "."
+  },
+  "grub-df-6":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "24d5934",
+    "build-commit" : "d6c2782",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make libgrubkern.a -j4"],
+    "compile-directory": "."
+  },
+  "grub-uaf-1":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "fefd7d6",
+    "build-commit" : "3626296",
+    "preprocess-commands": [],
+    "compile-commands": ["make widthspec.h", "make grub_script.tab.h", "cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make normal.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-2":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "4e75f21",
+    "build-commit" : "0f076d7",
+    "preprocess-commands": [],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make usb.module pci.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-3":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "ca028db",
+    "build-commit" : "e261fcf",
+    "preprocess-commands": [],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make usb.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-4":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "cf0b030",
+    "build-commit" : "cd816bd",
+    "preprocess-commands": [],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make xnu.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-5":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "e261fcf",
+    "build-commit" : "c069460",
+    "preprocess-commands": [],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make scsi.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-6":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "cd816bd",
+    "build-commit" : "72ccf92",
+    "preprocess-commands": [],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make search_label.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-7":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "0fb886c",
+    "build-commit" : "0415dbe",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make libgrubkern.a -j4"],
+    "compile-directory": "."
+  },
+  "grub-uaf-8":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "ea44693",
+    "build-commit" : "e8f0782",
+    "preprocess-commands": ["sed -i '277i \\ \\ \\ \\ \\ \\ free (arguments.output);' util\/grub-mkimage.c"],
+    "compile-commands": ["sed -ie \"\\$a mkimage_SAVER:\\n\\t$\\(MAKE\\) -C grub-core\/gnulib && $\\(MAKE\\) grub-mkimage\" Makefile"
+                        ,"make clean", "infer run -g --headers --check-nullable-only -- make mkimage_SAVER -j4"],
+    "compile-directory": "."
+  },
+  "grub-uaf-9":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "c821711",
+    "build-commit" : "e8f0782",
+    "preprocess-commands": ["sed -ie '364d' grub-core/gettext/gettext.c"
+                           ,"sed -i '364i \\ \\ \\ \\ \\ \\ mo_file = grub_xasprintf (\"%s.gz\", mo_file);' grub-core\/gettext\/gettext.c"],
+    "compile-commands": ["cd grub-core", "make clean", "infer run -g --headers --check-nullable-only -- make kernel.exec gettext.module -j4"],
+    "compile-directory": "grub-core"
+  },
+  "grub-uaf-10":
+  {
+    "repository": "https://github.com/coreos/grub",
+    "fix-commit": "6e3c515",
+    "build-commit" : "e8f0782",
+    "preprocess-commands": ["sed -ie '120d' grub-core/osdep/devmapper/getroot.c"
+                           ,"sed -i '118i \\ \\ dm_tree_free (tree);' grub-core\/osdep\/devmapper\/getroot.c"],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make libgrubkern.a -j4"],
+    "compile-directory": "."
+  },
+  "lxc-df-1":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "17d252a",
+    "build-commit" : "212bc24",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-df-2":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "d35b372",
+    "build-commit" : "2dce415",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-df-3":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "b21da19",
+    "build-commit" : "358b8c8",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-df-4":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "1d90e06",
+    "build-commit" : "b0ee598",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-df-5":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "e00c024",
+    "build-commit" : "2579641",
+    "preprocess-commands": ["find . -type f -name '*.c' | xargs sed -i 's/WEXITSTATUS//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFEXITED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFSIGNALED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WTERMSIG//g'"],
+    "compile-commands": ["cd src/lxc", "make clean", "infer run -g --headers --check-nullable-only -- make lxc-start -j4"],
+    "compile-directory": "src/lxc"
+  },
+  "lxc-df-6":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "534dfde",
+    "build-commit" : "ddf8122",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-uaf-1":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "020c90b",
+    "build-commit" : "4edd0ba",
+    "preprocess-commands": ["find . -type f -name '*.c' | xargs sed -i 's/WEXITSTATUS//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFEXITED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFSIGNALED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WTERMSIG//g'"],
+    "compile-commands": ["cd src/lxc", "make clean", "infer run -g --headers --check-nullable-only -- make lxc-execute -j4"],
+    "compile-directory": "src/lxc"
+  },
+  "lxc-uaf-2":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "cef701e",
+    "build-commit" : "ff62067",
+    "preprocess-commands": [],
+    "compile-commands": ["cd src/lxc", "make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "src/lxc"
+  },
+  "lxc-uaf-3":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "b44c0a6",
+    "build-commit" : "ed20740",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-uaf-4":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "e10e9f5",
+    "build-commit" : "7a643c7",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-uaf-5":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "a3b4f3d",
+    "build-commit" : "93936fb",
+    "preprocess-commands": ["find . -type f -name '*.c' | xargs sed -i 's/WEXITSTATUS//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFEXITED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFSIGNALED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WTERMSIG//g'"],
+    "compile-commands": ["cd src/lxc", "make clean", "infer run -g --headers --check-nullable-only -- make liblxc.la -j4"],
+    "compile-directory": "src/lxc"
+  },
+  "lxc-uaf-6":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "9ebb03a",
+    "build-commit" : "2312f31",
+    "preprocess-commands": ["sed -i 's/SCMP_ACT_ALLOW/0, SCMP_ACT_ALLOW/g' src/lxc/seccomp.c"
+                           ,"sed -i 's/SCMP_FLT/0, SCMP_FLT/g' src/lxc/seccomp.c"
+                           ,"sed -i 's/load()/load(0)/g' src/lxc/seccomp.c"
+                           ,"vim src/lxc/lxc_init.c -c '55,59mo51 | wq'"
+                           ,"sed -i 's/-Wall -Werror//g' configure.ac"],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-uaf-7":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "365d180",
+    "build-commit" : "fac7c66",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "lxc-uaf-8":
+  {
+    "repository": "https://github.com/lxc/lxc",
+    "fix-commit": "4e03ae5",
+    "build-commit" : "9588a6c",
+    "preprocess-commands": ["find . -type f -name '*.c' | xargs sed -i 's/WEXITSTATUS//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFEXITED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFSIGNALED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WTERMSIG//g'"],
+    "compile-commands": ["cd src/lxc", "make clean", "infer run -g --headers --check-nullable-only -- make liblxc.so -j4"],
+    "compile-directory": "."
+  },
+  "p11-kit-df-1":
+  {
+    "repository": "https://github.com/p11-glue/p11-kit",
+    "fix-commit": "cdf540c",
+    "build-commit" : "6a8843b",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  },
+  "p11-kit-df-2":
+  {
+    "repository": "https://github.com/p11-glue/p11-kit",
+    "fix-commit": "cd64b9a",
+    "build-commit" : "9cbf590",
+    "preprocess-commands": ["find . -type f -name '*.c' | xargs sed -i 's/WEXITSTATUS//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFEXITED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFSIGNALED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WTERMSIG//g'"
+                           ,"vim p11-kit/server.c -c '494,506mo476 | wq'"],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make p11-kit-server"],
+    "compile-directory": "."
+  },
+  "p11-kit-uaf-1":
+  {
+    "repository": "https://github.com/p11-glue/p11-kit",
+    "fix-commit": "b7ba8c6",
+    "build-commit" : "a2a2108",
+    "preprocess-commands": ["find . -type f -name '*.c' | xargs sed -i 's/WEXITSTATUS//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFEXITED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WIFSIGNALED//g'"
+                           ,"find . -type f -name '*.c' | xargs sed -i 's/WTERMSIG//g'"
+                           ,"vim p11-kit/server.c -c '494,506mo476 | wq'"],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make p11-kit-server"],
+    "compile-directory": "."
+  },
+  "p11-kit-uaf-2":
+  {
+    "repository": "https://github.com/p11-glue/p11-kit",
+    "fix-commit": "3748527",
+    "build-commit" : "6a8843b",
+    "preprocess-commands": [],
+    "compile-commands": ["make clean", "infer run -g --headers --check-nullable-only -- make -j4"],
+    "compile-directory": "."
+  }
+}

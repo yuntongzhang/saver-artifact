@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "p11-kit/server.c", "procedure": "main", "line": 658 }, "exp": null },
+    "sink"  : { "node": { "filename": "p11-kit/server.c", "procedure": "main", "line": 680 }, "exp": null }
+}

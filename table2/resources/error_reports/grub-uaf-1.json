@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "normal/crypto.c", "procedure": "read_crypto_list", "line": 150 }, "exp": null },
+    "sink"  : { "node": { "filename": "normal/crypto.c", "procedure": "read_crypto_list", "line": 151 }, "exp": null }
+}

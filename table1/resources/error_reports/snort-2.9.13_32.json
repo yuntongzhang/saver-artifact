@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/sfutil/sfPolicy.c", "procedure": "sfNetworkAddBinding", "line": 417 }, "exp": null },
+    "sink": { "node": { "filename": "src/sfutil/sfPolicy.c", "procedure": "sfNetworkAddBinding", "line": 440 }, "exp": null }
+}

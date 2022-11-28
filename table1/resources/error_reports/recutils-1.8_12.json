@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/rec-int.c", "procedure": "rec_int_collect_field_list", "line": 351 }, "exp": null },
+    "sink": { "node": { "filename": "src/rec-int.c", "procedure": "rec_int_collect_field_list", "line": 354 }, "exp": null }
+}

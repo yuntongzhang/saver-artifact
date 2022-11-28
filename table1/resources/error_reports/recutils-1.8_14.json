@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/rec-rset.c", "procedure": "rec_rset_merge_records", "line": 1760 }, "exp": null },
+    "sink": { "node": { "filename": "src/rec-rset.c", "procedure": "rec_rset_merge_records", "line": 1758 }, "exp": null }
+}

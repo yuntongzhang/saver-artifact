@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "p11-kit/iter.c", "procedure": "p11_kit_iter_new", "line": 156 }, "exp": null },
+    "sink": { "node": { "filename": "p11-kit/iter.c", "procedure": "p11_kit_iter_new", "line": 161 }, "exp": null }
+}

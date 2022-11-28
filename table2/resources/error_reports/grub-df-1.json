@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "grub-core/script/lexer.c", "procedure": "grub_script_lexer_init", "line": 253 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/script/lexer.c", "procedure": "grub_script_lexer_init", "line": 254 }, "exp": null }
+}

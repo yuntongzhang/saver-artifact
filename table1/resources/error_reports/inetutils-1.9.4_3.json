@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "ftpd.c", "procedure": "removedir", "line": 1858 }, "exp": null },
+    "sink": { "node": { "filename": "ftpd.c", "procedure": "removedir", "line": 1858 }, "exp": null }
+}

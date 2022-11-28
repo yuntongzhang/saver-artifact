@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "trust/parser.c", "procedure": "p11_parser_new", "line": 659 }, "exp": null },
+    "sink": { "node": { "filename": "trust/parser.c", "procedure": "p11_parser_new", "line": 663 }, "exp": null }
+}

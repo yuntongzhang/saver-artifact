@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "grub-core/kern/file.c", "procedure": "grub_file_close", "line": 190 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/kern/file.c", "procedure": "grub_file_close", "line": 190 }, "exp": null }
+}

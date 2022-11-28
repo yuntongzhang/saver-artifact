@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "grub-core/io/lzopio.c", "procedure": "test_header", "line": 370 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/io/lzopio.c", "procedure": "test_header", "line": 406 }, "exp": null }
+}

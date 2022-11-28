@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swShareMemory_sysv_create", "line": 155 }, "exp": null },
+    "sink": { "node": { "procedure": "swShareMemory_sysv_create", "line": 157 }, "exp": null }
+}
+

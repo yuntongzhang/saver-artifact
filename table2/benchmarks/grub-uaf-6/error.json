@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "grub-core/commands/search.c", "procedure": "try", "line": 215 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/commands/search.c", "procedure": "try", "line": 216 }, "exp": null }
+}

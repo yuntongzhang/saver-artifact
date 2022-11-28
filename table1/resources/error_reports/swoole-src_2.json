@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swHashMap_new", "line": 101 }, "exp": null },
+    "sink": { "node": { "procedure": "swHashMap_new", "line": 117 }, "exp": null }
+}
+

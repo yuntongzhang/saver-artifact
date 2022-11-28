@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "p11-kit/filter.c", "procedure": "p11_filter_deny_token", "line": 428 }, "exp": null },
+    "sink": { "node": { "filename": "p11-kit/filter.c", "procedure": "p11_filter_deny_token", "line": 431 }, "exp": null }
+}

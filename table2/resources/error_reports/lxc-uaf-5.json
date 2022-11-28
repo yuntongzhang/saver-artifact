@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "lxccontainer.c", "procedure": "do_lxcapi_start", "line": 1071 }, "exp": null },
+    "sink"  : { "node": { "filename": "lxccontainer.c", "procedure": "do_lxcapi_start", "line": 1072 }, "exp": null }
+}

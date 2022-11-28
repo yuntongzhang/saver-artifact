@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/misc.c", "procedure": "action_define", "line": 109 }, "exp": null },
+    "sink": { "node": { "filename": "src/misc.c", "procedure": "action_define", "line": 111 }, "exp": null }
+}

@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "cli/wvtag.c", "procedure": "do_tag_extractions", "line": 941 }, "exp": null },
+    "sink": { "node": { "filename": "cli/wvtag.c", "procedure": "do_tag_extractions", "line": 942 }, "exp": null }
+}

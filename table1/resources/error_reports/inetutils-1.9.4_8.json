@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "rshd.c", "procedure": "getstr", "line": 2016 }, "exp": null },
+    "sink": { "node": { "filename": "rshd.c", "procedure": "getstr", "line": 2044 }, "exp": null }
+}

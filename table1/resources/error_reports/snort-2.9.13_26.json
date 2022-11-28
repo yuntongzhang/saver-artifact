@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/fpdetect.c", "procedure": "CreateOtnForPolicy", "line": 1739 }, "exp": null },
+    "sink": { "node": { "filename": "src/fpdetect.c", "procedure": "CreateOtnForPolicy", "line": 1752 }, "exp": null }
+}

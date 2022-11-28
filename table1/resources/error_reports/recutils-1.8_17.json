@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "utils/recfmt.c", "procedure": "recfmt_get_subst", "line": 161 }, "exp": null },
+    "sink": { "node": { "filename": "utils/recfmt.c", "procedure": "recfmt_get_subst", "line": 173 }, "exp": null }
+}

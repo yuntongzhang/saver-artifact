@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/open_legacy.c", "procedure": "WavpackOpenFileInputEx", "line": 102 }, "exp": null },
+    "sink": { "node": { "filename": "src/open_legacy.c", "procedure": "WavpackOpenFileInputEx", "line": 113 }, "exp": null }
+}

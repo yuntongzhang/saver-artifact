@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "filters/video/select_every.c", "procedure": "init", "line": 60 }, "exp": null },
+    "sink": { "node": { "filename": "filters/video/select_every.c", "procedure": "init", "line": 79 }, "exp": null }
+}

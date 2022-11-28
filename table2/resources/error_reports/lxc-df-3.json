@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "src/lxc/attach.c", "procedure": "attach_child_main", "line": 984 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/attach.c", "procedure": "attach_child_main", "line": 1047 }, "exp": null }
+}

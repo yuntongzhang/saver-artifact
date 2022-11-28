@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/sfutil/ipobj.c", "procedure": "portset_add", "line": 224 }, "exp": null },
+    "sink": { "node": { "filename": "src/sfutil/ipobj.c", "procedure": "portset_add", "line": 230 }, "exp": null }
+}

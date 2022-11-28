@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "src/lxc/conf.c", "procedure": "userns_exec_1", "line": 4942 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/conf.c", "procedure": "userns_exec_1", "line": 4944 }, "exp": null }
+}

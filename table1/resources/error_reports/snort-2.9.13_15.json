@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/dcerpc2/dce2_cl.c", "procedure": "DCE2_ClInsertActTracker", "line": 447 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/dcerpc2/dce2_cl.c", "procedure": "DCE2_ClInsertActTracker", "line": 472 }, "exp": null }
+}

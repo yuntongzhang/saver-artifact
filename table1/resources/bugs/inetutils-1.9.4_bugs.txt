@@ -1,0 +1,824 @@
+Found 269 issues
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+ftp/cmds.c:132: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 132, column 12
+
+ftp/cmds.c:161: error: NULL_DEREFERENCE
+  pointer buffer last assigned on line 157 could be null and is dereferenced by call to sprintf() at line 161, column 35
+
+ftp/cmds.c:181: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((10==0)!=0) is always false at line 181, column 12
+
+ftp/cmds.c:402: warning: PRECONDITION_NOT_MET
+  in call to printf() at line 402, column 7
+
+ftp/cmds.c:415: warning: PRECONDITION_NOT_MET
+  in call to printf() at line 415, column 7
+
+ftp/cmds.c:1040: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1040, column 23
+
+ftp/cmds.c:1040: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1040, column 23
+
+ftp/cmds.c:1040: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1040, column 23
+
+ftp/cmds.c:1915: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array buf of size 8192 could be accessed with an index out of bounds at line 1915, column 4
+
+ftp/cmds.c:1915: error: ARRAY_OUT_OF_BOUNDS_L1
+  array buf of size 8192 could be accessed with index 16382 out of bounds at line 1915, column 4
+
+ftp/cmds.c:2049: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2049, column 12
+
+ftp/cmds.c:2049: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2049, column 12
+
+ftp/cmds.c:2049: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 2049, column 12
+
+ftp/cmds.c:2289: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((32==0)!=0) is always false at line 2289, column 8
+
+ftp/cmds.c:2684: warning: UNINITIALIZED_VALUE
+  value yy was not initialized after declaration and is used at line 2684, column 17
+
+ftp/cmds.c:2684: warning: UNINITIALIZED_VALUE
+  value mo was not initialized after declaration and is used at line 2684, column 8
+
+ftp/ftp.c:147: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 147, column 11
+
+ftp/ftp.c:147: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 147, column 11
+
+ftp/ftp.c:147: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 147, column 11
+
+ftp/ftp.c:563: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 563, column 5
+
+ftp/ftp.c:1574: warning: UNINITIALIZED_VALUE
+  value from.ss_family was not initialized after declaration and is used at line 1574, column 7
+
+ftp/ftp.c:1890: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1890, column 3
+
+ftp/ftp.c:1959: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1959, column 5
+
+ftp/ftp.c:1978: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1978, column 3
+
+ftp/main.c:466: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 466, column 5
+
+ftp/ruserpass.c:122: warning: PRECONDITION_NOT_MET
+  in call to getenv() at line 122, column 24
+
+ftp/ruserpass.c:354: warning: PRECONDITION_NOT_MET
+  in call to feof() at line 354, column 7
+
+ftpd/conf.c:44: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((10==0)!=0) is always false at line 44, column 9
+
+ftpd/conf.c:70: warning: PRECONDITION_NOT_MET
+  in call to fopen() at line 70, column 8
+
+ftpd/ftpcmd.y:1565: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((13==0)!=0) is always false at line 1565, column 9
+
+ftpd/ftpcmd.y:1857: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1857, column 5
+
+ftpd/ftpcmd.y:1866: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1866, column 7
+
+ftpd/ftpcmd.y:2025: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((10==0)!=0) is always false at line 2025, column 8
+
+ftpd/ftpd.c:219: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable off_to_str_bufs escapes to the caller via a return at line 219, column 1
+
+ftpd/ftpd.c:677: error: NULL_DEREFERENCE
+  pointer string last assigned on line 670 could be null and is dereferenced by call to memcpy() at line 677, column 3
+
+ftpd/ftpd.c:1098: error: RESOURCE_LEAK
+   resource of type _IO_FILE acquired to fout by call to fopen() at line 1096, column 10 is not released after line 1098, column 23
+
+ftpd/ftpd.c:1267: warning: UNINITIALIZED_VALUE
+  value from.ss_family was not initialized after declaration and is used at line 1267, column 11
+
+ftpd/ftpd.c:1753: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1753, column 10
+
+ftpd/ftpd.c:1753: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1753, column 10
+
+ftpd/ftpd.c:1753: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1753, column 10
+
+ftpd/ftpd.c:1797: error: MEMORY_LEAK
+   memory dynamically allocated by call to curdir() at line 1797, column 3 is not reachable after line 1797, column 3
+
+ftpd/ftpd.c:1833: error: MEMORY_LEAK
+   memory dynamically allocated by call to curdir() at line 1833, column 3 is not reachable after line 1833, column 3
+
+ftpd/ftpd.c:1858: error: MEMORY_LEAK
+   memory dynamically allocated by call to curdir() at line 1858, column 3 is not reachable after line 1858, column 3
+
+ifconfig/flags.c:326: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 326, column 13
+
+ifconfig/options.c:304: error: NULL_DEREFERENCE
+  pointer ifp last assigned on line 303 could be null and is dereferenced at line 304, column 3
+
+ifconfig/options.c:324: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 324, column 1
+
+ifconfig/options.c:325: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 325, column 1
+
+ifconfig/options.c:326: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 326, column 1
+
+ifconfig/options.c:327: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 327, column 1
+
+ifconfig/options.c:349: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 349, column 1
+
+ifconfig/options.c:350: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 350, column 1
+
+ifconfig/options.c:358: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 358, column 5
+
+ifconfig/options.c:362: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 362, column 9
+
+ifconfig/options.c:388: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((44==0)!=0) is always false at line 388, column 17
+
+ifconfig/options.c:466: error: NULL_DEREFERENCE
+  pointer buf last assigned on line 456 could be null and is dereferenced by call to strlen() at line 466, column 20
+
+ifconfig/options.c:477: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 477 could be dangling and is dereferenced or freed at line 477, column 3
+
+ifconfig/options.c:477: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 477, column 3
+
+ifconfig/printif.c:279: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 279, column 13
+
+ifconfig/printif.c:284: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 284, column 7
+
+ifconfig/printif.c:876: warning: PRECONDITION_NOT_MET
+  in call to rpl_ioctl() at line 876, column 7
+
+ifconfig/printif.c:1055: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1055, column 14
+
+ifconfig/system/linux.c:432: error: NULL_DEREFERENCE
+  pointer buf last assigned on line 411 could be null and is dereferenced by call to pnd_version() at line 432, column 23
+
+ifconfig/system/linux.c:689: error: NULL_DEREFERENCE
+  pointer ifp could be null and is dereferenced at line 689, column 9
+
+ifconfig/system/linux.c:695: error: NULL_DEREFERENCE
+  pointer ifp->system last assigned on line 691 could be null and is dereferenced at line 695, column 7
+
+ifconfig/system/linux.c:919: error: RESOURCE_LEAK
+   resource acquired to return by call to socket() at line 913, column 8 is not released after line 919, column 5
+
+ifconfig/system/linux.c:927: warning: UNINITIALIZED_VALUE
+  value length was not initialized after declaration and is used at line 927, column 35
+
+lib/anytostr.c:38: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<-1)!=0) is always false at line 38, column 19
+
+lib/anytostr.c:38: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<-1)!=0) is always false at line 38, column 19
+
+lib/anytostr.c:38: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<-1)!=0) is always false at line 38, column 19
+
+lib/anytostr.c:38: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<-1)!=0) is always false at line 38, column 19
+
+lib/anytostr.c:38: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<-1)!=0) is always false at line 38, column 19
+
+lib/argp-fmtstream.c:106: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((1==0)!=0) is always false at line 106, column 7
+
+lib/argp-fmtstream.c:364: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((1==0)!=0) is always false at line 364, column 15
+
+lib/argp-help.c:162: warning: PRECONDITION_NOT_MET
+  in call to getenv() at line 162, column 21
+
+lib/argp-help.c:1252: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer state was dereferenced at line 1248 and is tested for null at line 1252, column 38
+
+lib/argp-help.c:1413: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((10==0)!=0) is always false at line 1413, column 25
+
+lib/argp-help.c:1505: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((11==0)!=0) is always false at line 1505, column 18
+
+lib/basename-lgpl.c:66: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 66, column 7
+
+lib/chdir-long.c:117: error: NULL_DEREFERENCE
+  pointer dir could be null and is dereferenced by call to strlen() at line 117, column 18
+
+lib/dirname-lgpl.c:42: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 42, column 28
+
+lib/dirname-lgpl.c:75: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 75, column 26
+
+lib/fcntl.c:248: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 248, column 41
+
+lib/filemode.c:77: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 77, column 7
+
+lib/filemode.c:79: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 79, column 7
+
+lib/filemode.c:81: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 81, column 43
+
+lib/filemode.c:83: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 83, column 7
+
+lib/filemode.c:85: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 85, column 7
+
+lib/filemode.c:87: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 87, column 7
+
+lib/filemode.c:172: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 172, column 12
+
+lib/filemode.c:178: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 178, column 12
+
+lib/filenamecat-lgpl.c:82: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0!=0)!=0) is always false at line 82, column 27
+
+lib/fopen-safer.c:55: error: USE_AFTER_FREE
+  pointer f last assigned on line 41 was closed by call to fdopen() at line 52, column 26 and is dereferenced or freed at line 55, column 15
+
+lib/gettext.h:286: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable msg_ctxt_id escapes to the caller via a return at line 286, column 1
+
+lib/glob.c:294: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 294, column 18
+
+lib/malloca.c:125: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p could be accessed with index -1 out of bounds at line 125, column 11
+
+lib/mgetgroups.c:84: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 84, column 14
+
+lib/obstack.c:115: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((-1>-1)!=0) is always false at line 115, column 17
+
+lib/openat-proc.c:91: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<-1)!=0) is always false at line 91, column 24
+
+lib/openat-proc.c:93: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((4096<(4096-64))!=0) is always false at line 93, column 11
+
+lib/read-file.c:129: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 129, column 7
+
+lib/readutmp.c:56: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p last assigned on line 55 could be accessed with index -1 out of bounds at line 56, column 28
+
+lib/readutmp.c:67: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 67, column 20
+
+lib/save-cwd.c:68: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 68, column 8
+
+lib/save-cwd.c:72: error: NULL_DEREFERENCE
+  pointer 0 could be null and is dereferenced by call to getcwd() at line 72, column 19
+
+lib/xgetcwd.c:37: error: NULL_DEREFERENCE
+  pointer 0 could be null and is dereferenced by call to getcwd() at line 37, column 15
+
+lib/xgetdomainname.c:55: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 55, column 10
+
+lib/xgethostname.c:45: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 45, column 10
+
+lib/xvasprintf.c:87: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 87, column 14
+
+libicmp/icmp_address.c:43: warning: PRECONDITION_NOT_MET
+  in call to icmp_generic_encode() at line 43, column 3
+
+libinetutils/argcv.c:175: error: MEMORY_LEAK
+   memory dynamically allocated by call to realloc() at line 175, column 16 is not reachable after line 175, column 7
+
+libinetutils/argcv.c:175: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 167, column 12 is not reachable after line 175, column 7
+
+libinetutils/setsig.c:39: warning: UNINITIALIZED_VALUE
+  value sa.sa_flags was not initialized after declaration and is used at line 39, column 3
+
+libinetutils/setsig.c:44: warning: UNINITIALIZED_VALUE
+  value osa.__sigaction_handler.sa_handler was not initialized after declaration and is used at line 44, column 10
+
+libinetutils/tftpsubs.c:295: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 295, column 10
+
+libinetutils/tftpsubs.c:298: warning: UNINITIALIZED_VALUE
+  value i was not initialized after declaration and is used at line 298, column 11
+
+libinetutils/ttymsg.c:87: warning: PRECONDITION_NOT_MET
+  in call to strlen() at line 87, column 46
+
+libinetutils/ttymsg.c:273: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 273, column 12
+
+libinetutils/ttymsg.c:275: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p last assigned on line 273 could be accessed with index -1 out of bounds at line 275, column 23
+
+libls/fts.c:241: error: ARRAY_OUT_OF_BOUNDS_L1
+  array cp of size 1 last assigned on line 241 could be accessed with index 1 out of bounds at line 241, column 66
+
+libls/fts.c:1021: warning: PRECONDITION_NOT_MET
+  in call to memmove() at line 1021, column 3
+
+libls/ls.c:144: warning: UNINITIALIZED_VALUE
+  value win.ws_col was not initialized after declaration and is used at line 144, column 68
+
+libls/print.c:123: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer p was dereferenced at line 120 and is tested for null at line 123, column 22
+
+libls/print.c:307: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer p was dereferenced at line 304 and is tested for null at line 307, column 22
+
+libls/stat_flags.c:77: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable flags_to_string_string escapes to the caller via a return at line 77, column 1
+
+libtelnet/genget.c:102: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer found was dereferenced at line 96 and is tested for null at line 102, column 11
+
+ping/libping.c:53: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 53, column 10
+
+ping/libping.c:126: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 126, column 3
+
+ping/libping.c:132: warning: PRECONDITION_NOT_MET
+  in call to icmp_echo_encode() at line 132, column 7
+
+ping/libping.c:142: warning: PRECONDITION_NOT_MET
+  in call to icmp_address_encode() at line 142, column 7
+
+ping/libping.c:147: warning: PRECONDITION_NOT_MET
+  in call to icmp_generic_encode() at line 147, column 7
+
+ping/libping.c:188: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 188, column 28
+
+ping/ping.c:355: warning: UNINITIALIZED_VALUE
+  value ping_type was not initialized after declaration and is used at line 355, column 9
+
+ping/ping6.c:563: warning: PRECONDITION_NOT_MET
+  in call to tvsub() at line 563, column 23
+
+ping/ping6.c:888: error: NULL_DEREFERENCE
+  pointer p could be null and is dereferenced at line 888, column 12
+
+ping/ping6.c:923: warning: UNINITIALIZED_VALUE
+  value __a was not initialized after declaration and is used at line 923, column 10
+
+ping/ping6.c:923: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __a could be dangling and is dereferenced or freed at line 923, column 10
+
+ping/ping6.c:941: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 941, column 17
+
+ping/ping_common.c:100: warning: UNINITIALIZED_VALUE
+  value off was not initialized after declaration and is used at line 100, column 15
+
+ping/ping_common.c:101: warning: UNINITIALIZED_VALUE
+  value c was not initialized after declaration and is used at line 101, column 25
+
+ping/ping_echo.c:194: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 194, column 7
+
+ping/ping_echo.c:203: warning: PRECONDITION_NOT_MET
+  in call to tvsub() at line 203, column 23
+
+ping/ping_echo.c:360: error: NULL_DEREFERENCE
+  pointer cp could be null and is dereferenced at line 360, column 18
+
+ping/ping_echo.c:491: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 491, column 6
+
+src/hostname.c:120: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 120, column 28
+
+src/hostname.c:120: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 120, column 28
+
+src/hostname.c:120: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 120, column 28
+
+src/hostname.c:210: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 210, column 14
+
+src/hostname.c:210: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 210, column 14
+
+src/hostname.c:210: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 210, column 14
+
+src/hostname.c:273: error: MEMORY_LEAK
+   memory dynamically allocated by call to xmalloc() at line 256, column 13 is not reachable after line 273, column 15
+
+src/hostname.c:292: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 292, column 12
+
+src/hostname.c:292: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 292, column 12
+
+src/hostname.c:292: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 292, column 12
+
+src/hostname.c:294: error: NULL_DEREFERENCE
+  pointer ht could be null and is dereferenced at line 294, column 12
+
+src/hostname.c:294: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 294, column 12
+
+src/hostname.c:336: error: MEMORY_LEAK
+   memory dynamically allocated by call to xmalloc() at line 312, column 15 is not reachable after line 336, column 15
+
+src/hostname.c:353: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 353, column 9
+
+src/hostname.c:357: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 357, column 19
+
+src/hostname.c:357: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 357, column 19
+
+src/hostname.c:357: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 357, column 19
+
+src/hostname.c:372: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 372, column 9
+
+src/hostname.c:378: warning: UNINITIALIZED_VALUE
+  value __n was not initialized after declaration and is used at line 378, column 24
+
+src/hostname.c:378: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 378, column 24
+
+src/hostname.c:378: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 378, column 24
+
+src/hostname.c:408: error: NULL_DEREFERENCE
+  pointer buffer last assigned on line 390 could be null and is dereferenced at line 408, column 11
+
+src/inetd.c:508: warning: UNINITIALIZED_VALUE
+  value status was not initialized after declaration and is used at line 508, column 57
+
+src/inetd.c:512: warning: UNINITIALIZED_VALUE
+  value status was not initialized after declaration and is used at line 512, column 10
+
+src/inetd.c:522: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 522, column 5
+
+src/inetd.c:1553: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1553, column 10
+
+src/inetd.c:1606: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1606, column 13
+
+src/logger.c:114: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 114, column 7
+
+src/logger.c:150: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((47==0)!=0) is always false at line 150, column 24
+
+src/logger.c:181: error: NULL_DEREFERENCE
+  pointer host last accessed on line 150 could be null and is dereferenced at line 181, column 11
+
+src/rcp.c:419: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((64==0)!=0) is always false at line 419, column 11
+
+src/rcp.c:600: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((64==0)!=0) is always false at line 600, column 14
+
+src/rcp.c:802: warning: PRECONDITION_NOT_MET
+  in call to opendir() at line 802, column 10
+
+src/rlogin.c:1074: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1074, column 5
+
+src/rlogin.c:1356: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1356, column 5
+
+src/rlogin.c:1470: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1470, column 2
+
+src/rlogind.c:1085: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((47==0)!=0) is always false at line 1085, column 23
+
+src/rlogind.c:1094: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((47==0)!=0) is always false at line 1094, column 12
+
+src/rlogind.c:1886: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1886, column 10
+
+src/rlogind.c:1890: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1890, column 7
+
+src/rlogind.c:1891: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1891, column 7
+
+src/rlogind.c:1892: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1892, column 7
+
+src/rshd.c:2044: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 2016, column 15 is not reachable after line 2044, column 4
+
+src/syslogd.c:865: error: NULL_DEREFERENCE
+  pointer funix last assigned on line 861 could be null and is dereferenced at line 865, column 3
+
+src/syslogd.c:1172: warning: PRECONDITION_NOT_MET
+  in call to dbg_printf() at line 1172, column 3
+
+src/syslogd.c:1693: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 1693, column 7
+
+src/syslogd.c:1864: error: NULL_DEREFERENCE
+  pointer f last assigned on line 1860 could be null and is dereferenced at line 1864, column 4
+
+src/syslogd.c:2051: error: RESOURCE_LEAK
+   resource acquired by call to opendir() at line 2037, column 9 is not released after line 2051, column 4
+
+src/tftp.c:486: warning: PRECONDITION_NOT_MET
+  in call to printf() at line 486, column 7
+
+src/tftp.c:554: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 554, column 7
+
+src/tftp.c:670: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 670, column 6
+
+src/tftp.c:865: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 865, column 5
+
+src/tftp.c:994: warning: PRECONDITION_NOT_MET
+  in call to startclock() at line 994, column 3
+
+src/tftpd.c:547: warning: PRECONDITION_NOT_MET
+  in call to strstr() at line 547, column 31
+
+src/traceroute.c:370: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 370, column 7
+
+src/uucpd.c:202: warning: PRECONDITION_NOT_MET
+  in call to printf() at line 202, column 3
+
+talk/io.c:93: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 93, column 3
+
+talk/io.c:139: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 139, column 5
+
+talkd/acl.c:323: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 307, column 35 is not reachable after line 323, column 5
+
+talkd/announce.c:103: warning: PRECONDITION_NOT_MET
+  in call to format_line() at line 103, column 3
+
+talkd/process.c:179: error: NULL_DEREFERENCE
+  pointer ptr could be null and is dereferenced at line 179, column 20
+
+talkd/process.c:213: warning: PRECONDITION_NOT_MET
+  in call to strcpy() at line 213, column 29
+
+talkd/table.c:67: error: USE_AFTER_FREE
+  pointer ptr last assigned on line 67 was freed by call to table_delete() at line 77, column 4 and is dereferenced or freed at line 67, column 32
+
+talkd/talkd.c:158: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 158, column 10
+
+telnet/commands.c:279: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable control_buf escapes to the caller via a return at line 279, column 1
+
+telnet/commands.c:1952: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1952, column 31
+
+telnet/commands.c:1952: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1952, column 31
+
+telnet/commands.c:1952: error: NULL_DEREFERENCE
+  pointer var could be null and is dereferenced by call to memcpy() at line 1952, column 31
+
+telnet/commands.c:2464: warning: PRECONDITION_NOT_MET
+  in call to memset() at line 2464, column 3
+
+telnet/commands.c:2921: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array args of size 100 could be accessed with an index out of bounds at line 2921, column 11
+
+telnet/commands.c:3016: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 3016, column 5
+
+telnet/commands.c:3147: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 3147, column 5
+
+telnet/sys_bsd.c:133: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 133, column 3
+
+telnet/sys_bsd.c:134: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 134, column 3
+
+telnet/sys_bsd.c:135: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 135, column 3
+
+telnet/sys_bsd.c:901: warning: UNINITIALIZED_VALUE
+  value ws.ws_row was not initialized after declaration and is used at line 901, column 15
+
+telnet/sys_bsd.c:902: warning: UNINITIALIZED_VALUE
+  value ws.ws_col was not initialized after declaration and is used at line 902, column 15
+
+telnet/telnet.c:1392: warning: PRECONDITION_NOT_MET
+  in call to slc_add_reply() at line 1392, column 4
+
+telnet/telnet.c:1491: warning: PRECONDITION_NOT_MET
+  in call to slc_add_reply() at line 1491, column 4
+
+telnet/telnet.c:1689: error: ARRAY_OUT_OF_BOUNDS_L1
+  array opt_replyp could be accessed with index -1 out of bounds at line 1689, column 5
+
+telnet/telnet.c:2178: warning: UNINITIALIZED_VALUE
+  value c was not initialized after declaration and is used at line 2178, column 31
+
+telnet/telnet.c:2489: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 2489, column 5
+
+telnet/utilities.c:94: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 94, column 16
+
+telnet/utilities.c:1001: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1001, column 3
+
+telnetd/slc.c:129: warning: PRECONDITION_NOT_MET
+  in call to spcset() at line 129, column 2
+
+telnetd/slc.c:440: warning: PRECONDITION_NOT_MET
+  in call to add_slc() at line 440, column 4
+
+telnetd/state.c:1621: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1621, column 3
+
+telnetd/state.c:1622: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1622, column 3
+
+telnetd/state.c:1623: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1623, column 3
+
+telnetd/state.c:1624: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1624, column 3
+
+telnetd/state.c:1638: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1638, column 4
+
+telnetd/state.c:1639: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1639, column 4
+
+telnetd/state.c:1643: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1643, column 4
+
+telnetd/state.c:1644: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1644, column 4
+
+telnetd/telnetd.c:404: warning: UNINITIALIZED_VALUE
+  value saddr.ss_family was not initialized after declaration and is used at line 404, column 26
+
+telnetd/utility.c:413: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 413, column 3
+
+telnetd/utility.c:456: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 456, column 7
+
+telnetd/utility.c:1687: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((47==0)!=0) is always false at line 1687, column 11
+
+telnetd/utility.c:1701: error: NULL_DEREFERENCE
+  pointer returned by getenv() could be null and is dereferenced by call to xstrdup() at line 1701, column 32
+
+telnetd/utility.c:1781: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 1781 could be dangling and is dereferenced or freed at line 1781, column 2
+
+telnetd/utility.c:1781: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 1781, column 2
+
+telnetd/utility.c:1847: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 1847 could be dangling and is dereferenced or freed at line 1847, column 4
+
+telnetd/utility.c:1847: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 1847, column 4
+
+telnetd/utility.c:1852: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 1852 could be dangling and is dereferenced or freed at line 1852, column 4
+
+telnetd/utility.c:1852: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 1852, column 4
+
+telnetd/utility.c:1858: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 1858, column 4
+
+telnetd/utility.c:1858: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 1858 could be dangling and is dereferenced or freed at line 1858, column 4
+
+telnetd/utility.c:1881: warning: UNINITIALIZED_VALUE
+  value __o1 was not initialized after declaration and is used at line 1881, column 18
+
+telnetd/utility.c:1881: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 could be dangling and is dereferenced or freed at line 1881, column 18
+
+telnetd/utility.c:1887: warning: UNINITIALIZED_VALUE
+  value __obj was not initialized after declaration and is used at line 1887, column 3
+
+telnetd/utility.c:1887: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o could be dangling and is dereferenced or freed at line 1887, column 3
+
+telnetd/utility.c:1887: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 1887, column 3
+
+whois/whois.c:113: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 113 could be dangling and is dereferenced or freed at line 113, column 7
+
+whois/whois.c:113: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 113, column 7
+
+whois/whois.c:153: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 153, column 53
+
+whois/whois.c:221: warning: UNINITIALIZED_VALUE
+  value __o was not initialized after declaration and is used at line 221, column 3
+
+whois/whois.c:221: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __o1 last assigned on line 221 could be dangling and is dereferenced or freed at line 221, column 3
+
+whois/whois.c:310: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 310, column 7
+
+whois/whois.c:323: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((64==0)!=0) is always false at line 323, column 7
+
+whois/whois.c:426: warning: PRECONDITION_NOT_MET
+  in call to strlen() at line 426, column 18
+
+whois/whois.c:471: warning: PRECONDITION_NOT_MET
+  in call to fdopen() at line 471, column 8
+
+whois/whois.c:536: warning: PRECONDITION_NOT_MET
+  in call to strlen() at line 536, column 19
+
+whois/whois.c:652: warning: UNINITIALIZED_VALUE
+  value b was not initialized after declaration and is used at line 652, column 23
+
+whois/whois.c:652: warning: UNINITIALIZED_VALUE
+  value a was not initialized after declaration and is used at line 652, column 11
+
+Summary of the reports
+
+         CONDITION_ALWAYS_FALSE: 76
+            UNINITIALIZED_VALUE: 57
+           PRECONDITION_NOT_MET: 31
+          CONDITION_ALWAYS_TRUE: 29
+               NULL_DEREFERENCE: 28
+   DANGLING_POINTER_DEREFERENCE: 18
+                    MEMORY_LEAK: 9
+         ARRAY_OUT_OF_BOUNDS_L1: 6
+    NULL_TEST_AFTER_DEREFERENCE: 4
+  STACK_VARIABLE_ADDRESS_ESCAPE: 4
+                  RESOURCE_LEAK: 3
+                 USE_AFTER_FREE: 2
+         ARRAY_OUT_OF_BOUNDS_L2: 2

@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c", "procedure": "sipUaFinalize", "line": 398 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c", "procedure": "sipUaFinalize", "line": 406 }, "exp": null }
+}

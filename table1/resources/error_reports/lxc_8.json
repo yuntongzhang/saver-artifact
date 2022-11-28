@@ -1,0 +1,5 @@
+{
+    "err_type": "MEMORY_LEAK",
+      "source": { "node": { "filename": "src/lxc/lxccontainer.c", "procedure": "split_init_cmd", "line": 711 }, "exp": null },
+      	"sink": { "node": { "filename": "src/lxc/lxccontainer.c", "procedure": "split_init_cmd", "line": 716 }, "exp": null }
+}

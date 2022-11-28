@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "grub-core/disk/luks.c", "procedure": "configure_ciphers", "line": 203 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/disk/luks.c", "procedure": "configure_ciphers", "line": 204 }, "exp": null }
+}

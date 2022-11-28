@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "src/lxc/cgfs.c", "procedure": "do_setup_cgroup_limits", "line": 1927 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/cgfs.c", "procedure": "do_setup_cgroup_limits", "line": 1925 }, "exp": null }
+}

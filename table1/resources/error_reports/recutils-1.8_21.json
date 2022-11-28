@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "utils/recutl.c", "procedure": "recutl_check_integrity", "line": 476 }, "exp": null },
+    "sink": { "node": { "filename": "utils/recutl.c", "procedure": "recutl_check_integrity", "line": 492 }, "exp": null }
+}

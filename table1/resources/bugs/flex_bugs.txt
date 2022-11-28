@@ -1,0 +1,165 @@
+Found 50 issues
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+src/buf.c:182: error: MEMORY_LEAK
+   memory dynamically allocated to str by call to malloc() at line 175, column 11 is not reachable after line 182, column 1
+
+src/buf.c:203: error: MEMORY_LEAK
+   memory dynamically allocated to str by call to malloc() at line 196, column 11 is not reachable after line 203, column 1
+
+src/dfa.c:298: error: MEMORY_LEAK
+   memory dynamically allocated by call to allocate_array() at line 285, column 9 is not reachable after line 298, column 4
+
+src/dfa.c:298: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 298, column 4
+
+src/dfa.c:410: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array duplist of size 257 could be accessed with an index out of bounds at line 410, column 3
+
+src/dfa.c:411: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array symlist of size 257 could be accessed with an index out of bounds at line 411, column 3
+
+src/dfa.c:1015: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array dupfwd of size 257 could be accessed with an index out of bounds at line 1015, column 3
+
+src/dfa.c:1019: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array dupfwd of size 257 could be accessed with an index out of bounds at line 1019, column 2
+
+src/filter.c:53: error: NULL_DEREFERENCE
+  pointer f last assigned on line 50 could be null and is dereferenced at line 53, column 2
+
+src/filter.c:105: error: NULL_DEREFERENCE
+  pointer f last assigned on line 102 could be null and is dereferenced at line 105, column 2
+
+src/gen.c:111: error: NULL_DEREFERENCE
+  pointer tbl last assigned on line 109 could be null and is dereferenced at line 111, column 2
+
+src/gen.c:117: error: NULL_DEREFERENCE
+  pointer tdata last assigned on line 113 could be null and is dereferenced at line 117, column 3
+
+src/gen.c:218: error: NULL_DEREFERENCE
+  pointer tbl last assigned on line 216 could be null and is dereferenced at line 218, column 2
+
+src/gen.c:314: error: NULL_DEREFERENCE
+  pointer tbl last assigned on line 312 could be null and is dereferenced at line 314, column 2
+
+src/gen.c:322: error: NULL_DEREFERENCE
+  pointer tdata last assigned on line 318 could be null and is dereferenced at line 322, column 3
+
+src/gen.c:444: warning: UNINITIALIZED_VALUE
+  value tbl->td_flags was not initialized after declaration and is used at line 444, column 2
+
+src/gen.c:444: error: NULL_DEREFERENCE
+  pointer tbl last assigned on line 442 could be null and is dereferenced at line 444, column 2
+
+src/gen.c:453: error: NULL_DEREFERENCE
+  pointer tdata last assigned on line 448 could be null and is dereferenced at line 453, column 3
+
+src/gen.c:655: warning: UNINITIALIZED_VALUE
+  value tbl->td_flags was not initialized after declaration and is used at line 655, column 2
+
+src/gen.c:655: error: NULL_DEREFERENCE
+  pointer tbl last assigned on line 653 could be null and is dereferenced at line 655, column 2
+
+src/gen.c:667: error: NULL_DEREFERENCE
+  pointer tdata last assigned on line 659 could be null and is dereferenced at line 667, column 3
+
+src/gen.c:1174: error: ARRAY_OUT_OF_BOUNDS_L1
+  array acc_array of size 0 last assigned on line 1064 could be accessed with index 1 out of bounds at line 1174, column 4
+
+src/gen.c:1177: error: ARRAY_OUT_OF_BOUNDS_L1
+  array acc_array of size 0 last assigned on line 1064 could be accessed with index 2 out of bounds at line 1177, column 3
+
+src/misc.c:74: error: NULL_DEREFERENCE
+  pointer sko_stack last assigned on line 69 could be null and is dereferenced at line 74, column 5
+
+src/misc.c:111: error: MEMORY_LEAK
+   memory dynamically allocated to cpy by call to xstrdup() at line 109, column 8 is not reachable after line 111, column 1
+
+src/misc.c:223: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 223, column 57
+
+src/misc.c:231: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 231, column 12
+
+src/misc.c:231: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 231, column 12
+
+src/misc.c:231: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 231, column 12
+
+src/misc.c:657: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable readable_form_rform escapes to the caller via a return at line 657, column 1
+
+src/misc.c:699: warning: PRECONDITION_NOT_MET
+  in call to sko_peek() at line 699, column 9
+
+src/scan.c:4780: error: NULL_DEREFERENCE
+  pointer b could be null and is dereferenced at line 4780, column 2
+
+src/scanflags.c:48: error: NULL_DEREFERENCE
+  pointer _sf_stk last assigned on line 44 could be null and is dereferenced at line 48, column 31
+
+src/scanopt.c:143: error: NULL_DEREFERENCE
+  pointer s last assigned on line 141 could be null and is dereferenced at line 143, column 2
+
+src/scanopt.c:258: error: NULL_DEREFERENCE
+  pointer ue last assigned on line 257 could be null and is dereferenced at line 258, column 3
+
+src/scanopt.c:628: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 628, column 2
+
+src/scanopt.c:629: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 629, column 2
+
+src/stage1scan.c:4637: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 4632 and is tested for null at line 4637, column 18
+
+src/stage1scan.c:4637: warning: PRECONDITION_NOT_MET
+  in call to yy_init_buffer() at line 4637, column 2
+
+src/stage1scan.c:4654: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 4653 and is tested for null at line 4654, column 7
+
+src/stage1scan.c:4657: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 4653 and is tested for null at line 4657, column 7
+
+src/stage1scan.c:4744: error: NULL_DEREFERENCE
+  pointer b could be null and is dereferenced at line 4744, column 2
+
+src/stage1scan.c:4802: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 4799 and is tested for null at line 4802, column 7
+
+src/stage1scan.c:4811: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 4799 and is tested for null at line 4811, column 6
+
+src/sym.c:120: error: MEMORY_LEAK
+   memory dynamically allocated by call to xstrdup() at line 120, column 17 is not reachable after line 120, column 9
+
+src/sym.c:180: error: MEMORY_LEAK
+   memory dynamically allocated by call to xstrdup() at line 181, column 7 is not reachable after line 180, column 6
+
+src/sym.c:180: error: MEMORY_LEAK
+   memory dynamically allocated by call to xstrdup() at line 180, column 14 is not reachable after line 180, column 6
+
+src/tblcmp.c:357: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 357, column 9
+
+Summary of the reports
+
+               NULL_DEREFERENCE: 17
+                    MEMORY_LEAK: 7
+    NULL_TEST_AFTER_DEREFERENCE: 5
+            UNINITIALIZED_VALUE: 5
+         ARRAY_OUT_OF_BOUNDS_L2: 4
+         CONDITION_ALWAYS_FALSE: 3
+          CONDITION_ALWAYS_TRUE: 3
+         ARRAY_OUT_OF_BOUNDS_L1: 2
+           PRECONDITION_NOT_MET: 2
+  STACK_VARIABLE_ADDRESS_ESCAPE: 1
+   DANGLING_POINTER_DEREFERENCE: 1

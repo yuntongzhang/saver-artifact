@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/appid/service_plugins/service_telnet.c", "procedure": "telnet_validate", "line": 123 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/appid/service_plugins/service_telnet.c", "procedure": "telnet_validate", "line": 133 }, "exp": null }
+}

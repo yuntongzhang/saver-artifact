@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "lxccontainer.c", "procedure": "prepend_lxc_header", "line": 1637 }, "exp": null },
+    "sink"  : { "node": { "filename": "lxccontainer.c", "procedure": "prepend_lxc_header", "line": 1639 }, "exp": null }
+}

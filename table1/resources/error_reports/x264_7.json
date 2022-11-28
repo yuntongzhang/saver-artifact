@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "input/avs.c", "procedure": "open_file", "line": 265 }, "exp": null },
+    "sink": { "node": { "filename": "input/avs.c", "procedure": "open_file", "line": 268 }, "exp": null }
+}

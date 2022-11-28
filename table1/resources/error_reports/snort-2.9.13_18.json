@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/sdf/spp_sdf.c", "procedure": "SDFInit", "line": 170 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/sdf/spp_sdf.c", "procedure": "SDFInit", "line": 171 }, "exp": null }
+}

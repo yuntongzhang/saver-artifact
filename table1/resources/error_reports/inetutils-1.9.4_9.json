@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "talkd/acl.c", "procedure": "open_users_acl", "line": 305 }, "exp": null },
+    "sink": { "node": { "filename": "talkd/acl.c", "procedure": "open_users_acl", "line": 323 }, "exp": null }
+}

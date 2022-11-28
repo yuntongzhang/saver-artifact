@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "trust/token.c", "procedure": "p11_token_new", "line": 831 }, "exp": null },
+    "sink": { "node": { "filename": "trust/token.c", "procedure": "p11_token_new", "line": 850 }, "exp": null }
+}

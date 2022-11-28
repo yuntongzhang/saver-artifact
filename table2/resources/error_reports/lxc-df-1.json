@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "src/lxc/cgmanager.c", "procedure": "collect_subsytems", "line": 1262 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/cgmanager.c", "procedure": "collect_subsytems", "line": 1285 }, "exp": null }
+}

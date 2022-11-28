@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src.c", "procedure": "foo", "line": 4 }, "exp": null },
+    "sink": { "node": { "filename": "src.c", "procedure": "foo", "line": 6 }, "exp": null }
+}

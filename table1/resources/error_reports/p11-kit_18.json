@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "p11-kit/proxy.c", "procedure": "proxy_list_slots", "line": 269 }, "exp": null },
+    "sink": { "node": { "filename": "p11-kit/proxy.c", "procedure": "proxy_list_slots", "line": 282 }, "exp": null }
+}

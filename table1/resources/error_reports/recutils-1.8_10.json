@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/rec-fex.c", "procedure": "rec_fex_parse_str_simple", "line": 544 }, "exp": null },
+    "sink": { "node": { "filename": "src/rec-fex.c", "procedure": "rec_fex_parse_str_simple", "line": 545 }, "exp": null }
+}

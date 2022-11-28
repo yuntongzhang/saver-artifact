@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "net/tcp.c", "procedure": "grub_net_recv_tcp_packet", "line": 921 }, "exp": null },
+    "sink"  : { "node": { "filename": "net/tcp.c", "procedure": "grub_net_recv_tcp_packet", "line": 921 }, "exp": null }
+}

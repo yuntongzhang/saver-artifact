@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "grub-core/disk/diskfilter.c", "procedure": "free_array", "line": 1256 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/disk/diskfilter.c", "procedure": "free_array", "line": 1265 }, "exp": null }
+}

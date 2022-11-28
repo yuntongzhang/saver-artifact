@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "add_new_item", "line": 13 }, "exp": null },
+    "sink": { "node": { "procedure": "add_new_item", "line": 21 }, "exp": null }
+}
+

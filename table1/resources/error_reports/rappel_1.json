@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "pipe.c", "procedure": "_read_bytecode", "line": 52 }, "exp": null },
+    "sink": { "node": { "filename": "pipe.c", "procedure": "_read_bytecode", "line": 65 }, "exp": null }
+}
+

@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-plugins/sp_preprocopt.c", "procedure": "RegisterPreprocessorRuleOption", "line": 141 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-plugins/sp_preprocopt.c", "procedure": "RegisterPreprocessorRuleOption", "line": 150 }, "exp": null }
+}

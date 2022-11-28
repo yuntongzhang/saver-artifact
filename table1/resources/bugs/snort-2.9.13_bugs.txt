@@ -1,0 +1,2624 @@
+Found 869 issues
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+src/active.c:194: warning: PRECONDITION_NOT_MET
+  in call to Active_Open() at line 194, column 60
+
+src/decode.c:3131: error: NULL_DEREFERENCE
+  pointer p could be null and is dereferenced at line 3131, column 5
+
+src/decode.c:3554: warning: PRECONDITION_NOT_MET
+  in call to sfip_fast_eq6() at line 3554, column 9
+
+src/detect.c:126: warning: RETURN_VALUE_IGNORED
+  after call to processDecoderAlertsActionQ() at line 126, column 59
+
+src/detection-plugins/sp_appid.c:223: error: MEMORY_LEAK
+   memory dynamically allocated to otn->ds_list[31] by call to optionAppIdCreate() at line 213, column 15 is not reachable after line 223, column 38
+
+src/detection-plugins/sp_byte_check.c:396: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 396, column 60
+
+src/detection-plugins/sp_byte_extract.c:318: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 318, column 39
+
+src/detection-plugins/sp_byte_jump.c:390: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 390, column 9
+
+src/detection-plugins/sp_file_type.c:187: error: NULL_DEREFERENCE
+  pointer option could be null and is dereferenced by call to FileTypeFree() at line 187, column 9
+
+src/detection-plugins/sp_file_type.c:200: error: MEMORY_LEAK
+   memory dynamically allocated to opt by call to SnortAlloc() at line 198, column 24 is not reachable after line 200, column 5
+
+src/detection-plugins/sp_file_type.c:208: warning: PRECONDITION_NOT_MET
+  in call to FileGroup_Parse() at line 208, column 47
+
+src/detection-plugins/sp_flowbits.c:505: error: NULL_DEREFERENCE
+  pointer flowbits_grp.GrpBitOp->pucBitBuffer could be null and is dereferenced by call to boResetBITOP() at line 505, column 9
+
+src/detection-plugins/sp_flowbits.c:568: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((124==0)!=0) is always false at line 568, column 17
+
+src/detection-plugins/sp_flowbits.c:568: error: MEMORY_LEAK
+   memory dynamically allocated to flowbits_name by call to SnortStrdup() at line 566, column 21 is not reachable after line 568, column 17
+
+src/detection-plugins/sp_flowbits.c:585: error: MEMORY_LEAK
+   memory dynamically allocated to flowbits_name by call to SnortStrdup() at line 566, column 21 is not reachable after line 585, column 22
+
+src/detection-plugins/sp_flowbits.c:585: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((38==0)!=0) is always false at line 585, column 22
+
+src/detection-plugins/sp_pattern_match.c:573: warning: PRECONDITION_NOT_MET
+  in call to GetLastPmdError() at line 573, column 29
+
+src/detection-plugins/sp_pattern_match.c:603: warning: PRECONDITION_NOT_MET
+  in call to GetLastPmdError() at line 603, column 29
+
+src/detection-plugins/sp_pattern_match.c:640: warning: PRECONDITION_NOT_MET
+  in call to GetLastPmdError() at line 640, column 29
+
+src/detection-plugins/sp_pattern_match.c:677: warning: PRECONDITION_NOT_MET
+  in call to GetLastPmdError() at line 677, column 29
+
+src/detection-plugins/sp_pattern_match.c:1387: warning: UNINITIALIZED_VALUE
+  value pmd_dup was not initialized after declaration and is used at line 1387, column 28
+
+src/detection-plugins/sp_pattern_match.c:1485: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((34==0)!=0) is always false at line 1485, column 17
+
+src/detection-plugins/sp_pattern_match.c:1488: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((34==0)!=0) is always false at line 1488, column 21
+
+src/detection-plugins/sp_pattern_match.c:1489: error: ARRAY_OUT_OF_BOUNDS_L1
+  array quote_two last assigned on line 1488 could be accessed with index -1 out of bounds at line 1489, column 30
+
+src/detection-plugins/sp_pattern_match.c:1912: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1912, column 33
+
+src/detection-plugins/sp_pcre.c:269: warning: UNINITIALIZED_VALUE
+  value pcre_data->expression was not initialized after declaration and is used at line 269, column 13
+
+src/detection-plugins/sp_pcre.c:270: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer pcre_data->expression could be dangling and is dereferenced or freed at line 270, column 13
+
+src/detection-plugins/sp_pcre.c:326: error: ARRAY_OUT_OF_BOUNDS_L1
+  array re of size 1 last assigned on line 323 could be accessed with index -1 out of bounds at line 326, column 12
+
+src/dynamic-plugins/sf_convert_dynamic.c:724: warning: UNINITIALIZED_VALUE
+  value data->flags was not initialized after declaration and is used at line 724, column 9
+
+src/dynamic-plugins/sf_convert_dynamic.c:726: warning: UNINITIALIZED_VALUE
+  value data->flags was not initialized after declaration and is used at line 726, column 9
+
+src/dynamic-plugins/sf_convert_dynamic.c:755: warning: UNINITIALIZED_VALUE
+  value dup was not initialized after declaration and is used at line 755, column 19
+
+src/dynamic-plugins/sf_convert_dynamic.c:1003: warning: UNINITIALIZED_VALUE
+  value data->flags was not initialized after declaration and is used at line 1003, column 9
+
+src/dynamic-plugins/sf_dynamic_decompression.c:84: warning: UNINITIALIZED_VALUE
+  value state->flags was not initialized after declaration and is used at line 84, column 5
+
+src/dynamic-plugins/sf_dynamic_plugins.c:265: warning: PRECONDITION_NOT_MET
+  in call to opendir() at line 265, column 29
+
+src/dynamic-plugins/sf_dynamic_plugins.c:547: warning: PRECONDITION_NOT_MET
+  in call to openDynamicLibrary() at line 547, column 14
+
+src/dynamic-plugins/sf_dynamic_plugins.c:554: warning: PRECONDITION_NOT_MET
+  in call to getSymbol() at line 554, column 37
+
+src/dynamic-plugins/sf_dynamic_plugins.c:718: warning: PRECONDITION_NOT_MET
+  in call to openDynamicLibrary() at line 718, column 14
+
+src/dynamic-plugins/sf_dynamic_plugins.c:726: warning: UNINITIALIZED_VALUE
+  value metaData.type was not initialized after declaration and is used at line 726, column 11
+
+src/dynamic-plugins/sf_dynamic_plugins.c:1096: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 1096, column 21
+
+src/dynamic-plugins/sf_dynamic_plugins.c:1296: warning: UNINITIALIZED_VALUE
+  value extra_extra->flags was not initialized after declaration and is used at line 1296, column 39
+
+src/dynamic-plugins/sf_dynamic_plugins.c:1303: warning: UNINITIALIZED_VALUE
+  value extra_extra->flags was not initialized after declaration and is used at line 1303, column 39
+
+src/dynamic-plugins/sf_dynamic_plugins.c:1428: error: MEMORY_LEAK
+   memory dynamically allocated to engineData.dataDumpDirectory by call to SnortStrdup() at line 1378, column 40 is not reachable after line 1428, column 1
+
+src/dynamic-plugins/sf_dynamic_plugins.c:1685: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1685, column 23
+
+src/dynamic-plugins/sf_dynamic_plugins.c:1811: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 1811, column 12
+
+src/dynamic-plugins/sf_dynamic_plugins.c:2823: warning: PRECONDITION_NOT_MET
+  in call to getSymbol() at line 2823, column 45
+
+src/dynamic-plugins/sf_dynamic_plugins.c:2861: warning: PRECONDITION_NOT_MET
+  in call to openDynamicLibrary() at line 2861, column 14
+
+src/dynamic-plugins/sf_dynamic_plugins.c:2869: warning: UNINITIALIZED_VALUE
+  value metaData.type was not initialized after declaration and is used at line 2869, column 9
+
+src/dynamic-plugins/sf_dynamic_plugins.c:3263: error: NULL_DEREFERENCE
+  pointer new_config could be null and is dereferenced at line 3263, column 90
+
+src/dynamic-plugins/sf_engine/examples/bug31842.c:343: warning: UNINITIALIZED_VALUE
+  value cursor was not initialized after declaration and is used at line 343, column 42
+
+src/dynamic-plugins/sf_engine/examples/bug35218.c:240: warning: UNINITIALIZED_VALUE
+  value cursor_normal was not initialized after declaration and is used at line 240, column 10
+
+src/dynamic-plugins/sf_engine/examples/bug35218.c:248: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer line_ptr last assigned on line 243 could be dangling and is dereferenced or freed at line 248, column 16
+
+src/dynamic-plugins/sf_engine/sf_ip.c:61: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 61, column 9
+
+src/dynamic-plugins/sf_engine/sf_ip.c:62: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 62, column 15
+
+src/dynamic-plugins/sf_engine/sf_ip.c:177: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 177, column 20
+
+src/dynamic-plugins/sf_engine/sf_ip.c:177: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 177, column 20
+
+src/dynamic-plugins/sf_engine/sf_ip.c:177: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 177, column 20
+
+src/dynamic-plugins/sf_engine/sf_ip.h:485: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ip2->ip.__in6_u.__u6_addr32 of size 4 could be accessed with an index out of bounds at line 485, column 30
+
+src/dynamic-plugins/sf_engine/sf_ip.h:485: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ip1->addr.ip.__in6_u.__u6_addr32 of size 4 could be accessed with an index out of bounds at line 485, column 14
+
+src/dynamic-plugins/sf_engine/sf_snort_detection_engine.c:603: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 603, column 33
+
+src/dynamic-plugins/sp_dynamic.c:224: warning: UNINITIALIZED_VALUE
+  value option_dup was not initialized after declaration and is used at line 224, column 34
+
+src/dynamic-plugins/sp_dynamic.c:337: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 337, column 69
+
+src/dynamic-plugins/sp_dynamic.c:368: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 368, column 95
+
+src/dynamic-plugins/sp_dynamic.c:602: warning: UNINITIALIZED_VALUE
+  value flowbits->ids was not initialized after declaration and is used at line 602, column 13
+
+src/dynamic-plugins/sp_dynamic.c:603: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer flowbits->ids could be dangling and is dereferenced or freed at line 603, column 13
+
+src/dynamic-plugins/sp_dynamic.c:608: warning: UNINITIALIZED_VALUE
+  value flowbits->eval was not initialized after declaration and is used at line 608, column 26
+
+src/dynamic-plugins/sp_dynamic.c:609: warning: UNINITIALIZED_VALUE
+  value flowbits->ids was not initialized after declaration and is used at line 609, column 25
+
+src/dynamic-plugins/sp_dynamic.c:610: warning: UNINITIALIZED_VALUE
+  value flowbits->num_ids was not initialized after declaration and is used at line 610, column 29
+
+src/dynamic-plugins/sp_preprocopt.c:150: error: MEMORY_LEAK
+   memory dynamically allocated to optionInfo by call to SnortAlloc() at line 141, column 44 is not reachable after line 150, column 5
+
+src/dynamic-preprocessors/appid/appIdConfig.c:317: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 317, column 31
+
+src/dynamic-preprocessors/appid/appIdConfig.c:317: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 317, column 31
+
+src/dynamic-preprocessors/appid/appIdConfig.c:317: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 317, column 31
+
+src/dynamic-preprocessors/appid/appIdConfig.c:333: warning: PRECONDITION_NOT_MET
+  in call to sflist_first() at line 333, column 52
+
+src/dynamic-preprocessors/appid/appIdConfig.c:351: warning: PRECONDITION_NOT_MET
+  in call to sflist_first_node() at line 351, column 18
+
+src/dynamic-preprocessors/appid/appIdStats.c:360: warning: PRECONDITION_NOT_MET
+  in call to sflist_add_before() at line 360, column 17
+
+src/dynamic-preprocessors/appid/appInfoTable.c:164: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 164, column 21
+
+src/dynamic-preprocessors/appid/appInfoTable.c:168: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 168, column 31
+
+src/dynamic-preprocessors/appid/appInfoTable.c:350: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 350, column 19
+
+src/dynamic-preprocessors/appid/appInfoTable.c:350: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 350, column 19
+
+src/dynamic-preprocessors/appid/appInfoTable.c:350: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 350, column 19
+
+src/dynamic-preprocessors/appid/appInfoTable.c:574: warning: PRECONDITION_NOT_MET
+  in call to dynamicArrayGetIndex() at line 574, column 17
+
+src/dynamic-preprocessors/appid/client_plugins/client_app_base.c:442: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 442, column 19
+
+src/dynamic-preprocessors/appid/client_plugins/client_app_base.c:825: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 825, column 32
+
+src/dynamic-preprocessors/appid/client_plugins/client_app_base.c:825: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 825, column 32
+
+src/dynamic-preprocessors/appid/client_plugins/client_app_base.c:825: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 825, column 32
+
+src/dynamic-preprocessors/appid/client_plugins/client_app_ssh.c:275: error: NULL_DEREFERENCE
+  pointer fd could be null and is dereferenced at line 275, column 17
+
+src/dynamic-preprocessors/appid/commonAppMatcher.c:351: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 351, column 13
+
+src/dynamic-preprocessors/appid/commonAppMatcher.c:353: warning: PRECONDITION_NOT_MET
+  in call to ParseIpv6Cidr() at line 353, column 44
+
+src/dynamic-preprocessors/appid/commonAppMatcher.c:411: warning: PRECONDITION_NOT_MET
+  in call to ParseIpCidr() at line 411, column 58
+
+src/dynamic-preprocessors/appid/commonAppMatcher.c:467: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 467, column 10
+
+src/dynamic-preprocessors/appid/commonAppMatcher.c:712: warning: PRECONDITION_NOT_MET
+  in call to NetworkSet_New() at line 712, column 9
+
+src/dynamic-preprocessors/appid/commonAppMatcher.c:1154: error: NULL_DEREFERENCE
+  pointer pNewConfig last assigned on line 1136 could be null and is dereferenced at line 1154, column 5
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_dns.c:267: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 267, column 5
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_dns.c:339: error: NULL_DEREFERENCE
+  pointer offset could be null and is dereferenced at line 339, column 25
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:459: error: ARRAY_OUT_OF_BOUNDS_L1
+  array pTally->item of size 0 could be accessed with index 1 out of bounds at line 459, column 23
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:461: error: ARRAY_OUT_OF_BOUNDS_L1
+  array pTally->item of size 0 could be accessed with index 1 out of bounds at line 461, column 13
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:918: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array pHttpConfig->chp_matchers of size 9 could be accessed with an index out of bounds at line 918, column 46
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:919: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array pHttpConfig->chp_matchers of size 9 could be accessed with an index out of bounds at line 919, column 9
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:1710: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1710, column 37
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:1710: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1710, column 37
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_http.c:1710: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1710, column 37
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c:346: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 346, column 39
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c:346: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 346, column 39
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c:346: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 346, column 39
+
+src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c:406: error: MEMORY_LEAK
+   memory dynamically allocated to pSipConfig->sipUaMatcher by call to mlmpCreate() at line 398, column 32 is not reachable after line 406, column 9
+
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:97: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 97, column 41
+
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:97: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 97, column 41
+
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:97: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 97, column 41
+
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:190: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 190, column 49
+
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:190: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 190, column 49
+
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:190: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 190, column 49
+
+src/dynamic-preprocessors/appid/fw_appid.c:2637: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer p->ip6h was dereferenced at line 2620 and is tested for null at line 2637, column 22
+
+src/dynamic-preprocessors/appid/fw_appid.c:2675: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((93==0)!=0) is always false at line 2675, column 19
+
+src/dynamic-preprocessors/appid/fw_appid.c:4089: warning: PRECONDITION_NOT_MET
+  in call to appIdActiveConfigGet() at line 4089, column 50
+
+src/dynamic-preprocessors/appid/fw_appid.c:4754: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 4754, column 23
+
+src/dynamic-preprocessors/appid/fw_appid.c:4754: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 4754, column 23
+
+src/dynamic-preprocessors/appid/fw_appid.c:4754: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 4754, column 23
+
+src/dynamic-preprocessors/appid/fw_appid.c:5025: warning: UNINITIALIZED_VALUE
+  value __n was not initialized after declaration and is used at line 5025, column 39
+
+src/dynamic-preprocessors/appid/fw_appid.c:5025: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 5025, column 39
+
+src/dynamic-preprocessors/appid/fw_appid.h:340: error: NULL_DEREFERENCE
+  pointer session could be null and is dereferenced at line 340, column 17
+
+src/dynamic-preprocessors/appid/fw_appid.h:366: error: NULL_DEREFERENCE
+  pointer session could be null and is dereferenced at line 366, column 17
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:152: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 152, column 22
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:152: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 152, column 22
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:152: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 152, column 22
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:380: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 380, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:380: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 380, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:380: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 380, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:410: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 410, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:410: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 410, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:410: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 410, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:431: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 431, column 16
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:431: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 431, column 16
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:431: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 431, column 16
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:507: warning: PRECONDITION_NOT_MET
+  in call to storeLuaString() at line 507, column 9
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2063: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2063, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2063: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2063, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2156: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2156, column 30
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2156: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2156, column 30
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2202: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2202, column 30
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2202: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2202, column 30
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2244: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2244, column 30
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2244: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2244, column 30
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2288: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 2288, column 10
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2343: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 2343, column 10
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2393: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2393, column 26
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2393: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2393, column 26
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2393: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 2393, column 26
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2552: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 2552, column 29
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2552: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 2552, column 29
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2552: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 2552, column 29
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2571: warning: PRECONDITION_NOT_MET
+  in call to sfxhash_find() at line 2571, column 107
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3062: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 3062, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3062: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 3062, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3209: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 3209, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3209: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 3209, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3546: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 3546, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3546: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 3546, column 39
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3630: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 3630, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3630: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 3630, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3630: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 3630, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3783: warning: PRECONDITION_NOT_MET
+  in call to checkDetectorUserData() at line 3783, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3894: warning: PRECONDITION_NOT_MET
+  in call to checkDetectorUserData() at line 3894, column 42
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:4021: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 4021, column 9
+
+src/dynamic-preprocessors/appid/luaDetectorApi.c:4023: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((46==0)!=0) is always false at line 4023, column 14
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:124: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 124, column 25
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:124: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 124, column 25
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:124: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 124, column 25
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:125: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 125, column 44
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:125: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 125, column 44
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:125: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 125, column 44
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:126: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 126, column 45
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:126: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 126, column 45
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:126: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 126, column 45
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:127: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 127, column 48
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:127: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 127, column 48
+
+src/dynamic-preprocessors/appid/luaDetectorModule.c:127: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 127, column 48
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1305: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1305, column 31
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1305: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1305, column 31
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1305: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1305, column 31
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1458: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1458, column 40
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1458: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1458, column 40
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1458: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1458, column 40
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1464: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1464, column 39
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1464: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1464, column 39
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1464: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1464, column 39
+
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:1470: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1470, column 40
+
+src/dynamic-preprocessors/appid/service_plugins/service_dcerpc.c:140: error: MEMORY_LEAK
+   memory dynamically allocated by call to calloc() at line 108, column 14 is not reachable after line 140, column 5
+
+src/dynamic-preprocessors/appid/service_plugins/service_dcerpc.c:194: error: MEMORY_LEAK
+   memory dynamically allocated by call to calloc() at line 162, column 14 is not reachable after line 194, column 5
+
+src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c:147: error: MEMORY_LEAK
+   memory dynamically allocated to fd by call to calloc() at line 136, column 14 is not reachable after line 147, column 9
+
+src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c:149: error: MEMORY_LEAK
+   memory dynamically allocated to fd by call to calloc() at line 136, column 14 is not reachable after line 149, column 9
+
+src/dynamic-preprocessors/appid/service_plugins/service_netbios.c:444: error: NULL_DEREFERENCE
+  pointer data could be null and is dereferenced at line 444, column 24
+
+src/dynamic-preprocessors/appid/service_plugins/service_netbios.c:477: error: NULL_DEREFERENCE
+  pointer data could be null and is dereferenced at line 477, column 9
+
+src/dynamic-preprocessors/appid/service_plugins/service_netbios.c:867: error: NULL_DEREFERENCE
+  pointer hdr could be null and is dereferenced at line 867, column 42
+
+src/dynamic-preprocessors/appid/service_plugins/service_rpc.c:249: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 249, column 34
+
+src/dynamic-preprocessors/appid/service_plugins/service_rpc.c:249: error: NULL_DEREFERENCE
+  pointer rpc could be null and is dereferenced at line 249, column 34
+
+src/dynamic-preprocessors/appid/service_plugins/service_ssh.c:274: error: NULL_DEREFERENCE
+  pointer ss could be null and is dereferenced at line 274, column 17
+
+src/dynamic-preprocessors/appid/service_plugins/service_telnet.c:133: error: MEMORY_LEAK
+   memory dynamically allocated to td by call to calloc() at line 123, column 14 is not reachable after line 133, column 27
+
+src/dynamic-preprocessors/appid/service_plugins/service_telnet.c:137: error: MEMORY_LEAK
+   memory dynamically allocated to td by call to calloc() at line 123, column 14 is not reachable after line 137, column 13
+
+src/dynamic-preprocessors/appid/service_plugins/service_telnet.c:139: error: MEMORY_LEAK
+   memory dynamically allocated to td by call to calloc() at line 123, column 14 is not reachable after line 139, column 13
+
+src/dynamic-preprocessors/appid/spp_appid.c:152: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 152, column 5
+
+src/dynamic-preprocessors/appid/spp_appid.c:453: error: NULL_DEREFERENCE
+  pointer appidStaticConfig last assigned on line 446 could be null and is dereferenced by call to ThirdPartyAppIDInit() at line 453, column 9
+
+src/dynamic-preprocessors/appid/util/NetworkSet.c:442: warning: PRECONDITION_NOT_MET
+  in call to sflist_add_tail() at line 442, column 13
+
+src/dynamic-preprocessors/appid/util/NetworkSet.c:1212: warning: PRECONDITION_NOT_MET
+  in call to NetworkSet_New() at line 1212, column 9
+
+src/dynamic-preprocessors/appid/util/NetworkSet.c:1255: warning: PRECONDITION_NOT_MET
+  in call to NetworkSet_AddNetworkRangeEx() at line 1255, column 19
+
+src/dynamic-preprocessors/appid/util/NetworkSet.c:1266: warning: PRECONDITION_NOT_MET
+  in call to NetworkSet_AddNetworkRange6Ex() at line 1266, column 19
+
+src/dynamic-preprocessors/appid/util/fw_avltree.c:399: error: NULL_DEREFERENCE
+  pointer tail last assigned on line 394 could be null and is dereferenced at line 399, column 13
+
+src/dynamic-preprocessors/dcerpc2/dce2_cl.c:420: warning: PRECONDITION_NOT_MET
+  in call to DCE2_ClInsertActTracker() at line 420, column 14
+
+src/dynamic-preprocessors/dcerpc2/dce2_cl.c:472: error: MEMORY_LEAK
+   memory dynamically allocated by call to DCE2_Alloc() at line 447, column 72 is not reachable after line 472, column 12
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1395: warning: UNINITIALIZED_VALUE
+  value sc->smb_invalid_shares was not initialized after declaration and is used at line 1395, column 26
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1396: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer sc could be dangling and is dereferenced or freed at line 1396, column 9
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1416: warning: UNINITIALIZED_VALUE
+  value sc->smb_invalid_shares was not initialized after declaration and is used at line 1416, column 30
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1417: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer args could be dangling and is dereferenced or freed at line 1417, column 13
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1429: warning: UNINITIALIZED_VALUE
+  value sc->smb_invalid_shares was not initialized after declaration and is used at line 1429, column 30
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1430: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer args could be dangling and is dereferenced or freed at line 1430, column 13
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1443: warning: UNINITIALIZED_VALUE
+  value sc->smb_invalid_shares was not initialized after declaration and is used at line 1443, column 26
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1444: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer args could be dangling and is dereferenced or freed at line 1444, column 9
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:1449: error: MEMORY_LEAK
+   memory dynamically allocated to sc by call to DCE2_Alloc() at line 1386, column 31 is not reachable after line 1449, column 5
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:3513: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 3513, column 44
+
+src/dynamic-preprocessors/dcerpc2/dce2_config.c:4742: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 4742, column 37
+
+src/dynamic-preprocessors/dcerpc2/dce2_http.h:104: warning: PRECONDITION_NOT_MET
+  in call to DCE2_SsnFromServer() at line 104, column 9
+
+src/dynamic-preprocessors/dcerpc2/dce2_http.h:146: warning: PRECONDITION_NOT_MET
+  in call to DCE2_SsnFromClient() at line 146, column 9
+
+src/dynamic-preprocessors/dcerpc2/dce2_memory.c:531: warning: PRECONDITION_NOT_MET
+  in call to DCE2_Alloc() at line 531, column 41
+
+src/dynamic-preprocessors/dcerpc2/dce2_paf.c:268: warning: UNINITIALIZED_VALUE
+  value ss->state was not initialized after declaration and is used at line 268, column 17
+
+src/dynamic-preprocessors/dcerpc2/dce2_paf.c:275: warning: UNINITIALIZED_VALUE
+  value ss->nb_hdr was not initialized after declaration and is used at line 275, column 17
+
+src/dynamic-preprocessors/dcerpc2/dce2_paf.c:293: warning: UNINITIALIZED_VALUE
+  value ss->nb_hdr was not initialized after declaration and is used at line 293, column 17
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb.c:3074: warning: PRECONDITION_NOT_MET
+  in call to SmbBrokenPipe() at line 3074, column 38
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb.c:3895: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 3895, column 62
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb.c:4602: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 4602, column 49
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb.c:4602: error: NULL_DEREFERENCE
+  pointer nb_ptr could be null and is dereferenced at line 4602, column 49
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb.c:5704: warning: PRECONDITION_NOT_MET
+  in call to DCE2_SmbTrans2QueryFileInfoReq() at line 5704, column 54
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb.c:5846: warning: PRECONDITION_NOT_MET
+  in call to DCE2_ComInfoCommandSize() at line 5846, column 25
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb2.c:367: warning: PRECONDITION_NOT_MET
+  in call to SmbNtohl() at line 367, column 104
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb2.c:454: warning: PRECONDITION_NOT_MET
+  in call to SmbNtohq() at line 454, column 18
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb2.c:730: warning: PRECONDITION_NOT_MET
+  in call to SmbNtohq() at line 730, column 89
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb2.c:912: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer ssd was dereferenced at line 902 and is tested for null at line 912, column 9
+
+src/dynamic-preprocessors/dcerpc2/dce2_smb2.c:1046: warning: PRECONDITION_NOT_MET
+  in call to DCE2_Smb2UpdateStats() at line 1046, column 9
+
+src/dynamic-preprocessors/dcerpc2/dce2_stats.c:64: warning: PRECONDITION_NOT_MET
+  in call to DCE2_Alloc() at line 64, column 36
+
+src/dynamic-preprocessors/dcerpc2/dce2_stats.c:142: warning: PRECONDITION_NOT_MET
+  in call to DCE2_Alloc() at line 142, column 32
+
+src/dynamic-preprocessors/dcerpc2/dce2_utils.c:448: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable DCE2_UuidToStr_uuid_buf1 escapes to the caller via a return at line 448, column 1
+
+src/dynamic-preprocessors/dcerpc2/snort_dce2.c:767: warning: PRECONDITION_NOT_MET
+  in call to DCE2_CStackNew() at line 767, column 22
+
+src/dynamic-preprocessors/dcerpc2/snort_dce2.c:879: warning: PRECONDITION_NOT_MET
+  in call to DCE2_CoInitRdata() at line 879, column 76
+
+src/dynamic-preprocessors/dcerpc2/snort_dce2.c:885: warning: PRECONDITION_NOT_MET
+  in call to DCE2_CoInitRdata() at line 885, column 76
+
+src/dynamic-preprocessors/dcerpc2/snort_dce2.c:893: warning: PRECONDITION_NOT_MET
+  in call to DCE2_ClInitRdata() at line 893, column 54
+
+src/dynamic-preprocessors/dcerpc2/spp_dce2.c:1071: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 1071, column 86
+
+src/dynamic-preprocessors/dcerpc2/spp_dce2.c:1262: warning: PRECONDITION_NOT_MET
+  in call to DCE2_GetReloadSafeMemcap() at line 1262, column 35
+
+src/dynamic-preprocessors/dcerpc2/spp_dce2.c:1364: warning: PRECONDITION_NOT_MET
+  in call to DCE2_GetReloadSafeMemcap() at line 1364, column 26
+
+src/dynamic-preprocessors/dcerpc2/spp_dce2.c:1377: error: NULL_DEREFERENCE
+  pointer old_config last assigned on line 1350 could be null and is dereferenced by call to sfPolicyUserPolicyGetActive() at line 1377, column 9
+
+src/dynamic-preprocessors/dnp3/dnp3_paf.c:119: warning: UNINITIALIZED_VALUE
+  value pafdata->state was not initialized after declaration and is used at line 119, column 17
+
+src/dynamic-preprocessors/dnp3/dnp3_paf.c:162: warning: UNINITIALIZED_VALUE
+  value pafdata->real_length was not initialized after declaration and is used at line 162, column 23
+
+src/dynamic-preprocessors/dnp3/dnp3_reassembly.c:287: error: NULL_DEREFERENCE
+  pointer response last assigned on line 283 could be null and is dereferenced at line 287, column 25
+
+src/dynamic-preprocessors/dnp3/spp_dnp3.c:177: warning: PRECONDITION_NOT_MET
+  in call to DNP3InitializeMempool() at line 177, column 42
+
+src/dynamic-preprocessors/dnp3/spp_dnp3.c:245: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 245, column 5
+
+src/dynamic-preprocessors/dnp3/spp_dnp3.c:605: error: NULL_DEREFERENCE
+  pointer dnp3_eval_config last assigned on line 597 could be null and is dereferenced by call to DNP3PortCheck() at line 605, column 52
+
+src/dynamic-preprocessors/dnp3/spp_dnp3.c:718: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetCurrent() could be null and is dereferenced at line 718, column 5
+
+src/dynamic-preprocessors/dnp3/spp_dnp3.c:753: warning: PRECONDITION_NOT_MET
+  in call to DNP3InitializeMempool() at line 753, column 5
+
+src/dynamic-preprocessors/ftptelnet/ftpp_si.c:259: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable TelnetStatelessSessionInspection_TelnetStaticSession escapes at line 259, column 1
+
+src/dynamic-preprocessors/ftptelnet/ftpp_ui_config.c:141: warning: PRECONDITION_NOT_MET
+  in call to ftpp_ui_client_lookup_init() at line 141, column 12
+
+src/dynamic-preprocessors/ftptelnet/ftpp_ui_config.c:382: warning: PRECONDITION_NOT_MET
+  in call to ftp_bounce_lookup_init() at line 382, column 5
+
+src/dynamic-preprocessors/ftptelnet/pp_ftp.c:313: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer tok was dereferenced at line 301 and is tested for null at line 313, column 13
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:404: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 404, column 15
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:490: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 490, column 15
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:638: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 638, column 15
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:1172: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 1172, column 15
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:1318: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 1318, column 15
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:1773: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 1773, column 17
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:2021: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 2021, column 11
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:2373: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 2373, column 15
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:2693: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 2693, column 14
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:3291: warning: PRECONDITION_NOT_MET
+  in call to NextToken() at line 3291, column 14
+
+src/dynamic-preprocessors/ftptelnet/snort_ftptelnet.c:3690: error: NULL_DEREFERENCE
+  pointer pPolicyConfig->telnet_config last accessed on line 3685 could be null and is dereferenced at line 3690, column 40
+
+src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c:544: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 544, column 9
+
+src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c:554: error: MEMORY_LEAK
+   memory dynamically allocated to pPolicyConfig by call to calloc() at line 536, column 77 is not reachable after line 554, column 17
+
+src/dynamic-preprocessors/gtp/spp_gtp.c:204: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 204, column 78
+
+src/dynamic-preprocessors/gtp/spp_gtp.c:454: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetCurrent() could be null and is dereferenced at line 454, column 5
+
+src/dynamic-preprocessors/imap/imap_config.c:164: error: NULL_DEREFERENCE
+  pointer pPolicyConfig could be null and is dereferenced at line 164, column 14
+
+src/dynamic-preprocessors/imap/snort_imap.c:336: warning: UNINITIALIZED_VALUE
+  value ssn->session_flags was not initialized after declaration and is used at line 336, column 27
+
+src/dynamic-preprocessors/imap/snort_imap.c:684: warning: UNINITIALIZED_VALUE
+  value eolm was not initialized after declaration and is used at line 684, column 10
+
+src/dynamic-preprocessors/imap/snort_imap.c:723: warning: UNINITIALIZED_VALUE
+  value eol was not initialized after declaration and is used at line 723, column 20
+
+src/dynamic-preprocessors/imap/snort_imap.c:841: warning: UNINITIALIZED_VALUE
+  value eol was not initialized after declaration and is used at line 841, column 25
+
+src/dynamic-preprocessors/imap/spp_imap.c:600: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 600, column 5
+
+src/dynamic-preprocessors/imap/spp_imap.c:602: warning: PRECONDITION_NOT_MET
+  in call to IMAP_InitCmds() at line 602, column 5
+
+src/dynamic-preprocessors/imap/spp_imap.c:779: error: NULL_DEREFERENCE
+  pointer configNext last assigned on line 762 could be null and is dereferenced at line 779, column 13
+
+src/dynamic-preprocessors/imap/spp_imap.c:856: error: NULL_DEREFERENCE
+  pointer configOld last assigned on line 849 could be null and is dereferenced at line 856, column 19
+
+src/dynamic-preprocessors/imap/spp_imap.c:868: error: NULL_DEREFERENCE
+  pointer configOld last assigned on line 849 could be null and is dereferenced at line 868, column 18
+
+src/dynamic-preprocessors/include/sf_ip.c:61: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 61, column 9
+
+src/dynamic-preprocessors/include/sf_ip.c:62: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 62, column 15
+
+src/dynamic-preprocessors/include/sf_ip.c:177: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 177, column 20
+
+src/dynamic-preprocessors/include/sf_ip.c:177: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 177, column 20
+
+src/dynamic-preprocessors/include/sf_ip.c:177: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 177, column 20
+
+src/dynamic-preprocessors/include/sf_ip.h:485: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ip2->ip.__in6_u.__u6_addr32 of size 4 could be accessed with an index out of bounds at line 485, column 30
+
+src/dynamic-preprocessors/include/sf_ip.h:485: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ip1->addr.ip.__in6_u.__u6_addr32 of size 4 could be accessed with an index out of bounds at line 485, column 14
+
+src/dynamic-preprocessors/modbus/modbus_decode.c:386: error: NULL_DEREFERENCE
+  pointer packet could be null and is dereferenced at line 386, column 43
+
+src/dynamic-preprocessors/modbus/modbus_paf.c:98: warning: UNINITIALIZED_VALUE
+  value pafdata->state was not initialized after declaration and is used at line 98, column 17
+
+src/dynamic-preprocessors/modbus/modbus_paf.c:111: warning: UNINITIALIZED_VALUE
+  value pafdata->modbus_length was not initialized after declaration and is used at line 111, column 17
+
+src/dynamic-preprocessors/modbus/modbus_paf.c:116: warning: UNINITIALIZED_VALUE
+  value pafdata->modbus_length was not initialized after declaration and is used at line 116, column 17
+
+src/dynamic-preprocessors/modbus/modbus_paf.c:121: warning: UNINITIALIZED_VALUE
+  value pafdata->modbus_length was not initialized after declaration and is used at line 121, column 22
+
+src/dynamic-preprocessors/modbus/spp_modbus.c:221: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 221, column 57
+
+src/dynamic-preprocessors/modbus/spp_modbus.c:374: error: NULL_DEREFERENCE
+  pointer modbus_eval_config last assigned on line 366 could be null and is dereferenced by call to ModbusPortCheck() at line 374, column 56
+
+src/dynamic-preprocessors/modbus/spp_modbus.c:478: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetCurrent() could be null and is dereferenced at line 478, column 5
+
+src/dynamic-preprocessors/modbus/spp_modbus.c:514: error: NULL_DEREFERENCE
+  
+
+src/dynamic-preprocessors/pop/pop_config.c:163: error: NULL_DEREFERENCE
+  pointer pPolicyConfig could be null and is dereferenced at line 163, column 14
+
+src/dynamic-preprocessors/pop/pop_paf.c:326: warning: PRECONDITION_NOT_MET
+  in call to find_data_end_multi_line() at line 326, column 18
+
+src/dynamic-preprocessors/pop/snort_pop.c:295: warning: UNINITIALIZED_VALUE
+  value ssn->session_flags was not initialized after declaration and is used at line 295, column 27
+
+src/dynamic-preprocessors/pop/snort_pop.c:642: warning: UNINITIALIZED_VALUE
+  value eolm was not initialized after declaration and is used at line 642, column 10
+
+src/dynamic-preprocessors/pop/snort_pop.c:655: error: NULL_DEREFERENCE
+  pointer tmp last assigned on line 647 could be null and is dereferenced at line 655, column 37
+
+src/dynamic-preprocessors/pop/snort_pop.c:806: warning: UNINITIALIZED_VALUE
+  value eol was not initialized after declaration and is used at line 806, column 25
+
+src/dynamic-preprocessors/pop/spp_pop.c:534: error: NULL_DEREFERENCE
+  pointer defaultConfig last assigned on line 509 could be null and is dereferenced at line 534, column 69
+
+src/dynamic-preprocessors/pop/spp_pop.c:595: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 595, column 5
+
+src/dynamic-preprocessors/pop/spp_pop.c:597: warning: PRECONDITION_NOT_MET
+  in call to POP_InitCmds() at line 597, column 5
+
+src/dynamic-preprocessors/pop/spp_pop.c:775: error: NULL_DEREFERENCE
+  pointer configNext last assigned on line 757 could be null and is dereferenced at line 775, column 13
+
+src/dynamic-preprocessors/reputation/reputation_config.c:557: warning: PRECONDITION_NOT_MET
+  in call to segment_calloc() at line 557, column 26
+
+src/dynamic-preprocessors/reputation/reputation_config.c:711: warning: PRECONDITION_NOT_MET
+  in call to segment_calloc() at line 711, column 20
+
+src/dynamic-preprocessors/reputation/reputation_config.c:747: warning: PRECONDITION_NOT_MET
+  in call to duplicateInfo() at line 747, column 32
+
+src/dynamic-preprocessors/reputation/reputation_config.c:848: warning: PRECONDITION_NOT_MET
+  in call to sfrt_flat_lookup() at line 848, column 17
+
+src/dynamic-preprocessors/reputation/reputation_config.c:911: warning: PRECONDITION_NOT_MET
+  in call to sfip_set_raw() at line 911, column 9
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1254: warning: PRECONDITION_NOT_MET
+  in call to segment_calloc() at line 1254, column 18
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1405: error: NULL_DEREFERENCE
+  pointer argp could be null and is dereferenced by call to memcpy() at line 1405, column 15
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1405: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1405, column 15
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1405: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1405, column 15
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1629: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1629, column 15
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1629: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1629, column 15
+
+src/dynamic-preprocessors/reputation/reputation_config.c:1629: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1629, column 15
+
+src/dynamic-preprocessors/reputation/spp_reputation.c:487: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 487, column 92
+
+src/dynamic-preprocessors/reputation/spp_reputation.c:864: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 864, column 92
+
+src/dynamic-preprocessors/reputation/spp_reputation.c:1074: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 1074, column 48
+
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:128: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 128, column 25
+
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:128: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 128, column 25
+
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:128: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 128, column 25
+
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:132: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 132, column 25
+
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:132: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 132, column 25
+
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:132: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 132, column 25
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:86: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((123==0)!=0) is always false at line 86, column 21
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:101: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((123==0)!=0) is always false at line 101, column 29
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:356: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 356, column 25
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:356: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 356, column 25
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:356: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 356, column 25
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:438: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 438, column 25
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:438: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 438, column 25
+
+src/dynamic-preprocessors/sdf/sdf_pattern_match.c:438: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 438, column 25
+
+src/dynamic-preprocessors/sdf/spp_sdf.c:171: error: MEMORY_LEAK
+   memory dynamically allocated to config by call to NewSDFConfig() at line 170, column 14 is not reachable after line 171, column 30
+
+src/dynamic-preprocessors/sdf/spp_sdf.c:525: error: NULL_DEREFERENCE
+  pointer config last assigned on line 517 could be null and is dereferenced by call to SDFCheckPorts() at line 525, column 13
+
+src/dynamic-preprocessors/sdf/spp_sdf.c:550: error: NULL_DEREFERENCE
+  pointer config last assigned on line 517 could be null and is dereferenced at line 550, column 37
+
+src/dynamic-preprocessors/sdf/spp_sdf.c:811: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 811, column 5
+
+src/dynamic-preprocessors/sdf/spp_sdf.c:897: error: MEMORY_LEAK
+   memory dynamically allocated to config by call to NewSDFConfig() at line 896, column 14 is not reachable after line 897, column 5
+
+src/dynamic-preprocessors/sip/sip_paf.c:288: warning: PRECONDITION_NOT_MET
+  in call to memchr() at line 288, column 38
+
+src/dynamic-preprocessors/sip/sip_parser.c:499: error: ARRAY_OUT_OF_BOUNDS_L1
+  array start last assigned on line 482 could be accessed with index -1 out of bounds at line 499, column 48
+
+src/dynamic-preprocessors/sip/sip_parser.c:736: warning: PRECONDITION_NOT_MET
+  in call to memchr() at line 736, column 9
+
+src/dynamic-preprocessors/sip/sip_parser.c:809: warning: PRECONDITION_NOT_MET
+  in call to memchr() at line 809, column 9
+
+src/dynamic-preprocessors/sip/spp_sip.c:245: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 245, column 78
+
+src/dynamic-preprocessors/sip/spp_sip.c:543: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetCurrent() could be null and is dereferenced at line 543, column 77
+
+src/dynamic-preprocessors/sip/spp_sip.c:991: error: NULL_DEREFERENCE
+  pointer default_swap_config last assigned on line 977 could be null and is dereferenced at line 991, column 56
+
+src/dynamic-preprocessors/smtp/smtp_config.c:383: error: NULL_DEREFERENCE
+  pointer pPolicyConfig could be null and is dereferenced at line 383, column 14
+
+src/dynamic-preprocessors/smtp/smtp_config.c:960: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 960, column 22
+
+src/dynamic-preprocessors/smtp/smtp_config.c:960: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 960, column 22
+
+src/dynamic-preprocessors/smtp/smtp_config.c:960: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 960, column 22
+
+src/dynamic-preprocessors/smtp/smtp_xlink2state.c:101: error: NULL_DEREFERENCE
+  pointer buf could be null and is dereferenced at line 101, column 13
+
+src/dynamic-preprocessors/smtp/snort_smtp.c:363: error: NULL_DEREFERENCE
+  pointer pPolicyConfig last assigned on line 361 could be null and is dereferenced at line 363, column 56
+
+src/dynamic-preprocessors/smtp/snort_smtp.c:796: warning: UNINITIALIZED_VALUE
+  value eol was not initialized after declaration and is used at line 796, column 20
+
+src/dynamic-preprocessors/smtp/snort_smtp.c:816: warning: UNINITIALIZED_VALUE
+  value eolm was not initialized after declaration and is used at line 816, column 10
+
+src/dynamic-preprocessors/smtp/snort_smtp.c:1149: warning: PRECONDITION_NOT_MET
+  in call to SMTP_CopyToAltBuffer() at line 1149, column 16
+
+src/dynamic-preprocessors/smtp/snort_smtp.c:1153: warning: PRECONDITION_NOT_MET
+  in call to SMTP_CopyToAltBuffer() at line 1153, column 16
+
+src/dynamic-preprocessors/smtp/snort_smtp.c:1258: warning: PRECONDITION_NOT_MET
+  in call to SMTP_CopyToAltBuffer() at line 1258, column 21
+
+src/dynamic-preprocessors/smtp/spp_smtp.c:626: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 626, column 5
+
+src/dynamic-preprocessors/smtp/spp_smtp.c:629: warning: PRECONDITION_NOT_MET
+  in call to SMTP_InitCmds() at line 629, column 5
+
+src/dynamic-preprocessors/smtp/spp_smtp.c:805: error: NULL_DEREFERENCE
+  pointer configNext last assigned on line 788 could be null and is dereferenced at line 805, column 13
+
+src/dynamic-preprocessors/smtp/spp_smtp.c:873: error: NULL_DEREFERENCE
+  pointer configOld last assigned on line 866 could be null and is dereferenced at line 873, column 20
+
+src/dynamic-preprocessors/smtp/spp_smtp.c:885: error: NULL_DEREFERENCE
+  pointer configOld last assigned on line 866 could be null and is dereferenced at line 885, column 20
+
+src/dynamic-preprocessors/ssh/spp_ssh.c:909: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetCurrent() could be null and is dereferenced at line 909, column 5
+
+src/dynamic-preprocessors/ssh/spp_ssh.c:1170: error: NULL_DEREFERENCE
+  pointer payload could be null and is dereferenced by call to memcpy() at line 1170, column 9
+
+src/dynamic-preprocessors/ssl_common/ssl.c:243: error: NULL_DEREFERENCE
+  pointer record last assigned on line 239 could be null and is dereferenced at line 243, column 41
+
+src/dynamic-preprocessors/ssl_common/ssl_config.c:768: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataGetDefault() at line 768, column 38
+
+src/dynamic-preprocessors/ssl_common/ssl_config.c:793: warning: PRECONDITION_NOT_MET
+  in call to SSLFreeConfig() at line 793, column 9
+
+src/dynamic-preprocessors/ssl_common/ssl_config.c:962: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 962, column 5
+
+src/dynamic-preprocessors/ssl_common/ssl_config.c:1051: warning: PRECONDITION_NOT_MET
+  in call to SSLFreeConfig() at line 1051, column 5
+
+src/dynamic-preprocessors/ssl_common/ssl_inspect.c:344: error: NULL_DEREFERENCE
+  pointer config last assigned on line 342 could be null and is dereferenced at line 344, column 9
+
+src/dynamic-preprocessors/ssl_common/ssl_inspect.c:389: error: NULL_DEREFERENCE
+  pointer config last assigned on line 378 could be null and is dereferenced at line 389, column 9
+
+src/dynamic-preprocessors/ssl_common/ssl_inspect.c:437: error: NULL_DEREFERENCE
+  pointer config last assigned on line 433 could be null and is dereferenced at line 437, column 10
+
+src/encode.c:396: error: ARRAY_OUT_OF_BOUNDS_L1
+  array encoders could be accessed with an index out of bounds at line 396, column 9
+
+src/encode.c:417: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to ScMaxIP6Extensions() at line 417, column 83
+
+src/encode.c:865: error: NULL_DEREFERENCE
+  pointer lyr could be null and is dereferenced at line 865, column 13
+
+src/encode.c:870: warning: PRECONDITION_NOT_MET
+  in call to sfiph_build() at line 870, column 5
+
+src/encode.c:993: error: NULL_DEREFERENCE
+  pointer out could be null and is dereferenced at line 993, column 24
+
+src/encode.c:1263: warning: PRECONDITION_NOT_MET
+  in call to NextEncoder() at line 1263, column 21
+
+src/encode.c:1263: warning: RETURN_VALUE_IGNORED
+  after call to NextEncoder() at line 1263, column 21
+
+src/encode.c:1361: error: NULL_DEREFERENCE
+  pointer c could be null and is dereferenced at line 1361, column 5
+
+src/encode.c:1608: error: NULL_DEREFERENCE
+  pointer out could be null and is dereferenced at line 1608, column 11
+
+src/event_wrapper.c:66: error: MEMORY_LEAK
+   memory dynamically allocated to rtn by call to calloc() at line 61, column 15 is not reachable after line 66, column 17
+
+src/file-process/file_capture.c:211: warning: PRECONDITION_NOT_MET
+  in call to _free_file_buffer() at line 211, column 13
+
+src/file-process/file_capture.c:303: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 303, column 16
+
+src/file-process/file_mempool.c:159: warning: PRECONDITION_NOT_MET
+  in call to safe_mempool_free_pools() at line 159, column 13
+
+src/file-process/file_segment_process.c:421: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 421, column 17
+
+src/file-process/file_service.c:255: warning: PRECONDITION_NOT_MET
+  in call to file_service_config_create() at line 255, column 27
+
+src/file-process/file_service.c:413: error: MEMORY_LEAK
+   memory dynamically allocated by call to get_create_file_session() at line 413, column 5 is not reachable after line 413, column 5
+
+src/file-process/file_service.c:533: warning: PRECONDITION_NOT_MET
+  in call to GetHttpBuffer() at line 533, column 28
+
+src/file-process/file_service.c:1060: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 1060, column 9
+
+src/file-process/file_stats.c:174: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced at line 174, column 43
+
+src/file-process/libs/file_config.c:464: warning: PRECONDITION_NOT_MET
+  in call to StringVector_Add() at line 464, column 9
+
+src/file-process/libs/file_identifier.c:192: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer current was dereferenced at line 182 and is tested for null at line 192, column 12
+
+src/file-process/libs/file_identifier.c:200: warning: PRECONDITION_NOT_MET
+  in call to verify_magic_offset() at line 200, column 13
+
+src/file-process/libs/file_identifier.c:220: error: MEMORY_LEAK
+   next is not reachable after line 220, column 9
+
+src/fpcreate.c:365: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer list was dereferenced at line 364 and is tested for null at line 365, column 14
+
+src/fpcreate.c:379: error: MEMORY_LEAK
+   memory dynamically allocated by call to sflist_add_tail() at line 379, column 9 is not reachable after line 379, column 9
+
+src/fpcreate.c:379: error: MEMORY_LEAK
+   memory dynamically allocated to list by call to sflist_new() at line 364, column 16 is not reachable after line 379, column 9
+
+src/fpcreate.c:545: error: NULL_DEREFERENCE
+  pointer node last assigned on line 542 could be null and is dereferenced by call to free_detection_option_tree() at line 545, column 13
+
+src/fpcreate.c:582: warning: UNINITIALIZED_VALUE
+  value root->children was not initialized after declaration and is used at line 582, column 16
+
+src/fpcreate.c:833: warning: PRECONDITION_NOT_MET
+  in call to fpSetDefaults() at line 833, column 5
+
+src/fpcreate.c:1155: error: MEMORY_LEAK
+   memory dynamically allocated to pmd_list->pattern_buf by call to DynamicContentToPmd() at line 1146, column 56 is not reachable after line 1155, column 19
+
+src/fpcreate.c:3347: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 3347, column 9
+
+src/fpdetect.c:425: error: NULL_DEREFERENCE
+  pointer rtn last assigned on line 423 could be null and is dereferenced at line 425, column 17
+
+src/fpdetect.c:877: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 877, column 17
+
+src/fpdetect.c:1752: error: MEMORY_LEAK
+   memory dynamically allocated by call to GenerateSnortEventRtn() at line 1750, column 13 is not reachable after line 1752, column 26
+
+src/fpdetect.c:1752: warning: PRECONDITION_NOT_MET
+  in call to OtnLookupAdd() at line 1752, column 13
+
+src/fpdetect.c:1795: error: MEMORY_LEAK
+   memory dynamically allocated by call to GenerateSnortEventRtn() at line 1793, column 40 is not reachable after line 1795, column 24
+
+src/log.c:159: warning: PRECONDITION_NOT_MET
+  in call to AllocDumpBuf() at line 159, column 22
+
+src/log.c:640: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 640, column 9
+
+src/log.c:694: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 694, column 9
+
+src/log.c:730: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 730, column 9
+
+src/log.c:1705: warning: PRECONDITION_NOT_MET
+  in call to fprintf() at line 1705, column 5
+
+src/log.c:1892: error: NULL_DEREFERENCE
+  pointer fp could be null and is dereferenced by call to fprintf() at line 1892, column 17
+
+src/log_text.c:76: warning: PRECONDITION_NOT_MET
+  in call to TextLog_Puts() at line 76, column 5
+
+src/log_text.c:469: warning: PRECONDITION_NOT_MET
+  in call to TextLog_Print() at line 469, column 65
+
+src/log_text.c:715: warning: UNINITIALIZED_VALUE
+  value save_sp was not initialized after declaration and is used at line 715, column 17
+
+src/log_text.c:716: warning: UNINITIALIZED_VALUE
+  value save_dp was not initialized after declaration and is used at line 716, column 17
+
+src/log_text.c:889: warning: PRECONDITION_NOT_MET
+  in call to TextLog_Puts() at line 889, column 31
+
+src/log_text.c:1656: warning: PRECONDITION_NOT_MET
+  in call to ScOutputDataLink() at line 1656, column 10
+
+src/mempool.c:103: warning: PRECONDITION_NOT_MET
+  in call to mempool_setObjectSize() at line 103, column 5
+
+src/mstring.c:774: error: ARRAY_OUT_OF_BOUNDS_L1
+  array buf could be accessed with index -1 out of bounds at line 774, column 17
+
+src/obfuscation.c:600: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ob_struct.maxlen_entries of size 8 could be accessed with an index out of bounds at line 600, column 21
+
+src/output-plugins/spo_alert_sf_socket.c:280: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 280, column 17
+
+src/output-plugins/spo_alert_sf_socket.c:331: error: NULL_DEREFERENCE
+  pointer event could be null and is dereferenced at line 331, column 20
+
+src/output-plugins/spo_alert_test.c:225: warning: PRECONDITION_NOT_MET
+  in call to OpenAlertFile() at line 225, column 22
+
+src/output-plugins/spo_alert_unixsock.c:183: warning: PRECONDITION_NOT_MET
+  in call to memmove() at line 183, column 9
+
+src/output-plugins/spo_log_ascii.c:205: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 205, column 13
+
+src/output-plugins/spo_log_tcpdump.c:390: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 390, column 72
+
+src/output-plugins/spo_unified2.c:451: warning: PRECONDITION_NOT_MET
+  in call to memset() at line 451, column 44
+
+src/output-plugins/spo_unified2.c:619: warning: PRECONDITION_NOT_MET
+  in call to memset() at line 619, column 5
+
+src/output-plugins/spo_unified2.c:974: error: NULL_DEREFERENCE
+  pointer p could be null and is dereferenced at line 974, column 13
+
+src/output-plugins/spo_unified2.c:1043: error: NULL_DEREFERENCE
+  pointer pkth could be null and is dereferenced at line 1043, column 18
+
+src/output-plugins/spo_unified2.c:1134: error: NULL_DEREFERENCE
+  pointer unifiedData could be null and is dereferenced at line 1134, column 27
+
+src/output-plugins/spo_unified2.c:1267: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to ScNoOutputTimestamp() at line 1267, column 43
+
+src/output-plugins/spo_unified2.c:1575: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer error could be dangling and is dereferenced or freed at line 1575, column 52
+
+src/parser.c:1049: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((45==0)!=0) is always false at line 1049, column 20
+
+src/parser.c:1667: warning: PRECONDITION_NOT_MET
+  in call to PortTableAddObject() at line 1667, column 16
+
+src/parser.c:2591: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 2591, column 26
+
+src/parser.c:2594: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 2594, column 23
+
+src/parser.c:2871: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 2871, column 67
+
+src/parser.c:3925: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((44==0)!=0) is always false at line 3925, column 9
+
+src/parser.c:4054: warning: PRECONDITION_NOT_MET
+  in call to getParserPolicy() at line 4054, column 67
+
+src/parser.c:4328: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((36==0)!=0) is always false at line 4328, column 32
+
+src/parser.c:4503: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 4503, column 20
+
+src/parser.c:4515: warning: PRECONDITION_NOT_MET
+  in call to getParserPolicy() at line 4515, column 53
+
+src/parser.c:6169: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 6169, column 9
+
+src/parser.c:6558: warning: PRECONDITION_NOT_MET
+  in call to fpSetDefaults() at line 6558, column 9
+
+src/parser.c:7408: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 7408, column 9
+
+src/parser.c:7410: warning: PRECONDITION_NOT_MET
+  in call to GetRuleProtocol() at line 7410, column 16
+
+src/parser.c:8058: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 8058, column 9
+
+src/parser.c:8502: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 8502, column 9
+
+src/parser.c:8607: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 8607, column 9
+
+src/parser.c:8962: warning: PRECONDITION_NOT_MET
+  in call to ConfigEventFilter() at line 8962, column 5
+
+src/parser.c:9434: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced by call to findHeadNode() at line 9434, column 25
+
+src/parser.c:9444: warning: UNINITIALIZED_VALUE
+  value rtn->otnRefCount was not initialized after declaration and is used at line 9444, column 9
+
+src/parser.c:9883: warning: PRECONDITION_NOT_MET
+  in call to ParseThreshFilter() at line 9883, column 5
+
+src/parser.c:10168: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((34==0)!=0) is always false at line 10168, column 12
+
+src/parser.c:10971: error: NULL_DEREFERENCE
+  pointer otn->proto_nodes could be null and is dereferenced at line 10971, column 13
+
+src/parser.c:12169: warning: UNINITIALIZED_VALUE
+  value pPolicy->decoder_alert_flags was not initialized after declaration and is used at line 12169, column 9
+
+src/parser.c:12178: warning: UNINITIALIZED_VALUE
+  value pPolicy->decoder_drop_flags was not initialized after declaration and is used at line 12178, column 9
+
+src/pcrm.c:821: warning: UNINITIALIZED_VALUE
+  value p->prmDstPort[dport]->pgCount was not initialized after declaration and is used at line 821, column 11
+
+src/pcrm.c:937: warning: UNINITIALIZED_VALUE
+  value p->prmDstPort[dport]->pgCount was not initialized after declaration and is used at line 937, column 11
+
+src/pcrm.c:1033: warning: UNINITIALIZED_VALUE
+  value p->prmDstPort[dport]->pgCount was not initialized after declaration and is used at line 1033, column 11
+
+src/pcrm.c:1389: warning: PRECONDITION_NOT_MET
+  in call to prmxAddPortRule() at line 1389, column 12
+
+src/pcrm.c:1494: warning: PRECONDITION_NOT_MET
+  in call to prmxAddPortRule() at line 1494, column 12
+
+src/pkt_tracer.c:79: warning: PRECONDITION_NOT_MET
+  in call to memcpy() at line 79, column 13
+
+src/pkt_tracer.c:617: warning: PRECONDITION_NOT_MET
+  in call to sfip_ntop() at line 617, column 9
+
+src/plugbase.c:591: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 591, column 38
+
+src/plugbase.c:910: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 910, column 9
+
+src/plugbase.c:937: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 937, column 38
+
+src/plugbase.c:1011: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 1011, column 84
+
+src/ppm.c:351: warning: PRECONDITION_NOT_MET
+  in call to OtnLookupAdd() at line 351, column 13
+
+src/ppm.c:436: warning: PRECONDITION_NOT_MET
+  in call to OtnLookupAdd() at line 436, column 9
+
+src/preprocessors/HttpInspect/client/hi_client.c:654: error: NULL_DEREFERENCE
+  pointer ptr could be null and is dereferenced at line 654, column 47
+
+src/preprocessors/HttpInspect/client/hi_client.c:2457: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 2457, column 12
+
+src/preprocessors/HttpInspect/client/hi_client.c:2473: error: NULL_DEREFERENCE
+  pointer header_ptr could be null and is dereferenced at line 2473, column 17
+
+src/preprocessors/HttpInspect/client/hi_client.c:2473: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 2473, column 17
+
+src/preprocessors/HttpInspect/event_output/hi_eo_log.c:317: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array client_events->stack of size 35 could be accessed with an index out of bounds at line 317, column 12
+
+src/preprocessors/HttpInspect/event_output/hi_eo_log.c:336: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array client_events->stack of size 35 could be accessed with an index out of bounds at line 336, column 5
+
+src/preprocessors/HttpInspect/event_output/hi_eo_log.c:393: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array server_events->stack of size 28 could be accessed with an index out of bounds at line 393, column 12
+
+src/preprocessors/HttpInspect/event_output/hi_eo_log.c:412: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array server_events->stack of size 28 could be accessed with an index out of bounds at line 412, column 5
+
+src/preprocessors/HttpInspect/files/file_decomp.c:134: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 134, column 12
+
+src/preprocessors/HttpInspect/files/file_decomp_PDF.c:179: error: NULL_DEREFERENCE
+  pointer SessionPtr could be null and is dereferenced at line 179, column 9
+
+src/preprocessors/HttpInspect/files/file_decomp_PDF.c:840: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 840, column 12
+
+src/preprocessors/HttpInspect/files/file_decomp_PDF.c:1070: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1070, column 12
+
+src/preprocessors/HttpInspect/files/file_decomp_PDF.c:1109: warning: RETURN_VALUE_IGNORED
+  after call to File_Decomp_End_PDF() at line 1109, column 32
+
+src/preprocessors/HttpInspect/files/file_decomp_PDF.c:1126: warning: RETURN_VALUE_IGNORED
+  after call to File_Decomp_End_PDF() at line 1126, column 32
+
+src/preprocessors/HttpInspect/files/file_decomp_PDF.c:1139: warning: RETURN_VALUE_IGNORED
+  after call to File_Decomp_End_PDF() at line 1139, column 33
+
+src/preprocessors/HttpInspect/files/file_decomp_SWF.c:96: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable LZMA_Header escapes at line 96, column 1
+
+src/preprocessors/HttpInspect/server/hi_server.c:162: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 162, column 5
+
+src/preprocessors/HttpInspect/server/hi_server.c:163: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 163, column 5
+
+src/preprocessors/HttpInspect/server/hi_server.c:164: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 164, column 5
+
+src/preprocessors/HttpInspect/server/hi_server.c:362: error: ARRAY_OUT_OF_BOUNDS_L1
+  array crlf last assigned on line 358 could be accessed with index -1 out of bounds at line 362, column 23
+
+src/preprocessors/HttpInspect/server/hi_server.c:853: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 853, column 46
+
+src/preprocessors/HttpInspect/server/hi_server.c:853: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 853, column 46
+
+src/preprocessors/HttpInspect/server/hi_server.c:853: warning: UNINITIALIZED_VALUE
+  value __n was not initialized after declaration and is used at line 853, column 46
+
+src/preprocessors/HttpInspect/server/hi_server.c:1687: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer p was dereferenced at line 1680 and is tested for null at line 1687, column 22
+
+src/preprocessors/HttpInspect/server/hi_server.c:2237: warning: PRECONDITION_NOT_MET
+  in call to IsHttpServerData() at line 2237, column 16
+
+src/preprocessors/HttpInspect/session_inspection/hi_si.c:343: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable StatelessSessionInspection_StaticSession escapes at line 343, column 1
+
+src/preprocessors/HttpInspect/user_interface/hi_ui_iis_unicode_map.c:96: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 96, column 12
+
+src/preprocessors/HttpInspect/utils/h2_common.c:116: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 116, column 26
+
+src/preprocessors/HttpInspect/utils/h2_common.c:658: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 658, column 36
+
+src/preprocessors/HttpInspect/utils/hi_paf.c:593: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 593, column 22
+
+src/preprocessors/HttpInspect/utils/hi_util_kmap.c:162: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array km->root of size 256 could be accessed with an index out of bounds at line 162, column 9
+
+src/preprocessors/HttpInspect/utils/hi_util_kmap.c:257: error: NULL_DEREFERENCE
+  pointer P could be null and is dereferenced at line 257, column 23
+
+src/preprocessors/HttpInspect/utils/hi_util_kmap.c:257: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 257, column 23
+
+src/preprocessors/HttpInspect/utils/hi_util_kmap.c:400: error: NULL_DEREFERENCE
+  pointer T could be null and is dereferenced at line 400, column 23
+
+src/preprocessors/HttpInspect/utils/hi_util_kmap.c:400: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 400, column 23
+
+src/preprocessors/Session/session_common.c:112: error: NULL_DEREFERENCE
+  pointer pfunks last assigned on line 109 could be null and is dereferenced at line 112, column 9
+
+src/preprocessors/Session/session_common.c:114: error: NULL_DEREFERENCE
+  pointer pfunks last assigned on line 109 could be null and is dereferenced at line 114, column 9
+
+src/preprocessors/Session/session_common.c:124: error: NULL_DEREFERENCE
+  pointer pfunks last assigned on line 121 could be null and is dereferenced at line 124, column 9
+
+src/preprocessors/Session/session_common.c:126: error: NULL_DEREFERENCE
+  pointer pfunks last assigned on line 121 could be null and is dereferenced at line 126, column 9
+
+src/preprocessors/Session/session_expect.c:631: error: NULL_DEREFERENCE
+  pointer srcIP last assigned on line 602 could be null and is dereferenced by call to sfaddr_copy_to_raw() at line 631, column 47
+
+src/preprocessors/Session/session_expect.c:632: error: NULL_DEREFERENCE
+  pointer dstIP last assigned on line 603 could be null and is dereferenced by call to sfaddr_copy_to_raw() at line 632, column 47
+
+src/preprocessors/Stream6/snort_stream_ip.c:373: error: NULL_DEREFERENCE
+  pointer scb could be null and is dereferenced at line 373, column 12
+
+src/preprocessors/Stream6/snort_stream_tcp.c:725: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced at line 725, column 17
+
+src/preprocessors/Stream6/snort_stream_tcp.c:803: warning: PRECONDITION_NOT_MET
+  in call to InitFlushPointList() at line 803, column 61
+
+src/preprocessors/Stream6/snort_stream_tcp.c:1458: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to getParserPolicy() at line 1458, column 101
+
+src/preprocessors/Stream6/snort_stream_tcp.c:2370: warning: PRECONDITION_NOT_MET
+  in call to sfvar_print() at line 2370, column 9
+
+src/preprocessors/Stream6/snort_stream_tcp.c:3198: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array p->tcp_options of size 40 could be accessed with an index out of bounds at line 3198, column 22
+
+src/preprocessors/Stream6/snort_stream_tcp.c:5416: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 5416, column 37
+
+src/preprocessors/Stream6/snort_stream_tcp.c:10846: error: NULL_DEREFERENCE
+  pointer st could be null and is dereferenced at line 10846, column 23
+
+src/preprocessors/Stream6/snort_stream_tcp.c:10920: error: NULL_DEREFERENCE
+  pointer tcpssn could be null and is dereferenced at line 10920, column 9
+
+src/preprocessors/Stream6/snort_stream_tcp.c:11927: error: MEMORY_LEAK
+   memory dynamically allocated to new_net by call to initNetworkPortReassembly() at line 11924, column 94 is not reachable after line 11927, column 75
+
+src/preprocessors/Stream6/stream_common.c:147: error: NULL_DEREFERENCE
+  pointer config last assigned on line 146 could be null and is dereferenced at line 147, column 19
+
+src/preprocessors/Stream6/stream_paf.c:742: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to ScPafMax() at line 742, column 15
+
+src/preprocessors/perf-base.c:128: warning: UNINITIALIZED_VALUE
+  value rusage.ru_utime.tv_sec was not initialized after declaration and is used at line 128, column 42
+
+src/preprocessors/perf-base.c:129: warning: UNINITIALIZED_VALUE
+  value rusage.ru_utime.tv_usec was not initialized after declaration and is used at line 129, column 43
+
+src/preprocessors/perf-base.c:130: warning: UNINITIALIZED_VALUE
+  value rusage.ru_stime.tv_sec was not initialized after declaration and is used at line 130, column 42
+
+src/preprocessors/perf-base.c:131: warning: UNINITIALIZED_VALUE
+  value rusage.ru_stime.tv_usec was not initialized after declaration and is used at line 131, column 43
+
+src/preprocessors/perf-base.c:595: warning: UNINITIALIZED_VALUE
+  value rusage.ru_utime.tv_sec was not initialized after declaration and is used at line 595, column 37
+
+src/preprocessors/perf-base.c:596: warning: UNINITIALIZED_VALUE
+  value rusage.ru_utime.tv_usec was not initialized after declaration and is used at line 596, column 37
+
+src/preprocessors/perf-base.c:598: warning: UNINITIALIZED_VALUE
+  value rusage.ru_stime.tv_sec was not initialized after declaration and is used at line 598, column 37
+
+src/preprocessors/perf-base.c:599: warning: UNINITIALIZED_VALUE
+  value rusage.ru_stime.tv_usec was not initialized after declaration and is used at line 599, column 37
+
+src/preprocessors/perf-flow.c:321: error: NULL_DEREFERENCE
+  pointer dst_addr could be null and is dereferenced at line 321, column 9
+
+src/preprocessors/perf-flow.c:322: error: NULL_DEREFERENCE
+  pointer src_addr could be null and is dereferenced at line 322, column 9
+
+src/preprocessors/perf-flow.c:821: warning: PRECONDITION_NOT_MET
+  in call to WriteFlowIPStats() at line 821, column 9
+
+src/preprocessors/perf-flow.c:841: warning: PRECONDITION_NOT_MET
+  in call to sfip_ntop() at line 841, column 9
+
+src/preprocessors/perf-flow.c:867: warning: PRECONDITION_NOT_MET
+  in call to sfip_ntop() at line 867, column 9
+
+src/preprocessors/perf.c:596: warning: PRECONDITION_NOT_MET
+  in call to InitFlowIPStats() at line 596, column 9
+
+src/preprocessors/perf.c:599: warning: PRECONDITION_NOT_MET
+  in call to InitEventStats() at line 599, column 9
+
+src/preprocessors/perf.c:607: warning: PRECONDITION_NOT_MET
+  in call to UpdateBaseStats() at line 607, column 9
+
+src/preprocessors/perf_indicators.c:113: error: DIVIDE_BY_ZERO
+  Expression 0 could be zero at line 113, column 57
+
+src/preprocessors/portscan.c:556: warning: UNINITIALIZED_VALUE
+  value key.protocol was not initialized after declaration and is used at line 556, column 25
+
+src/preprocessors/portscan.c:844: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array proto->open_ports of size 8 could be accessed with an index out of bounds at line 844, column 20
+
+src/preprocessors/portscan.c:1270: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1270, column 22
+
+src/preprocessors/portscan.c:1275: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1275, column 22
+
+src/preprocessors/portscan.c:1280: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1280, column 21
+
+src/preprocessors/portscan.c:1285: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1285, column 22
+
+src/preprocessors/portscan.c:1291: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1291, column 22
+
+src/preprocessors/portscan.c:1297: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1297, column 22
+
+src/preprocessors/portscan.c:1303: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1303, column 22
+
+src/preprocessors/portscan.c:1309: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1309, column 22
+
+src/preprocessors/portscan.c:1324: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1324, column 22
+
+src/preprocessors/portscan.c:1329: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1329, column 22
+
+src/preprocessors/portscan.c:1334: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1334, column 21
+
+src/preprocessors/portscan.c:1339: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1339, column 22
+
+src/preprocessors/portscan.c:1344: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1344, column 22
+
+src/preprocessors/portscan.c:1349: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1349, column 22
+
+src/preprocessors/portscan.c:1355: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1355, column 21
+
+src/preprocessors/portscan.c:1361: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1361, column 22
+
+src/preprocessors/portscan.c:1376: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1376, column 22
+
+src/preprocessors/portscan.c:1381: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1381, column 22
+
+src/preprocessors/portscan.c:1386: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1386, column 21
+
+src/preprocessors/portscan.c:1391: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1391, column 22
+
+src/preprocessors/portscan.c:1397: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1397, column 22
+
+src/preprocessors/portscan.c:1403: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1403, column 22
+
+src/preprocessors/portscan.c:1409: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1409, column 21
+
+src/preprocessors/portscan.c:1415: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1415, column 22
+
+src/preprocessors/portscan.c:1429: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1429, column 21
+
+src/preprocessors/portscan.c:1435: warning: PRECONDITION_NOT_MET
+  in call to GetSnortEventAction() at line 1435, column 21
+
+src/preprocessors/snort_httpinspect.c:1766: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1766, column 24
+
+src/preprocessors/snort_httpinspect.c:1766: error: NULL_DEREFERENCE
+  pointer cp could be null and is dereferenced at line 1766, column 24
+
+src/preprocessors/snort_httpinspect.c:3183: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to ScPafEnabled() at line 3183, column 23
+
+src/preprocessors/snort_httpinspect.c:4123: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable unfold_buf escapes to the caller via a return at line 4123, column 1
+
+src/preprocessors/snort_httpinspect.c:5302: error: NULL_DEREFERENCE
+  pointer scb could be null and is dereferenced at line 5302, column 9
+
+src/preprocessors/snort_httpinspect.c:5312: error: NULL_DEREFERENCE
+  pointer scb could be null and is dereferenced at line 5312, column 9
+
+src/preprocessors/spp_arpspoof.c:214: error: NULL_DEREFERENCE
+  pointer arp_spoof_config last assigned on line 205 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 214, column 55
+
+src/preprocessors/spp_arpspoof.c:280: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 280, column 47
+
+src/preprocessors/spp_arpspoof.c:289: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 289, column 47
+
+src/preprocessors/spp_arpspoof.c:297: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 297, column 83
+
+src/preprocessors/spp_arpspoof.c:392: error: NULL_DEREFERENCE
+  pointer p could be null and is dereferenced at line 392, column 27
+
+src/preprocessors/spp_arpspoof.c:717: error: NULL_DEREFERENCE
+  pointer arp_spoof_swap_config last assigned on line 713 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 717, column 60
+
+src/preprocessors/spp_arpspoof.c:722: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 722, column 61
+
+src/preprocessors/spp_arpspoof.c:760: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 760, column 47
+
+src/preprocessors/spp_bo.c:266: error: NULL_DEREFERENCE
+  pointer bo_config last assigned on line 252 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 266, column 48
+
+src/preprocessors/spp_bo.c:270: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 270, column 68
+
+src/preprocessors/spp_bo.c:895: error: NULL_DEREFERENCE
+  pointer bo_swap_config last assigned on line 891 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 895, column 53
+
+src/preprocessors/spp_bo.c:900: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 900, column 68
+
+src/preprocessors/spp_frag3.c:476: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 476, column 15
+
+src/preprocessors/spp_frag3.c:609: warning: PRECONDITION_NOT_MET
+  in call to sfvar_print() at line 609, column 9
+
+src/preprocessors/spp_frag3.c:1118: error: NULL_DEREFERENCE
+  pointer frag3_config last assigned on line 1097 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 1118, column 51
+
+src/preprocessors/spp_frag3.c:1230: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 1230, column 75
+
+src/preprocessors/spp_frag3.c:1241: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 1241, column 63
+
+src/preprocessors/spp_frag3.c:1250: warning: UNINITIALIZED_VALUE
+  value context->bound_addrs was not initialized after declaration and is used at line 1250, column 18
+
+src/preprocessors/spp_frag3.c:1253: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer args could be dangling and is dereferenced or freed at line 1253, column 80
+
+src/preprocessors/spp_frag3.c:2072: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2072, column 5
+
+src/preprocessors/spp_frag3.c:4313: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer hnode was dereferenced at line 4327 and is tested for null at line 4313, column 17
+
+src/preprocessors/spp_frag3.c:4459: error: NULL_DEREFERENCE
+  pointer pDefaultPolicyConfig last assigned on line 4456 could be null and is dereferenced at line 4459, column 8
+
+src/preprocessors/spp_frag3.c:4813: error: NULL_DEREFERENCE
+  pointer frag3_swap_config last assigned on line 4809 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 4813, column 56
+
+src/preprocessors/spp_frag3.c:4886: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 4886, column 78
+
+src/preprocessors/spp_frag3.c:4889: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 4889, column 32
+
+src/preprocessors/spp_frag3.c:4898: warning: UNINITIALIZED_VALUE
+  value context->bound_addrs was not initialized after declaration and is used at line 4898, column 18
+
+src/preprocessors/spp_frag3.c:4966: error: NULL_DEREFERENCE
+  pointer newConfig last assigned on line 4963 could be null and is dereferenced at line 4966, column 9
+
+src/preprocessors/spp_frag3.c:5086: error: NULL_DEREFERENCE
+  pointer pCurrDefaultPolicyConfig last assigned on line 5076 could be null and is dereferenced at line 5086, column 52
+
+src/preprocessors/spp_frag3.c:5086: error: NULL_DEREFERENCE
+  pointer pSwapDefaultPolicyConfig last assigned on line 5077 could be null and is dereferenced at line 5086, column 10
+
+src/preprocessors/spp_httpinspect.c:448: error: NULL_DEREFERENCE
+  pointer pPolicyConfig could be null and is dereferenced at line 448, column 14
+
+src/preprocessors/spp_httpinspect.c:500: error: NULL_DEREFERENCE
+  pointer pPolicyConfig could be null and is dereferenced at line 500, column 14
+
+src/preprocessors/spp_httpinspect.c:565: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 565, column 9
+
+src/preprocessors/spp_httpinspect.c:571: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 571, column 9
+
+src/preprocessors/spp_httpinspect.c:579: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 579, column 13
+
+src/preprocessors/spp_httpinspect.c:829: error: NULL_DEREFERENCE
+  pointer pPolicyConfig last assigned on line 825 could be null and is dereferenced at line 829, column 10
+
+src/preprocessors/spp_httpinspect.c:1552: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 1552, column 64
+
+src/preprocessors/spp_httpinspect.c:1559: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 1559, column 38
+
+src/preprocessors/spp_httpinspect.c:1568: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 1568, column 42
+
+src/preprocessors/spp_normalize.c:113: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced by call to ScNapPassiveModeNewConf() at line 113, column 10
+
+src/preprocessors/spp_normalize.c:124: error: NULL_DEREFERENCE
+  pointer base_set last assigned on line 118 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 124, column 46
+
+src/preprocessors/spp_normalize.c:130: warning: PRECONDITION_NOT_MET
+  in call to sfPolicyUserDataSetCurrent() at line 130, column 48
+
+src/preprocessors/spp_normalize.c:270: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced at line 270, column 35
+
+src/preprocessors/spp_normalize.c:505: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced at line 505, column 27
+
+src/preprocessors/spp_normalize.c:530: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced at line 530, column 27
+
+src/preprocessors/spp_normalize.c:764: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced by call to ScNapPassiveModeNewConf() at line 764, column 36
+
+src/preprocessors/spp_perfmonitor.c:181: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 181, column 57
+
+src/preprocessors/spp_perfmonitor.c:708: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 708, column 84
+
+src/preprocessors/spp_perfmonitor.c:829: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 829, column 37
+
+src/preprocessors/spp_perfmonitor.c:898: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced by call to ReloadAdjustRegister() at line 898, column 9
+
+src/preprocessors/spp_rpc_decode.c:296: error: NULL_DEREFERENCE
+  pointer rpc_decode_config last assigned on line 277 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 296, column 56
+
+src/preprocessors/spp_rpc_decode.c:300: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 300, column 63
+
+src/preprocessors/spp_rpc_decode.c:1224: error: NULL_DEREFERENCE
+  pointer data could be null and is dereferenced at line 1224, column 37
+
+src/preprocessors/spp_rpc_decode.c:1464: error: NULL_DEREFERENCE
+  pointer rpc_decode_swap_config last assigned on line 1461 could be null and is dereferenced by call to sfPolicyUserPolicySet() at line 1464, column 61
+
+src/preprocessors/spp_rpc_decode.c:1468: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 1468, column 62
+
+src/preprocessors/spp_session.c:441: warning: UNINITIALIZED_VALUE
+  value session_configuration->disabled was not initialized after declaration and is used at line 441, column 39
+
+src/preprocessors/spp_session.c:1350: error: NULL_DEREFERENCE
+  pointer returned by getSessionPlugins() could be null and is dereferenced at line 1350, column 9
+
+src/preprocessors/spp_session.c:1350: warning: UNINITIALIZED_VALUE
+  value returned by getSessionPlugins()->select_session_nap was not initialized after declaration and is used at line 1350, column 9
+
+src/preprocessors/spp_session.c:1350: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer returned by getSessionPlugins()->select_session_nap could be dangling and is dereferenced or freed at line 1350, column 9
+
+src/preprocessors/spp_session.c:3315: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 3315, column 17
+
+src/preprocessors/spp_session.c:3393: warning: UNINITIALIZED_VALUE
+  value returned by getSessionPlugins()->flush_client_stream was not initialized after declaration and is used at line 3393, column 17
+
+src/preprocessors/spp_session.c:3393: error: NULL_DEREFERENCE
+  pointer returned by getSessionPlugins() could be null and is dereferenced at line 3393, column 17
+
+src/preprocessors/spp_session.c:3394: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer returned by getSessionPlugins()->flush_client_stream could be dangling and is dereferenced or freed at line 3394, column 17
+
+src/preprocessors/spp_session.c:3546: error: NULL_DEREFERENCE
+  pointer scb could be null and is dereferenced at line 3546, column 9
+
+src/preprocessors/spp_session.c:3781: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced at line 3781, column 27
+
+src/preprocessors/spp_session.c:3795: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced at line 3795, column 27
+
+src/preprocessors/spp_session.c:3836: error: NULL_DEREFERENCE
+  pointer pfunks last assigned on line 3833 could be null and is dereferenced at line 3836, column 9
+
+src/preprocessors/spp_session.c:3865: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 3865, column 104
+
+src/preprocessors/spp_session.c:3870: warning: PRECONDITION_NOT_MET
+  in call to initSessionConfiguration() at line 3870, column 26
+
+src/preprocessors/spp_session.c:4112: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 4112, column 74
+
+src/preprocessors/spp_sfportscan.c:210: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 210, column 23
+
+src/preprocessors/spp_sfportscan.c:236: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 236, column 23
+
+src/preprocessors/spp_sfportscan.c:558: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 558, column 25
+
+src/preprocessors/spp_sfportscan.c:563: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 563, column 25
+
+src/preprocessors/spp_sfportscan.c:568: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 568, column 24
+
+src/preprocessors/spp_sfportscan.c:575: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 575, column 25
+
+src/preprocessors/spp_sfportscan.c:581: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 581, column 25
+
+src/preprocessors/spp_sfportscan.c:587: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 587, column 25
+
+src/preprocessors/spp_sfportscan.c:593: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 593, column 24
+
+src/preprocessors/spp_sfportscan.c:593: warning: RETURN_VALUE_IGNORED
+  after call to GeneratePSSnortEvent() at line 593, column 24
+
+src/preprocessors/spp_sfportscan.c:601: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 601, column 25
+
+src/preprocessors/spp_sfportscan.c:653: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 653, column 13
+
+src/preprocessors/spp_sfportscan.c:658: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 658, column 13
+
+src/preprocessors/spp_sfportscan.c:663: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 663, column 12
+
+src/preprocessors/spp_sfportscan.c:668: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 668, column 13
+
+src/preprocessors/spp_sfportscan.c:673: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 673, column 13
+
+src/preprocessors/spp_sfportscan.c:678: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 678, column 13
+
+src/preprocessors/spp_sfportscan.c:683: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 683, column 12
+
+src/preprocessors/spp_sfportscan.c:688: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 688, column 13
+
+src/preprocessors/spp_sfportscan.c:708: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 708, column 13
+
+src/preprocessors/spp_sfportscan.c:713: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 713, column 13
+
+src/preprocessors/spp_sfportscan.c:718: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 718, column 12
+
+src/preprocessors/spp_sfportscan.c:723: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 723, column 13
+
+src/preprocessors/spp_sfportscan.c:728: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 728, column 13
+
+src/preprocessors/spp_sfportscan.c:733: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 733, column 13
+
+src/preprocessors/spp_sfportscan.c:738: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 738, column 12
+
+src/preprocessors/spp_sfportscan.c:743: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 743, column 13
+
+src/preprocessors/spp_sfportscan.c:763: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 763, column 12
+
+src/preprocessors/spp_sfportscan.c:768: warning: PRECONDITION_NOT_MET
+  in call to GeneratePSSnortEvent() at line 768, column 12
+
+src/preprocessors/spp_sfportscan.c:1009: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer *ip_list was dereferenced at line 1008 and is tested for null at line 1009, column 9
+
+src/preprocessors/spp_sfportscan.c:1053: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1053, column 49
+
+src/preprocessors/spp_sfportscan.c:1244: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 1244, column 58
+
+src/preprocessors/spp_sfportscan.c:1530: warning: PRECONDITION_NOT_MET
+  in call to ParseError() at line 1530, column 58
+
+src/preprocessors/spp_sfportscan.c:1584: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetDefault() could be null and is dereferenced at line 1584, column 97
+
+src/preprocessors/spp_sfportscan.c:1585: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetDefault() could be null and is dereferenced at line 1585, column 88
+
+src/preprocessors/spp_sfportscan.c:1605: error: NULL_DEREFERENCE
+  pointer sc could be null and is dereferenced by call to ReloadAdjustRegister() at line 1605, column 13
+
+src/preprocessors/spp_sfportscan.c:1625: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetDefault() could be null and is dereferenced at line 1625, column 80
+
+src/preprocessors/spp_sfportscan.c:1626: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetDefault() could be null and is dereferenced at line 1626, column 75
+
+src/preprocessors/spp_sfportscan.c:1634: error: NULL_DEREFERENCE
+  pointer returned by sfPolicyUserDataGetDefault() could be null and is dereferenced at line 1634, column 160
+
+src/preprocessors/spp_stream6.c:498: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to StreamInitTcp() at line 498, column 9
+
+src/preprocessors/spp_stream6.c:623: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 623, column 9
+
+src/preprocessors/spp_stream6.c:629: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 629, column 92
+
+src/profiler.c:175: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 175, column 17
+
+src/profiler.c:182: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer log was dereferenced at line 169 and is tested for null at line 182, column 12
+
+src/profiler.c:191: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer log was dereferenced at line 169 and is tested for null at line 191, column 12
+
+src/profiler.c:414: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 414, column 41
+
+src/profiler.c:721: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 721, column 17
+
+src/profiler.c:942: warning: PRECONDITION_NOT_MET
+  in call to SnortAlloc() at line 942, column 45
+
+src/reload.c:171: error: NULL_DEREFERENCE
+  pointer snort_conf last assigned on line 166 could be null and is dereferenced by call to ScRestoreInternalLogLevel() at line 171, column 35
+
+src/reload.h:76: error: NULL_DEREFERENCE
+  pointer 0 could be null and is dereferenced by call to gettimeofday() at line 76, column 13
+
+src/sf_sdlist.c:386: warning: UNINITIALIZED_VALUE
+  value data was not initialized after declaration and is used at line 386, column 27
+
+src/sfdaq.c:192: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 192, column 85
+
+src/sfdaq.c:501: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((61==0)!=0) is always false at line 501, column 15
+
+src/sfdaq.c:511: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 511, column 13
+
+src/sfutil/acsmx.c:231: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 231, column 36
+
+src/sfutil/acsmx.c:483: error: NULL_DEREFERENCE
+  pointer plist->patrn last assigned on line 482 could be null and is dereferenced by call to ConvertCaseEx() at line 483, column 3
+
+src/sfutil/acsmx.c:485: error: NULL_DEREFERENCE
+  pointer plist->casepatrn last assigned on line 484 could be null and is dereferenced by call to memcpy() at line 485, column 3
+
+src/sfutil/acsmx2.c:221: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 221, column 36
+
+src/sfutil/acsmx2.c:941: error: NULL_DEREFERENCE
+  pointer queue_array last assigned on line 932 could be null and is dereferenced at line 941, column 16
+
+src/sfutil/acsmx2.c:1036: error: NULL_DEREFERENCE
+  pointer acsmTransTableOpt last assigned on line 1026 could be null and is dereferenced at line 1036, column 13
+
+src/sfutil/asn1.c:537: warning: PRECONDITION_NOT_MET
+  in call to asn1_decode_ident() at line 537, column 12
+
+src/sfutil/bnfa_search.c:194: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 194, column 36
+
+src/sfutil/bnfa_search.c:2061: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 2061, column 5
+
+src/sfutil/bnfa_search.c:2130: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 2130, column 5
+
+src/sfutil/ipobj.c:96: warning: PRECONDITION_NOT_MET
+  in call to ipset_add() at line 96, column 9
+
+src/sfutil/ipobj.c:130: error: MEMORY_LEAK
+   memory dynamically allocated to p by call to calloc() at line 123, column 32 is not reachable after line 130, column 22
+
+src/sfutil/ipobj.c:131: error: MEMORY_LEAK
+   memory dynamically allocated to p by call to calloc() at line 123, column 32 is not reachable after line 131, column 22
+
+src/sfutil/ipobj.c:194: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 194, column 45
+
+src/sfutil/ipobj.c:230: error: MEMORY_LEAK
+   memory dynamically allocated to p by call to calloc() at line 224, column 23 is not reachable after line 230, column 5
+
+src/sfutil/ipobj.c:323: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((44==0)!=0) is always false at line 323, column 13
+
+src/sfutil/ipobj.c:399: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 399, column 12
+
+src/sfutil/ipobj.c:399: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 399, column 12
+
+src/sfutil/ipobj.c:399: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 399, column 12
+
+src/sfutil/sfPolicy.c:440: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to calloc() at line 417, column 21 is not reachable after line 440, column 5
+
+src/sfutil/sf_ip.c:61: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 61, column 9
+
+src/sfutil/sf_ip.c:62: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 62, column 15
+
+src/sfutil/sf_ip.c:177: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 177, column 20
+
+src/sfutil/sf_ip.c:177: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 177, column 20
+
+src/sfutil/sf_ip.c:177: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 177, column 20
+
+src/sfutil/sf_ip.c:587: warning: PRECONDITION_NOT_MET
+  in call to sfip_raw_ntop() at line 587, column 5
+
+src/sfutil/sf_ip.c:598: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable sfip_to_str_buf escapes to the caller via a return at line 598, column 1
+
+src/sfutil/sf_ip.h:485: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ip2->ip.__in6_u.__u6_addr32 of size 4 could be accessed with an index out of bounds at line 485, column 30
+
+src/sfutil/sf_ip.h:485: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array ip1->addr.ip.__in6_u.__u6_addr32 of size 4 could be accessed with an index out of bounds at line 485, column 14
+
+src/sfutil/sf_iph.c:415: error: NULL_DEREFERENCE
+  pointer p could be null and is dereferenced at line 415, column 9
+
+src/sfutil/sf_iph.c:509: error: NULL_DEREFERENCE
+  pointer p could be null and is dereferenced at line 509, column 9
+
+src/sfutil/sf_ipvar.c:98: warning: UNINITIALIZED_VALUE
+  value ret->flags was not initialized after declaration and is used at line 98, column 23
+
+src/sfutil/sf_ipvar.c:739: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 739, column 17
+
+src/sfutil/sf_ipvar.c:905: error: MEMORY_LEAK
+   memory dynamically allocated to ret by call to calloc() at line 903, column 35 is not reachable after line 905, column 13
+
+src/sfutil/sf_ipvar.c:910: error: MEMORY_LEAK
+   memory dynamically allocated to ret by call to calloc() at line 903, column 35 is not reachable after line 910, column 13
+
+src/sfutil/sf_ipvar.c:1036: warning: PRECONDITION_NOT_MET
+  in call to sfip_fast_cont6() at line 1036, column 47
+
+src/sfutil/sf_ipvar.c:1050: warning: PRECONDITION_NOT_MET
+  in call to sfip_fast_cont6() at line 1050, column 48
+
+src/sfutil/sf_ipvar.c:1133: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1133, column 81
+
+src/sfutil/sf_ipvar.c:1137: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1137, column 81
+
+src/sfutil/sf_ipvar.c:1142: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1142, column 74
+
+src/sfutil/sf_ipvar.c:1153: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1153, column 80
+
+src/sfutil/sf_ipvar.c:1157: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1157, column 80
+
+src/sfutil/sf_ipvar.c:1162: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1162, column 73
+
+src/sfutil/sf_ipvar.c:1207: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1207, column 36
+
+src/sfutil/sf_ipvar.c:1209: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 1209, column 36
+
+src/sfutil/sf_textlog.c:57: warning: PRECONDITION_NOT_MET
+  in call to OpenAlertFile() at line 57, column 25
+
+src/sfutil/sf_textlog.c:174: error: ARRAY_OUT_OF_BOUNDS_L1
+  array this->buf of size 1 could be accessed with an index out of bounds at line 174, column 5
+
+src/sfutil/sf_textlog.c:298: error: ARRAY_OUT_OF_BOUNDS_L1
+  array this->buf of size 1 could be accessed with an index out of bounds at line 298, column 13
+
+src/sfutil/sf_textlog.c:300: error: ARRAY_OUT_OF_BOUNDS_L1
+  array this->buf of size 1 could be accessed with an index out of bounds at line 300, column 9
+
+src/sfutil/sfksearch.c:122: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 122, column 38
+
+src/sfutil/sfksearch.c:354: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer root was dereferenced at line 353 and is tested for null at line 354, column 12
+
+src/sfutil/sflsq.c:108: warning: PRECONDITION_NOT_MET
+  in call to sflist_add_head() at line 108, column 14
+
+src/sfutil/sfportobject.c:367: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer po->item_list was dereferenced at line 365 and is tested for null at line 367, column 10
+
+src/sfutil/sfportobject.c:374: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer po->rule_list was dereferenced at line 373 and is tested for null at line 374, column 10
+
+src/sfutil/sfportobject.c:420: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer po->item_list was dereferenced at line 418 and is tested for null at line 420, column 10
+
+src/sfutil/sfportobject.c:577: error: MEMORY_LEAK
+   memory dynamically allocated to poi by call to PortObjectItemDup() at line 576, column 31 is not reachable after line 577, column 13
+
+src/sfutil/sfportobject.c:622: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 622, column 23
+
+src/sfutil/sfportobject.c:622: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 622, column 23
+
+src/sfutil/sfportobject.c:622: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 622, column 23
+
+src/sfutil/sfportobject.c:624: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 624, column 23
+
+src/sfutil/sfportobject.c:624: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 624, column 23
+
+src/sfutil/sfportobject.c:624: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 624, column 23
+
+src/sfutil/sfportobject.c:689: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 689, column 23
+
+src/sfutil/sfportobject.c:689: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 689, column 23
+
+src/sfutil/sfportobject.c:689: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 689, column 23
+
+src/sfutil/sfportobject.c:691: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 691, column 23
+
+src/sfutil/sfportobject.c:691: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 691, column 23
+
+src/sfutil/sfportobject.c:691: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 691, column 23
+
+src/sfutil/sfportobject.c:739: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 739, column 23
+
+src/sfutil/sfportobject.c:739: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 739, column 23
+
+src/sfutil/sfportobject.c:739: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 739, column 23
+
+src/sfutil/sfportobject.c:741: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 741, column 23
+
+src/sfutil/sfportobject.c:741: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 741, column 23
+
+src/sfutil/sfportobject.c:741: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 741, column 23
+
+src/sfutil/sfportobject.c:810: error: MEMORY_LEAK
+   memory dynamically allocated to poi by call to PortObjectItemNew() at line 798, column 10 is not reachable after line 810, column 4
+
+src/sfutil/sfportobject.c:832: error: MEMORY_LEAK
+   memory dynamically allocated to poi by call to PortObjectItemNew() at line 820, column 10 is not reachable after line 832, column 4
+
+src/sfutil/sfportobject.c:1228: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer plist was dereferenced at line 1227 and is tested for null at line 1228, column 9
+
+src/sfutil/sfportobject.c:1351: error: NULL_DEREFERENCE
+  pointer po could be null and is dereferenced at line 1351, column 23
+
+src/sfutil/sfportobject.c:1478: error: MEMORY_LEAK
+   memory dynamically allocated to poia by call to PortObjectItemNew() at line 1471, column 15 is not reachable after line 1478, column 8
+
+src/sfutil/sfportobject.c:1497: warning: PRECONDITION_NOT_MET
+  in call to sflist_add_tail() at line 1497, column 8
+
+src/sfutil/sfportobject.c:1497: error: MEMORY_LEAK
+   memory dynamically allocated to prid2 by call to calloc() at line 1493, column 16 is not reachable after line 1497, column 8
+
+src/sfutil/sfportobject.c:1516: error: MEMORY_LEAK
+   memory dynamically allocated to prid2 by call to calloc() at line 1512, column 16 is not reachable after line 1516, column 12
+
+src/sfutil/sfportobject.c:1543: error: MEMORY_LEAK
+   memory dynamically allocated to prid2 by call to calloc() at line 1538, column 16 is not reachable after line 1543, column 12
+
+src/sfutil/sfportobject.c:1593: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer p->pt_polist was dereferenced at line 1592 and is tested for null at line 1593, column 9
+
+src/sfutil/sfportobject.c:1745: error: MEMORY_LEAK
+   memory dynamically allocated to pruleid by call to calloc() at line 1737, column 15 is not reachable after line 1745, column 5
+
+src/sfutil/sfportobject.c:1774: warning: PRECONDITION_NOT_MET
+  in call to sflist_add_tail() at line 1774, column 9
+
+src/sfutil/sfportobject.c:1774: error: NULL_DEREFERENCE
+  pointer p->pt_polist last accessed on line 1762 could be null and is dereferenced by call to sflist_add_tail() at line 1774, column 9
+
+src/sfutil/sfportobject.c:2166: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer *parray[port] was dereferenced at line 2165 and is tested for null at line 2166, column 15
+
+src/sfutil/sfportobject.c:2293: error: NULL_DEREFERENCE
+  pointer mhash->sfhashfcn last accessed on line 2289 could be null and is dereferenced by call to sfhashfcn_static() at line 2293, column 44
+
+src/sfutil/sfportobject.c:2306: error: NULL_DEREFERENCE
+  pointer mhashx->sfhashfcn last accessed on line 2302 could be null and is dereferenced by call to sfhashfcn_static() at line 2306, column 45
+
+src/sfutil/sfportobject.c:2749: error: NULL_DEREFERENCE
+  pointer currNode last assigned on line 2751 could be null and is dereferenced at line 2749, column 13
+
+src/sfutil/sfportobject.c:3270: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 3270, column 4
+
+src/sfutil/sfportobject.c:3643: warning: PRECONDITION_NOT_MET
+  in call to SnortStrndup() at line 3643, column 24
+
+src/sfutil/sfrf.c:855: warning: UNINITIALIZED_VALUE
+  value returned by getSessionPlugins()->select_session_nap was not initialized after declaration and is used at line 855, column 9
+
+src/sfutil/sfrf.c:855: error: NULL_DEREFERENCE
+  pointer returned by getSessionPlugins() could be null and is dereferenced at line 855, column 9
+
+src/sfutil/sfrf.c:855: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer returned by getSessionPlugins()->select_session_nap could be dangling and is dereferenced or freed at line 855, column 9
+
+src/sfutil/sfrt_flat.c:87: warning: PRECONDITION_NOT_MET
+  in call to segment_calloc() at line 87, column 25
+
+src/sfutil/sfrt_flat_dir.c:153: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array table->dimensions of size 20 could be accessed with an index out of bounds at line 153, column 9
+
+src/sfutil/util_jsnorm.c:562: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 562, column 10
+
+src/sfutil/util_jsnorm.c:750: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 750, column 10
+
+src/sfutil/util_jsnorm.c:1010: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1010, column 10
+
+src/sfutil/util_jsnorm.c:1200: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1200, column 10
+
+src/sfutil/util_net.c:116: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable inet_ntoax_ip_buf1 escapes to the caller via a return at line 116, column 1
+
+src/signature.c:66: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to ReferenceSystemAdd() at line 66, column 24
+
+src/signature.c:122: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 122, column 18
+
+src/snort.c:809: warning: PRECONDITION_NOT_MET
+  in call to DAQ_Start() at line 809, column 9
+
+src/snort.c:818: warning: PRECONDITION_NOT_MET
+  in call to DAQ_Start() at line 818, column 17
+
+src/snort.c:989: error: MEMORY_LEAK
+   memory dynamically allocated to pro by call to SnortAlloc() at line 984, column 29 is not reachable after line 989, column 9
+
+src/snort.c:1077: warning: PRECONDITION_NOT_MET
+  in call to ScPcapShow() at line 1077, column 11
+
+src/snort.c:1236: warning: PRECONDITION_NOT_MET
+  in call to PQ_First() at line 1236, column 16
+
+src/snort.c:1253: warning: PRECONDITION_NOT_MET
+  in call to GetFirstInterface() at line 1253, column 38
+
+src/snort.c:1454: warning: PRECONDITION_NOT_MET
+  in call to DAQ_Load() at line 1454, column 5
+
+src/snort.c:1454: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to DAQ_Load() at line 1454, column 5
+
+src/snort.c:1886: error: NULL_DEREFERENCE
+  pointer snort_conf could be null and is dereferenced by call to ScMaxIP6Extensions() at line 1886, column 76
+
+src/snort.c:3598: warning: PRECONDITION_NOT_MET
+  in call to ScVersionMode() at line 3598, column 10
+
+src/snort.c:4493: warning: PRECONDITION_NOT_MET
+  in call to SnortStrdup() at line 4493, column 62
+
+src/snort.c:4516: warning: PRECONDITION_NOT_MET
+  in call to SnortStrndup() at line 4516, column 30
+
+src/snort.c:5464: warning: UNINITIALIZED_VALUE
+  value old_action.__sigaction_handler.sa_handler was not initialized after declaration and is used at line 5464, column 19
+
+src/target-based/sf_attribute_table_parser.c:7293: warning: PRECONDITION_NOT_MET
+  in call to sfat_init_buffer() at line 7293, column 2
+
+src/target-based/sf_attribute_table_parser.c:7293: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 7288 and is tested for null at line 7293, column 19
+
+src/target-based/sf_attribute_table_parser.c:7310: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 7309 and is tested for null at line 7310, column 7
+
+src/target-based/sf_attribute_table_parser.c:7313: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 7309 and is tested for null at line 7313, column 7
+
+src/target-based/sf_attribute_table_parser.c:7400: error: NULL_DEREFERENCE
+  pointer b could be null and is dereferenced at line 7400, column 2
+
+src/target-based/sf_attribute_table_parser.c:7458: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 7455 and is tested for null at line 7458, column 7
+
+src/target-based/sf_attribute_table_parser.c:7467: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer yy_buffer_stack was dereferenced at line 7455 and is tested for null at line 7467, column 6
+
+src/target-based/sftarget_reader.c:352: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 352, column 17
+
+src/target-based/sftarget_reader.c:366: warning: PRECONDITION_NOT_MET
+  in call to sfip_to_str() at line 366, column 17
+
+src/target-based/sftarget_reader.c:996: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 996, column 13
+
+src/target-based/sftarget_reader.c:1021: warning: PRECONDITION_NOT_MET
+  in call to FatalError() at line 1021, column 9
+
+src/target-based/sftarget_reader.c:1172: warning: PRECONDITION_NOT_MET
+  in call to SFAT_StartReloadThread() at line 1172, column 13
+
+src/util.c:243: warning: PRECONDITION_NOT_MET
+  in call to gettimeofday() at line 243, column 30
+
+src/util.c:280: error: NULL_DEREFERENCE
+  pointer lt last assigned on line 265 could be null and is dereferenced at line 280, column 59
+
+src/util.c:310: error: NULL_DEREFERENCE
+  pointer returned by gmtime() could be null and is dereferenced at line 310, column 12
+
+src/util.c:313: error: NULL_DEREFERENCE
+  pointer loc last assigned on line 311 could be null and is dereferenced at line 313, column 11
+
+src/util.c:1056: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1056, column 5
+
+src/util.c:1831: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1831, column 12
+
+src/util.c:1831: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1831, column 12
+
+src/util.c:1831: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1831, column 12
+
+src/util.c:1914: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1914, column 14
+
+src/util.c:2089: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable CurrentWorkingDir_buf escapes to the caller via a return at line 2089, column 1
+
+src/util.c:2104: error: NULL_DEREFERENCE
+  pointer returned by CurrentWorkingDir() could be null and is dereferenced at line 2104, column 15
+
+src/util.c:2104: error: DANGLING_POINTER_DEREFERENCE
+  deallocated stack pointer returned by CurrentWorkingDir() could be dangling and is dereferenced or freed at line 2104, column 15
+
+src/util.c:2141: error: STACK_VARIABLE_ADDRESS_ESCAPE
+  Address of stack variable GetAbsolutePath_buf escapes to the caller via a return at line 2141, column 1
+
+src/util.h:345: error: NULL_DEREFERENCE
+  pointer endptr could be null and is dereferenced at line 345, column 9
+
+src/util.h:354: error: NULL_DEREFERENCE
+  pointer endptr could be null and is dereferenced at line 354, column 9
+
+tools/u2openappid/u2openappid.c:152: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 152, column 21
+
+tools/u2openappid/u2openappid.c:152: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 152, column 21
+
+tools/u2openappid/u2openappid.c:152: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 152, column 21
+
+tools/u2openappid/u2openappid.c:159: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer it was dereferenced at line 157 and is tested for null at line 159, column 8
+
+tools/u2openappid/u2openappid.c:186: error: NULL_DEREFERENCE
+  pointer it could be null and is dereferenced at line 186, column 57
+
+tools/u2spewfoo/u2spewfoo.c:153: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 153, column 21
+
+tools/u2spewfoo/u2spewfoo.c:153: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 153, column 21
+
+tools/u2spewfoo/u2spewfoo.c:153: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 153, column 21
+
+tools/u2spewfoo/u2spewfoo.c:160: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer it was dereferenced at line 158 and is tested for null at line 160, column 8
+
+tools/u2spewfoo/u2spewfoo.c:187: error: NULL_DEREFERENCE
+  pointer it could be null and is dereferenced at line 187, column 57
+
+tools/u2streamer/SpoolFileIterator.c:86: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 86, column 32
+
+tools/u2streamer/SpoolFileIterator.c:86: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 86, column 32
+
+tools/u2streamer/SpoolFileIterator.c:86: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 86, column 32
+
+tools/u2streamer/SpoolFileIterator.c:453: warning: PRECONDITION_NOT_MET
+  in call to sf_strerror() at line 453, column 71
+
+tools/u2streamer/u2streamer.c:153: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 153, column 36
+
+tools/u2streamer/u2streamer.c:153: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 153, column 36
+
+tools/u2streamer/u2streamer.c:153: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 153, column 36
+
+Summary of the reports
+
+           PRECONDITION_NOT_MET: 302
+            UNINITIALIZED_VALUE: 197
+               NULL_DEREFERENCE: 155
+   DANGLING_POINTER_DEREFERENCE: 56
+                    MEMORY_LEAK: 43
+         CONDITION_ALWAYS_FALSE: 32
+    NULL_TEST_AFTER_DEREFERENCE: 24
+         ARRAY_OUT_OF_BOUNDS_L2: 17
+          CONDITION_ALWAYS_TRUE: 16
+         ARRAY_OUT_OF_BOUNDS_L1: 11
+  STACK_VARIABLE_ADDRESS_ESCAPE: 9
+           RETURN_VALUE_IGNORED: 6
+                 DIVIDE_BY_ZERO: 1

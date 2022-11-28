@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "input/timecode.c", "procedure": "open_file", "line": 347 }, "exp": null },
+    "sink": { "node": { "filename": "input/timecode.c", "procedure": "open_file", "line": 360 }, "exp": null }
+}

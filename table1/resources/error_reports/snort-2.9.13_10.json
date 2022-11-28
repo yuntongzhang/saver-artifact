@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c", "procedure": "direct_connect_validate", "line": 136 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/appid/service_plugins/service_direct_connect.c", "procedure": "direct_connect_validate", "line": 147 }, "exp": null }
+}

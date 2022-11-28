@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swPipeUnsock_create", "line": 54 }, "exp": null },
+    "sink": { "node": { "procedure": "swPipeUnsock_create", "line": 64 }, "exp": null }
+}
+

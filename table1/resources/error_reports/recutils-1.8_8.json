@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/rec-crypt.c", "procedure": "rec_encrypt", "line": 99 }, "exp": null },
+    "sink": { "node": { "filename": "src/rec-crypt.c", "procedure": "rec_encrypt", "line": 115 }, "exp": null }
+}

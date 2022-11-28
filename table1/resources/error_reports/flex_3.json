@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dfa.c", "procedure": "epsclosure", "line": 285 }, "exp": null },
+    "sink": { "node": { "filename": "src/dfa.c", "procedure": "epsclosure", "line": 298 }, "exp": null }
+}

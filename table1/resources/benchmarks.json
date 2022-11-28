@@ -1,0 +1,62 @@
+{
+  "rappel": 
+  {
+    "configure": [],
+    "truealarms": [1],
+    "totalalarms": 1
+  },
+  "flex":
+  {
+    "configure": ["./autogen.sh", "./configure"],
+    "truealarms": [5, 6, 7],
+    "totalalarms": 7
+  },
+  "WavPack":
+  {
+    "configure": ["./autogen.sh", "./configure"],
+    "truealarms": [3],
+    "totalalarms": 3
+  },
+  "swoole-src":
+  {
+    "configure": ["phpize", "./configure"],
+    "truealarms": [2, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18],
+    "totalalarms": 18
+  },
+  "p11-kit":
+  {
+    "configure": ["./autogen.sh", "./configure"],
+    "truealarms": [1, 2, 4, 5, 7, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 32, 33, 34, 35, 38, 39, 40, 42], 
+    "totalalarms": 42
+  },
+  "lxc":
+  {
+    "configure": ["./autogen.sh", "./configure"],
+    "truealarms": [1, 2, 3],
+    "totalalarms": 8
+  },
+  "x264":
+  {
+    "configure": ["./configure"],
+    "truealarms": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "totalalarms": 10
+  },
+  "recutils-1.8":
+  {
+    "configure": ["./configure CC=clang"],
+    "truealarms": [8, 9, 12, 13, 14, 16, 18, 19, 20, 21],
+    "totalalarms": 21
+  },
+  "inetutils-1.9.4":
+  {
+    "configure": ["./configure CC=clang"],
+    "truealarms": [4, 5, 8, 9],
+    "totalalarms": 9
+  },
+  "snort-2.9.13":
+  {
+    "configure": ["autoreconf", "./configure"],
+    "truealarms": [6, 17, 26, 27, 28, 29, 30, 31, 35, 36, 37, 38, 39, 42, 43],
+    "totalalarms": 22
+  }
+}

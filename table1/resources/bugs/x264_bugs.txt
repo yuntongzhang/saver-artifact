@@ -1,0 +1,908 @@
+Found 298 issues
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+autocomplete.c:292: warning: PRECONDITION_NOT_MET
+  in call to strlen() at line 292, column 19
+
+common/base.c:186: error: ARRAY_OUT_OF_BOUNDS_L1
+  array buf last assigned on line 174 could be accessed with index -1 out of bounds at line 186, column 9
+
+common/base.c:799: warning: UNINITIALIZED_VALUE
+  value coef was not initialized after declaration and is used at line 799, column 44
+
+common/base.c:802: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((44==0)!=0) is always false at line 802, column 35
+
+common/bitstream.c:35: error: ARRAY_OUT_OF_BOUNDS_L1
+  array dst last assigned on line 32 could be accessed with index -2 out of bounds at line 35, column 32
+
+common/cabac.c:89: error: ARRAY_OUT_OF_BOUNDS_L1
+  array cb->p could be accessed with index -1 out of bounds at line 89, column 13
+
+common/cabac.c:176: warning: PRECONDITION_NOT_MET
+  in call to cabac_putbyte() at line 176, column 5
+
+common/frame.c:852: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 852, column 5
+
+common/macroblock.c:44: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 44, column 5
+
+common/macroblock.c:83: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 83, column 5
+
+common/macroblock.c:260: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 260, column 5
+
+common/macroblock.c:261: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 261, column 5
+
+common/macroblock.c:262: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 262, column 5
+
+common/macroblock.c:263: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 263, column 5
+
+common/macroblock.c:266: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 266, column 5
+
+common/macroblock.c:269: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 269, column 5
+
+common/macroblock.c:273: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 273, column 9
+
+common/macroblock.c:274: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 274, column 9
+
+common/macroblock.c:275: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 275, column 9
+
+common/macroblock.c:277: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 277, column 13
+
+common/macroblock.c:394: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 394, column 9
+
+common/macroblock.c:437: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->fref[0] of size 2 could be accessed with an index out of bounds at line 437, column 34
+
+common/macroblock.c:437: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->fdec->ref_poc[0] of size 16 could be accessed with an index out of bounds at line 437, column 9
+
+common/macroblock.c:565: error: ARRAY_OUT_OF_BOUNDS_L1
+  array dst could be accessed with index -128 out of bounds at line 565, column 9
+
+common/macroblock.c:565: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -128 out of bounds at line 565, column 30
+
+common/mc.c:174: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((10>9)!=0) is always true at line 174, column 34
+
+common/mc.c:179: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -2 out of bounds at line 179, column 21
+
+common/mc.c:180: warning: PRECONDITION_NOT_MET
+  in call to x264_clip_pixel() at line 180, column 54
+
+common/mc.c:426: error: ARRAY_OUT_OF_BOUNDS_L1
+  array sum could be accessed with an index out of bounds at line 426, column 22
+
+common/mc.c:436: error: ARRAY_OUT_OF_BOUNDS_L1
+  array sum could be accessed with an index out of bounds at line 436, column 22
+
+common/opencl.c:58: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 58, column 5
+
+common/opencl.c:125: warning: PRECONDITION_NOT_MET
+  in call to fopen() at line 125, column 16
+
+common/opencl.c:191: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 191, column 5
+
+common/opencl.c:559: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 559, column 5
+
+common/opencl.c:560: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 560, column 5
+
+common/opencl.c:561: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 561, column 5
+
+common/opencl.c:626: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 626, column 9
+
+common/osdep.h:413: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 413, column 17
+
+common/pixel.c:325: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 325, column 1
+
+common/pixel.c:326: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 326, column 1
+
+common/pixel.c:326: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 326, column 1
+
+common/pixel.c:327: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 327, column 1
+
+common/pixel.c:327: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 327, column 1
+
+common/pixel.c:328: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 328, column 1
+
+common/pixel.c:329: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 329, column 1
+
+common/pixel.c:329: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((4==16)!=0) is always false at line 329, column 1
+
+common/pixel.c:330: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((4==16)!=0) is always false at line 330, column 1
+
+common/pixel.c:330: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 330, column 1
+
+common/pixel.c:430: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 430, column 1
+
+common/pixel.c:431: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 431, column 1
+
+common/pixel.c:431: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 431, column 1
+
+common/pixel.c:432: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((16==16)!=0) is always true at line 432, column 1
+
+common/pixel.c:432: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 432, column 1
+
+common/pixel.c:433: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((8==16)!=0) is always false at line 433, column 1
+
+common/pixel.c:528: warning: PRECONDITION_NOT_MET
+  in call to x264_10_predict_8x8_v_c() at line 528, column 1
+
+common/pixel.c:529: warning: PRECONDITION_NOT_MET
+  in call to x264_10_predict_8x8_v_c() at line 529, column 1
+
+common/pixel.c:532: warning: PRECONDITION_NOT_MET
+  in call to x264_10_predict_8x8_v_c() at line 532, column 1
+
+common/pixel.c:703: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 703, column 13
+
+common/predict.c:70: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 70, column 15
+
+common/predict.c:71: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 71, column 15
+
+common/predict.c:82: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 82, column 15
+
+common/predict.c:92: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 92, column 15
+
+common/predict.c:105: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 105, column 26
+
+common/predict.c:115: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 115, column 17
+
+common/predict.c:116: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 116, column 17
+
+common/predict.c:117: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -24 out of bounds at line 117, column 17
+
+common/predict.c:118: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -20 out of bounds at line 118, column 17
+
+common/predict.c:136: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -24 out of bounds at line 136, column 53
+
+common/predict.c:179: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 179, column 16
+
+common/predict.c:205: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 205, column 16
+
+common/predict.c:206: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 206, column 16
+
+common/predict.c:229: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 229, column 15
+
+common/predict.c:230: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 230, column 15
+
+common/predict.c:231: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 231, column 15
+
+common/predict.c:261: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 261, column 20
+
+common/predict.c:285: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 285, column 49
+
+common/predict.c:327: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 327, column 19
+
+common/predict.c:345: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 345, column 16
+
+common/predict.c:346: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 346, column 16
+
+common/predict.c:371: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 371, column 15
+
+common/predict.c:372: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 372, column 15
+
+common/predict.c:373: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 373, column 15
+
+common/predict.c:422: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 422, column 20
+
+common/predict.c:446: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 446, column 51
+
+common/predict.c:484: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 484, column 17
+
+common/predict.c:489: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 489, column 17
+
+common/predict.c:494: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 494, column 17
+
+common/predict.c:500: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 500, column 19
+
+common/predict.c:507: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 507, column 5
+
+common/predict.c:533: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 533, column 5
+
+common/predict.c:534: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 534, column 5
+
+common/predict.c:545: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -33 out of bounds at line 545, column 14
+
+common/predict.c:546: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 546, column 5
+
+common/predict.c:547: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 547, column 5
+
+common/predict.c:559: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -33 out of bounds at line 559, column 14
+
+common/predict.c:560: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 560, column 5
+
+common/predict.c:561: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 561, column 5
+
+common/predict.c:576: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -33 out of bounds at line 576, column 13
+
+common/predict.c:577: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 577, column 5
+
+common/predict.c:578: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 578, column 5
+
+common/predict.c:593: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 593, column 5
+
+common/predict.c:594: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -28 out of bounds at line 594, column 5
+
+common/predict.c:609: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 609, column 5
+
+common/predict.c:639: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 639, column 21
+
+common/predict.c:650: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -32 out of bounds at line 650, column 45
+
+common/quant.c:60: warning: UNARY_MINUS_APPLIED_TO_UNSIGNED_EXPRESSION
+  A unary minus is applied to expression (((*bias[i]-*dct[i])**mf[i])>>16) of type unsigned int  at line 60, column 9
+
+common/quant.c:68: warning: UNARY_MINUS_APPLIED_TO_UNSIGNED_EXPRESSION
+  A unary minus is applied to expression (((*bias[i]-*dct[i])**mf[i])>>16) of type unsigned int  at line 68, column 9
+
+common/quant.c:79: warning: UNARY_MINUS_APPLIED_TO_UNSIGNED_EXPRESSION
+  A unary minus is applied to expression (((*bias[i]-*dct[j][i])**mf[i])>>16) of type unsigned int  at line 79, column 13
+
+common/set.c:308: warning: PRECONDITION_NOT_MET
+  in call to strstr() at line 308, column 33
+
+common/set.c:361: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((35==0)!=0) is always false at line 361, column 17
+
+common/threadpool.c:86: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((0<0)!=0) is always false at line 86, column 9
+
+common/threadpool.c:90: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 90, column 5
+
+common/threadpool.c:130: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 130, column 12
+
+common/x86/predict-c.c:141: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((10>8)!=0) is always true at line 141, column 1
+
+common/x86/predict-c.c:141: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -33 out of bounds at line 141, column 1
+
+common/x86/predict-c.c:152: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((10>8)!=0) is always true at line 152, column 1
+
+common/x86/predict-c.c:152: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -33 out of bounds at line 152, column 1
+
+common/x86/predict-c.c:270: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 270, column 1
+
+common/x86/predict-c.c:280: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 280, column 1
+
+common/x86/predict-c.c:281: error: ARRAY_OUT_OF_BOUNDS_L1
+  array src could be accessed with index -1 out of bounds at line 281, column 1
+
+encoder/analyse.c:151: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 151, column 5
+
+encoder/analyse.c:156: error: ARRAY_OUT_OF_BOUNDS_L1
+  array h->cost_mv[qp] last assigned on line 152 could be accessed with index -1 out of bounds at line 156, column 30
+
+encoder/analyse.c:495: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i8x8_mode_available[1][0] could be accessed with index 1 out of bounds at line 495, column 1
+
+encoder/analyse.c:495: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i8x8_mode_available[1][4] could be accessed with index 1 out of bounds at line 495, column 1
+
+encoder/analyse.c:495: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i8x8_mode_available[1][2] could be accessed with index 1 out of bounds at line 495, column 1
+
+encoder/analyse.c:495: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i8x8_mode_available[1][3] could be accessed with index 1 out of bounds at line 495, column 1
+
+encoder/analyse.c:495: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i8x8_mode_available[1][1] could be accessed with index 1 out of bounds at line 495, column 1
+
+encoder/analyse.c:513: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i4x4_mode_available[1][0] could be accessed with index 1 out of bounds at line 513, column 1
+
+encoder/analyse.c:513: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i4x4_mode_available[1][1] could be accessed with index 1 out of bounds at line 513, column 1
+
+encoder/analyse.c:513: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i4x4_mode_available[1][3] could be accessed with index 1 out of bounds at line 513, column 1
+
+encoder/analyse.c:513: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i4x4_mode_available[1][2] could be accessed with index 1 out of bounds at line 513, column 1
+
+encoder/analyse.c:513: error: ARRAY_OUT_OF_BOUNDS_L1
+  array i4x4_mode_available[1][4] could be accessed with index 1 out of bounds at line 513, column 1
+
+encoder/analyse.c:1262: error: ARRAY_OUT_OF_BOUNDS_L1
+  array h->mb.pic.p_fref[0][i_ref] of size 2 could be accessed with index 2 out of bounds at line 1262, column 9
+
+encoder/analyse.c:1694: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p_fref of size 2 last assigned on line 1675 could be accessed with an index out of bounds at line 1694, column 9
+
+encoder/analyse.c:1733: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p_fref of size 2 last assigned on line 1714 could be accessed with an index out of bounds at line 1733, column 9
+
+encoder/analyse.c:1769: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p_fref of size 2 last assigned on line 1750 could be accessed with an index out of bounds at line 1769, column 9
+
+encoder/analyse.c:2146: warning: PRECONDITION_NOT_MET
+  in call to x264_macroblock_cache_ref() at line 2146, column 9
+
+encoder/analyse.c:2151: warning: PRECONDITION_NOT_MET
+  in call to x264_macroblock_cache_ref() at line 2151, column 5
+
+encoder/analyse.c:2155: warning: PRECONDITION_NOT_MET
+  in call to x264_macroblock_cache_ref() at line 2155, column 5
+
+encoder/analyse.c:2377: error: ARRAY_OUT_OF_BOUNDS_L1
+  array h->mb.pic.p_fref[l][i_ref] of size 2 could be accessed with an index out of bounds at line 2377, column 17
+
+encoder/analyse.c:2471: error: ARRAY_OUT_OF_BOUNDS_L1
+  array h->mb.pic.p_fref[l][i_ref] of size 2 could be accessed with an index out of bounds at line 2471, column 17
+
+encoder/api.c:82: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 82, column 9
+
+encoder/api.c:97: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 97, column 14
+
+encoder/api.c:115: warning: UNINITIALIZED_VALUE
+  value api->x264 was not initialized after declaration and is used at line 115, column 10
+
+encoder/cabac.c:360: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 360, column 13
+
+encoder/cabac.c:363: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 363, column 13
+
+encoder/cabac.c:364: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 364, column 13
+
+encoder/cabac.c:367: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 367, column 13
+
+encoder/cabac.c:368: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 368, column 13
+
+encoder/cabac.c:716: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 716, column 13
+
+encoder/cavlc.c:481: warning: PRECONDITION_NOT_MET
+  in call to cavlc_mb_header_i() at line 481, column 53
+
+encoder/encoder.c:1354: warning: PRECONDITION_NOT_MET
+  in call to memcpy() at line 1354, column 5
+
+encoder/encoder.c:1455: warning: PRECONDITION_NOT_MET
+  in call to x264_malloc() at line 1455, column 5
+
+encoder/encoder.c:2056: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->frames.reference of size 18 could be accessed with an index out of bounds at line 2056, column 21
+
+encoder/encoder.c:2057: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->frames.reference of size 18 could be accessed with an index out of bounds at line 2057, column 13
+
+encoder/encoder.c:2065: error: ARRAY_OUT_OF_BOUNDS_L1
+  array h->fref[list] of size 2 could be accessed with index 2 out of bounds at line 2065, column 33
+
+encoder/encoder.c:2092: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  ((10>8)!=0) is always true at line 2092, column 9
+
+encoder/encoder.c:2120: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->fenc->weighted of size 16 could be accessed with an index out of bounds at line 2120, column 68
+
+encoder/encoder.c:2120: error: ARRAY_OUT_OF_BOUNDS_L1
+  array h->fref[0] of size 2 could be accessed with index 2 out of bounds at line 2120, column 52
+
+encoder/encoder.c:2120: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->fref[0] of size 2 could be accessed with an index out of bounds at line 2120, column 52
+
+encoder/encoder.c:3215: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->frames.reference of size 18 could be accessed with an index out of bounds at line 3215, column 25
+
+encoder/encoder.c:3216: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->frames.reference of size 18 could be accessed with an index out of bounds at line 3216, column 24
+
+encoder/encoder.c:4481: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->thread of size 129 could be accessed with an index out of bounds at line 4481, column 31
+
+encoder/lookahead.c:134: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 134, column 5
+
+encoder/lookahead.c:136: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->thread of size 129 could be accessed with an index out of bounds at line 136, column 9
+
+encoder/macroblock.c:569: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p_dst could be accessed with index -1 out of bounds at line 569, column 36
+
+encoder/macroblock.c:609: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p_dst last assigned on line 598 could be accessed with index -1 out of bounds at line 609, column 36
+
+encoder/me.c:219: warning: PRECONDITION_NOT_MET
+  in call to x264_clip3() at line 219, column 78
+
+encoder/me.c:279: warning: PRECONDITION_NOT_MET
+  in call to x264_clip3() at line 279, column 69
+
+encoder/ratecontrol.c:559: warning: UNINITIALIZED_VALUE
+  value i_type was not initialized after declaration and is used at line 559, column 21
+
+encoder/ratecontrol.c:1266: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1266, column 9
+
+encoder/ratecontrol.c:1807: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1807, column 9
+
+encoder/ratecontrol.c:1811: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1811, column 9
+
+encoder/ratecontrol.c:1812: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1812, column 9
+
+encoder/ratecontrol.c:2641: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->thread of size 129 could be accessed with an index out of bounds at line 2641, column 22
+
+encoder/ratecontrol.c:2642: error: DIVIDE_BY_ZERO
+  Expression totalsize could be zero at line 2642, column 5
+
+encoder/ratecontrol.c:2658: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->thread of size 129 could be accessed with an index out of bounds at line 2658, column 25
+
+encoder/ratecontrol.c:2857: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2857, column 5
+
+encoder/ratecontrol.c:2881: error: ARRAY_OUT_OF_BOUNDS_L1
+  array fills last assigned on line 2859 could be accessed with index -1 out of bounds at line 2881, column 75
+
+encoder/rdo.c:583: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 583, column 5
+
+encoder/rdo.c:584: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 584, column 5
+
+encoder/rdo.c:585: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (2!=0) is always true at line 585, column 5
+
+encoder/rdo.c:586: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (3!=0) is always true at line 586, column 5
+
+encoder/rdo.c:597: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 597, column 5
+
+encoder/rdo.c:598: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (2!=0) is always true at line 598, column 5
+
+encoder/rdo.c:599: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (3!=0) is always true at line 599, column 5
+
+encoder/rdo.c:600: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (4!=0) is always true at line 600, column 5
+
+encoder/rdo.c:601: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (5!=0) is always true at line 601, column 5
+
+encoder/rdo.c:602: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (6!=0) is always true at line 602, column 5
+
+encoder/rdo.c:603: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (7!=0) is always true at line 603, column 5
+
+encoder/rdo.c:615: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 615, column 5
+
+encoder/rdo.c:616: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 616, column 5
+
+encoder/rdo.c:617: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (2!=0) is always true at line 617, column 5
+
+encoder/rdo.c:618: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (3!=0) is always true at line 618, column 5
+
+encoder/rdo.c:630: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 630, column 5
+
+encoder/rdo.c:631: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (2!=0) is always true at line 631, column 5
+
+encoder/rdo.c:632: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (3!=0) is always true at line 632, column 5
+
+encoder/rdo.c:633: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (4!=0) is always true at line 633, column 5
+
+encoder/set.c:40: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 40, column 13
+
+encoder/set.c:597: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 597, column 5
+
+encoder/set.c:602: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 602, column 40
+
+encoder/slicetype-cl.c:67: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array h->opencl.copies of size 1024 could be accessed with an index out of bounds at line 67, column 17
+
+encoder/slicetype-cl.c:572: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 572, column 5
+
+encoder/slicetype.c:291: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 291, column 5
+
+encoder/slicetype.c:292: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 292, column 5
+
+encoder/slicetype.c:293: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 293, column 5
+
+encoder/slicetype.c:1404: error: DIVIDE_BY_ZERO
+  Expression (h->param.i_keyint_max-h->param.i_keyint_min) could be zero at line 1404, column 9
+
+filters/video/cache.c:66: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to calloc() at line 59, column 22 is not reachable after line 66, column 9
+
+filters/video/cache.c:71: error: MEMORY_LEAK
+   memory dynamically allocated to h by call to calloc() at line 59, column 22 is not reachable after line 71, column 29
+
+filters/video/cache.c:123: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 123, column 5
+
+filters/video/crop.c:56: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 56, column 9
+
+filters/video/crop.c:57: warning: PRECONDITION_NOT_MET
+  in call to x264_otoi() at line 57, column 22
+
+filters/video/crop.c:67: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 67, column 5
+
+filters/video/crop.c:81: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to calloc() at line 68, column 21 is not reachable after line 81, column 9
+
+filters/video/crop.c:85: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 85, column 5
+
+filters/video/crop.c:85: error: MEMORY_LEAK
+   memory dynamically allocated to h by call to calloc() at line 68, column 21 is not reachable after line 85, column 5
+
+filters/video/depth.c:218: warning: PRECONDITION_NOT_MET
+  in call to x264_otoi() at line 218, column 25
+
+filters/video/depth.c:229: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 229, column 5
+
+filters/video/depth.c:230: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 230, column 5
+
+filters/video/depth.c:235: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 235, column 9
+
+filters/video/internal.c:43: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 43, column 5
+
+filters/video/internal.c:44: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 44, column 5
+
+filters/video/select_every.c:68: warning: PRECONDITION_NOT_MET
+  in call to x264_otoi() at line 68, column 38
+
+filters/video/select_every.c:79: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 60, column 52 is not reachable after line 79, column 5
+
+filters/video/source.c:48: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to calloc() at line 42, column 23 is not reachable after line 48, column 9
+
+filters/video/video.c:51: warning: PRECONDITION_NOT_MET
+  in call to register_vid_filter() at line 51, column 5
+
+filters/video/video.c:71: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 71, column 5
+
+input/avs.c:133: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 133, column 5
+
+input/avs.c:134: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 134, column 5
+
+input/avs.c:135: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 135, column 5
+
+input/avs.c:136: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 136, column 5
+
+input/avs.c:137: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 137, column 5
+
+input/avs.c:138: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 138, column 5
+
+input/avs.c:139: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 139, column 5
+
+input/avs.c:224: error: ARRAY_OUT_OF_BOUNDS_L1
+  array all_purpose of size 2 could be accessed with an index out of bounds at line 224, column 21
+
+input/avs.c:224: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array all_purpose of size 2 could be accessed with an index out of bounds at line 224, column 21
+
+input/avs.c:225: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array all_purpose of size 2 could be accessed with an index out of bounds at line 225, column 23
+
+input/avs.c:225: error: ARRAY_OUT_OF_BOUNDS_L1
+  array all_purpose of size 2 could be accessed with an index out of bounds at line 225, column 23
+
+input/avs.c:263: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 263, column 5
+
+input/avs.c:268: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 268, column 5
+
+input/avs.c:268: error: MEMORY_LEAK
+   memory dynamically allocated by call to calloc() at line 265, column 20 is not reachable after line 268, column 5
+
+input/avs.c:269: warning: UNINITIALIZED_VALUE
+  value h->func.avs_create_script_environment was not initialized after declaration and is used at line 269, column 14
+
+input/avs.c:269: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer h->func.avs_create_script_environment could be dangling and is dereferenced or freed at line 269, column 14
+
+input/avs.c:510: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 510, column 5
+
+input/input.c:138: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array pic->img.plane of size 4 could be accessed with an index out of bounds at line 138, column 20
+
+input/raw.c:45: warning: PRECONDITION_NOT_MET
+  in call to calloc() at line 45, column 49
+
+input/thread.c:54: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 54, column 5
+
+input/thread.c:54: error: MEMORY_LEAK
+   memory dynamically allocated to h by call to malloc() at line 53, column 23 is not reachable after line 54, column 5
+
+input/thread.c:61: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 53, column 23 is not reachable after line 61, column 9
+
+input/thread.c:66: warning: PRECONDITION_NOT_MET
+  in call to x264_10_threadpool_init() at line 66, column 9
+
+input/timecode.c:60: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 60, column 12
+
+input/timecode.c:64: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 64, column 9
+
+input/timecode.c:90: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 90, column 9
+
+input/timecode.c:104: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 104, column 5
+
+input/timecode.c:348: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 348, column 5
+
+input/timecode.c:360: warning: UNINITIALIZED_VALUE
+  value h->timebase_den was not initialized after declaration and is used at line 360, column 9
+
+input/timecode.c:360: error: MEMORY_LEAK
+   memory dynamically allocated to h by call to malloc() at line 347, column 56 is not reachable after line 360, column 9
+
+input/timecode.c:360: warning: UNINITIALIZED_VALUE
+  value h->timebase_num was not initialized after declaration and is used at line 360, column 9
+
+input/timecode.c:360: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 360, column 9
+
+input/y4m.c:73: warning: PRECONDITION_NOT_MET
+  in call to calloc() at line 73, column 20
+
+input/y4m.c:269: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 269, column 9
+
+output/flv.c:156: warning: PRECONDITION_NOT_MET
+  in call to flv_rewrite_amf_be24() at line 156, column 5
+
+output/flv.c:222: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 222, column 5
+
+output/flv.c:323: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 323, column 5
+
+output/flv_bytestream.c:90: warning: PRECONDITION_NOT_MET
+  in call to calloc() at line 90, column 21
+
+output/matroska_ebml.c:168: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 168, column 5
+
+output/matroska_ebml.c:169: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 169, column 5
+
+output/matroska_ebml.c:182: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 182, column 9
+
+output/matroska_ebml.c:195: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 195, column 9
+
+output/matroska_ebml.c:196: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 196, column 9
+
+output/matroska_ebml.c:238: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 238, column 5
+
+output/matroska_ebml.c:239: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 239, column 5
+
+output/matroska_ebml.c:240: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 240, column 5
+
+output/matroska_ebml.c:246: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 246, column 5
+
+output/matroska_ebml.c:247: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 247, column 5
+
+output/matroska_ebml.c:248: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 248, column 5
+
+output/matroska_ebml.c:257: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 257, column 5
+
+output/matroska_ebml.c:275: warning: UNINITIALIZED_VALUE
+  value u.u was not initialized after declaration and is used at line 275, column 14
+
+output/matroska_ebml.c:285: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 285, column 5
+
+output/matroska_ebml.c:286: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 286, column 5
+
+output/matroska_ebml.c:287: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 287, column 5
+
+output/matroska_ebml.c:293: warning: PRECONDITION_NOT_MET
+  in call to calloc() at line 293, column 20
+
+output/matroska_ebml.c:338: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 338, column 5
+
+output/matroska_ebml.c:339: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 339, column 5
+
+output/matroska_ebml.c:340: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 340, column 5
+
+output/matroska_ebml.c:341: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 341, column 5
+
+output/matroska_ebml.c:342: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 342, column 5
+
+output/matroska_ebml.c:401: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 401, column 5
+
+output/matroska_ebml.c:403: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 403, column 5
+
+output/matroska_ebml.c:418: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 418, column 9
+
+x264.c:1421: warning: UNINITIALIZED_VALUE
+  value defaults.i_log_level was not initialized after declaration and is used at line 1421, column 21
+
+x264.c:1857: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1857, column 5
+
+x264.c:1861: warning: UNINITIALIZED_VALUE
+  value nal was not initialized after declaration and is used at line 1861, column 54
+
+x264.c:1861: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer nal could be dangling and is dereferenced or freed at line 1861, column 54
+
+x264.c:1949: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1949, column 9
+
+x264cli.h:50: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 50, column 12
+
+Summary of the reports
+
+                      CONDITION_ALWAYS_FALSE: 103
+                      ARRAY_OUT_OF_BOUNDS_L1: 84
+                       CONDITION_ALWAYS_TRUE: 43
+                        PRECONDITION_NOT_MET: 26
+                      ARRAY_OUT_OF_BOUNDS_L2: 16
+                                 MEMORY_LEAK: 10
+                         UNINITIALIZED_VALUE: 9
+  UNARY_MINUS_APPLIED_TO_UNSIGNED_EXPRESSION: 3
+                              DIVIDE_BY_ZERO: 2
+                DANGLING_POINTER_DEREFERENCE: 2

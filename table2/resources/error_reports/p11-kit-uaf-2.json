@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "p11-kit/modules.c", "procedure": "load_module_from_file_inlock", "line": 368 }, "exp": null },
+    "sink"  : { "node": { "filename": "p11-kit/modules.c", "procedure": "load_module_from_file_inlock", "line": 381 }, "exp": null }
+}

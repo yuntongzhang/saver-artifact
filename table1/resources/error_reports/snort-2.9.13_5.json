@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-plugins/sf_dynamic_plugins.c", "procedure": "InitDynamicEngines", "line": 1378 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-plugins/sf_dynamic_plugins.c", "procedure": "InitDynamicEngines", "line": 1428 }, "exp": null }
+}

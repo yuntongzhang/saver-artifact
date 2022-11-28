@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "util/grub-mkimage.c", "procedure": "main", "line": 277 }, "exp": null },
+    "sink"  : { "node": { "filename": "util/grub-mkimage.c", "procedure": "main", "line": 291 }, "exp": null }
+}

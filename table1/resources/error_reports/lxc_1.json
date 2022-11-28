@@ -1,0 +1,5 @@
+{
+    "err_type": "MEMORY_LEAK",
+      "source": { "node": { "procedure": "do_mkfs_exec_wrapper", "line": 752 }, "exp": null },
+      	"sink": { "node": { "procedure": "do_mkfs_exec_wrapper", "line": 758 }, "exp": null }
+}

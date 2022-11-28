@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "input/thread.c", "procedure": "open_file", "line": 53 }, "exp": null },
+    "sink": { "node": { "filename": "input/thread.c", "procedure": "open_file", "line": 61 }, "exp": null }
+}

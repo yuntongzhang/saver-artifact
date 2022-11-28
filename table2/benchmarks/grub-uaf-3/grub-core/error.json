@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "bus/usb/usbtrans.c", "procedure": "grub_usb_bulk_finish_readwrite", "line": 314 }, "exp": null },
+    "sink"  : { "node": { "filename": "bus/usb/usbtrans.c", "procedure": "grub_usb_bulk_finish_readwrite", "line": 315 }, "exp": null }
+}

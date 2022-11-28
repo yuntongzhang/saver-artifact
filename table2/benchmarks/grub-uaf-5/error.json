@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "grub-core/disk/scsi.c", "procedure": "grub_scsi_open", "line": 618 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/disk/scsi.c", "procedure": "grub_scsi_open", "line": 619 }, "exp": null }
+}

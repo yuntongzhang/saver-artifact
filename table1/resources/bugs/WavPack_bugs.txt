@@ -1,0 +1,276 @@
+Found 87 issues
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+cli/caff.c:164: warning: PRECONDITION_NOT_MET
+  in call to DoGetFileSize() at line 164, column 18
+
+cli/caff.c:574: error: NULL_DEREFERENCE
+  pointer wpc could be null and is dereferenced by call to WavpackGetFloatNormExp() at line 574, column 26
+
+cli/dsdiff.c:87: warning: PRECONDITION_NOT_MET
+  in call to DoGetFileSize() at line 87, column 18
+
+cli/dsf.c:77: warning: PRECONDITION_NOT_MET
+  in call to DoGetFileSize() at line 77, column 18
+
+cli/import_id3.c:455: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 447 could be null and is dereferenced by call to memset() at line 455, column 5
+
+cli/riff.c:346: error: NULL_DEREFERENCE
+  pointer wpc could be null and is dereferenced by call to WavpackGetFloatNormExp() at line 346, column 18
+
+cli/utils.c:311: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 311, column 12
+
+cli/wave64.c:64: warning: PRECONDITION_NOT_MET
+  in call to memcmp() at line 64, column 52
+
+cli/wave64.c:299: error: NULL_DEREFERENCE
+  pointer wpc could be null and is dereferenced by call to WavpackGetFloatNormExp() at line 299, column 18
+
+cli/wavpack.c:1384: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer wid was dereferenced at line 1381 and is tested for null at line 1384, column 9
+
+cli/wavpack.c:1479: error: NULL_DEREFERENCE
+  pointer matchname last assigned on line 1478 could be null and is dereferenced by call to strcpy() at line 1479, column 13
+
+cli/wavpack.c:1525: warning: PRECONDITION_NOT_MET
+  in call to memset() at line 1525, column 5
+
+cli/wavpack.c:3204: error: NULL_DEREFERENCE
+  pointer infile could be null and is dereferenced by call to WavpackGetQualifyMode() at line 3204, column 17
+
+cli/wavpack.c:3407: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 3401 could be null and is dereferenced at line 3407, column 13
+
+cli/wavpack.c:4141: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 4123 could be null and is dereferenced by call to memset() at line 4141, column 5
+
+cli/wvgain.c:1365: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array sp->delay of size 80 could be accessed with an index out of bounds at line 1365, column 47
+
+cli/wvtag.c:930: error: NULL_DEREFERENCE
+  pointer tag_extractions last assigned on line 929 could be null and is dereferenced at line 930, column 5
+
+cli/wvtag.c:931: error: NULL_DEREFERENCE
+  pointer *tag_extractions[num_tag_extractions] last assigned on line 930 could be null and is dereferenced by call to strcpy() at line 931, column 5
+
+cli/wvtag.c:941: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 941, column 33
+
+cli/wvtag.c:941: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 941, column 33
+
+cli/wvtag.c:941: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 941, column 33
+
+cli/wvtag.c:942: error: MEMORY_LEAK
+   memory dynamically allocated to extraction_spec by call to calloc() at line 941, column 33 is not reachable after line 942, column 29
+
+cli/wvtag.c:942: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((61==0)!=0) is always false at line 942, column 29
+
+cli/wvtag.c:1219: error: NULL_DEREFERENCE
+  pointer value last assigned on line 1215 could be null and is dereferenced at line 1219, column 22
+
+cli/wvtag.c:1392: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 1383 could be null and is dereferenced by call to memset() at line 1392, column 5
+
+cli/wvtag.c:1403: warning: PRECONDITION_NOT_MET
+  in call to setlocale() at line 1403, column 5
+
+cli/wvtag.c:1403: error: NULL_DEREFERENCE
+  pointer old_locale last assigned on line 1393 could be null and is dereferenced by call to setlocale() at line 1403, column 5
+
+cli/wvtag.c:1548: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 1530 could be null and is dereferenced by call to memset() at line 1548, column 5
+
+cli/wvtag.c:1660: error: NULL_DEREFERENCE
+  pointer matchname last assigned on line 1659 could be null and is dereferenced by call to strcpy() at line 1660, column 13
+
+cli/wvunpack.c:1820: error: NULL_DEREFERENCE
+  pointer tag_extractions last assigned on line 1819 could be null and is dereferenced at line 1820, column 5
+
+cli/wvunpack.c:1821: error: NULL_DEREFERENCE
+  pointer *tag_extractions[num_tag_extractions] last assigned on line 1820 could be null and is dereferenced by call to strcpy() at line 1821, column 5
+
+cli/wvunpack.c:1831: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 1831, column 33
+
+cli/wvunpack.c:1831: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1831, column 33
+
+cli/wvunpack.c:1831: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1831, column 33
+
+cli/wvunpack.c:1832: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((61==0)!=0) is always false at line 1832, column 29
+
+cli/wvunpack.c:1832: error: MEMORY_LEAK
+   memory dynamically allocated to extraction_spec by call to calloc() at line 1831, column 33 is not reachable after line 1832, column 29
+
+cli/wvunpack.c:2157: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 2151 could be null and is dereferenced at line 2157, column 13
+
+cli/wvunpack.c:2188: error: NULL_DEREFERENCE
+  pointer wpc could be null and is dereferenced by call to WavpackGetQualifyMode() at line 2188, column 9
+
+cli/wvunpack.c:2457: warning: PRECONDITION_NOT_MET
+  in call to dump_file_item() at line 2457, column 13
+
+cli/wvunpack.c:2580: error: NULL_DEREFERENCE
+  pointer value last assigned on line 2576 could be null and is dereferenced at line 2580, column 22
+
+cli/wvunpack.c:2815: error: NULL_DEREFERENCE
+  pointer temp last assigned on line 2806 could be null and is dereferenced by call to memset() at line 2815, column 5
+
+cli/wvunpack.c:2826: error: NULL_DEREFERENCE
+  pointer old_locale last assigned on line 2816 could be null and is dereferenced by call to setlocale() at line 2826, column 5
+
+cli/wvunpack.c:2826: warning: PRECONDITION_NOT_MET
+  in call to setlocale() at line 2826, column 5
+
+src/extra2.c:70: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 70, column 29
+
+src/open_filename.c:253: error: NULL_DEREFERENCE
+  pointer in2filename last assigned on line 251 could be null and is dereferenced by call to strcpy() at line 253, column 9
+
+src/open_filename.c:261: error: RESOURCE_LEAK
+   resource of type _IO_FILE acquired to wvc_id by call to fopen() at line 255, column 18 is not released after line 261, column 5
+
+src/open_filename.c:261: error: RESOURCE_LEAK
+   resource of type _IO_FILE acquired to wv_id by call to fopen() at line 245, column 23 is not released after line 261, column 5
+
+src/open_legacy.c:103: error: NULL_DEREFERENCE
+  pointer trans_wv last assigned on line 102 could be null and is dereferenced at line 103, column 9
+
+src/open_legacy.c:109: error: NULL_DEREFERENCE
+  pointer trans_wvc last assigned on line 108 could be null and is dereferenced at line 109, column 9
+
+src/open_legacy.c:113: error: MEMORY_LEAK
+   memory dynamically allocated to trans_wv by call to malloc() at line 102, column 47 is not reachable after line 113, column 5
+
+src/open_utils.c:310: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((wps->wphdr.flags&0)!=0) is always false at line 310, column 10
+
+src/open_utils.c:507: error: NULL_DEREFERENCE
+  pointer wpc->channel_identities last assigned on line 506 could be null and is dereferenced by call to memcpy() at line 507, column 9
+
+src/open_utils.c:891: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 891, column 12
+
+src/open_utils.c:974: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 974, column 12
+
+src/open_utils.c:1069: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1069, column 12
+
+src/pack.c:243: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 243 could be null and is dereferenced at line 243, column 5
+
+src/pack.c:284: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 284 could be null and is dereferenced at line 284, column 5
+
+src/pack.c:297: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 297 could be null and is dereferenced at line 297, column 5
+
+src/pack.c:328: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 328 could be null and is dereferenced at line 328, column 9
+
+src/pack.c:348: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 348, column 18
+
+src/pack.c:348: error: NULL_DEREFERENCE
+  pointer wpc could be null and is dereferenced at line 348, column 18
+
+src/pack.c:364: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 364 could be null and is dereferenced at line 364, column 5
+
+src/pack.c:391: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 391 could be null and is dereferenced at line 391, column 9
+
+src/pack.c:434: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 434 could be null and is dereferenced at line 434, column 5
+
+src/pack.c:1711: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1711, column 12
+
+src/pack.c:1713: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1713, column 13
+
+src/pack_dsd.c:493: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 493, column 12
+
+src/pack_floats.c:216: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 216, column 17
+
+src/pack_floats.c:220: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 220, column 17
+
+src/pack_utils.c:740: error: NULL_DEREFERENCE
+  pointer wpc could be null and is dereferenced at line 740, column 9
+
+src/pack_utils.c:1029: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1029, column 5
+
+src/pack_utils.c:1034: warning: UNINITIALIZED_VALUE
+  value wrapper_size was not initialized after declaration and is used at line 1034, column 13
+
+src/tag_utils.c:564: error: ARRAY_OUT_OF_BOUNDS_L1
+  array s2 last assigned on line 562 could be accessed with index -1 out of bounds at line 564, column 17
+
+src/tag_utils.c:585: error: ARRAY_OUT_OF_BOUNDS_L1
+  array s2 last assigned on line 583 could be accessed with index -1 out of bounds at line 585, column 17
+
+src/tags.c:33: warning: PRECONDITION_NOT_MET
+  in call to memset() at line 33, column 5
+
+src/unpack_dsd.c:145: error: NULL_DEREFERENCE
+  pointer wps->dsd.value_lookup last assigned on line 144 could be null and is dereferenced by call to memset() at line 145, column 5
+
+src/unpack_dsd.c:174: error: NULL_DEREFERENCE
+  pointer wps->dsd.probabilities last assigned on line 147 could be null and is dereferenced by call to memcpy() at line 174, column 9
+
+src/unpack_seek.c:258: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 258, column 12
+
+src/unpack_seek.c:335: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 335, column 12
+
+src/unpack_utils.c:55: error: NULL_DEREFERENCE
+  pointer wps last assigned on line 39 could be null and is dereferenced at line 55, column 14
+
+src/write_words.c:107: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 107 could be null and is dereferenced at line 107, column 5
+
+src/write_words.c:144: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 144 could be null and is dereferenced at line 144, column 9
+
+src/write_words.c:153: error: NULL_DEREFERENCE
+  pointer byteptr last assigned on line 153 could be null and is dereferenced at line 153, column 5
+
+src/write_words.c:200: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 200, column 13
+
+src/write_words.c:452: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 452, column 13
+
+Summary of the reports
+
+              NULL_DEREFERENCE: 41
+         CONDITION_ALWAYS_TRUE: 11
+        CONDITION_ALWAYS_FALSE: 9
+          PRECONDITION_NOT_MET: 9
+           UNINITIALIZED_VALUE: 6
+                   MEMORY_LEAK: 3
+  DANGLING_POINTER_DEREFERENCE: 2
+                 RESOURCE_LEAK: 2
+        ARRAY_OUT_OF_BOUNDS_L1: 2
+   NULL_TEST_AFTER_DEREFERENCE: 1
+        ARRAY_OUT_OF_BOUNDS_L2: 1

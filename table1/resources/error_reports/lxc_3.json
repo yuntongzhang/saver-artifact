@@ -1,0 +1,7 @@
+{
+    "err_type": "MEMORY_LEAK",
+      "source": { "node": { "procedure": "do_rsync", "line": 57 }, "exp": null },
+      	"sink": { "node": { "procedure": "do_rsync", "line": 65 }, "exp": null }
+}
+
+

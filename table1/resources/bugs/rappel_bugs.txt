@@ -1,0 +1,94 @@
+Found 28 issues
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+arch/amd64/assemble_intel.c:28: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 28, column 2
+
+arch/amd64/assemble_intel.c:29: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 29, column 2
+
+arch/amd64/assemble_intel.c:30: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 30, column 2
+
+arch/amd64/assemble_intel.c:32: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 32, column 2
+
+arch/amd64/display_amd64.c:22: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 22, column 2
+
+arch/amd64/ptrace_amd64.c:32: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 32, column 2
+
+arch/amd64/ptrace_amd64.c:36: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 36, column 2
+
+exedir.c:27: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 27, column 2
+
+exedir.c:31: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 31, column 2
+
+exedir.c:40: warning: PRECONDITION_NOT_MET
+  in call to snprintf() at line 40, column 2
+
+exedir.c:81: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 81, column 3
+
+exedir.c:87: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 87, column 3
+
+exedir.c:113: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 113, column 2
+
+exedir.c:131: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 131, column 2
+
+exedir.c:135: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 135, column 2
+
+pipe.c:66: error: MEMORY_LEAK
+   memory dynamically allocated by call to xmalloc() at line 52, column 23 is not reachable after line 66, column 12
+
+pipe.c:104: warning: PRECONDITION_NOT_MET
+  in call to verbose_dump() at line 104, column 2
+
+ptrace.c:36: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 36, column 2
+
+ptrace.c:40: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 40, column 2
+
+ptrace.c:117: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 117, column 2
+
+ptrace.c:129: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 129, column 2
+
+ptrace.c:134: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 134, column 2
+
+ptrace.c:143: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 143, column 2
+
+ui.c:57: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 57, column 18
+
+ui.c:57: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 57, column 18
+
+ui.c:57: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 57, column 18
+
+Summary of the reports
+
+        CONDITION_ALWAYS_FALSE: 20
+           UNINITIALIZED_VALUE: 2
+         CONDITION_ALWAYS_TRUE: 2
+          PRECONDITION_NOT_MET: 2
+                   MEMORY_LEAK: 1
+  DANGLING_POINTER_DEREFERENCE: 1

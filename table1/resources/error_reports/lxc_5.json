@@ -1,0 +1,6 @@
+{
+    "err_type": "MEMORY_LEAK",
+      "source": { "node": { "procedure": "lxc_cmd_state_server_callback", "line": 996 }, "exp": null },
+      	"sink": { "node": { "procedure": "lxc_cmd_state_server_callback", "line": 1003 }, "exp": null }
+}
+

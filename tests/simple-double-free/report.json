@@ -1,0 +1,5 @@
+{
+  "err_type": "DOUBLE_FREE",
+  "source": { "node": { "filename": "src.c", "procedure": "foo", "line": 6 }, "exp": null },
+    "sink": { "node": { "filename": "src.c", "procedure": "main", "line": 14 }, "exp": null }
+}

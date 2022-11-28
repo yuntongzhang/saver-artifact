@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "p11-kit/pin.c", "procedure": "p11_kit_pin_new", "line": 549 }, "exp": null },
+    "sink": { "node": { "filename": "p11-kit/pin.c", "procedure": "p11_kit_pin_new", "line": 553 }, "exp": null }
+}

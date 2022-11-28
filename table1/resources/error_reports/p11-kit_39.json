@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "trust/save.c", "procedure": "cleanup_directory", "line": 555 }, "exp": null },
+    "sink": { "node": { "filename": "trust/save.c", "procedure": "cleanup_directory", "line": 562 }, "exp": null }
+}

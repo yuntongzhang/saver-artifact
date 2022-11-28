@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "src/lxc/storage/overlay.c", "procedure": "ovl_clonepaths", "line": 204 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/storage/overlay.c", "procedure": "ovl_clonepaths", "line": 205 }, "exp": null }
+}

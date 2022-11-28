@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swTableColumn_add", "line": 86 }, "exp": null },
+    "sink": { "node": { "procedure": "swTableColumn_add", "line": 125 }, "exp": null }
+}
+

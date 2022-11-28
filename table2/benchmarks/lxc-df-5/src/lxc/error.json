@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "conf.c", "procedure": "lxc_create_tty", "line": 3297 }, "exp": null },
+    "sink"  : { "node": { "filename": "start.c", "procedure": "lxc_init", "line": 495 }, "exp": null }
+}

@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c", "procedure": "_FtpTelnetReload", "line": 535 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/ftptelnet/spp_ftptelnet.c", "procedure": "_FtpTelnetReload", "line": 554 }, "exp": null }
+}

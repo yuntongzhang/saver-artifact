@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "trust/index.c", "procedure": "p11_index_take", "line": 506 }, "exp": null },
+    "sink": { "node": { "filename": "trust/index.c", "procedure": "p11_index_take", "line": 528 }, "exp": null }
+}

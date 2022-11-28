@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/buf.c", "procedure": "buf_m4_undefine", "line": 196 }, "exp": null },
+    "sink": { "node": { "filename": "src/buf.c", "procedure": "buf_m4_undefine", "line": 203 }, "exp": null }
+}

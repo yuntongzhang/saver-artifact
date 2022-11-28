@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "trust/extract-openssl.c", "procedure": "symlink_for_subject_hash", "line": 543 }, "exp": null },
+    "sink": { "node": { "filename": "trust/extract-openssl.c", "procedure": "symlink_for_subject_hash", "line": 543 }, "exp": null }
+}

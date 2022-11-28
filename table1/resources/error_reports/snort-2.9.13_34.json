@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/sfutil/sf_ipvar.c", "procedure": "_sfvar_deep_copy_list", "line": 903 }, "exp": null },
+    "sink": { "node": { "filename": "src/sfutil/sf_ipvar.c", "procedure": "_sfvar_deep_copy_list", "line": 910 }, "exp": null }
+}

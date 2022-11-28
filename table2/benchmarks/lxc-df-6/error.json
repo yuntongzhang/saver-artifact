@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "src/lxc/lxc_copy.c", "procedure": "set_mnt_entry", "line": 346 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/lxc_copy.c", "procedure": "do_clone_ephemeral", "line": 453 }, "exp": null }
+}

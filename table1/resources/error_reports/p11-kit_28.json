@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "trust/asn1.c", "procedure": "p11_asn1_read", "line": 215 }, "exp": null },
+    "sink": { "node": { "filename": "trust/asn1.c", "procedure": "p11_asn1_read", "line": 219 }, "exp": null }
+}

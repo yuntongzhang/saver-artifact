@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "grub-core/gettext/gettext.c", "procedure": "grub_mofile_open_lang", "line": 364 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/gettext/gettext.c", "procedure": "grub_mofile_open_lang", "line": 365 }, "exp": null }
+}

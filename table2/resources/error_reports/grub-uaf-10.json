@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "grub-core/osdep/devmapper/getroot.c", "procedure": "get_dm_uuid", "line": 118 }, "exp": null },
+    "sink"  : { "node": { "filename": "grub-core/osdep/devmapper/getroot.c", "procedure": "get_dm_uuid", "line": 119 }, "exp": null }
+}

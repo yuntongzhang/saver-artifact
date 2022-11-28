@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/dynamic-preprocessors/dcerpc2/dce2_config.c", "procedure": "DCE2_ServerConfigure", "line": 1386 }, "exp": null },
+    "sink": { "node": { "filename": "src/dynamic-preprocessors/dcerpc2/dce2_config.c", "procedure": "DCE2_ServerConfigure", "line": 1449 }, "exp": null }
+}

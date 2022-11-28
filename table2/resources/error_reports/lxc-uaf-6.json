@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "src/lxc/conf.c", "procedure": "lxc_remove_nic", "line": 2469 }, "exp": null },
+    "sink"  : { "node": { "filename": "src/lxc/conf.c", "procedure": "lxc_remove_nic", "line": 2466}, "exp": null }
+}

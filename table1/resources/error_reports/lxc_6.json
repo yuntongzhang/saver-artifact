@@ -1,0 +1,6 @@
+{
+    "err_type": "MEMORY_LEAK",
+      "source": { "node": { "procedure": "lxc_config_define_add", "line": 2520 }, "exp": null },
+      	"sink": { "node": { "procedure": "lxc_config_define_add", "line": 2525 }, "exp": null }
+}
+

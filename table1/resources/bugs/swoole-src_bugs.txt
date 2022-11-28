@@ -1,0 +1,2419 @@
+Found 801 issues
+
+/usr/include/php/20151012/Zend/zend_API.h:1123: warning: UNINITIALIZED_VALUE
+  value str was not initialized after declaration and is used at line 1123, column 20
+
+/usr/include/php/20151012/Zend/zend_API.h:1127: warning: UNINITIALIZED_VALUE
+  value str was not initialized after declaration and is used at line 1127, column 11
+
+/usr/include/php/20151012/Zend/zend_API.h:1128: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer str could be dangling and is dereferenced or freed at line 1128, column 15
+
+/usr/include/php/20151012/Zend/zend_ast.h:221: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 221, column 2
+
+/usr/include/php/20151012/Zend/zend_ast.h:226: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 226, column 2
+
+/usr/include/php/20151012/Zend/zend_ast.h:231: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 231, column 2
+
+/usr/include/php/20151012/Zend/zend_ast.h:236: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 236, column 2
+
+/usr/include/php/20151012/Zend/zend_ast.h:253: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 253, column 2
+
+/usr/include/php/20151012/Zend/zend_execute.h:182: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 182, column 3
+
+/usr/include/php/20151012/Zend/zend_execute.h:185: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 185, column 3
+
+/usr/include/php/20151012/Zend/zend_execute.h:225: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 225, column 6
+
+/usr/include/php/20151012/Zend/zend_execute.h:253: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 253, column 6
+
+/usr/include/php/20151012/Zend/zend_gc.h:147: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 147, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:318: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 318, column 10
+
+/usr/include/php/20151012/Zend/zend_hash.h:333: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 333, column 10
+
+/usr/include/php/20151012/Zend/zend_hash.h:345: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 345, column 10
+
+/usr/include/php/20151012/Zend/zend_hash.h:357: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 357, column 34
+
+/usr/include/php/20151012/Zend/zend_hash.h:369: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 369, column 34
+
+/usr/include/php/20151012/Zend/zend_hash.h:381: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 381, column 35
+
+/usr/include/php/20151012/Zend/zend_hash.h:393: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 393, column 35
+
+/usr/include/php/20151012/Zend/zend_hash.h:405: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 405, column 37
+
+/usr/include/php/20151012/Zend/zend_hash.h:417: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 417, column 37
+
+/usr/include/php/20151012/Zend/zend_hash.h:429: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 429, column 10
+
+/usr/include/php/20151012/Zend/zend_hash.h:441: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 441, column 10
+
+/usr/include/php/20151012/Zend/zend_hash.h:453: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 453, column 34
+
+/usr/include/php/20151012/Zend/zend_hash.h:465: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 465, column 34
+
+/usr/include/php/20151012/Zend/zend_hash.h:477: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 477, column 35
+
+/usr/include/php/20151012/Zend/zend_hash.h:489: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 489, column 37
+
+/usr/include/php/20151012/Zend/zend_hash.h:499: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 499, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:502: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 502, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:513: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 513, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:516: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 516, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:527: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 527, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:530: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 530, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:541: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 541, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:544: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 544, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:555: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 555, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:558: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 558, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:569: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 569, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:572: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 572, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:583: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 583, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:596: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 596, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:627: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 627, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:636: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 636, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:645: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 645, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:648: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 648, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:659: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 659, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:672: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 672, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:675: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 675, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:695: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 695, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:710: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 710, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:723: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 723, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:736: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 736, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:748: warning: UNINITIALIZED_VALUE
+  value idx was not initialized after declaration and is used at line 748, column 39
+
+/usr/include/php/20151012/Zend/zend_hash.h:760: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 760, column 3
+
+/usr/include/php/20151012/Zend/zend_hash.h:936: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 936, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:958: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 958, column 2
+
+/usr/include/php/20151012/Zend/zend_hash.h:980: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 980, column 2
+
+/usr/include/php/20151012/Zend/zend_operators.h:225: error: ARRAY_OUT_OF_BOUNDS_L1
+  array p last assigned on line 225 could be accessed with an index out of bounds at line 225, column 89
+
+/usr/include/php/20151012/Zend/zend_smart_str.h:84: error: NULL_DEREFERENCE
+  pointer dest->s could be null and is dereferenced at line 84, column 2
+
+/usr/include/php/20151012/Zend/zend_smart_str.h:90: error: NULL_DEREFERENCE
+  pointer dest->s could be null and is dereferenced at line 90, column 29
+
+/usr/include/php/20151012/Zend/zend_string.h:204: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 204, column 2
+
+/usr/include/php/20151012/Zend/zend_string.h:224: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 224, column 2
+
+/usr/include/php/20151012/Zend/zend_string.h:262: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 262, column 3
+
+/usr/include/php/20151012/Zend/zend_types.h:811: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 811, column 2
+
+/usr/include/php/20151012/Zend/zend_types.h:816: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 816, column 2
+
+/usr/include/php/20151012/Zend/zend_types.h:821: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 821, column 2
+
+/usr/include/php/20151012/Zend/zend_types.h:826: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 826, column 2
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1215: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1215, column 14
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:1243: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1243, column 14
+
+include/Server.h:893: error: NULL_DEREFERENCE
+  pointer worker last assigned on line 892 could be null and is dereferenced at line 893, column 12
+
+include/hash.h:56: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 56, column 9
+
+include/module.h:71: error: ARRAY_OUT_OF_BOUNDS_L1
+  array val->value of size 0 could be accessed with an index out of bounds at line 71, column 5
+
+include/module.h:229: warning: PRECONDITION_NOT_MET
+  in call to swVal_bool() at line 229, column 5
+
+include/module.h:229: error: NULL_DEREFERENCE
+  pointer val last assigned on line 228 could be null and is dereferenced by call to swVal_bool() at line 229, column 5
+
+include/module.h:253: error: NULL_DEREFERENCE
+  pointer val last assigned on line 252 could be null and is dereferenced by call to swVal_string() at line 253, column 5
+
+include/module.h:253: warning: PRECONDITION_NOT_MET
+  in call to swVal_string() at line 253, column 5
+
+include/redis.h:53: warning: PRECONDITION_NOT_MET
+  in call to strtol() at line 53, column 15
+
+include/swoole.h:593: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer str was dereferenced at line 592 and is tested for null at line 593, column 5
+
+include/swoole.h:1116: error: NULL_DEREFERENCE
+  pointer c could be null and is dereferenced at line 1116, column 14
+
+include/swoole.h:1116: warning: UNINITIALIZED_VALUE
+  value __c was not initialized after declaration and is used at line 1116, column 14
+
+include/swoole.h:1896: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1896, column 12
+
+php7_wrapper.h:320: error: NULL_DEREFERENCE
+  pointer key last assigned on line 319 could be null and is dereferenced at line 320, column 25
+
+src/core/Channel.c:208: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer object was dereferenced at line 194 and is tested for null at line 208, column 9
+
+src/core/array.c:28: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 28, column 9
+
+src/core/array.c:37: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 37, column 9
+
+src/core/array.c:130: error: MEMORY_LEAK
+   memory dynamically allocated by call to swArray_extend() at line 130, column 13 is not reachable after line 130, column 13
+
+src/core/base.c:186: error: DIVIDE_BY_ZERO
+  Expression type_size could be zero at line 186, column 29
+
+src/core/base.c:253: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 253, column 21
+
+src/core/base.c:253: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 253, column 21
+
+src/core/base.c:253: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 253, column 21
+
+src/core/base.c:262: error: ARRAY_OUT_OF_BOUNDS_L1
+  array dirname of size 1 last assigned on line 253 could be accessed with index -1 out of bounds at line 262, column 9
+
+src/core/base.c:401: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 401, column 9
+
+src/core/base.c:405: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 405, column 9
+
+src/core/base.c:533: warning: UNINITIALIZED_VALUE
+  value file_stat.st_size was not initialized after declaration and is used at line 533, column 12
+
+src/core/base.c:545: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 545, column 9
+
+src/core/base.c:550: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 550, column 9
+
+src/core/base.c:563: error: RESOURCE_LEAK
+   resource acquired to return by call to open() at line 554, column 37 is not released after line 563, column 16
+
+src/core/base.c:581: error: MEMORY_LEAK
+   memory dynamically allocated to content by call to swString_new() at line 560, column 46 is not reachable after line 581, column 17
+
+src/core/hashmap.c:43: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer node was dereferenced at line 42 and is tested for null at line 43, column 5
+
+src/core/hashmap.c:117: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 101, column 28 is not reachable after line 117, column 9
+
+src/core/hashmap.c:150: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 150, column 21
+
+src/core/hashmap.c:150: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 150, column 21
+
+src/core/hashmap.c:150: warning: UNINITIALIZED_VALUE
+  value __n was not initialized after declaration and is used at line 150, column 21
+
+src/core/hashmap.c:153: error: MEMORY_LEAK
+   memory dynamically allocated to node by call to malloc() at line 142, column 46 is not reachable after line 153, column 5
+
+src/core/hashmap.c:180: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 180, column 9
+
+src/core/hashmap.c:214: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 214, column 9
+
+src/core/hashmap.c:308: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 308, column 21
+
+src/core/hashmap.c:308: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 308, column 21
+
+src/core/hashmap.c:308: warning: UNINITIALIZED_VALUE
+  value __n was not initialized after declaration and is used at line 308, column 21
+
+src/core/heap.c:49: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer heap was dereferenced at line 48 and is tested for null at line 49, column 5
+
+src/core/heap.c:196: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer head was dereferenced at line 195 and is tested for null at line 196, column 5
+
+src/core/list.c:147: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer remove_node was dereferenced at line 114 and is tested for null at line 147, column 5
+
+src/core/list.c:186: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer node was dereferenced at line 181 and is tested for null at line 186, column 9
+
+src/core/list.c:190: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer ll was dereferenced at line 176 and is tested for null at line 190, column 5
+
+src/core/log.c:74: error: NULL_DEREFERENCE
+  pointer p last assigned on line 73 could be null and is dereferenced at line 74, column 75
+
+src/core/socket.c:35: error: RESOURCE_LEAK
+   resource acquired by call to open() at line 25, column 42 is not released after line 35, column 9
+
+src/core/socket.c:95: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 95, column 12
+
+src/core/socket.c:181: warning: PRECONDITION_NOT_MET
+  in call to swSocket_wait() at line 181, column 17
+
+src/core/socket.c:227: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 227, column 12
+
+src/core/socket.c:242: warning: PRECONDITION_NOT_MET
+  in call to swSocket_wait() at line 242, column 17
+
+src/factory/FactoryProcess.c:206: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 206, column 9
+
+src/factory/FactoryThread.c:58: warning: PRECONDITION_NOT_MET
+  in call to swThreadPool_create() at line 58, column 57
+
+src/factory/FactoryThread.c:104: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer object was dereferenced at line 103 and is tested for null at line 104, column 5
+
+src/factory/FactoryThread.c:210: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 210, column 9
+
+src/factory/FactoryThread.c:213: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 213, column 13
+
+src/factory/FactoryThread.c:217: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 217, column 13
+
+src/memory/FixedPool.c:39: error: NULL_DEREFERENCE
+  pointer object last assigned on line 35 could be null and is dereferenced at line 39, column 5
+
+src/memory/FixedPool.c:129: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 129, column 14
+
+src/memory/FixedPool.c:214: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer object was dereferenced at line 208 and is tested for null at line 214, column 9
+
+src/memory/RingBuffer.c:209: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer object was dereferenced at line 203 and is tested for null at line 209, column 9
+
+src/memory/ShareMemory.c:157: error: MEMORY_LEAK
+   memory dynamically allocated by call to shmget() at line 155, column 18 is not reachable after line 157, column 9
+
+src/memory/Table.c:34: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer col was dereferenced at line 33 and is tested for null at line 34, column 5
+
+src/memory/Table.c:86: error: NULL_DEREFERENCE
+  pointer col last assigned on line 85 could be null and is dereferenced at line 86, column 5
+
+src/memory/Table.c:89: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 85, column 26 is not reachable after line 89, column 9
+
+src/memory/Table.c:125: error: MEMORY_LEAK
+   memory dynamically allocated by call to swString_dup() at line 86, column 17 is not reachable after line 125, column 9
+
+src/memory/Table.c:131: error: MEMORY_LEAK
+   memory dynamically allocated to col by call to malloc() at line 85, column 26 is not reachable after line 131, column 5
+
+src/memory/Table.c:256: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 256, column 13
+
+src/network/Client.c:277: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer cli->socket was dereferenced at line 254 and is tested for null at line 277, column 9
+
+src/network/Client.c:363: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 363, column 12
+
+src/network/Client.c:455: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 455, column 12
+
+src/network/Client.c:552: warning: PRECONDITION_NOT_MET
+  in call to swSocket_wait() at line 552, column 17
+
+src/network/Connection.c:216: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer task was dereferenced at line 214 and is tested for null at line 216, column 5
+
+src/network/Connection.c:239: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 239, column 22
+
+src/network/Connection.c:239: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 239, column 22
+
+src/network/Connection.c:239: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 239, column 22
+
+src/network/Connection.c:334: warning: PRECONDITION_NOT_MET
+  in call to swBuffer_new_trunk() at line 334, column 17
+
+src/network/Connection.c:338: warning: UNINITIALIZED_VALUE
+  value conn->out_buffer->head was not initialized after declaration and is used at line 338, column 17
+
+src/network/Manager.c:300: warning: UNINITIALIZED_VALUE
+  value status was not initialized after declaration and is used at line 300, column 63
+
+src/network/Manager.c:528: warning: UNINITIALIZED_VALUE
+  value status was not initialized after declaration and is used at line 528, column 63
+
+src/network/Manager.c:530: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 530, column 28
+
+src/network/Manager.c:713: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 713, column 12
+
+src/network/Port.c:319: error: NULL_DEREFERENCE
+  pointer request last assigned on line 310 could be null and is dereferenced at line 319, column 19
+
+src/network/Port.c:319: warning: UNINITIALIZED_VALUE
+  value request->buffer was not initialized after declaration and is used at line 319, column 19
+
+src/network/ProcessPool.c:469: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer pool->pipes was dereferenced at line 467 and is tested for null at line 469, column 9
+
+src/network/ReactorProcess.c:432: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 432, column 9
+
+src/network/ReactorThread.c:289: warning: PRECONDITION_NOT_MET
+  in call to snprintf() at line 289, column 9
+
+src/network/ReactorThread.c:418: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 418, column 12
+
+src/network/ReactorThread.c:424: warning: PRECONDITION_NOT_MET
+  in call to memcpy() at line 424, column 62
+
+src/network/ReactorThread.c:529: warning: PRECONDITION_NOT_MET
+  in call to swSocket_wait() at line 529, column 17
+
+src/network/ReactorThread.c:531: warning: PRECONDITION_NOT_MET
+  in call to swBuffer_append() at line 531, column 17
+
+src/network/ReactorThread.c:580: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 580, column 13
+
+src/network/ReactorThread.c:768: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 768, column 21
+
+src/network/ReactorThread.c:871: error: NULL_DEREFERENCE
+  pointer conn last assigned on line 870 could be null and is dereferenced at line 871, column 15
+
+src/network/ReactorThread.c:1106: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1106, column 9
+
+src/network/ReactorThread.c:1110: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 1110, column 13
+
+src/network/ReactorThread.c:1114: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 1114, column 13
+
+src/network/Server.c:134: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 134, column 17
+
+src/network/Server.c:150: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 150, column 13
+
+src/network/Server.c:516: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 516, column 9
+
+src/network/Server.c:519: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 519, column 13
+
+src/network/Server.c:523: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 523, column 13
+
+src/network/Server.c:614: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 614, column 17
+
+src/network/Server.c:758: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 758, column 9
+
+src/network/Server.c:939: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 939, column 9
+
+src/network/Server.c:989: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 989, column 9
+
+src/network/Server.c:1037: error: NULL_DEREFERENCE
+  pointer worker last assigned on line 1032 could be null and is dereferenced by call to swWorker_send2worker() at line 1037, column 15
+
+src/network/Server.c:1077: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1077, column 5
+
+src/network/Server.c:1090: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1090, column 9
+
+src/network/Server.c:1095: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1095, column 9
+
+src/network/Server.c:1289: warning: UNINITIALIZED_VALUE
+  value thread_id was not initialized after declaration and is used at line 1289, column 30
+
+src/network/TaskWorker.c:200: error: NULL_DEREFERENCE
+  pointer worker last assigned on line 157 could be null and is dereferenced at line 200, column 9
+
+src/network/Timer.c:63: warning: PRECONDITION_NOT_MET
+  in call to swReactorTimer_now() at line 63, column 9
+
+src/network/Timer.c:125: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 115, column 27 is not reachable after line 125, column 9
+
+src/network/Timer.c:158: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer tnode was dereferenced at line 153 and is tested for null at line 158, column 5
+
+src/network/Timer.c:208: warning: PRECONDITION_NOT_MET
+  in call to swHeap_pop() at line 208, column 31
+
+src/network/Worker.c:171: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 171, column 9
+
+src/network/Worker.c:209: error: NULL_DEREFERENCE
+  pointer package last assigned on line 179 could be null and is dereferenced at line 209, column 13
+
+src/network/Worker.c:421: error: NULL_DEREFERENCE
+  pointer worker last assigned on line 416 could be null and is dereferenced by call to swWorker_free() at line 421, column 5
+
+src/network/Worker.c:435: error: NULL_DEREFERENCE
+  pointer worker last assigned on line 432 could be null and is dereferenced at line 435, column 17
+
+src/os/base.c:149: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array events of size 128 could be accessed with an index out of bounds at line 149, column 28
+
+src/os/base.c:151: warning: ARRAY_OUT_OF_BOUNDS_L2
+  array events of size 128 could be accessed with an index out of bounds at line 151, column 9
+
+src/os/base.c:179: error: MEMORY_LEAK
+   memory dynamically allocated to swAioBase_thread_pool.params by call to swThreadPool_create() at line 166, column 9 is not reachable after line 179, column 9
+
+src/os/base.c:320: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 304, column 43 is not reachable after line 320, column 9
+
+src/os/base.c:347: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 331, column 43 is not reachable after line 347, column 9
+
+src/os/base.c:375: error: MEMORY_LEAK
+   memory dynamically allocated to return by call to malloc() at line 358, column 43 is not reachable after line 375, column 9
+
+src/os/dl.c:37: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 37, column 9
+
+src/os/dl.c:49: error: DANGLING_POINTER_DEREFERENCE
+  uninitialized pointer __retval could be dangling and is dereferenced or freed at line 49, column 20
+
+src/os/dl.c:49: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 49, column 20
+
+src/os/dl.c:49: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 49, column 20
+
+src/os/linux_aio.c:191: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 165, column 26 is not reachable after line 191, column 1
+
+src/os/msg_queue.c:76: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 76, column 12
+
+src/os/signal.c:86: warning: UNINITIALIZED_VALUE
+  value oact.__sigaction_handler.sa_handler was not initialized after declaration and is used at line 86, column 12
+
+src/pipe/PipeBase.c:41: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 32, column 26 is not reachable after line 41, column 9
+
+src/pipe/PipeBase.c:90: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer this was dereferenced at line 88 and is tested for null at line 90, column 5
+
+src/pipe/PipeEventfd.c:97: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 97, column 12
+
+src/pipe/PipeEventfd.c:113: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 113, column 12
+
+src/pipe/PipeEventfd.c:137: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer p->object was dereferenced at line 136 and is tested for null at line 137, column 5
+
+src/pipe/PipeUnsock.c:46: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer object was dereferenced at line 43 and is tested for null at line 46, column 5
+
+src/pipe/PipeUnsock.c:64: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 54, column 28 is not reachable after line 64, column 9
+
+src/protocol/Base.c:86: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 86, column 16
+
+src/protocol/Socks5.c:135: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 135, column 13
+
+src/protocol/Socks5.c:149: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 149, column 13
+
+src/reactor/ReactorBase.c:116: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 116, column 5
+
+src/reactor/ReactorEpoll.c:111: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer object was dereferenced at line 109 and is tested for null at line 111, column 5
+
+src/reactor/ReactorPoll.c:53: error: MEMORY_LEAK
+   memory dynamically allocated by call to malloc() at line 42, column 29 is not reachable after line 53, column 9
+
+src/reactor/ReactorPoll.c:59: error: MEMORY_LEAK
+   memory dynamically allocated by call to calloc() at line 50, column 19 is not reachable after line 59, column 9
+
+src/reactor/ReactorPoll.c:80: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer reactor->object was dereferenced at line 79 and is tested for null at line 80, column 5
+
+src/reactor/ReactorSelect.c:76: error: NULL_DEREFERENCE
+  pointer ev last assigned on line 79 could be null and is dereferenced at line 76, column 5
+
+src/reactor/ReactorSelect.c:78: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 78, column 9
+
+src/reactor/ReactorSelect.c:81: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer reactor->object was dereferenced at line 76 and is tested for null at line 81, column 5
+
+src/reactor/ReactorSelect.c:97: error: NULL_DEREFERENCE
+  pointer ev last assigned on line 96 could be null and is dereferenced at line 97, column 5
+
+src/reactor/ReactorSelect.c:125: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 125, column 5
+
+src/reactor/ReactorSelect.c:145: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 145, column 5
+
+src/reactor/ReactorSelect.c:181: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 181, column 9
+
+src/reactor/ReactorSelect.c:182: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 182, column 9
+
+src/reactor/ReactorSelect.c:183: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 183, column 9
+
+swoole.c:514: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 514, column 5
+
+swoole.c:649: warning: PRECONDITION_NOT_MET
+  in call to php_swoole_init_globals() at line 649, column 5
+
+swoole.c:947: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 947, column 13
+
+swoole.c:965: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 965, column 5
+
+swoole.c:994: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 994, column 5
+
+swoole.c:1038: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1038, column 5
+
+swoole_async.c:339: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 339, column 9
+
+swoole_async.c:424: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 424, column 9
+
+swoole_async.c:433: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 433, column 13
+
+swoole_async.c:532: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 532, column 9
+
+swoole_async.c:537: error: RESOURCE_LEAK
+   resource acquired by call to open() at line 528, column 56 is not released after line 537, column 9
+
+swoole_async.c:605: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 605, column 13
+
+swoole_async.c:614: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 614, column 9
+
+swoole_async.c:620: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 620, column 9
+
+swoole_async.c:761: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 761, column 9
+
+swoole_async.c:782: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 782, column 13
+
+swoole_async.c:785: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 785, column 13
+
+swoole_atomic.c:77: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 77, column 9
+
+swoole_atomic.c:84: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 84, column 9
+
+swoole_atomic.c:89: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 89, column 5
+
+swoole_atomic.c:95: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 95, column 27
+
+swoole_atomic.c:99: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 99, column 9
+
+swoole_atomic.c:107: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 107, column 27
+
+swoole_atomic.c:111: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 111, column 9
+
+swoole_atomic.c:118: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 118, column 27
+
+swoole_atomic.c:124: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 124, column 27
+
+swoole_atomic.c:129: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 129, column 9
+
+swoole_atomic.c:137: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 137, column 27
+
+swoole_atomic.c:141: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 141, column 9
+
+swoole_atomic.c:144: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 144, column 5
+
+swoole_buffer.c:110: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 110, column 9
+
+swoole_buffer.c:116: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 116, column 9
+
+swoole_buffer.c:121: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 121, column 9
+
+swoole_buffer.c:128: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 128, column 9
+
+swoole_buffer.c:131: error: MEMORY_LEAK
+   memory dynamically allocated to buffer by call to swString_new() at line 124, column 24 is not reachable after line 131, column 5
+
+swoole_buffer.c:138: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 138, column 51
+
+swoole_buffer.c:152: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 152, column 9
+
+swoole_buffer.c:192: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 192, column 9
+
+swoole_buffer.c:194: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 194, column 24
+
+swoole_buffer.c:230: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 230, column 51
+
+swoole_buffer.c:231: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 231, column 5
+
+swoole_buffer.c:243: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 243, column 9
+
+swoole_buffer.c:296: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 296, column 9
+
+swoole_buffer.c:299: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 299, column 51
+
+swoole_buffer.c:308: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 308, column 9
+
+swoole_buffer.c:315: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 315, column 9
+
+swoole_buffer.c:318: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 318, column 5
+
+swoole_buffer.c:327: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 327, column 9
+
+swoole_buffer.c:330: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 330, column 24
+
+swoole_buffer.c:335: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 335, column 9
+
+swoole_buffer.c:341: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 341, column 9
+
+swoole_buffer.c:345: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 345, column 9
+
+swoole_buffer.c:351: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 351, column 24
+
+swoole_buffer.c:360: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 360, column 24
+
+swoole_channel.c:66: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 66, column 9
+
+swoole_channel.c:85: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 85, column 23
+
+swoole_channel.c:90: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 90, column 9
+
+swoole_channel.c:96: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 96, column 5
+
+swoole_channel.c:117: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 117, column 50
+
+swoole_client.c:107: error: NULL_DEREFERENCE
+  pointer cb last assigned on line 101 could be null and is dereferenced at line 107, column 24
+
+swoole_client.c:111: error: NULL_DEREFERENCE
+  pointer cb last assigned on line 101 could be null and is dereferenced at line 111, column 24
+
+swoole_client.c:115: error: NULL_DEREFERENCE
+  pointer cb last assigned on line 101 could be null and is dereferenced at line 115, column 24
+
+swoole_client.c:119: error: NULL_DEREFERENCE
+  pointer cb last assigned on line 101 could be null and is dereferenced at line 119, column 24
+
+swoole_client.c:123: error: NULL_DEREFERENCE
+  pointer cb last assigned on line 101 could be null and is dereferenced at line 123, column 24
+
+swoole_client.c:291: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 291, column 5
+
+swoole_client.c:297: error: NULL_DEREFERENCE
+  pointer cb last assigned on line 296 could be null and is dereferenced at line 297, column 21
+
+swoole_client.c:644: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 644, column 5
+
+swoole_client.c:897: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 897, column 9
+
+swoole_client.c:936: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 936, column 48
+
+swoole_client.c:977: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 977, column 5
+
+swoole_client.c:995: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 995, column 9
+
+swoole_client.c:998: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 998, column 21
+
+swoole_client.c:1002: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1002, column 9
+
+swoole_client.c:1017: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1017, column 13
+
+swoole_client.c:1134: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1134, column 9
+
+swoole_client.c:1137: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1137, column 21
+
+swoole_client.c:1141: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1141, column 9
+
+swoole_client.c:1147: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1147, column 9
+
+swoole_client.c:1158: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1158, column 9
+
+swoole_client.c:1182: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1182, column 9
+
+swoole_client.c:1185: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1185, column 48
+
+swoole_client.c:1209: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1209, column 9
+
+swoole_client.c:1211: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1211, column 5
+
+swoole_client.c:1227: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1227, column 9
+
+swoole_client.c:1230: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1230, column 21
+
+swoole_client.c:1234: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1234, column 9
+
+swoole_client.c:1240: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1240, column 9
+
+swoole_client.c:1245: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1245, column 9
+
+swoole_client.c:1259: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1259, column 9
+
+swoole_client.c:1282: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1282, column 48
+
+swoole_client.c:1286: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1286, column 9
+
+swoole_client.c:1292: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1292, column 9
+
+swoole_client.c:1458: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1458, column 21
+
+swoole_client.c:1461: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1461, column 9
+
+swoole_client.c:1465: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1465, column 9
+
+swoole_client.c:1467: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1467, column 5
+
+swoole_client.c:1472: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1472, column 21
+
+swoole_client.c:1476: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1476, column 9
+
+swoole_client.c:1481: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1481, column 9
+
+swoole_client.c:1487: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1487, column 9
+
+swoole_client.c:1494: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1494, column 9
+
+swoole_client.c:1498: error: NULL_DEREFERENCE
+  pointer cli could be null and is dereferenced at line 1498, column 9
+
+swoole_client.c:1551: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1551, column 21
+
+swoole_client.c:1555: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1555, column 9
+
+swoole_client.c:1561: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1561, column 9
+
+swoole_client.c:1588: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1588, column 9
+
+swoole_client.c:1602: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1602, column 48
+
+swoole_client.c:1606: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1606, column 9
+
+swoole_client.c:1611: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1611, column 9
+
+swoole_client.c:1616: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1616, column 9
+
+swoole_client.c:1658: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1658, column 82
+
+swoole_client.c:1723: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1723, column 21
+
+swoole_client.c:1727: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1727, column 9
+
+swoole_client.c:1733: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1733, column 9
+
+swoole_client.c:1745: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1745, column 5
+
+swoole_client.c:1750: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1750, column 21
+
+swoole_client.c:1754: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1754, column 9
+
+swoole_client.c:1760: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1760, column 9
+
+swoole_client.c:1772: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1772, column 5
+
+swoole_client.c:1888: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1888, column 48
+
+swoole_client.c:1892: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1892, column 9
+
+swoole_client.c:1910: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1910, column 13
+
+swoole_client.c:1919: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1919, column 13
+
+swoole_client.c:1922: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1922, column 5
+
+swoole_client.c:1940: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1940, column 5
+
+swoole_client.c:1941: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1941, column 5
+
+swoole_client.c:1942: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1942, column 5
+
+swoole_client.c:2041: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2041, column 5
+
+swoole_client.c:2083: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2083, column 5
+
+swoole_event.c:320: error: NULL_DEREFERENCE
+  pointer cb_read could be null and is dereferenced by call to zval_get_type() at line 320, column 51
+
+swoole_event.c:323: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 323, column 9
+
+swoole_event.c:330: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 330, column 9
+
+swoole_event.c:335: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 335, column 9
+
+swoole_event.c:396: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 396, column 9
+
+swoole_event.c:407: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 407, column 9
+
+swoole_event.c:414: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 414, column 9
+
+swoole_event.c:419: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 419, column 9
+
+swoole_event.c:423: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 423, column 9
+
+swoole_event.c:439: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 439, column 9
+
+swoole_event.c:451: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 451, column 9
+
+swoole_event.c:459: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 459, column 9
+
+swoole_event.c:538: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 538, column 9
+
+swoole_event.c:550: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 550, column 9
+
+swoole_event.c:572: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 572, column 9
+
+swoole_event.c:586: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 586, column 9
+
+swoole_http_client.c:595: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 594 could be null and is dereferenced at line 595, column 28
+
+swoole_http_client.c:649: warning: PRECONDITION_NOT_MET
+  in call to __errno_location() at line 649, column 9
+
+swoole_http_client.c:661: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 660 could be null and is dereferenced at line 661, column 28
+
+swoole_http_client.c:800: error: NULL_DEREFERENCE
+  pointer http->cli->socket last accessed on line 800 could be null and is dereferenced at line 800, column 50
+
+swoole_http_client.c:818: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 816 could be null and is dereferenced at line 818, column 28
+
+swoole_http_client.c:1220: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1220, column 9
+
+swoole_http_client.c:1260: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1260, column 52
+
+swoole_http_client.c:1285: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1285, column 5
+
+swoole_http_client.c:1296: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1296, column 65
+
+swoole_http_client.c:1297: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1296 could be null and is dereferenced at line 1297, column 5
+
+swoole_http_client.c:1299: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1299, column 5
+
+swoole_http_client.c:1310: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1310, column 65
+
+swoole_http_client.c:1311: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1310 could be null and is dereferenced at line 1311, column 5
+
+swoole_http_client.c:1314: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1314, column 5
+
+swoole_http_client.c:1325: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1325, column 65
+
+swoole_http_client.c:1326: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1325 could be null and is dereferenced at line 1326, column 5
+
+swoole_http_client.c:1328: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1328, column 5
+
+swoole_http_client.c:1353: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1353, column 9
+
+swoole_http_client.c:1358: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1358, column 9
+
+swoole_http_client.c:1363: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1363, column 9
+
+swoole_http_client.c:1422: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1422, column 33
+
+swoole_http_client.c:1423: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1422 could be null and is dereferenced at line 1423, column 5
+
+swoole_http_client.c:1424: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1424, column 5
+
+swoole_http_client.c:1429: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1429, column 25
+
+swoole_http_client.c:1432: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1432, column 9
+
+swoole_http_client.c:1436: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1436, column 9
+
+swoole_http_client.c:1438: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1438, column 5
+
+swoole_http_client.c:1443: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1443, column 25
+
+swoole_http_client.c:1446: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1446, column 9
+
+swoole_http_client.c:1452: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1452, column 9
+
+swoole_http_client.c:1457: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1457, column 9
+
+swoole_http_client.c:1462: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1462, column 9
+
+swoole_http_client.c:1490: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1490, column 65
+
+swoole_http_client.c:1506: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1490 could be null and is dereferenced at line 1506, column 127
+
+swoole_http_client.c:1512: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1490 could be null and is dereferenced at line 1512, column 131
+
+swoole_http_client.c:1518: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1518, column 9
+
+swoole_http_client.c:1633: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1633, column 12
+
+swoole_http_client.c:1764: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1764, column 5
+
+swoole_http_client.c:1779: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1779, column 5
+
+swoole_http_client.c:1796: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1796, column 65
+
+swoole_http_client.c:1798: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1796 could be null and is dereferenced at line 1798, column 5
+
+swoole_http_client.c:1802: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1802, column 5
+
+swoole_http_client.c:1821: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1821, column 9
+
+swoole_http_client.c:1824: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1824, column 65
+
+swoole_http_client.c:1826: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1824 could be null and is dereferenced at line 1826, column 5
+
+swoole_http_client.c:1829: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1829, column 5
+
+swoole_http_client.c:1844: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 1844, column 65
+
+swoole_http_client.c:1845: error: NULL_DEREFERENCE
+  pointer hcc last assigned on line 1844 could be null and is dereferenced at line 1845, column 15
+
+swoole_http_client.c:1900: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1900, column 9
+
+swoole_http_client.c:1906: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1906, column 9
+
+swoole_http_client.c:1909: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1909, column 52
+
+swoole_http_client.c:1913: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1913, column 9
+
+swoole_http_client.c:1919: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1919, column 9
+
+swoole_http_client.c:1925: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1925, column 9
+
+swoole_http_client.c:1930: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1930, column 5
+
+swoole_http_server.c:698: error: NULL_DEREFERENCE
+  pointer zerr could be null and is dereferenced at line 698, column 9
+
+swoole_http_server.c:710: error: RESOURCE_LEAK
+   resource of type _IO_FILE acquired by call to fdopen() at line 707, column 16 is not released after line 710, column 9
+
+swoole_http_server.c:802: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 802, column 5
+
+swoole_http_server.c:1115: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1115, column 9
+
+swoole_http_server.c:1129: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1129, column 9
+
+swoole_http_server.c:1347: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1347, column 9
+
+swoole_http_server.c:1350: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1350, column 22
+
+swoole_http_server.c:1358: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1358, column 13
+
+swoole_http_server.c:1363: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1363, column 13
+
+swoole_http_server.c:1369: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1369, column 9
+
+swoole_http_server.c:1455: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1455, column 9
+
+swoole_http_server.c:1458: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 1458, column 64
+
+swoole_http_server.c:1461: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1461, column 9
+
+swoole_http_server.c:1467: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((1==0)!=0) is always false at line 1467, column 9
+
+swoole_http_server.c:1467: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1467, column 9
+
+swoole_http_server.c:1477: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1477, column 9
+
+swoole_http_server.c:1492: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1492, column 9
+
+swoole_http_server.c:1520: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 1520, column 64
+
+swoole_http_server.c:1535: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1535, column 13
+
+swoole_http_server.c:1549: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1549, column 9
+
+swoole_http_server.c:1858: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1858, column 13
+
+swoole_http_server.c:1871: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 1871, column 64
+
+swoole_http_server.c:1874: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1874, column 9
+
+swoole_http_server.c:1956: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1956, column 9
+
+swoole_http_server.c:1959: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 1959, column 64
+
+swoole_http_server.c:1962: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1962, column 9
+
+swoole_http_server.c:1969: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1969, column 9
+
+swoole_http_server.c:1976: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1976, column 9
+
+swoole_http_server.c:1983: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1983, column 9
+
+swoole_http_server.c:1989: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1989, column 9
+
+swoole_http_server.c:2030: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 2030, column 64
+
+swoole_http_server.c:2033: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2033, column 9
+
+swoole_http_server.c:2145: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 2145, column 64
+
+swoole_http_server.c:2148: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2148, column 9
+
+swoole_http_server.c:2254: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 2254, column 28
+
+swoole_http_server.c:2257: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2257, column 9
+
+swoole_http_server.c:2274: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 2274, column 64
+
+swoole_http_server.c:2277: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2277, column 9
+
+swoole_http_server.c:2289: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2289, column 9
+
+swoole_http_server.c:2328: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to http_get_context() at line 2328, column 29
+
+swoole_http_server.c:2331: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2331, column 9
+
+swoole_http_server.c:2337: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2337, column 9
+
+swoole_http_server.c:2356: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 2356, column 56
+
+swoole_lock.c:76: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 76, column 9
+
+swoole_lock.c:83: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 83, column 9
+
+swoole_lock.c:97: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 97, column 13
+
+swoole_lock.c:103: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 103, column 13
+
+swoole_lock.c:108: warning: PRECONDITION_NOT_MET
+  in call to swSem_create() at line 108, column 15
+
+swoole_lock.c:123: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 123, column 9
+
+swoole_lock.c:131: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 131, column 20
+
+swoole_lock.c:141: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 141, column 20
+
+swoole_lock.c:142: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 142, column 5
+
+swoole_lock.c:147: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 147, column 20
+
+swoole_lock.c:148: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 148, column 5
+
+swoole_lock.c:153: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 153, column 20
+
+swoole_lock.c:157: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 157, column 9
+
+swoole_lock.c:159: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 159, column 5
+
+swoole_lock.c:164: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 164, column 20
+
+swoole_lock.c:168: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 168, column 9
+
+swoole_lock.c:170: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 170, column 5
+
+swoole_lock.c:175: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 175, column 20
+
+swoole_lock.c:179: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 179, column 9
+
+swoole_lock.c:181: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 181, column 5
+
+swoole_mmap.c:163: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 163, column 9
+
+swoole_mmap.c:169: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 169, column 9
+
+swoole_mmap.c:176: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 176, column 9
+
+swoole_mmap.c:184: error: RESOURCE_LEAK
+   resource acquired by call to open() at line 173, column 36 is not released after line 184, column 13
+
+swoole_mmap.c:185: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 185, column 13
+
+swoole_mmap.c:189: error: RESOURCE_LEAK
+   resource acquired by call to open() at line 173, column 36 is not released after line 189, column 13
+
+swoole_mmap.c:190: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 190, column 13
+
+swoole_mmap.c:205: error: RESOURCE_LEAK
+   resource acquired by call to open() at line 173, column 36 is not released after line 205, column 9
+
+swoole_module.c:52: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 52, column 9
+
+swoole_module.c:56: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 56, column 9
+
+swoole_module.c:67: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 67, column 9
+
+swoole_module.c:97: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 97, column 9
+
+swoole_module.c:118: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 118, column 51
+
+swoole_module.c:133: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 133, column 5
+
+swoole_module.c:159: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 159, column 13
+
+swoole_mysql.c:725: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 725, column 13
+
+swoole_mysql.c:742: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 742, column 9
+
+swoole_mysql.c:750: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 750, column 55
+
+swoole_mysql.c:762: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 762, column 9
+
+swoole_mysql.c:782: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 782, column 9
+
+swoole_mysql.c:966: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 966, column 55
+
+swoole_mysql.c:993: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 993, column 55
+
+swoole_mysql.c:997: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 997, column 9
+
+swoole_mysql.c:1003: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1003, column 9
+
+swoole_mysql.c:1047: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1047, column 55
+
+swoole_mysql.c:1051: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1051, column 9
+
+swoole_mysql.c:1063: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1063, column 9
+
+swoole_mysql.c:1065: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1065, column 5
+
+swoole_mysql.c:1077: warning: NULL_TEST_AFTER_DEREFERENCE
+  Pointer client was dereferenced at line 1071 and is tested for null at line 1077, column 14
+
+swoole_mysql.c:1112: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1112, column 9
+
+swoole_mysql.c:1117: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1117, column 9
+
+swoole_mysql.c:1117: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1117, column 9
+
+swoole_mysql.c:1282: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 1282, column 11
+
+swoole_process.c:213: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 213, column 9
+
+swoole_process.c:219: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 219, column 9
+
+swoole_process.c:224: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 224, column 9
+
+swoole_process.c:232: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 232, column 9
+
+swoole_process.c:277: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 277, column 25
+
+swoole_process.c:329: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 329, column 9
+
+swoole_process.c:332: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 332, column 25
+
+swoole_process.c:359: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 359, column 52
+
+swoole_process.c:363: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 363, column 9
+
+swoole_process.c:376: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 376, column 9
+
+swoole_process.c:382: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 382, column 25
+
+swoole_process.c:389: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 389, column 9
+
+swoole_process.c:393: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 393, column 9
+
+swoole_process.c:404: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 404, column 9
+
+swoole_process.c:414: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 414, column 9
+
+swoole_process.c:416: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 416, column 5
+
+swoole_process.c:432: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 432, column 9
+
+swoole_process.c:440: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 440, column 13
+
+swoole_process.c:512: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 512, column 9
+
+swoole_process.c:518: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 518, column 9
+
+swoole_process.c:525: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 525, column 9
+
+swoole_process.c:552: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 552, column 9
+
+swoole_process.c:555: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 555, column 5
+
+swoole_process.c:678: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 678, column 52
+
+swoole_process.c:683: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 683, column 9
+
+swoole_process.c:690: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 690, column 9
+
+swoole_process.c:702: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 702, column 9
+
+swoole_process.c:713: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 713, column 9
+
+swoole_process.c:721: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 721, column 52
+
+swoole_process.c:726: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 726, column 9
+
+swoole_process.c:754: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 754, column 9
+
+swoole_process.c:760: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 760, column 9
+
+swoole_process.c:763: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 763, column 25
+
+swoole_process.c:767: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 767, column 9
+
+swoole_process.c:785: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 785, column 9
+
+swoole_process.c:803: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 803, column 9
+
+swoole_process.c:809: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 809, column 9
+
+swoole_process.c:814: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 814, column 9
+
+swoole_process.c:817: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 817, column 25
+
+swoole_process.c:822: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 822, column 9
+
+swoole_process.c:831: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 831, column 9
+
+swoole_process.c:833: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 833, column 5
+
+swoole_process.c:842: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 842, column 9
+
+swoole_process.c:850: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 850, column 52
+
+swoole_process.c:854: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 854, column 9
+
+swoole_process.c:888: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 888, column 9
+
+swoole_process.c:894: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 894, column 9
+
+swoole_process.c:930: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 930, column 9
+
+swoole_process.c:932: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 932, column 5
+
+swoole_process.c:941: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 941, column 9
+
+swoole_process.c:945: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 945, column 9
+
+swoole_process.c:950: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 950, column 9
+
+swoole_process.c:955: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 955, column 5
+
+swoole_process.c:957: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 957, column 5
+
+swoole_process.c:962: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 962, column 13
+
+swoole_process.c:964: warning: UNINITIALIZED_VALUE
+  value __cpu was not initialized after declaration and is used at line 964, column 9
+
+swoole_process.c:982: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 982, column 9
+
+swoole_process.c:985: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 985, column 25
+
+swoole_process.c:990: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 990, column 9
+
+swoole_process.c:1018: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1018, column 25
+
+swoole_process.c:1023: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1023, column 9
+
+swoole_process.c:1030: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1030, column 9
+
+swoole_redis_server.c:225: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 225, column 9
+
+swoole_redis_server.c:228: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 228, column 49
+
+swoole_redis_server.c:237: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 237, column 9
+
+swoole_redis_server.c:287: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 287, column 9
+
+swoole_redis_server.c:305: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 305, column 5
+
+swoole_redis_server.c:424: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 424, column 9
+
+swoole_redis_server.c:440: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 440, column 9
+
+swoole_server.c:152: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 152, column 9
+
+swoole_server.c:818: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 818, column 5
+
+swoole_server.c:849: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 849, column 5
+
+swoole_server.c:873: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 873, column 5
+
+swoole_server.c:1005: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1005, column 5
+
+swoole_server.c:1056: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1056, column 5
+
+swoole_server.c:1256: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1256, column 9
+
+swoole_server.c:1262: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1262, column 9
+
+swoole_server.c:1268: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1268, column 9
+
+swoole_server.c:1272: error: NULL_DEREFERENCE
+  pointer serv last assigned on line 1271 could be null and is dereferenced by call to swServer_init() at line 1272, column 5
+
+swoole_server.c:1341: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1341, column 9
+
+swoole_server.c:1351: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 1333 could be null and is dereferenced by call to swoole_get_object() at line 1351, column 47
+
+swoole_server.c:1358: warning: UNINITIALIZED_VALUE
+  value __n was not initialized after declaration and is used at line 1358, column 26
+
+swoole_server.c:1358: warning: UNINITIALIZED_VALUE
+  value __retval was not initialized after declaration and is used at line 1358, column 26
+
+swoole_server.c:1358: warning: UNINITIALIZED_VALUE
+  value __len was not initialized after declaration and is used at line 1358, column 26
+
+swoole_server.c:1626: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1626, column 9
+
+swoole_server.c:1746: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1746, column 9
+
+swoole_server.c:1758: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1758, column 9
+
+swoole_server.c:1761: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 1761, column 22
+
+swoole_server.c:1765: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1765, column 9
+
+swoole_server.c:1802: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1802, column 9
+
+swoole_server.c:1805: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 1796 could be null and is dereferenced by call to swoole_get_object() at line 1805, column 22
+
+swoole_server.c:1811: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1811, column 9
+
+swoole_server.c:1817: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1817, column 5
+
+swoole_server.c:1842: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1842, column 9
+
+swoole_server.c:1855: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1855, column 9
+
+swoole_server.c:1860: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1860, column 9
+
+swoole_server.c:1863: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 1831 could be null and is dereferenced by call to swoole_get_object() at line 1863, column 46
+
+swoole_server.c:1936: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1936, column 9
+
+swoole_server.c:1947: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1947, column 9
+
+swoole_server.c:1950: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 1923 could be null and is dereferenced by call to swoole_get_object() at line 1950, column 22
+
+swoole_server.c:1952: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((58==0)!=0) is always false at line 1952, column 9
+
+swoole_server.c:1965: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1965, column 9
+
+swoole_server.c:1997: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 1997, column 9
+
+swoole_server.c:2008: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2008, column 9
+
+swoole_server.c:2009: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2009, column 9
+
+swoole_server.c:2038: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2038, column 9
+
+swoole_server.c:2044: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2044, column 9
+
+swoole_server.c:2052: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2031 could be null and is dereferenced by call to swoole_get_object() at line 2052, column 22
+
+swoole_server.c:2053: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2053, column 5
+
+swoole_server.c:2064: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2064, column 9
+
+swoole_server.c:2070: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2070, column 9
+
+swoole_server.c:2078: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2058 could be null and is dereferenced by call to swoole_get_object() at line 2078, column 22
+
+swoole_server.c:2079: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2079, column 5
+
+swoole_server.c:2090: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2090, column 9
+
+swoole_server.c:2093: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2084 could be null and is dereferenced by call to swoole_get_object() at line 2093, column 47
+
+swoole_server.c:2097: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2097, column 9
+
+swoole_server.c:2108: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2108, column 9
+
+swoole_server.c:2120: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2120, column 5
+
+swoole_server.c:2131: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2131, column 9
+
+swoole_server.c:2134: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2125 could be null and is dereferenced by call to swoole_get_object() at line 2134, column 47
+
+swoole_server.c:2138: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2138, column 9
+
+swoole_server.c:2149: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2149, column 9
+
+swoole_server.c:2161: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2161, column 5
+
+swoole_server.c:2169: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2169, column 9
+
+swoole_server.c:2200: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2200, column 9
+
+swoole_server.c:2212: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2212, column 9
+
+swoole_server.c:2214: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2214, column 5
+
+swoole_server.c:2226: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2226, column 9
+
+swoole_server.c:2234: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2219 could be null and is dereferenced by call to swoole_get_object() at line 2234, column 22
+
+swoole_server.c:2238: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2238, column 9
+
+swoole_server.c:2341: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2341, column 9
+
+swoole_server.c:2349: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 2349, column 49
+
+swoole_server.c:2369: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2369, column 9
+
+swoole_server.c:2374: error: NULL_DEREFERENCE
+  pointer worker last assigned on line 2363 could be null and is dereferenced at line 2374, column 18
+
+swoole_server.c:2468: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2468, column 9
+
+swoole_server.c:2478: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2478, column 9
+
+swoole_server.c:2483: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2483, column 9
+
+swoole_server.c:2499: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2499, column 9
+
+swoole_server.c:2512: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2512, column 9
+
+swoole_server.c:2528: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2528, column 9
+
+swoole_server.c:2539: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2539, column 9
+
+swoole_server.c:2542: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2519 could be null and is dereferenced by call to swoole_get_object() at line 2542, column 22
+
+swoole_server.c:2546: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2546, column 9
+
+swoole_server.c:2552: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2552, column 9
+
+swoole_server.c:2557: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2557, column 9
+
+swoole_server.c:2564: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2564, column 5
+
+swoole_server.c:2564: error: NULL_DEREFERENCE
+  pointer to_worker last assigned on line 2563 could be null and is dereferenced by call to swWorker_send2worker() at line 2564, column 5
+
+swoole_server.c:2575: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2575, column 9
+
+swoole_server.c:2583: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2569 could be null and is dereferenced by call to swoole_get_object() at line 2583, column 22
+
+swoole_server.c:2584: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2584, column 5
+
+swoole_server.c:2597: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2597, column 9
+
+swoole_server.c:2605: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2589 could be null and is dereferenced by call to swoole_get_object() at line 2605, column 47
+
+swoole_server.c:2613: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2613, column 9
+
+swoole_server.c:2620: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2620, column 9
+
+swoole_server.c:2625: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2625, column 9
+
+swoole_server.c:2636: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2636, column 5
+
+swoole_server.c:2675: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2675, column 9
+
+swoole_server.c:2683: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2666 could be null and is dereferenced by call to swoole_get_object() at line 2683, column 47
+
+swoole_server.c:2802: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2802, column 9
+
+swoole_server.c:2810: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2794 could be null and is dereferenced by call to swoole_get_object() at line 2810, column 47
+
+swoole_server.c:2816: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2816, column 9
+
+swoole_server.c:2832: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2832, column 13
+
+swoole_server.c:2841: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2841, column 9
+
+swoole_server.c:2886: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2886, column 9
+
+swoole_server.c:2899: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2899, column 9
+
+swoole_server.c:2904: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2904, column 9
+
+swoole_server.c:2907: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2878 could be null and is dereferenced by call to swoole_get_object() at line 2907, column 22
+
+swoole_server.c:2912: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2912, column 9
+
+swoole_server.c:2919: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2919, column 9
+
+swoole_server.c:2924: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2924, column 9
+
+swoole_server.c:2937: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2937, column 9
+
+swoole_server.c:2945: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 2930 could be null and is dereferenced by call to swoole_get_object() at line 2945, column 47
+
+swoole_server.c:2950: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2950, column 9
+
+swoole_server.c:2955: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2955, column 9
+
+swoole_server.c:2959: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2959, column 9
+
+swoole_server.c:2971: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2971, column 9
+
+swoole_server.c:2979: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 2979, column 49
+
+swoole_server.c:2984: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2984, column 9
+
+swoole_server.c:2989: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2989, column 9
+
+swoole_server.c:2994: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 2994, column 9
+
+swoole_server.c:3003: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3003, column 9
+
+swoole_server.c:3009: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3009, column 9
+
+swoole_server.c:3013: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3013, column 9
+
+swoole_server.c:3022: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3022, column 9
+
+swoole_server.c:3041: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3041, column 13
+
+swoole_server.c:3046: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3046, column 13
+
+swoole_server.c:3049: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3049, column 5
+
+swoole_server.c:3089: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3089, column 13
+
+swoole_server.c:3128: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 3128, column 9
+
+swoole_server_port.c:71: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 71, column 45
+
+swoole_server_port.c:91: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 91, column 53
+
+swoole_server_port.c:410: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 410, column 9
+
+swoole_server_port.c:429: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_property() at line 429, column 77
+
+swoole_table.c:120: warning: CONDITION_ALWAYS_TRUE
+  Boolean condition  (1!=0) is always true at line 120, column 11
+
+swoole_table.c:188: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 188, column 9
+
+swoole_table.c:192: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 192, column 9
+
+swoole_table.c:213: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 213, column 9
+
+swoole_table.c:218: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 218, column 9
+
+swoole_table.c:225: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 225, column 22
+
+swoole_table.c:229: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 229, column 9
+
+swoole_table.c:232: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 232, column 5
+
+swoole_table.c:237: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 237, column 22
+
+swoole_table.c:241: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 241, column 9
+
+swoole_table.c:246: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 246, column 9
+
+swoole_table.c:248: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 248, column 5
+
+swoole_table.c:253: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 253, column 22
+
+swoole_table.c:257: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 257, column 9
+
+swoole_table.c:261: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 261, column 5
+
+swoole_table.c:272: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 272, column 9
+
+swoole_table.c:275: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 275, column 49
+
+swoole_table.c:279: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 279, column 9
+
+swoole_table.c:298: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 298, column 5
+
+swoole_table.c:337: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 337, column 9
+
+swoole_table.c:341: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 341, column 49
+
+swoole_table.c:345: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 345, column 9
+
+swoole_table.c:362: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 362, column 9
+
+swoole_table.c:368: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 368, column 9
+
+swoole_table.c:415: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 415, column 9
+
+swoole_table.c:419: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 419, column 49
+
+swoole_table.c:423: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 423, column 9
+
+swoole_table.c:440: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 440, column 9
+
+swoole_table.c:446: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 446, column 9
+
+swoole_table.c:490: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 490, column 9
+
+swoole_table.c:493: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 493, column 22
+
+swoole_table.c:497: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 497, column 9
+
+swoole_table.c:519: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 519, column 9
+
+swoole_table.c:523: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 523, column 22
+
+swoole_table.c:527: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 527, column 9
+
+swoole_table.c:538: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 538, column 9
+
+swoole_table.c:549: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 549, column 9
+
+swoole_table.c:552: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 552, column 22
+
+swoole_table.c:556: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 556, column 9
+
+swoole_table.c:558: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 558, column 5
+
+swoole_table.c:573: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 573, column 22
+
+swoole_table.c:577: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 577, column 9
+
+swoole_table.c:593: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 593, column 22
+
+swoole_table.c:597: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 597, column 9
+
+swoole_table.c:605: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 605, column 49
+
+swoole_table.c:609: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 609, column 9
+
+swoole_table.c:619: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 619, column 49
+
+swoole_table.c:623: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 623, column 9
+
+swoole_table.c:627: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 627, column 5
+
+swoole_table.c:627: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  ((1==0)!=0) is always false at line 627, column 5
+
+swoole_table.c:633: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 633, column 22
+
+swoole_table.c:637: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 637, column 9
+
+swoole_table.c:644: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 644, column 22
+
+swoole_table.c:648: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 648, column 9
+
+swoole_table.c:651: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 651, column 5
+
+swoole_timer.c:205: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 205, column 9
+
+swoole_timer.c:261: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 261, column 9
+
+swoole_timer.c:283: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 283, column 9
+
+swoole_timer.c:296: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 296, column 9
+
+swoole_timer.c:318: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 318, column 13
+
+swoole_timer.c:322: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 322, column 13
+
+swoole_timer.c:328: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 328, column 9
+
+swoole_timer.c:333: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 333, column 9
+
+swoole_timer.c:342: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 342, column 9
+
+swoole_timer.c:358: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 358, column 9
+
+swoole_timer.c:360: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 360, column 5
+
+swoole_websocket_server.c:94: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 94, column 9
+
+swoole_websocket_server.c:329: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 329, column 9
+
+swoole_websocket_server.c:337: error: NULL_DEREFERENCE
+  pointer  could be null and is dereferenced by call to swoole_get_object() at line 337, column 49
+
+swoole_websocket_server.c:344: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 344, column 9
+
+swoole_websocket_server.c:384: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 384, column 9
+
+swoole_websocket_server.c:390: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 390, column 9
+
+swoole_websocket_server.c:398: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 398, column 9
+
+swoole_websocket_server.c:403: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 403, column 9
+
+swoole_websocket_server.c:410: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 410, column 9
+
+swoole_websocket_server.c:414: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 414, column 5
+
+swoole_websocket_server.c:433: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 433, column 9
+
+swoole_websocket_server.c:478: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 478, column 9
+
+swoole_websocket_server.c:486: error: NULL_DEREFERENCE
+  pointer zobject last assigned on line 472 could be null and is dereferenced by call to swoole_get_object() at line 486, column 47
+
+swoole_websocket_server.c:490: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 490, column 9
+
+swoole_websocket_server.c:495: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 495, column 9
+
+swoole_websocket_server.c:504: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 504, column 13
+
+thirdparty/multipart_parser.c:76: error: NULL_DEREFERENCE
+  pointer p last assigned on line 69 could be null and is dereferenced at line 76, column 3
+
+thirdparty/multipart_parser.c:120: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 120, column 11
+
+thirdparty/php_http_parser.c:349: warning: CONDITION_ALWAYS_FALSE
+  Boolean condition  (0!=0) is always false at line 349, column 7
+
+Summary of the reports
+
+        CONDITION_ALWAYS_FALSE: 499
+              NULL_DEREFERENCE: 158
+           UNINITIALIZED_VALUE: 48
+   NULL_TEST_AFTER_DEREFERENCE: 23
+         CONDITION_ALWAYS_TRUE: 20
+                   MEMORY_LEAK: 19
+          PRECONDITION_NOT_MET: 17
+                 RESOURCE_LEAK: 7
+  DANGLING_POINTER_DEREFERENCE: 4
+        ARRAY_OUT_OF_BOUNDS_L1: 3
+        ARRAY_OUT_OF_BOUNDS_L2: 2
+                DIVIDE_BY_ZERO: 1

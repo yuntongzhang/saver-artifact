@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "trust/extract.c", "procedure": "p11_trust_extract_compat", "line": 305 }, "exp": null },
+    "sink"  : { "node": { "filename": "trust/extract.c", "procedure": "p11_trust_extract_compat", "line": 319 }, "exp": null }
+}

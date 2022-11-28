@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "lib/regexec.c", "procedure": "check_arrival_expand_ecl", "line": 3107 }, "exp": null },
+    "sink": { "node": { "filename": "lib/regexec.c", "procedure": "check_arrival_expand_ecl", "line": 3132 }, "exp": null }
+}

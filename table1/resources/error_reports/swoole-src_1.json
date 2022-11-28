@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/core/array.c", "procedure": "swArray_alloc", "line": 130 }, "exp": null },
+    "sink": { "node": { "filename": "src/core/array.c", "procedure": "swArray_alloc", "line": 130 }, "exp": null }
+}

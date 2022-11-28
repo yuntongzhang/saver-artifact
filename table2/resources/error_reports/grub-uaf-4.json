@@ -1,0 +1,5 @@
+{
+    "err_type": "USE_AFTER_FREE",
+    "source": { "node": { "filename": "loader/i386/xnu.c", "procedure": "grub_xnu_devprop_add_property", "line": 272 }, "exp": null },
+    "sink"  : { "node": { "filename": "loader/i386/xnu.c", "procedure": "grub_xnu_devprop_add_property", "line": 274 }, "exp": null }
+}

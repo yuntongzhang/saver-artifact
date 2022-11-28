@@ -1,0 +1,6 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "procedure": "swAioBase_write", "line": 304 }, "exp": null },
+    "sink": { "node": { "procedure": "swAioBase_write", "line": 320 }, "exp": null }
+}
+

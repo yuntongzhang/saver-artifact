@@ -1,0 +1,5 @@
+{
+    "err_type": "DOUBLE_FREE",
+    "source": { "node": { "filename": "util/probe.c", "procedure": "escape_of_path", "line": 68 }, "exp": null },
+    "sink"  : { "node": { "filename": "util/grub-probe.c", "procedure": "probe", "line": 445 }, "exp": null }
+}

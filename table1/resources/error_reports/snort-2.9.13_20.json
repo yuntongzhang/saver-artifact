@@ -1,0 +1,5 @@
+{
+  "err_type": "MEMORY_LEAK",
+  "source": { "node": { "filename": "src/event_wrapper.c", "procedure": "GenerateSnortEventRtn", "line": 61 }, "exp": null },
+    "sink": { "node": { "filename": "src/event_wrapper.c", "procedure": "GenerateSnortEventRtn", "line": 66 }, "exp": null }
+}
