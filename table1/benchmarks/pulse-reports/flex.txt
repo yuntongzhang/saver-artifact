@@ -1,0 +1,13 @@
+#0
+src/scanopt.c:143: error: Null Dereference
+  `s` could be null (last assigned on line 141) and is dereferenced.
+  141. 	s = malloc(sizeof (struct _scanopt_t));
+  142. 
+  143. 	s->options = options;
+        ^
+  144. 	s->optc = 0;
+  145. 	s->argc = argc;
+
+Found 1 issue
+             Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULLPTR_DEREFERENCE): 1

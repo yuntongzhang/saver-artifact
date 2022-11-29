@@ -1,0 +1,105 @@
+#0
+src/memory/Table.c:70: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 63 is not freed after the last access at line 70, column 10.
+  68.     }
+  69.     table->columns = swHashMap_new(SW_HASHMAP_INIT_BUCKET_N, (swHashMap_dtor)swTableColumn_free);
+  70.     if (!table->columns)
+               ^
+  71.     {
+  72.         return NULL;
+
+#1
+src/memory/Table.c:86: error: Null Dereference
+  `col` could be null (last assigned on line 85) and is dereferenced.
+  84. {
+  85.     swTableColumn *col = sw_malloc(sizeof(swTableColumn));
+  86.     col->name = swString_dup(name, len);
+          ^
+  87.     if (!col->name)
+  88.     {
+
+#2
+src/memory/Table.c:131: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 85 is not freed after the last access at line 131, column 12.
+  129.     table->item_size += col->size;
+  130.     table->column_num ++;
+  131.     return swHashMap_add(table->columns, name, len, col);
+                  ^
+  132. }
+  133. 
+
+#3
+src/network/Server.c:312: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `swReactor_create()` on line 311 is not freed after the last access at line 312, column 9.
+  310. 
+  311.     ret = swReactor_create(main_reactor, SW_REACTOR_MAXEVENTS);
+  312.     if (ret < 0)
+               ^
+  313.     {
+  314.         swWarn("Reactor create failed");
+
+#4
+src/pipe/PipeBase.c:39: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 32 is not freed after the last access at line 39, column 9.
+  37.     p->blocking = blocking;
+  38.     ret = pipe(object->pipes);
+  39.     if (ret < 0)
+              ^
+  40.     {
+  41.         swWarn("pipe create fail. Error: %s[%d]", strerror(errno), errno);
+
+#5
+src/pipe/PipeEventfd.c:66: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 36 is not freed after the last access at line 66, column 9.
+  64.     p->blocking = blocking;
+  65.     efd = eventfd(0, flag);
+  66.     if (efd < 0)
+              ^
+  67.     {
+  68.         swWarn("eventfd create failed. Error: %s[%d]", strerror(errno), errno);
+
+#6
+src/protocol/WebSocket.c:219: error: Uninitialized Value
+  `frame.header.LENGTH` is read without initialization during the call to `swWebSocket_decode()`.
+  217. 
+  218.     swWebSocket_frame ws;
+  219.     swWebSocket_decode(&ws, &frame);
+           ^
+  220. 
+  221.     swString *frame_buffer;
+
+#7
+src/reactor/ReactorSelect.c:76: error: Null Dereference
+  `ev` could be null (last assigned on line 79) and is dereferenced.
+  74.     swFdList_node *ev;
+  75.     swReactorSelect *object = reactor->object;
+  76.     LL_FOREACH(object->fds, ev)
+          ^
+  77.     {
+  78.         LL_DELETE(object->fds, ev);
+
+#8
+swoole_buffer.c:131: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `swString_new()` on line 124 is not freed after the last access at line 131, column 5.
+  129.     }
+  130. 
+  131.     swoole_set_object(getThis(), buffer);
+           ^
+  132.     zend_update_property_long(swoole_buffer_class_entry_ptr, getThis(), ZEND_STRL("capacity"), size TSRMLS_CC);
+  133.     zend_update_property_long(swoole_buffer_class_entry_ptr, getThis(), ZEND_STRL("length"), 0 TSRMLS_CC);
+
+#9
+swoole_websocket_server.c:308: error: Uninitialized Value
+  `frame.header.LENGTH` is read without initialization during the call to `swWebSocket_decode()`.
+  306. {
+  307.     swWebSocket_frame frame;
+  308.     swWebSocket_decode(&frame, data);
+           ^
+  309. 
+  310.     zval *zframe;
+
+Found 10 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+                      Memory Leak(MEMORY_LEAK_C): 6
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 2
+           Null Dereference(NULLPTR_DEREFERENCE): 2

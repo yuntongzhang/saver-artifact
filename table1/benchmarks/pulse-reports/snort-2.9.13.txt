@@ -1,0 +1,104 @@
+#0
+src/dynamic-preprocessors/appid/appIdConfig.c:325: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 316 is not freed after the last access at line 325, column 5.
+  323.     }
+  324.     pConfigItem->pData = pData;
+  325.     sflist_add_tail(&pConfig->genericConfigList, pConfigItem);
+           ^
+  326. }
+  327. 
+
+#1
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:159: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 93 is not freed after the last access at line 159, column 9.
+  157.     patterns[num_patterns].pattern = NULL;
+  158. 
+  159.     if (addHostUrlPatternToList(detector, hostUrlPatternsList))
+               ^
+  160.         return -1;
+  161. 
+
+#2
+src/dynamic-preprocessors/appid/luaDetectorApi.c:926: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `ServiceAddPort()` on line 926 is not freed after the last access at line 926, column 9.
+  924.     detector = detectorUserData->pDetector;
+  925. 
+  926.     if (ServiceAddPort(&pp, &detector->server.serviceModule, (void*)detector, detector->pAppidNewConfig))
+               ^
+  927.     {
+  928.         lua_pushnumber(L, -1);
+
+#3
+src/dynamic-preprocessors/appid/luaDetectorApi.c:932: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `ServiceAddPort()` on line 926 is not freed after the last access at line 932, column 5.
+  930.     }
+  931. 
+  932.     detector->server.pServiceElement->ref_count++;
+           ^
+  933. 
+  934.     lua_pushnumber(L, 0);
+
+#4
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3312: error: Memory Leak
+  Memory dynamically allocated by `realloc` on line 3302 is not freed after the last access at line 3312, column 5.
+  3310.     }
+  3311. 
+  3312.     urlList->urlPattern[urlList->usedCount++] = pattern;
+            ^
+  3313. 
+  3314.     appInfoSetActive(pattern->userData.service_id, true);
+
+#5
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3357: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `sipUaPatternAdd()` on line 3357 is not freed after the last access at line 3357, column 5.
+  3355.     }
+  3356. 
+  3357.     sipUaPatternAdd(client_app, clientVersion, uaPattern, &detectorUserData->pDetector->pAppidNewConfig->detectorSipConfig);
+            ^
+  3358. 
+  3359.     appInfoSetActive(client_app, true);
+
+#6
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3712: error: Memory Leak
+  Memory dynamically allocated by `realloc` on line 3702 is not freed after the last access at line 3712, column 5.
+  3710.     }
+  3711. 
+  3712.     urlList->urlPattern[urlList->usedCount++] = pattern;
+            ^
+  3713. 
+  3714.     appInfoSetActive(service_id, true);
+
+#7
+src/dynamic-preprocessors/appid/luaDetectorApi.c:4009: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `sipServerPatternAdd()` on line 4009 is not freed after the last access at line 4009, column 5.
+  4007.     }
+  4008. 
+  4009.     sipServerPatternAdd(client_app, clientVersion, uaPattern, &detectorUserData->pDetector->pAppidNewConfig->detectorSipConfig);
+            ^
+  4010. 
+  4011.     appInfoSetActive(client_app, true);
+
+#8
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:810: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `serviceLoadForConfigCallback()` on line 805 is not freed after the last access at line 810, column 1.
+  808. 
+  809.     return 0;
+  810. }
+       ^
+  811. 
+  812. int ReloadServiceModules(tAppIdConfig *pConfig)
+
+#9
+src/file-process/libs/file_config.c:553: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 551.
+  551.     if ( (*list = realloc(_temp, sizeof(**list)*(*list_size))) == NULL )
+  552.     {
+  553.         free(_temp);
+               ^
+  554.         FatalError("Failed realloc!");
+  555.     }
+
+Found 10 issues
+      Issue Type(ISSUED_TYPE_ID): #
+      Memory Leak(MEMORY_LEAK_C): 9
+  Use After Free(USE_AFTER_FREE): 1

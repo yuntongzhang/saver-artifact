@@ -1,0 +1,116 @@
+#0
+src/lxc/af_unix.c:238: error: Null Dereference
+  `cmsg` could be null (last assigned on line 223) and is dereferenced.
+  236. 
+  237. 	cmsg = CMSG_FIRSTHDR(&msg);
+  238. 	cmsg->cmsg_len = CMSG_LEN(sizeof(struct ucred));
+        ^
+  239. 	cmsg->cmsg_level = SOL_SOCKET;
+  240. 	cmsg->cmsg_type = SCM_CREDENTIALS;
+
+#1
+src/lxc/cgroups/cgfs.c:1798: error: Uninitialized Value
+  is read without initialization during the call to `lxc_grow_array()`.
+  1796. 		 * with name= for named hierarchies
+  1797. 		 */
+  1798. 		r = lxc_grow_array((void ***)&result, &result_capacity, result_count + 1, 12);
+              ^
+  1799. 		if (r < 0)
+  1800. 			goto out_free;
+
+#2
+src/lxc/cgroups/cgfsng.c:127: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 127.
+  125. 
+  126. 	do {
+  127. 		ret = realloc(orig, sz);
+               ^
+  128. 	} while (!ret);
+  129. 	return ret;
+
+#3
+src/lxc/cgroups/cgfsng.c:387: error: Memory Leak
+  Memory dynamically allocated by `realloc`, indirectly via call to `lxc_append_string()` on line 381 is not freed after the last access at line 387, column 9.
+  385. 		}
+  386. 	}
+  387. 	return lxc_string_join(",", (const char **)cpulist, false);
+               ^
+  388. }
+  389. 
+
+#4
+src/lxc/commands.c:231: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 193 is not freed after the last access at line 231, column 1.
+  229. 
+  230. 	return ret;
+  231. }
+       ^
+  232. 
+  233. /*
+
+#5
+src/lxc/commands.c:1076: error: Uninitialized Value
+  `_.datalen` is read without initialization.
+  1074. 	}
+  1075. 
+  1076. 	if (req.datalen > LXC_CMD_DATA_MAX) {
+             ^
+  1077. 		ERROR("Received command data length %d is too large.", req.datalen);
+  1078. 		ret = -1;
+
+#6
+src/lxc/confile.c:1196: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 1173 is not freed after the last access at line 1196, column 7.
+  1194. 		*slash = '\0';
+  1195. 		netmask = slash + 1;
+  1196. 		if (lxc_safe_uint(netmask, &inet6dev->prefix) < 0)
+              ^
+  1197. 			return -1;
+  1198. 	}
+
+#7
+src/lxc/confile_network_legacy.c:715: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 692 is not freed after the last access at line 715, column 7.
+  713. 		*slash = '\0';
+  714. 		netmask = slash + 1;
+  715. 		if (lxc_safe_uint(netmask, &inet6dev->prefix) < 0)
+             ^
+  716. 			return -1;
+  717. 	}
+
+#8
+src/lxc/tools/lxc_autostart.c:232: error: Null Dereference
+  `workstr_list` could be null (last assigned on line 224) and is dereferenced in call to `lxc_list_init()`.
+  230. 
+  231. 	workstr_list = malloc(sizeof(*workstr_list));
+  232. 	lxc_list_init(workstr_list);
+        ^
+  233. 
+  234. 	workstr = strdup(input);
+
+#9
+src/lxc/tools/lxc_top.c:259: error: Uninitialized Value
+  is read without initialization during the call to `lxc_string_split_and_trim()`.
+  257. 	}
+  258. 
+  259. 	lines = lxc_string_split_and_trim(buf, '\n');
+                ^
+  260. 	if (!lines)
+  261. 		goto out;
+
+#10
+src/lxc/tools/lxc_top.c:315: error: Uninitialized Value
+  is read without initialization during the call to `lxc_string_split_and_trim()`.
+  313. 	}
+  314. 
+  315. 	lines = lxc_string_split_and_trim(buf, '\n');
+                ^
+  316. 	if (!lines)
+  317. 		return;
+
+Found 11 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 4
+                      Memory Leak(MEMORY_LEAK_C): 4
+           Null Dereference(NULLPTR_DEREFERENCE): 2
+                  Use After Free(USE_AFTER_FREE): 1

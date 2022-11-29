@@ -1,0 +1,74 @@
+#0
+common/attrs.c:155: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 152 is not freed after the last access at line 155, column 4.
+  153. 			else
+  154. 				attr->pValue = memdup (attr->pValue, attr->ulValueLen);
+  155. 			return_val_if_fail (attr->pValue != NULL, NULL);
+          ^
+  156. 		}
+  157. 	}
+
+#1
+p11-kit/iter.c:161: error: Null Dereference
+  `iter->modules` could be null (from the call to `p11_array_new()` on line 159) and is dereferenced in call to `p11_kit_iter_free()`.
+  159. 	iter->modules = p11_array_new (NULL);
+  160. 	if (iter->modules == NULL) {
+  161. 		p11_kit_iter_free (iter);
+         ^
+  162. 		return_val_if_reached (NULL);
+  163. 	}
+
+#2
+p11-kit/uri.c:1282: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `p11_url_decode()` on line 1278 is not freed after the last access at line 1282, column 2.
+  1280. 		return P11_KIT_URI_BAD_ENCODING;
+  1281. 
+  1282. 	uri->attrs = p11_attrs_take (uri->attrs, type, value, length);
+         ^
+  1283. 	return 1;
+  1284. }
+
+#3
+p11-kit/virtual.c:2536: error: Null Dereference
+  null (last assigned on line 2536) is dereferenced.
+  2534. 
+  2535. static const FunctionInfo function_info[] = {
+  2536.         { FUNCTION (Initialize) },
+                ^
+  2537.         { FUNCTION (Finalize) },
+  2538.         { FUNCTION (GetInfo) },
+
+#4
+trust/anchor.c:364: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `p11_attrs_dup()` on line 364 is not freed after the last access at line 364, column 2.
+  362. 	}
+  363. 
+  364. 	attrs = p11_attrs_merge (attrs, p11_attrs_dup (basics), true);
+        ^
+  365. 	p11_attrs_remove (attrs, CKA_MODIFIABLE);
+  366. 
+
+#5
+trust/parser.c:662: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `p11_asn1_defs_load()` on line 652 is not freed after the last access at line 662, column 9.
+  660. 	return_val_if_fail (parser.parsed != NULL, NULL);
+  661. 
+  662. 	return memdup (&parser, sizeof (parser));
+               ^
+  663. }
+  664. 
+
+#6
+trust/persist.c:555: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `parse_value()` on line 550 is not freed after the last access at line 555, column 2.
+  553. 	}
+  554. 
+  555. 	*attrs = p11_attrs_take (*attrs, attr.type,
+        ^
+  556. 	                         attr.pValue, attr.ulValueLen);
+  557. 	return true;
+
+Found 7 issues
+             Issue Type(ISSUED_TYPE_ID): #
+             Memory Leak(MEMORY_LEAK_C): 5
+  Null Dereference(NULLPTR_DEREFERENCE): 2

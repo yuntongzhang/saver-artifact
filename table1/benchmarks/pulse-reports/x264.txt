@@ -1,0 +1,64 @@
+#0
+extras/avxsynth_c.h:517: error: Uninitialized Value
+  `_.array_size` is read without initialization.
+  515.         { AVS_Value v; v.type = 'i'; v.d.integer = v0; return v; }   
+  516. AVSC_INLINE AVS_Value avs_new_value_string(const char * v0) 
+  517.         { AVS_Value v; v.type = 's'; v.d.string = v0; return v; }
+                                                             ^
+  518. AVSC_INLINE AVS_Value avs_new_value_float(float v0) 
+  519.         { AVS_Value v; v.type = 'f'; v.d.floating_pt = v0; return v;}
+
+#1
+filters/video/cache.c:71: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 64 is not freed after the last access at line 71, column 14.
+  69.     {
+  70.         h->cache[i] = malloc( sizeof(cli_pic_t) );
+  71.         if( !h->cache[i] || x264_cli_pic_alloc( h->cache[i], info->csp, info->width, info->height ) )
+                   ^
+  72.             return -1;
+  73.     }
+
+#2
+input/thread.c:54: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 53 is not freed after the last access at line 54, column 5.
+  52. {
+  53.     thread_hnd_t *h = malloc( sizeof(thread_hnd_t) );
+  54.     FAIL_IF_ERR( !h || cli_input.picture_alloc( &h->pic, *p_handle, info->csp, info->width, info->height ),
+          ^
+  55.                  "x264", "malloc failed\n" );
+  56.     h->input = cli_input;
+
+#3
+input/thread.c:60: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 53 is not freed after the last access at line 60, column 10.
+  58.     h->next_frame = -1;
+  59.     h->next_args = malloc( sizeof(thread_input_arg_t) );
+  60.     if( !h->next_args )
+               ^
+  61.         return -1;
+  62.     h->next_args->h = h;
+
+#4
+input/thread.c:66: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 59 is not freed after the last access at line 66, column 9.
+  64.     h->frame_total = info->num_frames;
+  65. 
+  66.     if( x264_threadpool_init( &h->pool, 1, NULL, NULL ) )
+              ^
+  67.         return -1;
+  68. 
+
+#5
+input/timecode.c:248: error: Uninitialized Value
+  is read without initialization.
+  246.         if( fgets( buff, sizeof(buff), tcfile_in ) != NULL )
+  247.         {
+  248.             ret = sscanf( buff, "%lf", &timecodes[0] );
+                         ^
+  249.             timecodes[0] *= 1e-3;         /* Timecode format v2 is expressed in milliseconds. */
+  250.             FAIL_IF_ERROR( ret != 1, "invalid input tcfile for frame 0\n" );
+
+Found 6 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+                      Memory Leak(MEMORY_LEAK_C): 4
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 2

@@ -1,0 +1,125 @@
+#0
+ftpd/ftpd.c:633: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 630.
+  631.       if (!tmp)
+  632. 	{
+  633. 	  free (path);
+          ^
+  634. 	  return (char *) "";
+  635. 	}
+
+#1
+ifconfig/options.c:303: error: Null Dereference
+  `#GB<ifconfig/options.c>$ifs` could be null (last assigned on line 299) and is dereferenced.
+  301.     error (EXIT_FAILURE, errno,
+  302. 	   "can't get memory for interface configuration");
+  303.   ifp = &ifs[nifs - 1];
+         ^
+  304.   *ifp = ifconfig_initializer;
+  305.   ifp->name = name;
+
+#2
+lib/read-file.c:102: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 97.
+  100.               }
+  101. 
+  102.             buf[size] = '\0';
+                   ^
+  103.             *length = size;
+  104.             return buf;
+
+#3
+lib/read-file.c:131: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 121.
+  129.       }
+  130. 
+  131.     free (buf);
+           ^
+  132.     errno = save_errno;
+  133.     return NULL;
+
+#4
+lib/readutmp.c:54: error: Null Dereference
+  `trimmed_name` could be null (from the call to `xmalloc()` on line 49) and is dereferenced.
+  52.      maximum with spaces, others pad with NULs.  Remove any trailing
+  53.      spaces.  */
+  54.   trimmed_name[sizeof (UT_USER (ut))] = '\0';
+        ^
+  55.   for (p = trimmed_name + strlen (trimmed_name);
+  56.        trimmed_name < p && p[-1] == ' ';
+
+#5
+libinetutils/localhost.c:59: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 55.
+  57. 	{
+  58. 	  errno = ENOMEM;
+  59. 	  free (buf);
+         ^
+  60. 	  return 0;
+  61. 	}
+
+#6
+libinetutils/setsig.c:39: error: Uninitialized Value
+  `_.sa_flags` is read without initialization.
+  37.   sigemptyset (&osa.sa_mask);
+  38. # ifdef SA_RESTART
+  39.   sa.sa_flags |= SA_RESTART;
+        ^
+  40. # endif
+  41.   sa.sa_handler = handler;
+
+#7
+src/hostname.c:257: error: Null Dereference
+  `aliases` could be null (from the call to `xmalloc()` on line 256) and is dereferenced.
+  255. 
+  256.   aliases = xmalloc (sizeof (char) * size);
+  257.   aliases[0] = '\0';
+         ^
+  258. 
+  259.   ht = gethostbyname (host_name);
+
+#8
+src/hostname.c:313: error: Null Dereference
+  `addresses` could be null (from the call to `xmalloc()` on line 312) and is dereferenced.
+  311. 
+  312.   addresses = xmalloc (sizeof (char) * size);
+  313.   addresses[0] = '\0';
+         ^
+  314. 
+  315.   ht = gethostbyname (host_name);
+
+#9
+src/syslogd.c:865: error: Null Dereference
+  `#GB<src/syslogd.c>$funix` could be null (last assigned on line 861) and is dereferenced.
+  863.     error (EXIT_FAILURE, errno, "cannot allocate space for unix sockets");
+  864. 
+  865.   funix[nfunix].name = name;
+         ^
+  866.   funix[nfunix].fd = -1;
+  867.   nfunix++;
+
+#10
+whois/whois.c:427: error: Null Dereference
+  `buf` could be null (from the call to `xmalloc()` on line 426) and is dereferenced.
+  425.   /* +10 for CORE; +2 for \r\n; +1 for NULL */
+  426.   buf = xmalloc (strlen (flags) + strlen (query) + 10 + 2 + 1);
+  427.   *buf = '\0';
+         ^
+  428. 
+  429.   isripe = is_ripe_server (ripe_servers, server)
+
+#11
+whois/whois.c:537: error: Null Dereference
+  `temp` could be null (from the call to `xmalloc()` on line 536) and is dereferenced.
+  535. 
+  536.   temp = xmalloc (strlen (query) + 1 + 2 + 1);
+  537.   *temp = '=';
+         ^
+  538.   strcpy (temp + 1, query);
+  539.   strcat (temp, "\r\n");
+
+Found 12 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+           Null Dereference(NULLPTR_DEREFERENCE): 7
+                  Use After Free(USE_AFTER_FREE): 4
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 1

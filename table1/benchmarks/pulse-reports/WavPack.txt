@@ -1,0 +1,63 @@
+#0
+cli/wvtag.c:930: error: Null Dereference
+  `#GB<cli/wvtag.c>$tag_extractions` could be null (last assigned on line 929) and is dereferenced.
+  928. {
+  929.     tag_extractions = realloc (tag_extractions, (num_tag_extractions + 1) * sizeof (*tag_extractions));
+  930.     tag_extractions [num_tag_extractions] = malloc (strlen (spec) + 10);
+           ^
+  931.     strcpy (tag_extractions [num_tag_extractions], spec);
+  932.     num_tag_extractions++;
+
+#1
+cli/wvunpack.c:1820: error: Null Dereference
+  `#GB<cli/wvunpack.c>$tag_extractions` could be null (last assigned on line 1819) and is dereferenced.
+  1818. {
+  1819.     tag_extractions = realloc (tag_extractions, (num_tag_extractions + 1) * sizeof (*tag_extractions));
+  1820.     tag_extractions [num_tag_extractions] = malloc (strlen (spec) + 10);
+            ^
+  1821.     strcpy (tag_extractions [num_tag_extractions], spec);
+  1822.     num_tag_extractions++;
+
+#2
+src/pack.c:284: error: Null Dereference
+  `byteptr` could be null (last assigned on line 282) and is dereferenced.
+  282.     byteptr = wpmd->data = malloc (4);
+  283.     wpmd->id = ID_INT32_INFO;
+  284.     *byteptr++ = wps->int32_sent_bits;
+           ^
+  285.     *byteptr++ = wps->int32_zeros;
+  286.     *byteptr++ = wps->int32_ones;
+
+#3
+src/pack.c:297: error: Null Dereference
+  `byteptr` could be null (last assigned on line 295) and is dereferenced.
+  295.     byteptr = wpmd->data = malloc (4);
+  296.     wpmd->id = ID_FLOAT_INFO;
+  297.     *byteptr++ = wps->float_flags;
+           ^
+  298.     *byteptr++ = wps->float_shift;
+  299.     *byteptr++ = wps->float_max_exp;
+
+#4
+src/pack.c:364: error: Null Dereference
+  `byteptr` could be null (last assigned on line 362) and is dereferenced.
+  362.     byteptr = wpmd->data = malloc (8);
+  363.     wpmd->id = ID_CONFIG_BLOCK;
+  364.     *byteptr++ = (char) (wpc->config.flags >> 8);
+           ^
+  365.     *byteptr++ = (char) (wpc->config.flags >> 16);
+  366.     *byteptr++ = (char) (wpc->config.flags >> 24);
+
+#5
+src/pack.c:434: error: Null Dereference
+  `byteptr` could be null (last assigned on line 432) and is dereferenced.
+  432.     byteptr = wpmd->data = malloc (4);
+  433.     wpmd->id = ID_SAMPLE_RATE;
+  434.     *byteptr++ = (char) (wpc->config.sample_rate);
+           ^
+  435.     *byteptr++ = (char) (wpc->config.sample_rate >> 8);
+  436.     *byteptr++ = (char) (wpc->config.sample_rate >> 16);
+
+Found 6 issues
+             Issue Type(ISSUED_TYPE_ID): #
+  Null Dereference(NULLPTR_DEREFERENCE): 6
