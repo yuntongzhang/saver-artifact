@@ -33,9 +33,6 @@
 #ifndef WIN32
 # include <sys/time.h>
 # include <sys/types.h>
-# ifdef LINUX
-#  include <sys/syscall.h>
-# endif
 #endif
 #include <stdlib.h>
 #include <errno.h>
@@ -374,6 +371,13 @@ static inline int IsEmptyStr(const char *str)
     return 0;
 }
 
+
+#if !defined(_GNU_SOURCE) || !defined(__GLIBC__) || __GLIBC__ < 2|| (__GLIBC__ == 2 && __GLIBC_MINOR__ < 30)
+
+# ifdef LINUX
+#  include <sys/syscall.h>
+# endif
+
 static inline pid_t gettid(void)
 {
 #if defined(LINUX) && defined(SYS_gettid)
@@ -382,5 +386,7 @@ static inline pid_t gettid(void)
     return getpid();
 #endif
 }
+
+#endif
 
 #endif /*__UTIL_H__*/
