@@ -1,3 +1,9 @@
+# Benchmark from SAVER tool
+
+This repository contains benchmark programs taken from the SAVER VM [ICSE20_SAVER_artifacts.tar.gz](https://drive.google.com/open?id=1PHUBRDuzSKxHRIbUYNgdNnPamiSp0Fe1), for convenience.
+
+The original public repo of SAVER is [here](https://github.com/kupl/SAVER_public).
+
 # SAVER
 
 SAVER automatically generates safe patches for three kinds of memory-related errors common in C programs: **Memory Leak**, **Use-After-Free**, and **Double-Free**. SAVER works on large C programs up to 320K lines of code while still maintaining the key property of making safe patches. These patches are safe in that if SAVER succeeded in generating patches for a program, applying these patches does not introduce new errors on that program.
