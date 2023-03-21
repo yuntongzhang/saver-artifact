@@ -1,0 +1,866 @@
+#0
+src/detection-plugins/sp_clientserver.c:247: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `InitFlowData()` on line 226 is not freed after the last access at line 247, column 1.
+  245.         }
+  246.     }
+  247. }
+       ^
+  248. 
+  249. 
+
+#1
+src/detection-plugins/sp_flowbits.c:616: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 574 is not freed after the last access at line 616, column 1.
+  614.     free(flowbits_name);
+  615. 
+  616. }
+       ^
+  617. 
+  618. void validateFlowbitsSyntax(FLOWBITS_OP *flowbits)
+
+#2
+src/dynamic-preprocessors/appid/appIdConfig.c:325: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 316 is not freed after the last access at line 325, column 5.
+  323.     }
+  324.     pConfigItem->pData = pData;
+  325.     sflist_add_tail(&pConfig->genericConfigList, pConfigItem);
+           ^
+  326. }
+  327. 
+
+#3
+src/dynamic-preprocessors/appid/commonAppMatcher.c:1154: error: Null Dereference
+  `pNewConfig` could be null (last assigned on line 1136) and is dereferenced.
+  1152.     // of the lists in the current AppId context. If a new item is added to a list, the list in the
+  1153.     // current context will be unchanged.
+  1154.     pNewConfig->clientAppConfig.tcp_client_app_list = pAppidActiveConfig->clientAppConfig.tcp_client_app_list;
+            ^
+  1155.     pNewConfig->clientAppConfig.udp_client_app_list = pAppidActiveConfig->clientAppConfig.udp_client_app_list;
+  1156.     pNewConfig->serviceConfig.active_service_list = pAppidActiveConfig->serviceConfig.active_service_list;
+
+#4
+src/dynamic-preprocessors/appid/detector_plugins/detector_sip.c:405: error: Uninitialized Value
+  `root.patternList` is read without initialization during the call to `mlmpDestroy()`.
+  403.     if (!pSipConfig->sipServerMatcher)
+  404.     {
+  405.         mlmpDestroy(pSipConfig->sipUaMatcher);
+               ^
+  406.         pSipConfig->sipUaMatcher = NULL;
+  407.         return -1;
+
+#5
+src/dynamic-preprocessors/appid/detector_plugins/http_url_patterns.c:159: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 93 is not freed after the last access at line 159, column 9.
+  157.     patterns[num_patterns].pattern = NULL;
+  158. 
+  159.     if (addHostUrlPatternToList(detector, hostUrlPatternsList))
+               ^
+  160.         return -1;
+  161. 
+
+#6
+src/dynamic-preprocessors/appid/luaDetectorApi.c:517: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 512 is not freed after the last access at line 517, column 9.
+  515.         detector->server.pServiceElement->userdata = detector;
+  516. 
+  517.         detector->server.pServiceElement->detectorType = DETECTOR_TYPE_DECODER;
+               ^
+  518.     }
+  519. 
+
+#7
+src/dynamic-preprocessors/appid/luaDetectorApi.c:926: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `ServiceAddPort()` on line 926 is not freed after the last access at line 926, column 9.
+  924.     detector = detectorUserData->pDetector;
+  925. 
+  926.     if (ServiceAddPort(&pp, &detector->server.serviceModule, (void*)detector, detector->pAppidNewConfig))
+               ^
+  927.     {
+  928.         lua_pushnumber(L, -1);
+
+#8
+src/dynamic-preprocessors/appid/luaDetectorApi.c:926: error: Uninitialized Value
+  `_.ref_count` is read without initialization during the call to `ServiceAddPort()`.
+  924.     detector = detectorUserData->pDetector;
+  925. 
+  926.     if (ServiceAddPort(&pp, &detector->server.serviceModule, (void*)detector, detector->pAppidNewConfig))
+               ^
+  927.     {
+  928.         lua_pushnumber(L, -1);
+
+#9
+src/dynamic-preprocessors/appid/luaDetectorApi.c:932: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `ServiceAddPort()` on line 926 is not freed after the last access at line 932, column 5.
+  930.     }
+  931. 
+  932.     detector->server.pServiceElement->ref_count++;
+           ^
+  933. 
+  934.     lua_pushnumber(L, 0);
+
+#10
+src/dynamic-preprocessors/appid/luaDetectorApi.c:1140: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 1139 is not freed after the last access at line 1140, column 17.
+  1138.     /*packet */
+  1139.     if (!detectorUserData || !checkServiceElement(detectorUserData->pDetector)
+  1140.             || !detectorUserData->pDetector->validateParams.pkt)
+                        ^
+  1141.     {
+  1142.         lua_pushnumber(L, -1);
+
+#11
+src/dynamic-preprocessors/appid/luaDetectorApi.c:1148: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 1139 is not freed after the last access at line 1148, column 5.
+  1146.     detector = detectorUserData->pDetector;
+  1147. 
+  1148.     AppIdFlowdataAddId(detector->validateParams.flowp, sport, detector->server.pServiceElement);
+            ^
+  1149. 
+  1150.     lua_pushnumber(L, 0);
+
+#12
+src/dynamic-preprocessors/appid/luaDetectorApi.c:1216: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 1215 is not freed after the last access at line 1216, column 16.
+  1214.     /*called in context of a packet */
+  1215.     if (!detectorUserData || !checkServiceElement(detectorUserData->pDetector)
+  1216.            || !detectorUserData->pDetector->validateParams.pkt)
+                       ^
+  1217.     {
+  1218.         lua_pushnumber(L, SERVICE_ENULL);
+
+#13
+src/dynamic-preprocessors/appid/luaDetectorApi.c:1250: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 1249 is not freed after the last access at line 1250, column 16.
+  1248.     /*called in context of a packet */
+  1249.     if (!detectorUserData || !checkServiceElement(detectorUserData->pDetector)
+  1250.            || !detectorUserData->pDetector->validateParams.pkt)
+                       ^
+  1251.     {
+  1252.         lua_pushnumber(L, SERVICE_ENULL);
+
+#14
+src/dynamic-preprocessors/appid/luaDetectorApi.c:1258: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 1249 is not freed after the last access at line 1258, column 5.
+  1256.     detector = detectorUserData->pDetector;
+  1257. 
+  1258.     retValue = AppIdServiceInProcess(detector->validateParams.flowp, detector->validateParams.pkt,
+            ^
+  1259.                                      detector->validateParams.dir, detector->server.pServiceElement, NULL);
+  1260. 
+
+#15
+src/dynamic-preprocessors/appid/luaDetectorApi.c:1283: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 1282 is not freed after the last access at line 1283, column 16.
+  1281.     /*called in context of a packet */
+  1282.     if (!detectorUserData || !checkServiceElement(detectorUserData->pDetector)
+  1283.            || !detectorUserData->pDetector->validateParams.pkt)
+                       ^
+  1284.     {
+  1285.         lua_pushnumber(L, SERVICE_ENULL);
+
+#16
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2012: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `pushDetectorFlowUserData()` on line 2005 is not freed after the last access at line 2012, column 5.
+  2010.     }
+  2011. 
+  2012.     detectorFlowUserData->pDetectorFlow->pFlow = detector->validateParams.flowp;
+            ^
+  2013. 
+  2014. #ifdef LUA_DETECTOR_DEBUG
+
+#17
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2116: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 2073 is not freed after the last access at line 2116, column 14.
+  2114.         case HTTP_USER_AGENT:
+  2115.              element->next = pConfig->httpPatternLists.clientAgentPatternList;
+  2116.              pConfig->httpPatternLists.clientAgentPatternList = element;
+                     ^
+  2117.              break;
+  2118.     }
+
+#18
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2163: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `ssl_add_cert_pattern()` on line 2163 is not freed after the last access at line 2163, column 10.
+  2161.     }
+  2162. 
+  2163.     if (!ssl_add_cert_pattern(pattern_str, pattern_size, type, app_id, &detectorUserData->pDetector->pAppidNewConfig->serviceSslConfig))
+                 ^
+  2164.     {
+  2165.         free(pattern_str);
+
+#19
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2209: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `dns_add_host_pattern()` on line 2209 is not freed after the last access at line 2209, column 10.
+  2207.     }
+  2208. 
+  2209.     if (!dns_add_host_pattern(pattern_str, pattern_size, type, app_id, &detectorUserData->pDetector->pAppidNewConfig->serviceDnsConfig))
+                 ^
+  2210.     {
+  2211.         free(pattern_str);
+
+#20
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2251: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `ssl_add_cname_pattern()` on line 2251 is not freed after the last access at line 2251, column 10.
+  2249.     }
+  2250. 
+  2251.     if (!ssl_add_cname_pattern(pattern_str, pattern_size, type, app_id, &detectorUserData->pDetector->pAppidNewConfig->serviceSslConfig))
+                 ^
+  2252.     {
+  2253.         free(pattern_str);
+
+#21
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2425: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 2409 is not freed after the last access at line 2425, column 5.
+  2423. 
+  2424.     element->next = pConfig->httpPatternLists.contentTypePatternList;
+  2425.     pConfig->httpPatternLists.contentTypePatternList = element;
+            ^
+  2426. 
+  2427.     appInfoSetActive(appId, true);
+
+#22
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2748: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `detector_add_chp_action()` on line 2748 is not freed after the last access at line 2748, column 12.
+  2746.     }
+  2747. 
+  2748.     return detector_add_chp_action(detectorUserData, appIdInstance, key_pattern, ptype,
+                   ^
+  2749.                     psize, pattern, action, action_data);
+  2750. }
+
+#23
+src/dynamic-preprocessors/appid/luaDetectorApi.c:2841: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `detector_add_chp_action()` on line 2841 is not freed after the last access at line 2841, column 12.
+  2839.     }
+  2840. 
+  2841.     return detector_add_chp_action(detectorUserData, appIdInstance, key_pattern, ptype,
+                   ^
+  2842.                     psize, pattern, action, action_data);
+  2843. }
+
+#24
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3164: error: Memory Leak
+  Memory dynamically allocated by `realloc` on line 3154 is not freed after the last access at line 3164, column 5.
+  3162.     }
+  3163. 
+  3164.     urlList->urlPattern[urlList->usedCount++] = pattern;
+            ^
+  3165. 
+  3166.     appInfoSetActive(pattern->userData.service_id, true);
+
+#25
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3312: error: Memory Leak
+  Memory dynamically allocated by `realloc` on line 3302 is not freed after the last access at line 3312, column 5.
+  3310.     }
+  3311. 
+  3312.     urlList->urlPattern[urlList->usedCount++] = pattern;
+            ^
+  3313. 
+  3314.     appInfoSetActive(pattern->userData.service_id, true);
+
+#26
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3357: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `sipUaPatternAdd()` on line 3357 is not freed after the last access at line 3357, column 5.
+  3355.     }
+  3356. 
+  3357.     sipUaPatternAdd(client_app, clientVersion, uaPattern, &detectorUserData->pDetector->pAppidNewConfig->detectorSipConfig);
+            ^
+  3358. 
+  3359.     appInfoSetActive(client_app, true);
+
+#27
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3387: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `appInfoEntryCreate()` on line 3387 is not freed after the last access at line 3387, column 5.
+  3385.     }
+  3386. 
+  3387.     AppInfoTableEntry *entry = appInfoEntryCreate(tmpString, detectorUserData->pDetector->pAppidNewConfig);
+            ^
+  3388. 
+  3389.     if (entry)
+
+#28
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3391: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `appInfoEntryCreate()` on line 3387 is not freed after the last access at line 3391, column 9.
+  3389.     if (entry)
+  3390.     {
+  3391.         lua_pushnumber(L, entry->appId);
+                ^
+  3392.         return 1;   /*number of results */
+  3393.     }
+
+#29
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3453: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `checkServiceElement()` on line 3452 is not freed after the last access at line 3453, column 16.
+  3451. 
+  3452.     if (!detectorUserData || !checkServiceElement(detectorUserData->pDetector)
+  3453.            || !detectorUserData->pDetector->validateParams.pkt)
+                       ^
+  3454.     {
+  3455.         lua_pushnumber(L, SERVICE_ENULL);
+
+#30
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3585: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 3554 is not freed after the last access at line 3585, column 14.
+  3583.         case HTTP_USER_AGENT:
+  3584.              element->next = pConfig->httpPatternLists.clientAgentPatternList;
+  3585.              pConfig->httpPatternLists.clientAgentPatternList = element;
+                     ^
+  3586.              break;
+  3587.     }
+
+#31
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3712: error: Memory Leak
+  Memory dynamically allocated by `realloc` on line 3702 is not freed after the last access at line 3712, column 5.
+  3710.     }
+  3711. 
+  3712.     urlList->urlPattern[urlList->usedCount++] = pattern;
+            ^
+  3713. 
+  3714.     appInfoSetActive(service_id, true);
+
+#32
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3844: error: Uninitialized Value
+  `_.luaInjectedPatterns` is read without initialization.
+  3842.         prev = NULL;
+  3843.         for (curr = &pConfig->clientPortPattern->luaInjectedPatterns;
+  3844.                 *curr;
+                        ^
+  3845.                 prev = curr, curr = &((*curr)->next))
+  3846.         {
+
+#33
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3854: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 3811 is not freed after the last access at line 3854, column 13.
+  3852.         {
+  3853.             pPattern->next = (*prev)->next;
+  3854.             (*prev)->next = pPattern;
+                    ^
+  3855.         }
+  3856.         else
+
+#34
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3949: error: Uninitialized Value
+  `_.luaInjectedPatterns` is read without initialization.
+  3947.         prev = NULL;
+  3948.         for (curr = &pConfig->servicePortPattern->luaInjectedPatterns;
+  3949.                 *curr;
+                        ^
+  3950.                 prev = curr, curr = &((*curr)->next))
+  3951.         {
+
+#35
+src/dynamic-preprocessors/appid/luaDetectorApi.c:3959: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 3916 is not freed after the last access at line 3959, column 13.
+  3957.         {
+  3958.             pPattern->next = (*prev)->next;
+  3959.             (*prev)->next = pPattern;
+                    ^
+  3960.         }
+  3961.         else
+
+#36
+src/dynamic-preprocessors/appid/luaDetectorApi.c:4009: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `sipServerPatternAdd()` on line 4009 is not freed after the last access at line 4009, column 5.
+  4007.     }
+  4008. 
+  4009.     sipServerPatternAdd(client_app, clientVersion, uaPattern, &detectorUserData->pDetector->pAppidNewConfig->detectorSipConfig);
+            ^
+  4010. 
+  4011.     appInfoSetActive(client_app, true);
+
+#37
+src/dynamic-preprocessors/appid/luaDetectorFlowApi.c:293: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `pushDetectorFlowUserData()` on line 282 is not freed after the last access at line 293, column 10.
+  291.     pDetectorFlow->pFlow = AppIdEarlySessionCreate((tAppIdData*) pDetectorFlow, detectorUserData->pDetector->validateParams.pkt,
+  292.                                             &saddr, sport, &daddr, dport, proto, 0, 0);
+  293.     if (!pDetectorFlow->pFlow)
+                ^
+  294.     {
+  295.         /*calloced buffer will be freed later after the current packet is processed. */
+
+#38
+src/dynamic-preprocessors/appid/luaDetectorModule.c:761: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `createDetector()` on line 666 is not freed after the last access at line 761, column 1.
+  759. 
+  760.     globfree(&globs);
+  761. }
+       ^
+  762. 
+  763. void FinalizeLuaModules(tAppIdConfig *pConfig)
+
+#39
+src/dynamic-preprocessors/appid/service_plugins/service_MDNS.c:487: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 466 is not freed after the last access at line 487, column 5.
+  485.     _dpd.searchAPI->search_instance_prep(pMdnsConfig->mdnsMatcher);
+  486. 
+  487.     AppIdAddGenericConfigItem(pConfig, svc_element.name, pMdnsConfig);
+           ^
+  488.     return 1;
+  489. }
+
+#40
+src/dynamic-preprocessors/appid/service_plugins/service_base.c:810: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `serviceLoadForConfigCallback()` on line 805 is not freed after the last access at line 810, column 1.
+  808. 
+  809.     return 0;
+  810. }
+       ^
+  811. 
+  812. int ReloadServiceModules(tAppIdConfig *pConfig)
+
+#41
+src/dynamic-preprocessors/sdf/sdf_detection_option.c:180: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `AddPii()` on line 211 is not freed after the last access at line 180, column 12.
+  178. 
+  179.     /* Check that this is a SDF rule, then grab the context data. */
+  180.     while (tmp != NULL && tmp->type != RULE_OPTION_TYPE_LEAF_NODE)
+                  ^
+  181.     {
+  182.         if (tmp->type == RULE_OPTION_TYPE_PREPROCESSOR)
+
+#42
+src/dynamic-preprocessors/sdf/spp_sdf.c:171: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `NewSDFConfig()` on line 170 is not freed after the last access at line 171, column 5.
+  169.     /* Handle configuration. This is done once for each policy. */
+  170.     config = NewSDFConfig(sc, sdf_context->context_id);
+  171.     ParseSDFArgs(config, args);
+           ^
+  172. 
+  173.     /* Register callbacks */
+
+#43
+src/dynamic-preprocessors/sdf/spp_sdf.c:897: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `NewSDFConfig()` on line 896 is not freed after the last access at line 897, column 5.
+  895. 
+  896.     config = NewSDFConfig(sc, sdf_swap_context->context_id);
+  897.     ParseSDFArgs(config, args);
+           ^
+  898. 
+  899.     _dpd.addDetect(sc, ProcessSDF, PRIORITY_FIRST, PP_SDF,
+
+#44
+src/file-process/libs/file_config.c:553: error: Use After Free
+  accessing memory that was invalidated by call to `free()` on line 551.
+  551.     if ( (*list = realloc(_temp, sizeof(**list)*(*list_size))) == NULL )
+  552.     {
+  553.         free(_temp);
+               ^
+  554.         FatalError("Failed realloc!");
+  555.     }
+
+#45
+src/file-process/libs/file_config.c:712: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 686 is not freed after the last access at line 712, column 1.
+  710.             "%d\n", file_identifiers_usage()););
+  711.     mSplitFree(&toks, num_toks);
+  712. }
+       ^
+  713. 
+  714. RuleInfo *file_rule_get(FileConfig* file_config, uint32_t id)
+
+#46
+src/fpcreate.c:1540: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `SnortAlloc()` on line 1533 is not freed after the last access at line 1540, column 9.
+  1538.             PrintFastPatternInfo(otn, pmd, pattern, pattern_length, pm_type);
+  1539. 
+  1540.         mpseAddPatternWithSnortConfig(
+                ^
+  1541.                 sc,
+  1542.                 pg->pgPms[pm_type],
+
+#47
+src/fpcreate.c:1721: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `GetDynamicFastPatternPmd()` on line 1708 is not freed after the last access at line 1721, column 21.
+  1719.                 (void)AppendPmdToList(&dd->pmds, pmd_uri);
+  1720.                 if (pmd_uri->pattern_size > otn->longestPatternLen)
+  1721.                     otn->longestPatternLen = pmd_uri->pattern_size;
+                            ^
+  1722.                 return 0;
+  1723.             }
+
+#48
+src/output-plugins/spo_alert_fast.c:362: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 291 is not freed after the last access at line 362, column 1.
+  360. 
+  361.     return data;
+  362. }
+       ^
+  363. 
+  364. static void AlertFastCleanup(int signal, void *arg, const char* msg)
+
+#49
+src/output-plugins/spo_alert_full.c:305: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 246 is not freed after the last access at line 305, column 1.
+  303. 
+  304.     return data;
+  305. }
+       ^
+  306. 
+  307. static void AlertFullCleanup(int signal, void *arg, const char* msg)
+
+#50
+src/output-plugins/spo_log_tcpdump.c:247: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 199 is not freed after the last access at line 247, column 1.
+  245.     ););
+  246.     return data;
+  247. }
+       ^
+  248. 
+  249. /*
+
+#51
+src/output-plugins/spo_unified2.c:1363: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 1285 is not freed after the last access at line 1363, column 1.
+  1361. 
+  1362.     return config;
+  1363. }
+        ^
+  1364. 
+  1365. /*
+
+#52
+src/parser.c:3544: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 3504 is not freed after the last access at line 3544, column 1.
+  3542. 
+  3543.     return 0;
+  3544. }
+        ^
+  3545. 
+  3546. /****************************************************************************
+
+#53
+src/parser.c:5331: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 5203 is not freed after the last access at line 5331, column 1.
+  5329. 
+  5330.     sc->num_rule_types++;
+  5331. }
+        ^
+  5332. 
+  5333. /* adapted from ParseRuleFile in rules.c
+
+#54
+src/parser.c:6966: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectCharPortArray()` on line 6955 is not freed after the last access at line 6966, column 1.
+  6964. 
+  6965.     }
+  6966. }
+        ^
+  6967. 
+  6968. void ConfigEnableEspDecoding(SnortConfig *sc, char *args)
+
+#55
+src/parser.c:7604: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 7509 is not freed after the last access at line 7604, column 1.
+  7602. 
+  7603.     mSplitFree(&opt_toks, num_opts);
+  7604. }
+        ^
+  7605. 
+  7606. void ConfigLayer2Resets(SnortConfig *sc, char *args)
+
+#56
+src/parser.c:10531: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 10333 is not freed after the last access at line 10531, column 1.
+  10529.     mSplitFree(&key_value_toks, num_key_value_toks);
+  10530.     mSplitFree(&metadata_toks, num_metadata_toks);
+  10531. }
+         ^
+  10532. 
+  10533. static void ParseOtnPriority(SnortConfig *sc, RuleTreeNode *rtn,
+
+#57
+src/plugbase.c:1024: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `AddFuncToPreprocList()` on line 1020 is not freed after the last access at line 1024, column 2.
+  1022. 
+  1023.     setParserPolicy( sc, save_policy_id );
+  1024.  }
+         ^
+  1025. 
+  1026. 
+
+#58
+src/preprocessors/HttpInspect/utils/h2_common.c:394: error: Uninitialized Value
+  is read without initialization.
+  392.     if (NULL != temp)
+  393.     {
+  394.         temp->hd.stream_id = hd.stream_id;
+               ^
+  395.         temp->hd.length = hd.length;
+  396.         temp->hd.type = hd.type;
+
+#59
+src/preprocessors/Stream6/snort_stream_icmp.c:165: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 119 is not freed after the last access at line 165, column 1.
+  163.         mSplitFree(&toks, num_toks);
+  164.     }
+  165. }
+       ^
+  166. 
+  167. static void StreamPrintIcmpConfig(StreamIcmpPolicy *s5IcmpPolicy)
+
+#60
+src/preprocessors/Stream6/snort_stream_ip.c:129: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 88 is not freed after the last access at line 129, column 1.
+  127. 
+  128.     mSplitFree(&toks, num_toks);
+  129. }
+       ^
+  130. 
+  131. void IpSessionCleanup (void* ssn)
+
+#61
+src/preprocessors/Stream6/snort_stream_tcp.c:1429: error: Uninitialized Value
+  is read without initialization.
+  1427. 
+  1428.     /* Initialize flush policy to Ignore */
+  1429.     memcpy(&tcp_policy->flush_config, ignore_flush_policy,
+            ^
+  1430.             sizeof(FlushConfig) * MAX_PORTS);
+  1431. #ifdef TARGET_BASED
+
+#62
+src/preprocessors/Stream6/snort_stream_tcp.c:2362: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 1639 is not freed after the last access at line 2362, column 1.
+  2360.     }
+  2361. #endif
+  2362. }
+        ^
+  2363. 
+  2364. static void StreamPrintTcpConfig(StreamTcpPolicy *s5TcpPolicy)
+
+#63
+src/preprocessors/Stream6/snort_stream_udp.c:311: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 233 is not freed after the last access at line 311, column 1.
+  309.         }
+  310.     }
+  311. }
+       ^
+  312. 
+  313. static void StreamPrintUdpConfig(StreamUdpPolicy *s5UdpPolicy)
+
+#64
+src/preprocessors/snort_httpinspect.c:2119: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 2110 is not freed after the last access at line 2119, column 13.
+  2117.             strcpy(HTTPMethods->cmd_name, cmd);
+  2118. 
+  2119.             http_cmd_lookup_add(ServerConf->cmd_lookup, cmd, strlen(cmd), HTTPMethods);
+                    ^
+  2120.         }
+  2121.     }
+
+#65
+src/preprocessors/spp_frag3.c:1573: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 1458 is not freed after the last access at line 1573, column 1.
+  1571. 
+  1572.     mSplitFree(&toks, num_toks);
+  1573. }
+        ^
+  1574. 
+  1575. /**
+
+#66
+src/preprocessors/spp_session.c:934: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `mSplit()` on line 494 is not freed after the last access at line 934, column 1.
+  932. 
+  933.     mSplitFree(&toks, num_toks);
+  934. }
+       ^
+  935. 
+  936. static void printSessionConfiguration(SessionConfiguration *config)
+
+#67
+src/sfutil/bnfa_search.c:743: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `_bnfa_list_put_next_state()` on line 714 is not freed after the last access at line 743, column 1.
+  741. 
+  742.   return 0;
+  743. }
+       ^
+  744. 
+  745. #ifdef XXXXX
+
+#68
+src/sfutil/bnfa_search.c:743: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `_bnfa_list_put_next_state()` on line 719 is not freed after the last access at line 743, column 1.
+  741. 
+  742.   return 0;
+  743. }
+       ^
+  744. 
+  745. #ifdef XXXXX
+
+#69
+src/sfutil/ipobj.c:82: error: Uninitialized Value
+  is read without initialization.
+  80. {
+  81.     IPSET * p = (IPSET *)SnortAlloc( sizeof(IPSET));
+  82.     sflist_init(&p->ip_list);
+          ^
+  83. 
+  84.     return p;
+
+#70
+src/sfutil/ipobj.c:130: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 123 is not freed after the last access at line 130, column 22.
+  128.         p->notflag = (char)notflag;
+  129. 
+  130.         if( notflag )sflist_add_head( &ipset->ip_list, p ); // test NOT items 1st
+                            ^
+  131.         else         sflist_add_tail( &ipset->ip_list, p );
+  132.     }
+
+#71
+src/sfutil/ipobj.c:131: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 123 is not freed after the last access at line 131, column 22.
+  129. 
+  130.         if( notflag )sflist_add_head( &ipset->ip_list, p ); // test NOT items 1st
+  131.         else         sflist_add_tail( &ipset->ip_list, p );
+                            ^
+  132.     }
+  133. 
+
+#72
+src/sfutil/ipobj.c:230: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 224 is not freed after the last access at line 230, column 5.
+  228.     p->port_hi = port_hi;
+  229. 
+  230.     sflist_add_tail(&portset->port_list, p );
+           ^
+  231. 
+  232.     return 0;
+
+#73
+src/sfutil/sfActionQueue.c:42: error: Uninitialized Value
+  is read without initialization.
+  40.     if (queue)
+  41.     {
+  42.         if (mempool_init(&queue->mempool,
+                  ^
+  43.                 queueLength, sizeof(tSfActionNode)) != 0)
+  44.         {
+
+#74
+src/sfutil/sfPolicy.c:434: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 417 is not freed after the last access at line 434, column 9.
+  432. 
+  433.     //DEBUG_WRAP(DebugMessage(DEBUG_CONFIGRULES,"Added  vlandId  %d, file %s, policyId: %d\n", vlanId, fileName, policyId););
+  434.     if (iRet)
+               ^
+  435.     {
+  436.         free(policyId);
+
+#75
+src/sfutil/sfportobject.c:810: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectItemNew()` on line 798 is not freed after the last access at line 810, column 12.
+  808.    poi->hport = (unsigned short)port;
+  809. 
+  810.    return  sflist_add_tail( po->item_list, poi );
+                  ^
+  811. }
+  812. 
+
+#76
+src/sfutil/sfportobject.c:832: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectItemNew()` on line 820 is not freed after the last access at line 832, column 12.
+  830.    poi->hport = (unsigned short)hport;
+  831. 
+  832.    return  sflist_add_tail( po->item_list, poi );
+                  ^
+  833. }
+  834. /*
+
+#77
+src/sfutil/sfportobject.c:861: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectItemNew()` on line 844 is not freed after the last access at line 861, column 12.
+  859.        return -1;
+  860.    }
+  861.    return  sflist_add_tail( po->item_list, poi );
+                  ^
+  862. }
+  863. 
+
+#78
+src/sfutil/sfportobject.c:1343: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectCharPortArray()` on line 1343 is not freed after the last access at line 1343, column 6.
+  1341. 
+  1342.      /* Create a char array of ports */
+  1343.      PortObjectCharPortArray ( parray, po, &nports );
+             ^
+  1344. 
+  1345.      /* Convert the array into a Port Object list */
+
+#79
+src/sfutil/sfportobject.c:1497: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 1493 is not freed after the last access at line 1497, column 8.
+  1495.            return 0;
+  1496.        *prid2 = *prid;
+  1497.        sflist_add_tail(poa->rule_list,prid2);
+               ^
+  1498.    }
+  1499.    return poa;
+
+#80
+src/sfutil/sfportobject.c:1745: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 1737 is not freed after the last access at line 1745, column 5.
+  1743.     *pruleid = rule;
+  1744. 
+  1745.     sflist_add_tail( po->rule_list, pruleid );
+            ^
+  1746. 
+  1747.     return 0;
+
+#81
+src/sfutil/sfportobject.c:3865: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectAddPortAny()` on line 3862 is not freed after the last access at line 3865, column 5.
+  3863. 
+  3864.     /* Add ANY to the table */
+  3865.     PortVarTableAdd( h, po );
+            ^
+  3866. 
+  3867.     return h;
+
+#82
+src/sfutil/sfportobject.c:3865: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `PortObjectNew()` on line 3854 is not freed after the last access at line 3865, column 5.
+  3863. 
+  3864.     /* Add ANY to the table */
+  3865.     PortVarTableAdd( h, po );
+            ^
+  3866. 
+  3867.     return h;
+
+#83
+src/sfutil/sfrf.c:362: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 331 is not freed after the last access at line 362, column 5.
+  360.     fflush(stdout);
+  361. #endif
+  362.     sflist_add_tail(pSidNode->configNodeList,pNewConfigNode);
+           ^
+  363. 
+  364.     return 0;
+
+#84
+src/sfutil/sfthd.c:486: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 429 is not freed after the last access at line 486, column 14.
+  484.         /* Walk the list and insert based on priorities if suppress */
+  485.         for( lnode = sflist_first_node(sfthd_item->sfthd_node_list);
+  486.              lnode;
+                    ^
+  487.              lnode = sflist_next_node(sfthd_item->sfthd_node_list) )
+  488.         {
+
+#85
+tools/u2streamer/u2streamer.c:83: error: Uninitialized Value
+  `iterator.status` is read without initialization during the call to `SpoolFileIterator_GetNext()`.
+  81.     {
+  82.         /* Get another record for this iterator */
+  83.         rval = SpoolFileIterator_GetNext(iterator, &record, &file, &position);
+                     ^
+  84.         if(rval != SF_SUCCESS && rval != SF_EAGAIN && rval != SF_ENOENT)
+  85.         {
+
+Found 86 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+                      Memory Leak(MEMORY_LEAK_C): 75
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 9
+                  Use After Free(USE_AFTER_FREE): 1
+           Null Dereference(NULLPTR_DEREFERENCE): 1

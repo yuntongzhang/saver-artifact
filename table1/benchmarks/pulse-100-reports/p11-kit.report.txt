@@ -1,0 +1,144 @@
+#0
+common/array.c:79: error: Uninitialized Value
+  `array.allocated` is read without initialization during the call to `maybe_expand_array()`.
+  77. 		return NULL;
+  78. 
+  79. 	if (!maybe_expand_array (array, 2)) {
+            ^
+  80. 		p11_array_free (array);
+  81. 		return NULL;
+
+#1
+common/attrs.c:155: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 152 is not freed after the last access at line 155, column 4.
+  153. 			else
+  154. 				attr->pValue = memdup (attr->pValue, attr->ulValueLen);
+  155. 			return_val_if_fail (attr->pValue != NULL, NULL);
+          ^
+  156. 		}
+  157. 	}
+
+#2
+p11-kit/filter.c:395: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 376 is not freed after the last access at line 395, column 2.
+  393. 	filter->lower = &lower->funcs;
+  394. 	filter->entries = p11_array_new ((p11_destroyer)free);
+  395. 	return &filter->virt;
+        ^
+  396. }
+  397. 
+
+#3
+p11-kit/iter.c:161: error: Uninitialized Value
+  `iter.module` is read without initialization during the call to `p11_kit_iter_free()`.
+  159. 	iter->modules = p11_array_new (NULL);
+  160. 	if (iter->modules == NULL) {
+  161. 		p11_kit_iter_free (iter);
+         ^
+  162. 		return_val_if_reached (NULL);
+  163. 	}
+
+#4
+p11-kit/log.c:2021: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 2016 is not freed after the last access at line 2021, column 2.
+  2019. 	p11_virtual_init (&log->virt, &log_functions, lower, destroyer);
+  2020. 	log->lower = &lower->funcs;
+  2021. 	return &log->virt;
+         ^
+  2022. }
+
+#5
+p11-kit/modules.c:1820: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 1807 is not freed after the last access at line 1820, column 2.
+  1818. 	mod->ref_count++;
+  1819. 
+  1820. 	return &managed->virt;
+         ^
+  1821. }
+  1822. 
+
+#6
+p11-kit/proxy.c:519: error: Memory Leak
+  Memory dynamically allocated by `realloc`, indirectly via call to `proxy_list_slots()` on line 477 is not freed after the last access at line 519, column 1.
+  517. 
+  518. 	return rv;
+  519. }
+       ^
+  520. 
+  521. static CK_RV
+
+#7
+p11-kit/rpc-transport.c:1143: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 1130 is not freed after the last access at line 1143, column 2.
+  1141. 
+  1142. 	p11_debug ("initialized rpc socket: %s", remote);
+  1143. 	return &run->base;
+         ^
+  1144. }
+  1145. 
+
+#8
+p11-kit/uri.c:861: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 854 is not freed after the last access at line 861, column 1.
+  859. 
+  860. 	return p11_array_insert (attrs, i, attr);
+  861. }
+       ^
+  862. 
+  863. /**
+
+#9
+p11-kit/uri.c:1282: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `p11_url_decode()` on line 1278 is not freed after the last access at line 1282, column 2.
+  1280. 		return P11_KIT_URI_BAD_ENCODING;
+  1281. 
+  1282. 	uri->attrs = p11_attrs_take (uri->attrs, type, value, length);
+         ^
+  1283. 	return 1;
+  1284. }
+
+#10
+p11-kit/virtual.c:2536: error: Null Dereference
+  null (last assigned on line 2536) is dereferenced.
+  2534. 
+  2535. static const FunctionInfo function_info[] = {
+  2536.         { FUNCTION (Initialize) },
+                ^
+  2537.         { FUNCTION (Finalize) },
+  2538.         { FUNCTION (GetInfo) },
+
+#11
+trust/module.c:688: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `p11_session_new()` on line 683 is not freed after the last access at line 688, column 5.
+  686. 				if (flags & CKF_RW_SESSION)
+  687. 					session->read_write = true;
+  688. 				*handle = session->handle;
+           ^
+  689. 				p11_debug ("session: %lu", *handle);
+  690. 			} else {
+
+#12
+trust/persist.c:555: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `parse_value()` on line 550 is not freed after the last access at line 555, column 2.
+  553. 	}
+  554. 
+  555. 	*attrs = p11_attrs_take (*attrs, attr.type,
+        ^
+  556. 	                         attr.pValue, attr.ulValueLen);
+  557. 	return true;
+
+#13
+trust/token.c:511: error: Uninitialized Value
+  `file.extension` is read without initialization during the call to `p11_save_open_file()`.
+  509. 	return_val_if_fail (path != NULL, NULL);
+  510. 
+  511. 	file = p11_save_open_file (path, NULL, P11_SAVE_OVERWRITE);
+               ^
+  512. 	free (path);
+  513. 
+
+Found 14 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+                      Memory Leak(MEMORY_LEAK_C): 10
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 3
+           Null Dereference(NULLPTR_DEREFERENCE): 1

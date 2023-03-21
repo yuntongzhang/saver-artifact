@@ -1,0 +1,175 @@
+#0
+src/core/array.c:44: error: Uninitialized Value
+  `array` is read without initialization during the call to `swArray_extend()`.
+  42.     array->page_size = page_size;
+  43. 
+  44.     swArray_extend(array);
+          ^
+  45. 
+  46.     return array;
+
+#1
+src/factory/FactoryThread.c:58: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 51 is not freed after the last access at line 58, column 9.
+  56.     }
+  57. 
+  58.     if (swThreadPool_create(&object->workers, worker_num) < 0)
+              ^
+  59.     {
+  60.         return SW_ERR;
+
+#2
+src/factory/FactoryThread.c:58: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `swThreadPool_create()` on line 58 is not freed after the last access at line 58, column 9.
+  56.     }
+  57. 
+  58.     if (swThreadPool_create(&object->workers, worker_num) < 0)
+              ^
+  59.     {
+  60.         return SW_ERR;
+
+#3
+src/factory/FactoryThread.c:89: error: Memory Leak
+  Memory dynamically allocated by `calloc`, indirectly via call to `swThreadPool_create()` on line 58 is not freed after the last access at line 89, column 1.
+  87. 
+  88.     return SW_OK;
+  89. }
+      ^
+  90. 
+  91. static int swFactoryThread_start(swFactory *factory)
+
+#4
+src/memory/Table.c:70: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 63 is not freed after the last access at line 70, column 10.
+  68.     }
+  69.     table->columns = swHashMap_new(SW_HASHMAP_INIT_BUCKET_N, (swHashMap_dtor)swTableColumn_free);
+  70.     if (!table->columns)
+               ^
+  71.     {
+  72.         return NULL;
+
+#5
+src/memory/Table.c:86: error: Null Dereference
+  `col` could be null (last assigned on line 85) and is dereferenced.
+  84. {
+  85.     swTableColumn *col = sw_malloc(sizeof(swTableColumn));
+  86.     col->name = swString_dup(name, len);
+          ^
+  87.     if (!col->name)
+  88.     {
+
+#6
+src/memory/Table.c:131: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 85 is not freed after the last access at line 131, column 12.
+  129.     table->item_size += col->size;
+  130.     table->column_num ++;
+  131.     return swHashMap_add(table->columns, name, len, col);
+                  ^
+  132. }
+  133. 
+
+#7
+src/network/ProcessPool.c:385: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 378 is not freed after the last access at line 385, column 12.
+  383.     }
+  384. 
+  385.     while (SwooleG.running)
+                  ^
+  386.     {
+  387.         pid = wait(&status);
+
+#8
+src/pipe/PipeBase.c:39: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 32 is not freed after the last access at line 39, column 9.
+  37.     p->blocking = blocking;
+  38.     ret = pipe(object->pipes);
+  39.     if (ret < 0)
+              ^
+  40.     {
+  41.         swWarn("pipe create fail. Error: %s[%d]", strerror(errno), errno);
+
+#9
+src/pipe/PipeEventfd.c:66: error: Memory Leak
+  Memory dynamically allocated by `malloc` on line 36 is not freed after the last access at line 66, column 9.
+  64.     p->blocking = blocking;
+  65.     efd = eventfd(0, flag);
+  66.     if (efd < 0)
+              ^
+  67.     {
+  68.         swWarn("eventfd create failed. Error: %s[%d]", strerror(errno), errno);
+
+#10
+src/protocol/WebSocket.c:219: error: Uninitialized Value
+  `frame.header.LENGTH` is read without initialization during the call to `swWebSocket_decode()`.
+  217. 
+  218.     swWebSocket_frame ws;
+  219.     swWebSocket_decode(&ws, &frame);
+           ^
+  220. 
+  221.     swString *frame_buffer;
+
+#11
+src/reactor/ReactorPoll.c:57: error: Memory Leak
+  Memory dynamically allocated by `calloc` on line 50 is not freed after the last access at line 57, column 9.
+  55.     }
+  56.     object->events = sw_calloc(max_fd_num, sizeof(struct pollfd));
+  57.     if (object->events == NULL)
+              ^
+  58.     {
+  59.         swWarn("malloc[2] failed");
+
+#12
+src/reactor/ReactorSelect.c:76: error: Null Dereference
+  `ev` could be null (last assigned on line 79) and is dereferenced.
+  74.     swFdList_node *ev;
+  75.     swReactorSelect *object = reactor->object;
+  76.     LL_FOREACH(object->fds, ev)
+          ^
+  77.     {
+  78.         LL_DELETE(object->fds, ev);
+
+#13
+swoole_buffer.c:131: error: Memory Leak
+  Memory dynamically allocated by `malloc`, indirectly via call to `swString_new()` on line 124 is not freed after the last access at line 131, column 5.
+  129.     }
+  130. 
+  131.     swoole_set_object(getThis(), buffer);
+           ^
+  132.     zend_update_property_long(swoole_buffer_class_entry_ptr, getThis(), ZEND_STRL("capacity"), size TSRMLS_CC);
+  133.     zend_update_property_long(swoole_buffer_class_entry_ptr, getThis(), ZEND_STRL("length"), 0 TSRMLS_CC);
+
+#14
+swoole_websocket_server.c:308: error: Uninitialized Value
+  `frame.header.LENGTH` is read without initialization during the call to `swWebSocket_decode()`.
+  306. {
+  307.     swWebSocket_frame frame;
+  308.     swWebSocket_decode(&frame, data);
+           ^
+  309. 
+  310.     zval *zframe;
+
+#15
+thirdparty/multipart_parser.c:72: error: Null Dereference
+  `p` could be null (last assigned on line 69) and is dereferenced.
+  70.                                boundary_length +
+  71.                                boundary_length + 9 + 4, sizeof(char));
+  72.   strncpy(p->multipart_boundary, "--", 2);
+        ^
+  73.   strncpy(p->multipart_boundary + 2, boundary, boundary_length);
+  74. //printf("boundary:%s\r\n\r\n", p->multipart_boundary);
+
+#16
+thirdparty/multipart_parser.c:72: error: Uninitialized Value
+  is read without initialization.
+  70.                                boundary_length +
+  71.                                boundary_length + 9 + 4, sizeof(char));
+  72.   strncpy(p->multipart_boundary, "--", 2);
+        ^
+  73.   strncpy(p->multipart_boundary + 2, boundary, boundary_length);
+  74. //printf("boundary:%s\r\n\r\n", p->multipart_boundary);
+
+Found 17 issues
+                      Issue Type(ISSUED_TYPE_ID): #
+                      Memory Leak(MEMORY_LEAK_C): 10
+  Uninitialized Value(PULSE_UNINITIALIZED_VALUE): 4
+           Null Dereference(NULLPTR_DEREFERENCE): 3
