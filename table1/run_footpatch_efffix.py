@@ -63,7 +63,7 @@ def clean_project(dir):
 def setup_all(progs):
     for prog in progs:
         print("Setting up %s" % prog.name)
-        setup_cmd = "bash ./subject_setup.sh"
+        setup_cmd = "bash ./subject_setup.sh %s" % prog.subject_dir
         time_used, rc = run_process(setup_cmd, prog.subject_dir)
         logstr = "Download source code: %-15s: %4s sec.\n" % (
             prog.name,
