@@ -94,7 +94,6 @@ def setup_all(progs):
 
 
 def repair_all(progs):
-    results_dir = pjoin(script_dir, "results")
     os.makedirs(results_dir, exist_ok=True)
     for prog in progs:
         prog_result_dir = pjoin(results_dir, prog.name)
@@ -106,6 +105,7 @@ if __name__ == "__main__":
     global logfile
 
     script_dir = os.path.dirname(os.path.realpath(__file__))
+    results_dir = pjoin(script_dir, "results")
 
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
@@ -150,5 +150,7 @@ if __name__ == "__main__":
         logfile = open("setup.results", "w")
         setup_all(progs)
     else:
-        logfile = open("footpatch.repair.results", "w")
+        logpath = "footpatch.repair.results"
+        logfile = open(logpath, "w")
         repair_all(progs)
+        shutil.move(logpath, results_dir)
