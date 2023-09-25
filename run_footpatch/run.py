@@ -27,7 +27,11 @@ def run_process(cmd, dir, timeout=10000):
     curr_path = os.getcwd()
     start_time = time.time()
     os.chdir(dir)
-    cp = subprocess.run(cmd, shell=True, timeout=timeout)
+    try:
+        cp = subprocess.run(cmd, shell=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        logger.info("Timeout on command: %s" % cmd)
+
     # ret = EasyProcess(cmd, cwd=dir).call(timeout)
     elapsed = time.time() - start_time
     time_used = elapsed
@@ -47,17 +51,21 @@ def clean_project(dir):
     shutil.rmtree("%s/infer-out" % dir, ignore_errors=True)
 
 
-# def footpatch(pgm):
-#     cmd = "./run-footpatch-global.sh"
-#     pgm_dir = "%s/%s" % (BENCH_DIR, pgm)
-
-#     clean_project(pgm_dir)
-#     ret = run_process(cmd, dir=pgm_dir)
-
-#     logstr = "%-15s: %4s sec.\n" % (pgm, str(ret.time)[0:4])
-#     log_result(logstr)
-
-#     shutil.move('%s/infer-out/footpatch' % pgm_dir, '%s/results/footpatch/%s' % (ROOT_DIR, pgm))
+def footpatch(prog, result_dir):
+    footpatch_script = pjoin(script_dir, "run-footpatch-global.sh")
+    src_dir = pjoin(prog.subject_dir, "src")
+    # 1 clean
+    clean_project(src_dir)
+    # 2 copy over record and play to src dir
+    shutil.copy(pjoin(script_dir, "RECORD"), src_dir)
+    shutil.copy(pjoin(script_dir, "PLAY"), src_dir)
+    # 3 run footpatch
+    cmd = "bash %s %s" % (footpatch_script, prog.build_cmd)
+    time_used, rc = run_process(cmd, src_dir, timeout=3600)
+    logstr = "Footpatch: %-15s: %4s sec.\n" % (prog.name, time_used)
+    log_result(logstr)
+    # 4 move results
+    shutil.move("%s/infer-out/footpatch" % src_dir, result_dir)
 
 
 def setup_all(progs):
@@ -84,12 +92,18 @@ def setup_all(progs):
 
 
 def repair_all(progs):
+    results_dir = pjoin(script_dir, "results")
+    os.makedirs(results_dir, exist_ok=True)
     for prog in progs:
-        pass
+        prog_result_dir = pjoin(results_dir, prog.name)
+        os.makedirs(prog_result_dir, exist_ok=True)
+        footpatch(prog, prog_result_dir)
 
 
 if __name__ == "__main__":
     global logfile
+
+    script_dir = os.path.dirname(os.path.realpath(__file__))
 
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
@@ -120,6 +134,9 @@ if __name__ == "__main__":
         config_cmd = meta_entry["config_command"]
         build_cmd = meta_entry["build_command"]
         subject_dir = pjoin(bench, subject)
+
+        if "linux" in subject:
+            continue
 
         existing_names = [p.name for p in progs]
         if subject in existing_names:
