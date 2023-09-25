@@ -63,6 +63,10 @@ def clean_project(dir):
 def setup_all(progs):
     for prog in progs:
         print("Setting up %s" % prog.name)
+        src_dir = pjoin(prog.subject_dir, "src")
+        if os.path.isdir(src_dir):
+            shutil.rmtree(src_dir)
+
         setup_cmd = "bash ./subject_setup.sh %s" % prog.subject_dir
         time_used, rc = run_process(setup_cmd, prog.subject_dir)
         logstr = "Download source code: %-15s: %4s sec.\n" % (
@@ -71,7 +75,6 @@ def setup_all(progs):
         )
         log_result(logstr)
 
-        src_dir = pjoin(prog.subject_dir, "src")
         time_used, rc = run_process(prog.config_cmd, src_dir)
         logstr = "Configure project: %-15s: %4s sec.\n" % (
             prog.name,
