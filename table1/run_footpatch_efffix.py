@@ -6,7 +6,7 @@ import shutil
 import time
 from os.path import join as pjoin
 
-from easyprocess import EasyProcess
+import subprocess
 
 
 class Program(object):
@@ -24,18 +24,22 @@ def log_result(log):
 
 
 def run_process(cmd, dir, timeout=10000):
+    curr_path = os.getcwd()
     start_time = time.time()
-    ret = EasyProcess(cmd, cwd=dir).call(timeout)
+    os.chdir(dir)
+    cp = subprocess.run(cmd, shell=True, timeout=timeout)
+    # ret = EasyProcess(cmd, cwd=dir).call(timeout)
     elapsed = time.time() - start_time
-
-    ret.time = elapsed
-    if ret.return_code is not 0:
+    time_used = elapsed
+    rc = cp.returncode
+    if rc != 0:
         logger.info("Running the cmd was not successful: %s" % cmd)
     else:
         done_msg = "%s ... Done!: %f sec. elapsed" % (cmd, elapsed)
         logger.info(done_msg)
 
-    return ret
+    os.chdir(curr_path)
+    return time_used, rc
 
 
 def clean_project(dir):
@@ -60,18 +64,18 @@ def setup_all(progs):
     for prog in progs:
         print("Setting up %s" % prog.name)
         setup_script = "./subject_setup.sh"
-        ret = run_process(setup_script, prog.subject_dir)
+        time_used, rc = run_process(setup_script, prog.subject_dir)
         logstr = "Download source code: %-15s: %4s sec.\n" % (
             prog.name,
-            str(ret.time)[0:4],
+            time_used,
         )
         log_result(logstr)
 
         src_dir = pjoin(prog.subject_dir, "src")
-        ret = run_process(prog.config_cmd, src_dir)
+        time_used, rc = run_process(prog.config_cmd, src_dir)
         logstr = "Configure project: %-15s: %4s sec.\n" % (
             prog.name,
-            str(ret.time)[0:4],
+            time_used,
         )
         log_result(logstr)
 
@@ -95,9 +99,7 @@ if __name__ == "__main__":
     logger.addHandler(file_handler)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--setup", required=True, action="store_true", help="Do set up or run."
-    )
+    parser.add_argument("--setup", action="store_true", help="Do set up or run.")
     parser.add_argument("--bench", required=True, help="Path to the benchmark dir.")
     args = parser.parse_args()
 
