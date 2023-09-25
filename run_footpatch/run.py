@@ -60,12 +60,14 @@ def footpatch(prog, result_dir):
     shutil.copy(pjoin(script_dir, "RECORD"), src_dir)
     shutil.copy(pjoin(script_dir, "PLAY"), src_dir)
     # 3 run footpatch
-    cmd = "bash %s %s" % (footpatch_script, prog.build_cmd)
+    overall_log = pjoin(src_dir, "footpatch.log")
+    cmd = "bash %s %s > %s" % (footpatch_script, prog.build_cmd, overall_log)
     time_used, rc = run_process(cmd, src_dir, timeout=3600)
     logstr = "Footpatch: %-15s: %4s sec.\n" % (prog.name, time_used)
     log_result(logstr)
     # 4 move results
     shutil.move("%s/infer-out/footpatch" % src_dir, result_dir)
+    shutil.move(overall_log, result_dir)
 
 
 def setup_all(progs):
