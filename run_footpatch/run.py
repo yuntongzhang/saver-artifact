@@ -30,7 +30,8 @@ def run_process(cmd, dir, timeout=10000):
     try:
         cp = subprocess.run(cmd, shell=True, timeout=timeout)
     except subprocess.TimeoutExpired:
-        logger.info("Timeout on command: %s" % cmd)
+        logger.info("Timeout on command: %s, in dir" % (cmd, dir))
+        return timeout, -1
 
     # ret = EasyProcess(cmd, cwd=dir).call(timeout)
     elapsed = time.time() - start_time
@@ -106,6 +107,10 @@ if __name__ == "__main__":
 
     script_dir = os.path.dirname(os.path.realpath(__file__))
     results_dir = pjoin(script_dir, "results")
+    if os.path.isdir(results_dir):
+        shutil.rmtree(results_dir)
+    if os.path.isfile("log"):
+        os.remove("log")
 
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
