@@ -30,7 +30,7 @@ def run_process(cmd, dir, timeout=10000):
     try:
         cp = subprocess.run(cmd, shell=True, timeout=timeout)
     except subprocess.TimeoutExpired:
-        logger.info("Timeout on command: %s, in dir" % (cmd, dir))
+        logger.info("Timeout on command: %s, in dir %s" % (cmd, dir))
         return timeout, -1
 
     # ret = EasyProcess(cmd, cwd=dir).call(timeout)
