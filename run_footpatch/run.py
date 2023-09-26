@@ -97,6 +97,7 @@ def setup_all(progs):
 def repair_all(progs):
     os.makedirs(results_dir, exist_ok=True)
     for prog in progs:
+        print("\033[34mRunning repair for %s\033[0m" % prog.name)
         prog_result_dir = pjoin(results_dir, prog.name)
         os.makedirs(prog_result_dir, exist_ok=True)
         footpatch(prog, prog_result_dir)
