@@ -295,8 +295,8 @@ if __name__ == "__main__":
     # collect progs and bugs
     for meta_entry in meta:
         subject = meta_entry["subject"]
-        # if "linux" in subject:
-        #     continue
+        if "linux" not in subject:
+            continue
         # if "snort" in subject:
         #     # we already have results for this
         #     continue
@@ -305,8 +305,8 @@ if __name__ == "__main__":
         #     continue
 
         # temp
-        if "openssl-1" not in subject and "openssl-3" not in subject:
-            continue
+        # if "openssl-1" not in subject and "openssl-3" not in subject:
+        #     continue
         config_cmd = meta_entry["config_command"]
         build_cmd = meta_entry["build_command"]
         error_type = meta_entry["bug_type"]
