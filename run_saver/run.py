@@ -179,6 +179,7 @@ def saver_patch(bug: Bug):
         str(time_patch),
     )
     log_result(logstr)
+    err_content = err_content.decode("utf-8")
     patch_log.writelines(str(err_content))
     patch_log.close()
 
