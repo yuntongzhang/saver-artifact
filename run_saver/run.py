@@ -264,6 +264,9 @@ if __name__ == "__main__":
         subject = meta_entry["subject"]
         if "linux" in subject:
             continue
+        if "snort" in subject:
+            # we already have results for this
+            continue
         config_cmd = meta_entry["config_command"]
         build_cmd = meta_entry["build_command"]
         error_type = meta_entry["bug_type"]
@@ -273,7 +276,10 @@ if __name__ == "__main__":
         source_line = int(meta_entry["source"]["line"])
         sink_file = meta_entry["sink"]["src-file"]
         sink_proc = meta_entry["sink"]["procedure"]
-        sink_line = int(meta_entry["sink"]["line"])
+        if "footpatch-line" in meta_entry["sink"]:
+            sink_line = int(meta_entry["sink"]["footpatch-line"])
+        else:
+            sink_line = int(meta_entry["sink"]["line"])
 
         # add prog
         subject_dir = pjoin(bench, subject)
