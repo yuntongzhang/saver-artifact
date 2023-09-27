@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/asn1.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/asn1.c	2023-07-21 19:03:40.000000000 +0900
+@@ -354,6 +354,7 @@
+ 	}
+ 
+ 	if (!p11_dict_set (cache->items, (void *)der, item)) {
++	free (item);
+ 		return_if_reached ();
+   }
+ }

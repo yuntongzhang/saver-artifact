@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/dump.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/dump.c	2023-07-21 19:03:40.000000000 +0900
+@@ -90,6 +90,7 @@
+ 	persist = p11_persist_new ();
+ 
+ 	if (!p11_buffer_init (&buf, 0))
++	free (persist);
+ 		return_val_if_reached (false);
+ 
+ 	while ((rv = p11_kit_iter_next (ex->iter)) == CKR_OK) {

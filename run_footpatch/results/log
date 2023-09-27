@@ -1,0 +1,12 @@
+[2023-09-26 15:34:48,141/INFO]MainProcess - make clean ... Done!: 0.135875 sec. elapsed
+[2023-09-26 15:59:20,405/INFO]MainProcess - bash /home/saver/saver-artifact/run_footpatch/run-footpatch-global.sh make CFLAGS='-fcommon' -j32 > /home/saver/effFix-benchmark/p11-kit/src/footpatch.log ... Done!: 1472.262472 sec. elapsed
+[2023-09-26 15:59:20,928/INFO]MainProcess - make clean ... Done!: 0.522479 sec. elapsed
+[2023-09-26 16:59:20,942/INFO]MainProcess - Timeout on command: bash /home/saver/saver-artifact/run_footpatch/run-footpatch-global.sh make CFLAGS='-fcommon' -j32 > /home/saver/effFix-benchmark/snort/src/footpatch.log, in dir /home/saver/effFix-benchmark/snort/src
+[2023-09-26 16:59:21,948/INFO]MainProcess - make clean ... Done!: 0.919164 sec. elapsed
+[2023-09-26 17:59:22,014/INFO]MainProcess - Timeout on command: bash /home/saver/saver-artifact/run_footpatch/run-footpatch-global.sh make -j32 > /home/saver/effFix-benchmark/swoole/src/footpatch.log, in dir /home/saver/effFix-benchmark/swoole/src
+[2023-09-26 17:59:22,654/INFO]MainProcess - make clean ... Done!: 0.638961 sec. elapsed
+[2023-09-26 18:19:54,504/INFO]MainProcess - bash /home/saver/saver-artifact/run_footpatch/run-footpatch-global.sh make -j32 > /home/saver/effFix-benchmark/x264/src/footpatch.log ... Done!: 1231.848926 sec. elapsed
+[2023-09-26 18:19:54,720/INFO]MainProcess - make clean ... Done!: 0.215450 sec. elapsed
+[2023-09-26 19:19:54,731/INFO]MainProcess - Timeout on command: bash /home/saver/saver-artifact/run_footpatch/run-footpatch-global.sh make > /home/saver/effFix-benchmark/openssl-1/src/footpatch.log, in dir /home/saver/effFix-benchmark/openssl-1/src
+[2023-09-26 19:19:59,065/INFO]MainProcess - make clean ... Done!: 4.260796 sec. elapsed
+[2023-09-26 20:19:59,115/INFO]MainProcess - Timeout on command: bash /home/saver/saver-artifact/run_footpatch/run-footpatch-global.sh make -j32 > /home/saver/effFix-benchmark/openssl-3/src/footpatch.log, in dir /home/saver/effFix-benchmark/openssl-3/src

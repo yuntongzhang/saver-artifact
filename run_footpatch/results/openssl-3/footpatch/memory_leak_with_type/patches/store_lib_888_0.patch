@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/store/store_lib.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/store/store_lib.c	2023-07-21 19:03:40.000000000 +0900
+@@ -886,6 +886,7 @@
+                        "%s size is %d, fingerprint size is %zu",
+                        EVP_MD_get0_name(digest), EVP_MD_get_size(digest), len);
+         OPENSSL_free(search);
++    OPENSSL_free(search);
+         return NULL;
+     }
+ 

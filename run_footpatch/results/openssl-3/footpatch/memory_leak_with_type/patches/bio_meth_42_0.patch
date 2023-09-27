@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/bio/bio_meth.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/bio/bio_meth.c	2023-07-21 19:03:40.000000000 +0900
+@@ -40,6 +40,7 @@
+     if (biom == NULL
+             || (biom->name = OPENSSL_strdup(name)) == NULL) {
+         OPENSSL_free(biom);
++    BIO_meth_free(biom);
+         ERR_raise(ERR_LIB_BIO, ERR_R_MALLOC_FAILURE);
+         return NULL;
+     }

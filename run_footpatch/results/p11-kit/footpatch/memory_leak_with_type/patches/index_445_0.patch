@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/index.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/index.c	2023-07-21 19:03:40.000000000 +0900
+@@ -443,6 +443,7 @@
+ 		obj->handle = handle;
+ 		obj->attrs = removed;
+ 		if (!p11_dict_set (index->changes, &obj->handle, obj))
++		free (obj);
+ 			return_if_reached ();
+ 	}
+ }

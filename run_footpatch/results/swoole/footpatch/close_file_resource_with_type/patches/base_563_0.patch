@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/swoole/src/src/core/base.c	2023-07-21 19:03:41.000000000 +0900
+--- /home/saver/effFix-benchmark/swoole/src/src/core/base.c	2023-07-21 19:03:41.000000000 +0900
+@@ -560,6 +560,7 @@
+     swString *content = swString_new(filesize);
+     if (!content)
+     {
++    close(fd);
+         return NULL;
+     }
+ 

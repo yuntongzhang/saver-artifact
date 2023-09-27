@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/ec/ec_oct.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/ec/ec_oct.c	2023-07-21 19:03:40.000000000 +0900
+@@ -147,6 +147,7 @@
+     len = EC_POINT_point2oct(group, point, form, buf, len, ctx);
+     if (len == 0) {
+         OPENSSL_free(buf);
++        OPENSSL_free(buf);
+         return 0;
+     }
+     *pbuf = buf;

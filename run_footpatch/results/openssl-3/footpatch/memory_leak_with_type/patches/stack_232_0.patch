@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/stack/stack.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/stack/stack.c	2023-07-21 19:03:40.000000000 +0900
+@@ -230,6 +230,7 @@
+ 
+     if (!sk_reserve(st, n, 1)) {
+         OPENSSL_sk_free(st);
++    OPENSSL_sk_free(st);
+         return NULL;
+     }
+ 

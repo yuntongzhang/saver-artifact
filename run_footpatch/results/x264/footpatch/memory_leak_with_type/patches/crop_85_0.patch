@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/x264/src/filters/video/crop.c	2023-07-21 19:03:41.000000000 +0900
+--- /home/saver/effFix-benchmark/x264/src/filters/video/crop.c	2023-07-21 19:03:41.000000000 +0900
+@@ -83,6 +83,7 @@
+     h->dims[2] = info->width  - h->dims[0] - h->dims[2];
+     h->dims[3] = info->height - h->dims[1] - h->dims[3];
+     FAIL_IF_ERROR( h->dims[2] <= 0 || h->dims[3] <= 0, "invalid output resolution %dx%d\n", h->dims[2], h->dims[3] );
++        free( h );
+ 
+     if( info->width != h->dims[2] || info->height != h->dims[3] )
+         x264_cli_log( NAME, X264_LOG_INFO, "cropping to %dx%d\n", h->dims[2], h->dims[3] );

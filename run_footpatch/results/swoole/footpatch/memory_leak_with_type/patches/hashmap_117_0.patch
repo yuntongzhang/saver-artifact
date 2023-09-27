@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/swoole/src/src/core/hashmap.c	2023-07-21 19:03:41.000000000 +0900
+--- /home/saver/effFix-benchmark/swoole/src/src/core/hashmap.c	2023-07-21 19:03:41.000000000 +0900
+@@ -115,6 +115,7 @@
+     if (!(root->hh.tbl))
+     {
+         swWarn("malloc for table failed.");
++    swHashMap_node_free(hmap, root);
+         return NULL;
+     }
+ 

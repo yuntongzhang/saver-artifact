@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/asn1.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/asn1.c	2023-07-21 19:03:40.000000000 +0900
+@@ -216,6 +216,7 @@
+ 	return_val_if_fail (value != NULL, NULL);
+ 
+ 	ret = asn1_read_value (asn, field, value, &len);
++	free (value);
+ 	return_val_if_fail (ret == ASN1_SUCCESS, NULL);
+ 
+ 	/* Courtesy zero terminated */

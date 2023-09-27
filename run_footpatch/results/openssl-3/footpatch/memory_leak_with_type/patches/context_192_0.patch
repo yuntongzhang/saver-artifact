@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/context.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/context.c	2023-07-21 19:03:40.000000000 +0900
+@@ -190,6 +190,7 @@
+ 
+     if (ctx != NULL && !context_init(ctx)) {
+         OSSL_LIB_CTX_free(ctx);
++        OSSL_LIB_CTX_free(ctx);
+         ctx = NULL;
+     }
+     return ctx;

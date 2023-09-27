@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/token.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/token.c	2023-07-21 19:03:40.000000000 +0900
+@@ -831,6 +831,7 @@
+ 	token->builder = p11_builder_new (P11_BUILDER_FLAG_TOKEN);
+ 	if (token->builder == NULL) {
+ 		p11_token_free (token);
++	free (token);
+ 		return_val_if_reached (NULL);
+ 	}
+ 

@@ -1,0 +1,1846 @@
+===================================================================================
+PRE:
+	PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0 ;  CLOSED<close:44>(@f$3) ;  CLOSED<close:43>(@f$2)
+	SIGMA: &return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$0: ; 
+&p|->0: ; 
+&object|->@f$1: ; 
+@f$0|->{object:@f$1}: ; 
+@f$1|->{socks:[2|0:@f$2, 1:@f$3]}:
+	FOOTPRINT PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &p|->@f$0: ; 
+@f$0|->{object:@f$1}: ; 
+@f$1|->{socks:[2|0:@f$2, 1:@f$3]}: ; 
+@f$2|->@f$5: ; 
+@f$3|->@f$4:
+
+POST:
+	PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<free:46>(@f$1) ;  CLOSED<close:44>(@f$3) ;  CLOSED<close:43>(@f$2)
+	SIGMA: &return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$0: ; 
+&p|->0: ; 
+&object|->@f$1: ; 
+@f$0|->{object:@f$1}:
+	FOOTPRINT PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &p|->@f$0: ; 
+@f$0|->{object:@f$1}: ; 
+@f$1|->{socks:[2|0:@f$2, 1:@f$3]}: ; 
+@f$2|->@f$5: ; 
+@f$3|->@f$4:
+
+SIL INSN:_fun_free(n$3:) [line 46]
+===================================================================================
+PRE:
+	PI: @f$11 != @f$9 ;  @f$10 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0 ;  UND<swHashMap_find_int>:305(@f$0)
+	SIGMA: &tnode|->@f$0: ; 
+&#GB$timer_map|->@f$4: ; 
+&old_return_value|->@f$5: ; 
+&return_value|->@f$5: ; 
+&return|->_t$0: ; 
+&id|->@f$6: ; 
+&old_execute_data|->@f$7: ; 
+&execute_data|->0: ; 
+&#GB$SwooleG|->{timer:{_current_id:@f$9, set:@f$10}}: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$23|->0: ; 
+@f$0|->{data:@f$1, id:-1}: ; 
+@f$1|->{callback:@f$2, data:@f$3}: ; 
+@f$7|->{This:{u2:{num_args:@f$8}}}:
+	FOOTPRINT PI: @f$11 != @f$9 ;  @f$10 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &#GB$timer_map|->@f$4: ; 
+&return_value|->@f$5: ; 
+&execute_data|->@f$7: ; 
+&#GB$SwooleG|->{timer:{_current_id:@f$9, set:@f$10}}: ; 
+&$RET_zend_parse_parameters|abducedRetvar|->&id: ; 
+&$RET_swHashMap_find_int|abducedRetvar|->@f$0: ; 
+&id|$REF_PARAM_zend_parse_parameters|abducedRefParam|->@f$6: ; 
+@f$0|->{data:@f$1, id:@f$11}: ; 
+@f$1|->{callback:@f$2, data:@f$3}: ; 
+@f$7|->{This:{u2:{num_args:@f$8}}}:
+
+POST:
+	PI: @f$13 != @f$3 ;  @f$11 != 0 ;  @f$5 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0 ;  FREEDma<swTimer_del:332>(@f$11) ;  UND<swHashMap_find_int>:305(@f$11)
+	SIGMA: &tnode|->@f$11: ; 
+&#GB$timer_map|->@f$10: ; 
+&old_return_value|->@f$9: ; 
+&return_value|->@f$9: ; 
+&return|->_t$0: ; 
+&id|->@f$8: ; 
+&old_execute_data|->@f$6: ; 
+&execute_data|->0: ; 
+&#GB$SwooleG|->{timer:{_current_id:@f$3, heap:@f$4, set:@f$5}}: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$23|->0: ; 
+@f$0|->{callback:@f$1, data:@f$2}: ; 
+@f$6|->{This:{u2:{num_args:@f$7}}}:
+	FOOTPRINT PI: @f$13 != @f$3 ;  @f$11 != 0 ;  @f$5 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &#GB$timer_map|->@f$10: ; 
+&return_value|->@f$9: ; 
+&execute_data|->@f$6: ; 
+&#GB$SwooleG|->{timer:{_current_id:@f$3, heap:@f$4, set:@f$5}}: ; 
+&$RET_zend_parse_parameters|abducedRetvar|->&id: ; 
+&$RET_swHashMap_find_int|abducedRetvar|->@f$11: ; 
+&id|$REF_PARAM_zend_parse_parameters|abducedRefParam|->@f$8: ; 
+@f$0|->{callback:@f$1, data:@f$2}: ; 
+@f$6|->{This:{u2:{num_args:@f$7}}}: ; 
+@f$11|->{data:@f$0, heap_node:@f$12, id:@f$13}: ; 
+@f$12|->@f$14:
+@.	PI: @f$12 != @f$3 ;  @f$11 != 0 ;  @f$5 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0 ;  FREEDma<swTimer_del:332>(@f$11) ;  UND<swHashMap_find_int>:305(@f$11)
+	SIGMA: &tnode|->@f$11: ; 
+&#GB$timer_map|->@f$10: ; 
+&old_return_value|->@f$9: ; 
+&return_value|->@f$9: ; 
+&return|->_t$0: ; 
+&id|->@f$8: ; 
+&old_execute_data|->@f$6: ; 
+&execute_data|->0: ; 
+&#GB$SwooleG|->{timer:{_current_id:@f$3, heap:@f$4, set:@f$5}}: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$23|->0: ; 
+@f$0|->{callback:@f$1, data:@f$2}: ; 
+@f$6|->{This:{u2:{num_args:@f$7}}}:
+	FOOTPRINT PI: @f$13 = 0 ;  @f$12 != @f$3 ;  @f$11 != 0 ;  @f$5 != 0 ;  @f$2 != 0 ;  @f$1 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &#GB$timer_map|->@f$10: ; 
+&return_value|->@f$9: ; 
+&execute_data|->@f$6: ; 
+&#GB$SwooleG|->{timer:{_current_id:@f$3, heap:@f$4, set:@f$5}}: ; 
+&$RET_zend_parse_parameters|abducedRetvar|->&id: ; 
+&$RET_swHashMap_find_int|abducedRetvar|->@f$11: ; 
+&id|$REF_PARAM_zend_parse_parameters|abducedRefParam|->@f$8: ; 
+@f$0|->{callback:@f$1, data:@f$2}: ; 
+@f$6|->{This:{u2:{num_args:@f$7}}}: ; 
+@f$11|->{data:@f$0, heap_node:0, id:@f$12}:
+
+SIL INSN:_fun_swTimer_del(&#GB$SwooleG.timer:,n$4:) [line 332]
+===================================================================================
+PRE:
+	PI: n$1 != 0 ;  UND<swHeap_remove>:153(val$6)
+	SIGMA: &old_tnode|->n$1: ; 
+&tnode|->n$1: ; 
+&old_timer|->val$4: ; 
+&timer|->0: ; 
+&return|->_t$0: ; 
+&$RET_swHeap_remove|abducedRetvar|->val$6: ; 
+n$1|->{heap_node:0}: ; 
+val$4|->{heap:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: n$1 != 0 ;  FREEDma<free:158>(n$1) ;  UND<swHeap_remove>:153(val$6)
+	SIGMA: &old_tnode|->n$1: ; 
+&tnode|->n$1: ; 
+&old_timer|->val$4: ; 
+&timer|->0: ; 
+&return|->_t$0: ; 
+&$RET_swHeap_remove|abducedRetvar|->val$6: ; 
+val$4|->{heap:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 158]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: (-1 < _t$3) ;  n$4 != 0 ;  MEMma<malloc:21>(n$4) ;  DANGL<UNINIT>(_t$3) ;  UND<__function_pointer__>:32(_t$5) ;  UND<__function_pointer__>:32(_t$4) ;  UND<strerror>:32(_t$6) ;  UND<swLog_put>:32(&#GB$sw_error)
+	SIGMA: &#GB$sw_error|->val$7: ; 
+&str|->n$4: ; 
+&old_size|->val$1: ; 
+&size|->0: ; 
+&return|->_t$2: ; 
+&old_errno|->val$2: ; 
+&#GB$errno|->val$2: ; 
+&old_SwooleGS|->val$3: ; 
+&#GB$SwooleGS|->val$3: ; 
+&old_SwooleG|->{error:val$6}: ; 
+&#GB$SwooleG|->{error:val$2}: ; 
+&#GB$sw_error|$REF_PARAM_swLog_put|abducedRefParam|->val$7: ; 
+n$4|->{length:_t$0, offset:_t$1, size:val$1, str:0}: ; 
+val$3|->{lock_2:{lock:val$4, unlock:val$5}}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: (-1 < _t$1) ;  n$4 != 0 ;  FREEDma<free:33>(n$4) ;  DANGL<UNINIT>(_t$1) ;  UND<__function_pointer__>:32(_t$3) ;  UND<__function_pointer__>:32(_t$2) ;  UND<strerror>:32(_t$4) ;  UND<swLog_put>:32(&#GB$sw_error)
+	SIGMA: &#GB$sw_error|->val$7: ; 
+&str|->n$4: ; 
+&old_size|->val$1: ; 
+&size|->0: ; 
+&return|->_t$0: ; 
+&old_errno|->val$2: ; 
+&#GB$errno|->val$2: ; 
+&old_SwooleGS|->val$3: ; 
+&#GB$SwooleGS|->val$3: ; 
+&old_SwooleG|->{error:val$6}: ; 
+&#GB$SwooleG|->{error:val$2}: ; 
+&#GB$sw_error|$REF_PARAM_swLog_put|abducedRefParam|->val$7: ; 
+val$3|->{lock_2:{lock:val$4, unlock:val$5}}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$4:) [line 33]
+===================================================================================
+PRE:
+	PI: n$1 != 0
+	SIGMA: &old_str|->n$1: ; 
+&str|->n$1: ; 
+&return|->_t$0: ; 
+n$1|->{str:0}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: n$1 != 0 ;  FREEDma<free:593>(n$1)
+	SIGMA: &old_str|->n$1: ; 
+&str|->n$1: ; 
+&return|->_t$0:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 593]
+===================================================================================
+PRE:
+	PI: (-1 < _t$2) ;  n$9 != 0 ;  MEMma<malloc:60>(n$9) ;  DANGL<UNINIT>(_t$2) ;  UND<__function_pointer__>:73(_t$4) ;  UND<__function_pointer__>:73(_t$3) ;  UND<swLog_put>:73(&#GB$sw_error)
+	SIGMA: &#GB$sw_error|->val$6: ; 
+&str|->n$9: ; 
+&old_src_str|->val$1: ; 
+&src_str|->val$1: ; 
+&return|->_t$1: ; 
+&old_length|->val$2: ; 
+&length|->val$2: ; 
+&old_SwooleGS|->val$3: ; 
+&#GB$SwooleGS|->val$3: ; 
+&#GB$sw_error|$REF_PARAM_swLog_put|abducedRefParam|->val$6: ; 
+n$9|->{length:val$2, offset:_t$0, size:(val$2 + 1), str:0}: ; 
+val$3|->{lock_2:{lock:val$4, unlock:val$5}}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: (-1 < _t$1) ;  n$9 != 0 ;  FREEDma<free:74>(n$9) ;  DANGL<UNINIT>(_t$1) ;  UND<__function_pointer__>:73(_t$3) ;  UND<__function_pointer__>:73(_t$2) ;  UND<swLog_put>:73(&#GB$sw_error)
+	SIGMA: &#GB$sw_error|->val$6: ; 
+&str|->n$9: ; 
+&old_src_str|->val$1: ; 
+&src_str|->val$1: ; 
+&return|->_t$0: ; 
+&old_length|->val$2: ; 
+&length|->val$2: ; 
+&old_SwooleGS|->val$3: ; 
+&#GB$SwooleGS|->val$3: ; 
+&#GB$sw_error|$REF_PARAM_swLog_put|abducedRefParam|->val$6: ; 
+val$3|->{lock_2:{lock:val$4, unlock:val$5}}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$9:) [line 74]
+===================================================================================
+PRE:
+	PI: ((val$2 - val$3) <= 1) ;  val$5 != 0 ;  val$4 != 0 ;  val$1 != 0 ;  n$1 != 0 ;  UND<swoole_kmp_borders>:842(n$1) ;  UND<swoole_kmp_search>:847(val$5)
+	SIGMA: &return|->_t$0: ; 
+&nlen|->0: ; 
+&old_needle|->val$1: ; 
+&needle|->0: ; 
+&match|->val$5: ; 
+&old_length|->val$3: ; 
+&length|->0: ; 
+&old_haystack|->val$4: ; 
+&haystack|->0: ; 
+&borders|->n$1: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$8|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$21|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$18|->0: ; 
+&$RET_swoole_kmp_search{8bd9d2ad0ff064dea14b18d18a356198}|abducedRetvar|->val$5: ; 
+&$RET_swoole_kmp_borders{8bd9d2ad0ff064dea14b18d18a356198}|abducedRetvar|->n$1: ; 
+n$1|->val$7: ; 
+val$1|->[val$2|]:[val$2]
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: ((val$2 - val$3) <= 1) ;  val$5 != 0 ;  val$4 != 0 ;  val$1 != 0 ;  n$1 != 0 ;  FREEDma<free:848>(n$1) ;  UND<swoole_kmp_borders>:842(n$1) ;  UND<swoole_kmp_search>:847(val$5)
+	SIGMA: &return|->_t$0: ; 
+&nlen|->0: ; 
+&old_needle|->val$1: ; 
+&needle|->0: ; 
+&match|->val$5: ; 
+&old_length|->val$3: ; 
+&length|->0: ; 
+&old_haystack|->val$4: ; 
+&haystack|->0: ; 
+&borders|->n$1: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$8|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$21|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$18|->0: ; 
+&$RET_swoole_kmp_search{8bd9d2ad0ff064dea14b18d18a356198}|abducedRetvar|->val$5: ; 
+&$RET_swoole_kmp_borders{8bd9d2ad0ff064dea14b18d18a356198}|abducedRetvar|->n$1: ; 
+val$1|->[val$2|]:[val$2]
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 848]
+===================================================================================
+PRE:
+	PI: n$2 != 0 ;  DANGL<UNINIT>(_t$1)
+	SIGMA: &shmid|->n$2: ; 
+&old_rm|->1: ; 
+&rm|->0: ; 
+&return|->_t$0: ; 
+&ret|->_t$1: ; 
+&old_object|->val$1: ; 
+&object|->0: ; 
+n$2|->val$4: ; 
+val$1|->{mem:val$2, shmid:n$2}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: n$2 != 0 ;  FREEDma<shmctl:181>(n$2) ;  DANGL<UNINIT>(_t$1) ;  DANGL<UNINIT>(n$3)
+	SIGMA: &shmid|->n$2: ; 
+&old_rm|->1: ; 
+&rm|->0: ; 
+&return|->_t$0: ; 
+&ret|->_t$1: ; 
+&old_object|->val$1: ; 
+&object|->0: ; 
+val$1|->{mem:val$2, shmid:n$2}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:n$3=_fun_shmctl(n$2:,0:,0:) [line 181]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != -1 ;  @f$1 != 0 ;  @f$0 != 0 ;  CLOSED<close:89>(@f$2) ;  CLOSED<close:88>(@f$1)
+	SIGMA: &this|->@f$0: ; 
+&return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$3: ; 
+&p|->0: ; 
+@f$0|->{pipes:[2|0:@f$1, 1:@f$2]}: ; 
+@f$3|->{object:@f$0}:
+	FOOTPRINT PI: @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != -1 ;  @f$1 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &p|->@f$3: ; 
+@f$0|->{pipes:[2|0:@f$1, 1:@f$2]}: ; 
+@f$1|->@f$5: ; 
+@f$2|->@f$4: ; 
+@f$3|->{object:@f$0}:
+
+POST:
+	PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$0 != 0 ;  FREEDma<free:90>(@f$0) ;  CLOSED<close:89>(@f$3) ;  CLOSED<close:88>(@f$2)
+	SIGMA: &this|->@f$0: ; 
+&return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$1: ; 
+&p|->0: ; 
+@f$1|->{object:@f$0}:
+	FOOTPRINT PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &p|->@f$1: ; 
+@f$0|->{pipes:[2|0:@f$2, 1:@f$3]}: ; 
+@f$1|->{object:@f$0}: ; 
+@f$2|->@f$5: ; 
+@f$3|->@f$4:
+
+SIL INSN:_fun_free(n$3:) [line 90]
+===================================================================================
+PRE:
+	PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0 ;  CLOSED<close:44>(@f$3) ;  CLOSED<close:43>(@f$2)
+	SIGMA: &return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$0: ; 
+&p|->0: ; 
+&object|->@f$1: ; 
+@f$0|->{object:@f$1}: ; 
+@f$1|->{socks:[2|0:@f$2, 1:@f$3]}:
+	FOOTPRINT PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &p|->@f$0: ; 
+@f$0|->{object:@f$1}: ; 
+@f$1|->{socks:[2|0:@f$2, 1:@f$3]}: ; 
+@f$2|->@f$5: ; 
+@f$3|->@f$4:
+
+POST:
+	PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<free:46>(@f$1) ;  CLOSED<close:44>(@f$3) ;  CLOSED<close:43>(@f$2)
+	SIGMA: &return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$0: ; 
+&p|->0: ; 
+&object|->@f$1: ; 
+@f$0|->{object:@f$1}:
+	FOOTPRINT PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &p|->@f$0: ; 
+@f$0|->{object:@f$1}: ; 
+@f$1|->{socks:[2|0:@f$2, 1:@f$3]}: ; 
+@f$2|->@f$5: ; 
+@f$3|->@f$4:
+
+SIL INSN:_fun_free(n$3:) [line 46]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]
+===================================================================================
+PRE:
+	PI: n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_col|->n$1: ; 
+&col|->n$1: ; 
+n$1|->{name:val$2}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: n$1 != 0 ;  FREEDma<free:35>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_col|->n$1: ; 
+&col|->n$1:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 35]
+===================================================================================
+PRE:
+	PI: @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != -1 ;  @f$1 != 0 ;  @f$0 != 0 ;  CLOSED<close:89>(@f$2) ;  CLOSED<close:88>(@f$1)
+	SIGMA: &this|->@f$0: ; 
+&return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$3: ; 
+&p|->0: ; 
+@f$0|->{pipes:[2|0:@f$1, 1:@f$2]}: ; 
+@f$3|->{object:@f$0}:
+	FOOTPRINT PI: @f$2 != -1 ;  @f$2 != 0 ;  @f$1 != -1 ;  @f$1 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &p|->@f$3: ; 
+@f$0|->{pipes:[2|0:@f$1, 1:@f$2]}: ; 
+@f$1|->@f$5: ; 
+@f$2|->@f$4: ; 
+@f$3|->{object:@f$0}:
+
+POST:
+	PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$0 != 0 ;  FREEDma<free:90>(@f$0) ;  CLOSED<close:89>(@f$3) ;  CLOSED<close:88>(@f$2)
+	SIGMA: &this|->@f$0: ; 
+&return|->_t$0: ; 
+&ret2|->-1: ; 
+&ret1|->-1: ; 
+&old_p|->@f$1: ; 
+&p|->0: ; 
+@f$1|->{object:@f$0}:
+	FOOTPRINT PI: @f$3 != -1 ;  @f$3 != 0 ;  @f$2 != -1 ;  @f$2 != 0 ;  @f$0 != 0
+	FOOTPRINT SIGMA: &p|->@f$1: ; 
+@f$0|->{pipes:[2|0:@f$2, 1:@f$3]}: ; 
+@f$1|->{object:@f$0}: ; 
+@f$2|->@f$5: ; 
+@f$3|->@f$4:
+
+SIL INSN:_fun_free(n$3:) [line 90]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  n$1 != 0
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+n$1|->{data:val$2, key_str:0}: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  n$1 != 0 ;  FREEDma<free:43>(n$1)
+	SIGMA: &return|->_t$0: ; 
+&old_node|->n$1: ; 
+&node|->n$1: ; 
+&old_hmap|->val$5: ; 
+&hmap|->0: ; 
+val$5|->{dtor:val$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_free(n$1:) [line 43]
+===================================================================================
+PRE:
+	PI: val$4 != 0 ;  n$1 != 0 ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}: ; 
+n$1|->{data:val$7, key_str:val$8}: ; 
+val$8|->val$9:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$4 != 0 ;  n$1 != 0 ;  FREEDma<swHashMap_node_free:279>(n$1) ;  UND<swHashMap_node_delete>:278(val$10) ;  UND<swHashMap_node_find>:273(n$1)
+	SIGMA: &root|->0: ; 
+&return|->_t$0: ; 
+&node|->n$1: ; 
+&old_key_len|->val$1: ; 
+&key_len|->0: ; 
+&old_key|->val$2: ; 
+&key|->0: ; 
+&old_hmap|->n$0: ; 
+&hmap|->n$0: ; 
+&$RET_swHashMap_node_find{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->n$1: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->val$10: ; 
+n$0|->{dtor:val$4, root:val$5}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_swHashMap_node_free(n$0:,n$1:) [line 279]
+===================================================================================
+PRE:
+	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+	FOOTPRINT PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}}: ; 
+@f$3|->{root:@f$1}:
+
+POST:
+	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$8)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$8: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:@f$6}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}: ; 
+@f$6|->@f$7:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:@f$4}: ; 
+@f$3|->{dtor:0, root:@f$1}: ; 
+@f$4|->@f$5:
+@.	PI: @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$6)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+	FOOTPRINT PI: @f$7 = 0 ;  @f$4 != 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$6: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{data:@f$5, hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:@f$4, root:@f$1}:
+@.	PI: @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0 ;  FREEDma<swHashMap_node_free:367>(@f$2) ;  UND<swHashMap_node_delete>:366(@f$4)
+	SIGMA: &tmp|->@f$0: ; 
+&root|->@f$1: ; 
+&return|->_t$0: ; 
+&old_hmap|->@f$3: ; 
+&hmap|->@f$3: ; 
+&find|->@f$2: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$36|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$28|->0: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+	FOOTPRINT PI: @f$6 = 0 ;  @f$5 = 0 ;  @f$2 != @f$1 ;  @f$2 != 0 ;  @f$1 != 0
+	FOOTPRINT SIGMA: &hmap|->@f$3: ; 
+&$RET_swHashMap_node_delete{8691e7cfd50adb38ee6cd178b87a478e}|abducedRetvar|->@f$4: ; 
+@f$1|->{hh:{next:@f$2}}: ; 
+@f$2|->{hh:{next:@f$0}, key_str:0}: ; 
+@f$3|->{dtor:0, root:@f$1}:
+
+SIL INSN:_fun_swHashMap_node_free(n$43:,n$44:) [line 367]

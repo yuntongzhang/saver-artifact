@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/p11-kit/rpc-transport.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/p11-kit/rpc-transport.c	2023-07-21 19:03:40.000000000 +0900
+@@ -1094,6 +1094,7 @@
+ 	}
+ 
+ 	run->base.socket = rpc_socket_new (fd);
++		close (fd);
+ 	return_val_if_fail (run->base.socket != NULL, CKR_GENERAL_ERROR);
+ 
+ 	return CKR_OK;

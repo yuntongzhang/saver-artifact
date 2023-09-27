@@ -1,0 +1,12 @@
+Download source code: p11-kit        : 0.5720648765563965 sec.
+Configure project: p11-kit        : 12.60461950302124 sec.
+Download source code: snort          : 1.319701910018921 sec.
+Configure project: snort          : 10.242802143096924 sec.
+Download source code: swoole         : 0.4158926010131836 sec.
+Configure project: swoole         : 2.627838611602783 sec.
+Download source code: x264           : 0.5173313617706299 sec.
+Configure project: x264           : 0.5965406894683838 sec.
+Download source code: openssl-1      : 1.221238374710083 sec.
+Configure project: openssl-1      : 0.9427351951599121 sec.
+Download source code: openssl-3      : 3.877864122390747 sec.
+Configure project: openssl-3      : 2.9509952068328857 sec.

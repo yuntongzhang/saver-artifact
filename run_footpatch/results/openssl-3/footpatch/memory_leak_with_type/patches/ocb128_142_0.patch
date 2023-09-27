@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/modes/ocb128.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/modes/ocb128.c	2023-07-21 19:03:40.000000000 +0900
+@@ -140,6 +140,7 @@
+         if (ret)
+             return octx;
+         OPENSSL_free(octx);
++        OPENSSL_free(octx);
+     }
+ 
+     return NULL;

@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/p11-kit/proxy.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/p11-kit/proxy.c	2023-07-21 19:03:40.000000000 +0900
+@@ -279,6 +279,7 @@
+ 
+ 		if (count > 0) {
+ 			py->mappings = realloc (py->mappings, sizeof (Mapping) * (py->n_mappings + count));
++		free (slots);
+ 			return_val_if_fail (py->mappings != NULL, CKR_HOST_MEMORY);
+ 
+ 			/* And now add a mapping for each of those slots */

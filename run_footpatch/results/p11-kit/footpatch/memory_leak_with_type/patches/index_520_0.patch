@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/index.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/index.c	2023-07-21 19:03:40.000000000 +0900
+@@ -518,6 +518,7 @@
+ 	return_val_if_fail (obj->attrs != NULL, CKR_GENERAL_ERROR);
+ 
+ 	if (!p11_dict_set (index->objects, &obj->handle, obj))
++		free (obj);
+ 		return_val_if_reached (CKR_HOST_MEMORY);
+ 
+ 	index_hash (index, obj);

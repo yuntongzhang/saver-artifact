@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/swoole/src/swoole_mmap.c	2023-07-21 19:03:41.000000000 +0900
+--- /home/saver/effFix-benchmark/swoole/src/swoole_mmap.c	2023-07-21 19:03:41.000000000 +0900
+@@ -187,6 +187,7 @@
+         if (_stat.st_size == 0)
+         {
+             swoole_php_sys_error(E_WARNING, "file[%s] is empty.", filename);
++    close(fd);
+             RETURN_FALSE;
+         }
+         if (offset > 0)

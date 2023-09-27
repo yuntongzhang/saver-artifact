@@ -1,0 +1,73 @@
+===================================================================================
+PRE:
+	PI: (0 < n$9) ;  FILE<socket:1084>(n$9)
+	SIGMA: &old_vtable|->val$1: ; 
+&vtable|->0: ; 
+&old_stderr|->val$2: ; 
+&#GB$stderr|->val$2: ; 
+&run|->0: ; 
+&return|->_t$0: ; 
+&old_p11_print_messages|->0: ; 
+&#GB$p11_print_messages|->0: ; 
+&old_p11_message_locale|->0: ; 
+&#GB$p11_message_locale|->0: ; 
+&old_p11_debug_current_flags|->val$30: ; 
+&#GB$p11_debug_current_flags|->val$30: ; 
+&old_init_reserved|->val$31: ; 
+&init_reserved|->val$31: ; 
+&fd|->n$9: ; 
+&old_errno|->val$32: ; 
+&#GB$errno|->val$32: ; 
+&0$?%__sil_tmpSIL_compound_literal__n$6|->{__sockaddr__:_t$2, __sockaddr_at__:_t$3, __sockaddr_ax25__:_t$4, __sockaddr_dl__:_t$5, __sockaddr_eon__:_t$6, __sockaddr_in6__:_t$7, __sockaddr_in__:_t$8, __sockaddr_inarp__:_t$9, __sockaddr_ipx__:_t$10, __sockaddr_iso__:_t$11, __sockaddr_ns__:_t$12, __sockaddr_un__:_t$13, __sockaddr_x25__:_t$14}: ; 
+n$9|->_t$1: ; 
+val$2|->{_IO_backup_base:val$3, _IO_buf_base:val$4, _IO_buf_end:val$5, _IO_read_base:val$6, _IO_read_end:val$7, _IO_read_ptr:val$8, _IO_save_base:val$9, _IO_save_end:val$10, _IO_write_base:val$11, _IO_write_end:val$12, _IO_write_ptr:val$13, __pad1:val$14, __pad2:val$15, __pad3:val$16, __pad4:val$17, __pad5:val$18, _chain:val$19, _cur_column:val$20, _fileno:val$21, _flags:val$22, _flags2:val$23, _lock:val$24, _markers:val$25, _mode:val$26, _offset:val$27, _old_offset:val$28, _vtable_offset:val$29}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: (0 < n$9) ;  CLOSED<close:1092>(n$9)
+	SIGMA: &old_vtable|->val$1: ; 
+&vtable|->0: ; 
+&old_stderr|->val$2: ; 
+&#GB$stderr|->val$2: ; 
+&run|->0: ; 
+&return|->_t$0: ; 
+&old_p11_print_messages|->0: ; 
+&#GB$p11_print_messages|->0: ; 
+&old_p11_message_locale|->0: ; 
+&#GB$p11_message_locale|->0: ; 
+&old_p11_debug_current_flags|->val$30: ; 
+&#GB$p11_debug_current_flags|->val$30: ; 
+&old_init_reserved|->val$31: ; 
+&init_reserved|->val$31: ; 
+&fd|->n$9: ; 
+&old_errno|->val$32: ; 
+&#GB$errno|->val$32: ; 
+&0$?%__sil_tmpSIL_compound_literal__n$6|->{__sockaddr__:_t$1, __sockaddr_at__:_t$2, __sockaddr_ax25__:_t$3, __sockaddr_dl__:_t$4, __sockaddr_eon__:_t$5, __sockaddr_in6__:_t$6, __sockaddr_in__:_t$7, __sockaddr_inarp__:_t$8, __sockaddr_ipx__:_t$9, __sockaddr_iso__:_t$10, __sockaddr_ns__:_t$11, __sockaddr_un__:_t$12, __sockaddr_x25__:_t$13}: ; 
+val$2|->{_IO_backup_base:val$3, _IO_buf_base:val$4, _IO_buf_end:val$5, _IO_read_base:val$6, _IO_read_end:val$7, _IO_read_ptr:val$8, _IO_save_base:val$9, _IO_save_end:val$10, _IO_write_base:val$11, _IO_write_end:val$12, _IO_write_ptr:val$13, __pad1:val$14, __pad2:val$15, __pad3:val$16, __pad4:val$17, __pad5:val$18, _chain:val$19, _cur_column:val$20, _fileno:val$21, _flags:val$22, _flags2:val$23, _lock:val$24, _markers:val$25, _mode:val$26, _offset:val$27, _old_offset:val$28, _vtable_offset:val$29}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+@.	PI: (0 < n$9) ;  CLOSED<close:1092>(n$9)
+	SIGMA: &old_vtable|->val$1: ; 
+&vtable|->0: ; 
+&old_stderr|->val$2: ; 
+&#GB$stderr|->val$2: ; 
+&run|->0: ; 
+&return|->_t$0: ; 
+&old_p11_print_messages|->0: ; 
+&#GB$p11_print_messages|->0: ; 
+&old_p11_message_locale|->0: ; 
+&#GB$p11_message_locale|->0: ; 
+&old_p11_debug_current_flags|->val$30: ; 
+&#GB$p11_debug_current_flags|->val$30: ; 
+&old_init_reserved|->val$31: ; 
+&init_reserved|->val$31: ; 
+&fd|->n$9: ; 
+&old_errno|->val$32: ; 
+&#GB$errno|->val$32: ; 
+&0$?%__sil_tmpSIL_compound_literal__n$6|->{__sockaddr__:_t$1, __sockaddr_at__:_t$2, __sockaddr_ax25__:_t$3, __sockaddr_dl__:_t$4, __sockaddr_eon__:_t$5, __sockaddr_in6__:_t$6, __sockaddr_in__:_t$7, __sockaddr_inarp__:_t$8, __sockaddr_ipx__:_t$9, __sockaddr_iso__:_t$10, __sockaddr_ns__:_t$11, __sockaddr_un__:_t$12, __sockaddr_x25__:_t$13}: ; 
+val$2|->{_IO_backup_base:val$3, _IO_buf_base:val$4, _IO_buf_end:val$5, _IO_read_base:val$6, _IO_read_end:val$7, _IO_read_ptr:val$8, _IO_save_base:val$9, _IO_save_end:val$10, _IO_write_base:val$11, _IO_write_end:val$12, _IO_write_ptr:val$13, __pad1:val$14, __pad2:val$15, __pad3:val$16, __pad4:val$17, __pad5:val$18, _chain:val$19, _cur_column:val$20, _fileno:val$21, _flags:val$22, _flags2:val$23, _lock:val$24, _markers:val$25, _mode:val$26, _offset:val$27, _old_offset:val$28, _vtable_offset:val$29}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:n$10=_fun_close(n$9:) [line 1092]

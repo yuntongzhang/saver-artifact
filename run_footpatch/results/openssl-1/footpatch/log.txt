@@ -1,0 +1,1256 @@
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 0
+Doing cluster xcl5.cluster
+Doing cluster xcl6.cluster
+Doing cluster xcl4.cluster
+Doing cluster xcl7.cluster
+Doing cluster xcl2.cluster
+Doing cluster xcl10.cluster
+Doing cluster xcl12.cluster
+Doing cluster xcl11.cluster
+Doing cluster xcl13.cluster
+Doing cluster xcl3.cluster
+Doing cluster xcl17.cluster
+Doing cluster xcl15.cluster
+Doing cluster xcl14.cluster
+Doing cluster xcl18.cluster
+Doing cluster xcl20.cluster
+Doing cluster xcl19.cluster
+Doing cluster xcl8.cluster
+Doing cluster xcl16.cluster
+Doing cluster xcl9.cluster
+Doing cluster xcl1.cluster
+Doing cluster xcl21.cluster
+Doing cluster xcl22.cluster
+Doing cluster xcl23.cluster
+Doing cluster xcl24.cluster
+SEARCH STORE SIZE 15376
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+SIZE OF ERRORS: 2
+Doing cluster xcl25.cluster
+Doing cluster xcl26.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl27.cluster
+Doing cluster xcl28.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 4
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [test/wp_test.c]:[122] :[ memory is not reachable after line 122, column 6]
+[+] Complete err string: " memory is not reachable after line 122, column 6"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [test/wp_test.c]:[121] :[ memory is not reachable after line 121, column 11]
+[+] Complete err string: " memory is not reachable after line 121, column 11"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 9
+Doing cluster xcl29.cluster
+Doing cluster xcl30.cluster
+Doing cluster xcl31.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 7
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+Doing cluster xcl32.cluster
+Doing cluster xcl33.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 8
+Doing cluster xcl34.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 17
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 25
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl35.cluster
+Doing cluster xcl36.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 45
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/asn1/ameth_lib.c]:[193] :[ memory is not reachable after line 193, column 5]
+[+] Complete err string: " memory is not reachable after line 193, column 5"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/asn1/ameth_lib.c]:[180] :[ memory is not reachable after line 180, column 22]
+[+] Complete err string: " memory is not reachable after line 180, column 22"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl37.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 18
+Doing cluster xcl38.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 30
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl39.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 32
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_vpm.c]:[92] :[pointer param last assigned on line 91 could be null and is dereferenced by call to memset() at line 92, column 2]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_VERIFY_PARAM_new
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl40.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 6
+Doing cluster xcl41.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 0
+Doing cluster xcl42.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl43.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 12
+Doing cluster xcl44.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 8
+Doing cluster xcl45.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 8
+Doing cluster xcl46.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 11
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bio/bio_lib.c]:[433] :[ memory is not reachable after line 433, column 2]
+[+] Complete err string: " memory is not reachable after line 433, column 2"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 10
+Doing cluster xcl47.cluster
+Doing cluster xcl48.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+Doing cluster xcl49.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 14
+Doing cluster xcl50.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 21
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/objects/o_names.c]:[176] :[ ret is not reachable after line 176, column 4]
+[+] Complete err string: " ret is not reachable after line 176, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/objects/o_names.c]:[180] :[ ret is not reachable after line 180, column 4]
+[+] Complete err string: " ret is not reachable after line 180, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 13
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 0
+Doing cluster xcl51.cluster
+Doing cluster xcl52.cluster
+Doing cluster xcl53.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+Doing cluster xcl54.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 28
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509/x509_att.c]:[311] :[ return is not reachable after line 311, column 3]
+[+] Complete err string: " return is not reachable after line 311, column 3"
+[-] Could not get pvar name and type
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_att.c]:[206] :[pointer at last assigned on line 205 could be null and is dereferenced by call to X509_ATTRIBUTE_count() at line 206, column 24]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509at_get0_data_by_OBJ
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl55.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 43
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl56.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 59
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [ssl/ssl_rsa.c]:[197] :[pointer pktmp last assigned on line 196 could be null and is dereferenced by call to EVP_PKEY_copy_parameters() at line 197, column 3]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname ssl_set_pkey
+[=] I found these typs for pvar last
+[-] No type for pvar found
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl57.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 39
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 21
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/objects/o_names.c]:[176] :[ ret is not reachable after line 176, column 4]
+[+] Complete err string: " ret is not reachable after line 176, column 4"
+[-] Could not get pvar name and type
+Doing cluster xcl58.cluster
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/objects/o_names.c]:[180] :[ ret is not reachable after line 180, column 4]
+[+] Complete err string: " ret is not reachable after line 180, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/asn1/a_sign.c]:[243] :[pointer ctx could be null and is dereferenced at line 243, column 32]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar could in pname ASN1_item_sign_ctx
+[=] I found these typs for pvar could
+[-] No type for pvar found
+Doing cluster xcl59.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 26
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_lu.c]:[594] :[pointer &obj last assigned on line 593 could be null and is dereferenced by call to x509_object_cmp() at line 594, column 7]
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_OBJECT_retrieve_match
+[=] I found these typs for pvar last
+[-] No type for pvar found
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_lu.c]:[306] :[pointer lu last assigned on line 305 could be null and is dereferenced by call to X509_LOOKUP_by_subject() at line 306, column 6]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_STORE_get_by_subject
+[=] I found these typs for pvar last
+[-] No type for pvar found
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_vpm.c]:[92] :[pointer param last assigned on line 91 could be null and is dereferenced by call to memset() at line 92, column 2]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_VERIFY_PARAM_new
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl60.cluster
+Doing cluster xcl61.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl62.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+Doing cluster xcl63.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl64.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl65.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl66.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 32
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl67.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+Doing cluster xcl68.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl69.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl70.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl71.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 4
+Doing cluster xcl72.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 24
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[171] :[ n is not reachable after line 171, column 4]
+[+] Complete err string: " n is not reachable after line 171, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 8
+Doing cluster xcl73.cluster
+Doing cluster xcl74.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 14
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/evp/bio_enc.c]:[246] :[pointer b->next_bio last accessed on line 243 could be null and is dereferenced by call to BIO_copy_next_retry() at line 246, column 4]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname enc_write
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl75.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 38
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509v3/v3_sxnet.c]:[254] :[ memory is not reachable after line 254, column 42]
+[+] Complete err string: " memory is not reachable after line 254, column 42"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509v3/v3_sxnet.c]:[256] :[ id is not reachable after line 256, column 43]
+[+] Complete err string: " id is not reachable after line 256, column 43"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bn/bn_print.c]:[183] :[ memory is not reachable after line 183, column 44]
+[+] Complete err string: " memory is not reachable after line 183, column 44"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bn/bn_print.c]:[249] :[ memory is not reachable after line 249, column 43]
+[+] Complete err string: " memory is not reachable after line 249, column 43"
+[-] Could not get pvar name and type
+Doing cluster xcl76.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 23
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl77.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 30
+Doing cluster xcl78.cluster
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl79.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 53
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [ssl/ssl_lib.c]:[464] :[ memory is not reachable after line 464, column 3]
+[+] Complete err string: " memory is not reachable after line 464, column 3"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl80.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl81.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 21
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[171] :[ n is not reachable after line 171, column 4]
+[+] Complete err string: " n is not reachable after line 171, column 4"
+[-] Could not get pvar name and type
+Doing cluster xcl82.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl83.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl84.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 8
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [ssl/s3_cbc.c]:[473] :[pointer returned by EVP_MD_CTX_md() could be null and is dereferenced by call to EVP_MD_type() at line 473, column 10]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar by in pname ssl3_cbc_digest_record
+[=] I found these typs for pvar by
+[-] No type for pvar found
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [ssl/s3_cbc.c]:[399] :[pointer returned by EVP_MD_CTX_md() could be null and is dereferenced by call to EVP_MD_type() at line 399, column 10]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar by in pname ssl3_cbc_record_digest_supported
+[=] I found these typs for pvar by
+[-] No type for pvar found
+Doing cluster xcl85.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 28
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[171] :[ n is not reachable after line 171, column 4]
+[+] Complete err string: " n is not reachable after line 171, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/conf/conf_api.c]:[100] :[ v is not reachable after line 100, column 3]
+[+] Complete err string: " v is not reachable after line 100, column 3"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl86.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 27
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl87.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl88.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 28
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509/by_file.c]:[105] :[ memory is not reachable after line 105, column 5]
+[+] Complete err string: " memory is not reachable after line 105, column 5"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509/by_file.c]:[103] :[ memory is not reachable after line 103, column 19]
+[+] Complete err string: " memory is not reachable after line 103, column 19"
+[-] Could not get pvar name and type
+[+] Found error: RESOURCE_LEAK
+[+] Patchable error: [crypto/bio/bss_file.c]:[184] :[ resource of type _IO_FILE acquired to file by call to fopen() at line 165, column 7 is not released after line 184, column 2]
+[+] Complete err string: " resource of type _IO_FILE acquired to file by call to fopen() at line 165, column 7 is not released after line 184, column 2"
+[+] ERROR LINE IS: 165
+[+] NOTE: pvar: file (heuristic from error message) and pvar file (extracted from error message line number).
+[+] pvar is file and heurstic is file. Using pvar file
+[+] Patch generation routine started for bug "RESOURCE_LEAK".
+[+] pvar NAME is leaked: "file"
+[+] adding spec for type:  "struct _IO_FILE *"
+[+] Spec asked to look for type "struct_IO_FILE "
+	[=] Attempting patching with spec "close_file_resource_with_type"
+	[+] Footpatch_spec : Store size 15376
+[+] irvar @f$0 lookup gives pvar s.
+Comparing [tstruct] irvar "@f$0" and irvar' "@f$1"
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar s.
+Comparing [tstruct] irvar "@f$0" and irvar' "@f$1"
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$65 lookup gives pvar fd.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$65 lookup gives pvar fd.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$6 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$6 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] Filtered candidates: 4
+	[+] Candidate 0: _fun_CRYPTO_lock((2 | 8):,31:,"ui_openssl.c":,582:) [line 582]
+	[+] Candidate 1: n$7=_fun_fclose(n$6:) [line 577]
+	[+] Candidate 2: n$3=_fun_fclose(n$2:) [line 578]
+	[+] Candidate 3: n$5=_fun_fclose(n$4:) [line 267]
+[+] Prioritizing compatibility for type: struct _IO_FILE *
+[+] Found candidate containing type struct _IO_FILE *
+[+] Filtered candidates by type: 1
+--------------Patch routine for 1 candidate------------------
+		[*] Origin filename: /home/saver/effFix-benchmark/openssl-1/src/crypto/ui/ui_openssl.c
+			[*] Origin line num range: 576 - 577
+			[*] Origin function: close_console
+			[*] extracted: 	if (tty_in != stdin) fclose(tty_in);
+	[&] Renaming fragment fixing var to pvar: tty_in -> file
+	[&]FFF Running cmd for rename: /home/saver/project/footpatch/infer-linux64-v0.9.3/patching/rename/rename "\tif (tty_in != stdin) fclose(tty_in);" "tty_in" "file" > /tmp/patch97faa1.footpatch
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 20
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+	[&] Error renaming
+	[-] No candidates found.
+-------------------------FIN-----------------------------------
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_lu.c]:[594] :[pointer &obj last assigned on line 593 could be null and is dereferenced by call to x509_object_cmp() at line 594, column 7]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_OBJECT_retrieve_match
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl89.cluster
+Doing cluster xcl90.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 16
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/asn1/a_strex.c]:[536] :[ btmp is not reachable after line 536, column 3]
+[+] Complete err string: " btmp is not reachable after line 536, column 3"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 32
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl91.cluster
+Doing cluster xcl92.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl93.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 17
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl94.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 15
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 51
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 14
+Doing cluster xcl95.cluster
+Doing cluster xcl96.cluster
+Doing cluster xcl97.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 5
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/mem.c]:[331] :[pointer ret last assigned on line 329 could be null and is dereferenced by call to strcpy() at line 331, column 2]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname CRYPTO_strdup
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl98.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 12
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl99.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 41
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bn/bn_gf2m.c]:[576] :[ memory is not reachable after line 576, column 2]
+[+] Complete err string: " memory is not reachable after line 576, column 2"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bn/bn_gf2m.c]:[539] :[ u is not reachable after line 539, column 6]
+[+] Complete err string: " u is not reachable after line 539, column 6"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/ec/ec2_smpl.c]:[290] :[ b is not reachable after line 290, column 6]
+[+] Complete err string: " b is not reachable after line 290, column 6"
+[-] Could not get pvar name and type
+Doing cluster xcl100.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 18
+Doing cluster xcl101.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 0
+Doing cluster xcl102.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 5
+Doing cluster xcl103.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 18
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl104.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl105.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 8
+Doing cluster xcl106.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 9
+Doing cluster xcl107.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 29
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl108.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 3
+Doing cluster xcl109.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 4
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 6
+Doing cluster xcl110.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 20
+Doing cluster xcl111.cluster
+Doing cluster xcl112.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 11
+Doing cluster xcl113.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 21
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl114.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 20
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/dsa/dsa_depr.c]:[102] :[ ret is not reachable after line 102, column 2]
+[+] Complete err string: " ret is not reachable after line 102, column 2"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/dsa/dsa_depr.c]:[102] :[ memory is not reachable after line 102, column 2]
+[+] Complete err string: " memory is not reachable after line 102, column 2"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl115.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 36
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509/x509_att.c]:[311] :[ return is not reachable after line 311, column 3]
+[+] Complete err string: " return is not reachable after line 311, column 3"
+[-] Could not get pvar name and type
+Doing cluster xcl116.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl117.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 50
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/asn1/ameth_lib.c]:[193] :[ memory is not reachable after line 193, column 5]
+[+] Complete err string: " memory is not reachable after line 193, column 5"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/asn1/ameth_lib.c]:[180] :[ memory is not reachable after line 180, column 22]
+[+] Complete err string: " memory is not reachable after line 180, column 22"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [engines/ccgost/gost_ctl.c]:[68] :[ memory is not reachable after line 68, column 8]
+[+] Complete err string: " memory is not reachable after line 68, column 8"
+[-] Could not get pvar name and type
+Doing cluster xcl118.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 13
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bn/bn_kron.c]:[100] :[ A is not reachable after line 100, column 9]
+[+] Complete err string: " A is not reachable after line 100, column 9"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bn/bn_kron.c]:[100] :[ memory is not reachable after line 100, column 9]
+[+] Complete err string: " memory is not reachable after line 100, column 9"
+[-] Could not get pvar name and type
+Doing cluster xcl119.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 24
+Doing cluster xcl120.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 13
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_trs.c]:[120] :[pointer pt last assigned on line 119 could be null and is dereferenced at line 120, column 9]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_check_trust
+[=] I found these typs for pvar last
+[-] No type for pvar found
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509/x509_trs.c]:[120] :[ pt is not reachable after line 120, column 2]
+[+] Complete err string: " pt is not reachable after line 120, column 2"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl121.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 77
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [ssl/ssl_lib.c]:[464] :[ memory is not reachable after line 464, column 3]
+[+] Complete err string: " memory is not reachable after line 464, column 3"
+[-] Could not get pvar name and type
+[+] Found error: RESOURCE_LEAK
+[+] Patchable error: [crypto/bio/bss_file.c]:[184] :[ resource of type _IO_FILE acquired to file by call to fopen() at line 165, column 7 is not released after line 184, column 2]
+[+] Complete err string: " resource of type _IO_FILE acquired to file by call to fopen() at line 165, column 7 is not released after line 184, column 2"
+[+] ERROR LINE IS: 165
+[+] NOTE: pvar: file (heuristic from error message) and pvar file (extracted from error message line number).
+[+] pvar is file and heurstic is file. Using pvar file
+[+] Patch generation routine started for bug "RESOURCE_LEAK".
+[+] pvar NAME is leaked: "file"
+Doing cluster xcl122.cluster
+Doing cluster xcl123.cluster
+[+] adding spec for type:  "struct _IO_FILE *"
+[+] Spec asked to look for type "struct_IO_FILE "
+	[=] Attempting patching with spec "close_file_resource_with_type"
+	[+] Footpatch_spec : Store size 15376
+[+] irvar @f$0 lookup gives pvar s.
+Comparing [tstruct] irvar "@f$0" and irvar' "@f$1"
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar s.
+Comparing [tstruct] irvar "@f$0" and irvar' "@f$1"
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$65 lookup gives pvar fd.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$65 lookup gives pvar fd.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$6 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$6 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] Filtered candidates: 4
+	[+] Candidate 0: _fun_CRYPTO_lock((2 | 8):,31:,"ui_openssl.c":,582:) [line 582]
+	[+] Candidate 1: n$7=_fun_fclose(n$6:) [line 577]
+	[+] Candidate 2: n$3=_fun_fclose(n$2:) [line 578]
+	[+] Candidate 3: n$5=_fun_fclose(n$4:) [line 267]
+[+] Prioritizing compatibility for type: struct _IO_FILE *
+[+] Found candidate containing type struct _IO_FILE *
+[+] Filtered candidates by type: 1
+--------------Patch routine for 1 candidate------------------
+		[*] Origin filename: /home/saver/effFix-benchmark/openssl-1/src/crypto/ui/ui_openssl.c
+			[*] Origin line num range: 576 - 577
+			[*] Origin function: close_console
+			[*] extracted: 	if (tty_in != stdin) fclose(tty_in);
+	[&] Renaming fragment fixing var to pvar: tty_in -> file
+	[&]FFF Running cmd for rename: /home/saver/project/footpatch/infer-linux64-v0.9.3/patching/rename/rename "\tif (tty_in != stdin) fclose(tty_in);" "tty_in" "file" > /tmp/patchafc7ce.footpatch
+	[&] Error renaming
+	[-] No candidates found.
+-------------------------FIN-----------------------------------
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [apps/s_server.c]:[2977] :[ tmp_rsa_cb_rsa_tmp is not reachable after line 2977, column 4]
+[+] Complete err string: " tmp_rsa_cb_rsa_tmp is not reachable after line 2977, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl124.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 59
+Doing cluster xcl125.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 17
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 2
+Doing cluster xcl126.cluster
+Doing cluster xcl127.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 30
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[171] :[ n is not reachable after line 171, column 4]
+[+] Complete err string: " n is not reachable after line 171, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+Doing cluster xcl128.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 11
+Doing cluster xcl129.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 162
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_smime.c]:[696] :[ memory is not reachable after line 696, column 5]
+[+] Complete err string: " memory is not reachable after line 696, column 5"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_smime.c]:[693] :[ return is not reachable after line 693, column 5]
+[+] Complete err string: " return is not reachable after line 693, column 5"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_smime.c]:[725] :[ return is not reachable after line 725, column 4]
+[+] Complete err string: " return is not reachable after line 725, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_smime.c]:[638] :[ memory is not reachable after line 638, column 9]
+[+] Complete err string: " memory is not reachable after line 638, column 9"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[400] :[ memory is not reachable after line 400, column 4]
+[+] Complete err string: " memory is not reachable after line 400, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/bio/bio_lib.c]:[433] :[ memory is not reachable after line 433, column 2]
+[+] Complete err string: " memory is not reachable after line 433, column 2"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/x509/x509_att.c]:[311] :[ return is not reachable after line 311, column 3]
+[+] Complete err string: " return is not reachable after line 311, column 3"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/objects/o_names.c]:[176] :[ ret is not reachable after line 176, column 4]
+[+] Complete err string: " ret is not reachable after line 176, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/objects/o_names.c]:[180] :[ ret is not reachable after line 180, column 4]
+[+] Complete err string: " ret is not reachable after line 180, column 4"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_att.c]:[206] :[pointer at last assigned on line 205 could be null and is dereferenced by call to X509_ATTRIBUTE_count() at line 206, column 24]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509at_get0_data_by_OBJ
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 21
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[427] :[ memory is not reachable after line 427, column 11]
+[=] I found these typs for pvar last
+[-] No type for pvar found
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_ess.c]:[262] :[ memory is not reachable after line 262, column 16]
+[+] Complete err string: " memory is not reachable after line 427, column 11"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/lhash/lhash.c]:[171] :[ n is not reachable after line 171, column 4]
+[+] Complete err string: " n is not reachable after line 171, column 4"
+[-] Could not get pvar name and type
+[+] Complete err string: " memory is not reachable after line 262, column 16"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_ess.c]:[256] :[ memory is not reachable after line 256, column 3]
+[+] Complete err string: " memory is not reachable after line 256, column 3"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_ess.c]:[249] :[ memory is not reachable after line 249, column 3]
+[+] Complete err string: " memory is not reachable after line 249, column 3"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/cms/cms_smime.c]:[336] :[ memory is not reachable after line 336, column 3]
+[+] Complete err string: " memory is not reachable after line 336, column 3"
+[-] Could not get pvar name and type
+[+] Found error: NULL_DEREFERENCE
+[+] Patchable error: [crypto/x509/x509_vpm.c]:[92] :[pointer param last assigned on line 91 could be null and is dereferenced by call to memset() at line 92, column 2]
+[+] Patch generation routine started for bug "NULL_DEREF".
+[+] Looking for pvar last in pname X509_VERIFY_PARAM_new
+[=] I found these typs for pvar last
+[-] No type for pvar found
+Doing cluster xcl130.cluster
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 33
+Doing cluster xcl131.cluster
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/conf/conf_lib.c]:[216] :[ btmp is not reachable after line 216, column 2]
+[+] Complete err string: " btmp is not reachable after line 216, column 2"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/conf/conf_lib.c]:[226] :[ memory is not reachable after line 226, column 2]
+[+] Complete err string: " memory is not reachable after line 226, column 2"
+[-] Could not get pvar name and type
+[+] Found error: MEMORY_LEAK
+[+] Patchable error: [crypto/conf/conf_lib.c]:[203] :[ memory is not reachable after line 203, column 2]
+[+] Complete err string: " memory is not reachable after line 203, column 2"
+[-] Could not get pvar name and type
+[+] Found error: RESOURCE_LEAK
+[+] Patchable error: [crypto/bio/bss_file.c]:[184] :[ resource of type _IO_FILE acquired to file by call to fopen() at line 165, column 7 is not released after line 184, column 2]
+[+] Complete err string: " resource of type _IO_FILE acquired to file by call to fopen() at line 165, column 7 is not released after line 184, column 2"
+[+] ERROR LINE IS: 165
+[+] NOTE: pvar: file (heuristic from error message) and pvar file (extracted from error message line number).
+[+] pvar is file and heurstic is file. Using pvar file
+[+] Patch generation routine started for bug "RESOURCE_LEAK".
+[+] pvar NAME is leaked: "file"
+[+] adding spec for type:  "struct _IO_FILE *"
+[+] Spec asked to look for type "struct_IO_FILE "
+	[=] Attempting patching with spec "close_file_resource_with_type"
+	[+] Footpatch_spec : Store size 15376
+[+] irvar @f$0 lookup gives pvar s.
+Comparing [tstruct] irvar "@f$0" and irvar' "@f$1"
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar s.
+Comparing [tstruct] irvar "@f$0" and irvar' "@f$1"
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$65 lookup gives pvar fd.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$65 lookup gives pvar fd.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$0 lookup gives pvar sock.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+SEARCH STORE SIZE 15376
+SIZE OF ERRORS: 0
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$4 lookup gives pvar out.
+Comparing [tstruct] irvar "n$4" and irvar' "@f$2"
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+Doing cluster xcl132.cluster
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar val$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$2 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$6 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$6 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar n$34 lookup gives pvar ret.
+[?] Comparing HPRED TYPE of IRVAR int and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$1 lookup gives pvar tty_out.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .
+[+] irvar @f$2 lookup gives pvar tty_in.
+[?] Comparing HPRED TYPE of IRVAR struct_IO_FILE  and PVAR type struct_IO_FILE .

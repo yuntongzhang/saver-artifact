@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/test/tls-provider.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/test/tls-provider.c	2023-07-21 19:03:40.000000000 +0900
+@@ -642,6 +642,7 @@
+     if ((gctx->selection & OSSL_KEYMGMT_SELECT_KEYPAIR) != 0) {
+         if (RAND_bytes_ex(gctx->libctx, key->privkey, XOR_KEY_SIZE, 0) <= 0) {
+             OPENSSL_free(key);
++            OPENSSL_free(key);
+             return NULL;
+         }
+         for (i = 0; i < XOR_KEY_SIZE; i++)

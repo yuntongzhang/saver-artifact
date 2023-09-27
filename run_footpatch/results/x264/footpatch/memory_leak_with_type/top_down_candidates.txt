@@ -1,0 +1,138 @@
+===================================================================================
+PRE:
+	PI: (0 < @f$6) ;  (0 < @f$5) ;  n$28 != 0 ;  @f$19 != 0 ;  @f$8 != 0 ;  MEMma<calloc:68>(n$28) ;  FREEDma<free:79>(@f$19) ;  UND<x264_cli_get_csp>:72(@f$8) ;  UND<x264_split_options>:74(@f$19)
+	SIGMA: &return|->_t$0: ; 
+&old_param|->@f$0: ; 
+&param|->@f$0: ; 
+&opts|->0: ; 
+&old_opt_string|->@f$1: ; 
+&opt_string|->0: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&old_info|->@f$3: ; 
+&info|->@f$3: ; 
+&old_handle|->@f$7: ; 
+&handle|->@f$7: ; 
+&h|->n$28: ; 
+&old_filter|->@f$18: ; 
+&filter|->@f$18: ; 
+&err|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$66|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$57|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}: ; 
+n$28|->{csp:@f$8, dims:[4|@f$9:_t$1, 2:@f$6, 3:@f$5], prev_filter:{free:@f$10, get_frame:@f$11, help:@f$12, init:@f$13, name:@f$14, next:@f$15, release_frame:@f$16}, prev_hnd:@f$17}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: &param|->@f$0: ; 
+&opt_string|->@f$1: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&info|->@f$3: ; 
+&handle|->@f$7: ; 
+&filter|->@f$18: ; 
+&$RET_x264_split_options|abducedRetvar|->@f$19: ; 
+&$RET_x264_cli_get_csp|abducedRetvar|->@f$8: ; 
+&$RET_handle_opts{0664925c4cad611b6c087a18c94094f7}|abducedRetvar|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}: ; 
+@f$19|->@f$20:
+
+POST:
+	PI: (0 < @f$6) ;  (0 < @f$5) ;  n$28 != 0 ;  @f$11 != 0 ;  @f$9 != 0 ;  FREEDma<free:92>(n$28) ;  FREEDma<free:79>(@f$9) ;  UND<x264_cli_get_csp>:72(@f$11) ;  UND<x264_split_options>:74(@f$9)
+	SIGMA: &return|->_t$0: ; 
+&old_param|->@f$0: ; 
+&param|->@f$0: ; 
+&opts|->0: ; 
+&old_opt_string|->@f$1: ; 
+&opt_string|->0: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&old_info|->@f$3: ; 
+&info|->@f$3: ; 
+&old_handle|->@f$7: ; 
+&handle|->@f$7: ; 
+&h|->n$28: ; 
+&old_filter|->@f$8: ; 
+&filter|->@f$8: ; 
+&err|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$66|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$57|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: &param|->@f$0: ; 
+&opt_string|->@f$1: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&info|->@f$3: ; 
+&handle|->@f$7: ; 
+&filter|->@f$8: ; 
+&$RET_x264_split_options|abducedRetvar|->@f$9: ; 
+&$RET_x264_cli_get_csp|abducedRetvar|->@f$11: ; 
+&$RET_handle_opts{0664925c4cad611b6c087a18c94094f7}|abducedRetvar|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}: ; 
+@f$9|->@f$10:
+
+SIL INSN:_fun_free(n$28:) [line 92]
+===================================================================================
+PRE:
+	PI: (0 < @f$6) ;  (0 < @f$5) ;  n$28 != 0 ;  @f$19 != 0 ;  @f$8 != 0 ;  MEMma<calloc:68>(n$28) ;  FREEDma<free:79>(@f$19) ;  UND<x264_cli_get_csp>:72(@f$8) ;  UND<x264_split_options>:74(@f$19)
+	SIGMA: &return|->_t$0: ; 
+&old_param|->@f$0: ; 
+&param|->@f$0: ; 
+&opts|->0: ; 
+&old_opt_string|->@f$1: ; 
+&opt_string|->0: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&old_info|->@f$3: ; 
+&info|->@f$3: ; 
+&old_handle|->@f$7: ; 
+&handle|->@f$7: ; 
+&h|->n$28: ; 
+&old_filter|->@f$18: ; 
+&filter|->@f$18: ; 
+&err|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$66|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$57|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}: ; 
+n$28|->{csp:@f$8, dims:[4|@f$9:_t$1, 2:@f$6, 3:@f$5], prev_filter:{free:@f$10, get_frame:@f$11, help:@f$12, init:@f$13, name:@f$14, next:@f$15, release_frame:@f$16}, prev_hnd:@f$17}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: &param|->@f$0: ; 
+&opt_string|->@f$1: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&info|->@f$3: ; 
+&handle|->@f$7: ; 
+&filter|->@f$18: ; 
+&$RET_x264_split_options|abducedRetvar|->@f$19: ; 
+&$RET_x264_cli_get_csp|abducedRetvar|->@f$8: ; 
+&$RET_handle_opts{0664925c4cad611b6c087a18c94094f7}|abducedRetvar|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}: ; 
+@f$19|->@f$20:
+
+POST:
+	PI: (0 < @f$6) ;  (0 < @f$5) ;  n$28 != 0 ;  @f$11 != 0 ;  @f$9 != 0 ;  FREEDma<free:92>(n$28) ;  FREEDma<free:79>(@f$9) ;  UND<x264_cli_get_csp>:72(@f$11) ;  UND<x264_split_options>:74(@f$9)
+	SIGMA: &return|->_t$0: ; 
+&old_param|->@f$0: ; 
+&param|->@f$0: ; 
+&opts|->0: ; 
+&old_opt_string|->@f$1: ; 
+&opt_string|->0: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&old_info|->@f$3: ; 
+&info|->@f$3: ; 
+&old_handle|->@f$7: ; 
+&handle|->@f$7: ; 
+&h|->n$28: ; 
+&old_filter|->@f$8: ; 
+&filter|->@f$8: ; 
+&err|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$66|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$57|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: &param|->@f$0: ; 
+&opt_string|->@f$1: ; 
+&#GB$init_optlist|->[@f$2|]: ; 
+&info|->@f$3: ; 
+&handle|->@f$7: ; 
+&filter|->@f$8: ; 
+&$RET_x264_split_options|abducedRetvar|->@f$9: ; 
+&$RET_x264_cli_get_csp|abducedRetvar|->@f$11: ; 
+&$RET_handle_opts{0664925c4cad611b6c087a18c94094f7}|abducedRetvar|->0: ; 
+@f$3|->{csp:@f$4, height:@f$5, width:@f$6}: ; 
+@f$9|->@f$10:
+
+SIL INSN:_fun_free(n$28:) [line 92]

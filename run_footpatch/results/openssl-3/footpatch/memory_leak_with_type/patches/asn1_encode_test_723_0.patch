@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/test/asn1_encode_test.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/test/asn1_encode_test.c	2023-07-21 19:03:40.000000000 +0900
+@@ -721,6 +721,7 @@
+                      (int)package->encode_expectations_elem_size);
+     ret = ASN1_item_print(bio_err, o, 0, i, NULL);
+     OPENSSL_free(o);
++    OPENSSL_free(o);
+ 
+     return ret;
+ }

@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/evp/kdf_lib.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/evp/kdf_lib.c	2023-07-21 19:03:40.000000000 +0900
+@@ -38,6 +38,7 @@
+         if (ctx != NULL)
+             kdf->freectx(ctx->algctx);
+         OPENSSL_free(ctx);
++        OPENSSL_free(ctx);
+         ctx = NULL;
+     } else {
+         ctx->meth = kdf;

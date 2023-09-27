@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/p11-kit/proxy.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/p11-kit/proxy.c	2023-07-21 19:03:40.000000000 +0900
+@@ -1832,6 +1832,7 @@
+ 	}
+ 
+ 	*module = state->wrapped;
++		free (state);
+ 
+ 	return rv;
+ }

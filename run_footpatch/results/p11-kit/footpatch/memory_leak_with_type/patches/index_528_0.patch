@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/index.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/p11-kit/src/trust/index.c	2023-07-21 19:03:40.000000000 +0900
+@@ -526,6 +526,7 @@
+ 		*handle = obj->handle;
+ 
+ 	index_notify (index, obj->handle, NULL);
++		free (obj);
+ 	return CKR_OK;
+ }
+ 

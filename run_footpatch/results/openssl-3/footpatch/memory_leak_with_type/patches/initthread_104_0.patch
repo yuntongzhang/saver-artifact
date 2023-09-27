@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/initthread.c	2023-07-21 19:03:40.000000000 +0900
+--- /home/saver/effFix-benchmark/openssl-3/src/crypto/initthread.c	2023-07-21 19:03:40.000000000 +0900
+@@ -102,6 +102,7 @@
+ 
+             if (!CRYPTO_THREAD_set_local(local, hands)) {
+                 OPENSSL_free(hands);
++                OPENSSL_free(hands);
+                 return NULL;
+             }
+ 

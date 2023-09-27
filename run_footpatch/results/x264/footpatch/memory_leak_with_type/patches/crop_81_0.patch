@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/x264/src/filters/video/crop.c	2023-07-21 19:03:41.000000000 +0900
+--- /home/saver/effFix-benchmark/x264/src/filters/video/crop.c	2023-07-21 19:03:41.000000000 +0900
+@@ -78,6 +78,7 @@
+     int err = handle_opts( h, info, opts, optlist );
+     free( opts );
+     if( err )
++        free( h );
+         return -1;
+ 
+     h->dims[2] = info->width  - h->dims[0] - h->dims[2];

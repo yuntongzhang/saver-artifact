@@ -1,0 +1,10 @@
+--- /home/saver/effFix-benchmark/swoole/src/src/memory/Table.c	2023-07-21 19:03:41.000000000 +0900
+--- /home/saver/effFix-benchmark/swoole/src/src/memory/Table.c	2023-07-21 19:03:41.000000000 +0900
+@@ -130,6 +130,7 @@
+     table->item_size += col->size;
+     table->column_num ++;
+     __efffix_tmp = swHashMap_add(table->columns, name, len, col);
++    sw_free(col);
+     return __efffix_tmp;
+ }
+ 

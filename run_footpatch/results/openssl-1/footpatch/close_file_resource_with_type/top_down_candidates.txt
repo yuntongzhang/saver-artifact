@@ -1,0 +1,436 @@
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  val$5 != val$2 ;  val$4 != 0 ;  val$2 != 0 ;  CLOSED<fclose:578>(val$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->val$2: ; 
+&#GB$tty_out|->val$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  val$5 != val$2 ;  val$4 != 0 ;  val$2 != 0 ;  CLOSED<fclose:578>(val$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->val$2: ; 
+&#GB$tty_out|->val$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_CRYPTO_lock((2 | 8):,31:,"ui_openssl.c":,582:) [line 582]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  val$5 != 0 ;  val$4 != n$6 ;  n$6 != 0
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->0: ; 
+&#GB$tty_out|->0: ; 
+&old_tty_in|->n$6: ; 
+&#GB$tty_in|->n$6: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6: ; 
+n$6|->val$3:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  val$5 != 0 ;  val$4 != n$6 ;  n$6 != 0 ;  CLOSED<fclose:577>(n$6)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->0: ; 
+&#GB$tty_out|->0: ; 
+&old_tty_in|->n$6: ; 
+&#GB$tty_in|->n$6: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+@.	PI: val$6 != 0 ;  val$5 != 0 ;  val$4 != n$6 ;  n$6 != 0 ;  CLOSED<fclose:577>(n$6)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->0: ; 
+&#GB$tty_out|->0: ; 
+&old_tty_in|->n$6: ; 
+&#GB$tty_in|->n$6: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:n$7=_fun_fclose(n$6:) [line 577]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  val$5 != n$2 ;  val$4 != 0 ;  n$2 != 0
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->n$2: ; 
+&#GB$tty_out|->n$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6: ; 
+n$2|->val$3:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  val$5 != n$2 ;  val$4 != 0 ;  n$2 != 0 ;  CLOSED<fclose:578>(n$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->n$2: ; 
+&#GB$tty_out|->n$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+@.	PI: val$6 != 0 ;  val$5 != n$2 ;  val$4 != 0 ;  n$2 != 0 ;  CLOSED<fclose:578>(n$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->n$2: ; 
+&#GB$tty_out|->n$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:n$3=_fun_fclose(n$2:) [line 578]
+===================================================================================
+PRE:
+	PI: (0 < _t$24) ;  (_t$24 <= 1024) ;  n$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  FILE<fopen:243>(n$4) ;  DANGL<UNINIT>(_t$24)
+	SIGMA: &sb|->{__glibc_reserved:[3|], __pad0:_t$0, st_atim:{tv_nsec:_t$1, tv_sec:_t$2}, st_atime:_t$3, st_atimensec:_t$4, st_blksize:_t$5, st_blocks:_t$6, st_ctim:{tv_nsec:_t$7, tv_sec:_t$8}, st_ctime:_t$9, st_ctimensec:_t$10, st_dev:_t$11, st_gid:_t$12, st_ino:_t$13, st_mode:_t$14, st_mtim:{tv_nsec:_t$15, tv_sec:_t$16}, st_mtime:_t$17, st_mtimensec:_t$18, st_nlink:_t$19, st_rdev:_t$20, st_size:_t$21, st_uid:_t$22}: ; 
+&return|->_t$23: ; 
+&ret|->_t$24: ; 
+&rand_err|->0: ; 
+&out|->n$4: ; 
+&n|->0: ; 
+&i|->0: ; 
+&old_file|->@f$0: ; 
+&file|->0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+&buf|->[1024|]: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$16|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$0|->_t$52: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}: ; 
+n$4|->{_IO_backup_base:_t$25, _IO_buf_base:_t$26, _IO_buf_end:_t$27, _IO_read_base:_t$28, _IO_read_end:_t$29, _IO_read_ptr:_t$30, _IO_save_base:_t$31, _IO_save_end:_t$32, _IO_write_base:_t$33, _IO_write_end:_t$34, _IO_write_ptr:_t$35, __pad1:_t$36, __pad2:_t$37, __pad3:_t$38, __pad4:_t$39, __pad5:_t$40, _chain:_t$41, _cur_column:_t$42, _fileno:_t$43, _flags:_t$44, _flags2:_t$45, _lock:_t$46, _markers:_t$47, _mode:_t$48, _offset:_t$49, _old_offset:_t$50, _shortbuf:[1|], _unused2:[20|], _vtable_offset:_t$51}:
+	FOOTPRINT PI: @f$3 != 0 ;  @f$2 != 0
+	FOOTPRINT SIGMA: &file|->@f$0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+
+POST:
+	PI: (0 < _t$24) ;  (_t$24 <= 1024) ;  n$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  CLOSED<fclose:267>(n$4) ;  DANGL<UNINIT>(_t$24)
+	SIGMA: &sb|->{__glibc_reserved:[3|], __pad0:_t$0, st_atim:{tv_nsec:_t$1, tv_sec:_t$2}, st_atime:_t$3, st_atimensec:_t$4, st_blksize:_t$5, st_blocks:_t$6, st_ctim:{tv_nsec:_t$7, tv_sec:_t$8}, st_ctime:_t$9, st_ctimensec:_t$10, st_dev:_t$11, st_gid:_t$12, st_ino:_t$13, st_mode:_t$14, st_mtim:{tv_nsec:_t$15, tv_sec:_t$16}, st_mtime:_t$17, st_mtimensec:_t$18, st_nlink:_t$19, st_rdev:_t$20, st_size:_t$21, st_uid:_t$22}: ; 
+&return|->_t$23: ; 
+&ret|->_t$24: ; 
+&rand_err|->0: ; 
+&out|->n$4: ; 
+&n|->0: ; 
+&i|->0: ; 
+&old_file|->@f$0: ; 
+&file|->0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+&buf|->[1024|]: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$16|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$0|->_t$25: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+	FOOTPRINT PI: @f$3 != 0 ;  @f$2 != 0
+	FOOTPRINT SIGMA: &file|->@f$0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+@.	PI: (0 < _t$24) ;  (_t$24 <= 1024) ;  n$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  CLOSED<fclose:267>(n$4) ;  DANGL<UNINIT>(_t$24)
+	SIGMA: &sb|->{__glibc_reserved:[3|], __pad0:_t$0, st_atim:{tv_nsec:_t$1, tv_sec:_t$2}, st_atime:_t$3, st_atimensec:_t$4, st_blksize:_t$5, st_blocks:_t$6, st_ctim:{tv_nsec:_t$7, tv_sec:_t$8}, st_ctime:_t$9, st_ctimensec:_t$10, st_dev:_t$11, st_gid:_t$12, st_ino:_t$13, st_mode:_t$14, st_mtim:{tv_nsec:_t$15, tv_sec:_t$16}, st_mtime:_t$17, st_mtimensec:_t$18, st_nlink:_t$19, st_rdev:_t$20, st_size:_t$21, st_uid:_t$22}: ; 
+&return|->_t$23: ; 
+&ret|->_t$24: ; 
+&rand_err|->0: ; 
+&out|->n$4: ; 
+&n|->0: ; 
+&i|->0: ; 
+&old_file|->@f$0: ; 
+&file|->0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+&buf|->[1024|]: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$16|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$0|->_t$25: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+	FOOTPRINT PI: @f$3 != 0 ;  @f$2 != 0
+	FOOTPRINT SIGMA: &file|->@f$0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+
+SIL INSN:n$5=_fun_fclose(n$4:) [line 267]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  val$5 != val$2 ;  val$4 != 0 ;  val$2 != 0 ;  CLOSED<fclose:578>(val$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->val$2: ; 
+&#GB$tty_out|->val$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  val$5 != val$2 ;  val$4 != 0 ;  val$2 != 0 ;  CLOSED<fclose:578>(val$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->val$2: ; 
+&#GB$tty_out|->val$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:_fun_CRYPTO_lock((2 | 8):,31:,"ui_openssl.c":,582:) [line 582]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  val$5 != 0 ;  val$4 != n$6 ;  n$6 != 0
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->0: ; 
+&#GB$tty_out|->0: ; 
+&old_tty_in|->n$6: ; 
+&#GB$tty_in|->n$6: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6: ; 
+n$6|->val$3:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  val$5 != 0 ;  val$4 != n$6 ;  n$6 != 0 ;  CLOSED<fclose:577>(n$6)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->0: ; 
+&#GB$tty_out|->0: ; 
+&old_tty_in|->n$6: ; 
+&#GB$tty_in|->n$6: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+@.	PI: val$6 != 0 ;  val$5 != 0 ;  val$4 != n$6 ;  n$6 != 0 ;  CLOSED<fclose:577>(n$6)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->0: ; 
+&#GB$tty_out|->0: ; 
+&old_tty_in|->n$6: ; 
+&#GB$tty_in|->n$6: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:n$7=_fun_fclose(n$6:) [line 577]
+===================================================================================
+PRE:
+	PI: val$6 != 0 ;  val$5 != n$2 ;  val$4 != 0 ;  n$2 != 0
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->n$2: ; 
+&#GB$tty_out|->n$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6: ; 
+n$2|->val$3:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+POST:
+	PI: val$6 != 0 ;  val$5 != n$2 ;  val$4 != 0 ;  n$2 != 0 ;  CLOSED<fclose:578>(n$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->n$2: ; 
+&#GB$tty_out|->n$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+@.	PI: val$6 != 0 ;  val$5 != n$2 ;  val$4 != 0 ;  n$2 != 0 ;  CLOSED<fclose:578>(n$2)
+	SIGMA: &old_ui|->val$1: ; 
+&ui|->val$1: ; 
+&old_tty_out|->n$2: ; 
+&#GB$tty_out|->n$2: ; 
+&old_tty_in|->0: ; 
+&#GB$tty_in|->0: ; 
+&old_stdin|->val$4: ; 
+&#GB$stdin|->val$4: ; 
+&old_stderr|->val$5: ; 
+&#GB$stderr|->val$5: ; 
+&return|->_t$0: ; 
+&old_locking_callback|->val$6: ; 
+&#GB$locking_callback|->val$6:
+	FOOTPRINT PI: 
+	FOOTPRINT SIGMA: 
+
+SIL INSN:n$3=_fun_fclose(n$2:) [line 578]
+===================================================================================
+PRE:
+	PI: (0 < _t$24) ;  (_t$24 <= 1024) ;  n$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  FILE<fopen:243>(n$4) ;  DANGL<UNINIT>(_t$24)
+	SIGMA: &sb|->{__glibc_reserved:[3|], __pad0:_t$0, st_atim:{tv_nsec:_t$1, tv_sec:_t$2}, st_atime:_t$3, st_atimensec:_t$4, st_blksize:_t$5, st_blocks:_t$6, st_ctim:{tv_nsec:_t$7, tv_sec:_t$8}, st_ctime:_t$9, st_ctimensec:_t$10, st_dev:_t$11, st_gid:_t$12, st_ino:_t$13, st_mode:_t$14, st_mtim:{tv_nsec:_t$15, tv_sec:_t$16}, st_mtime:_t$17, st_mtimensec:_t$18, st_nlink:_t$19, st_rdev:_t$20, st_size:_t$21, st_uid:_t$22}: ; 
+&return|->_t$23: ; 
+&ret|->_t$24: ; 
+&rand_err|->0: ; 
+&out|->n$4: ; 
+&n|->0: ; 
+&i|->0: ; 
+&old_file|->@f$0: ; 
+&file|->0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+&buf|->[1024|]: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$16|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$0|->_t$52: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}: ; 
+n$4|->{_IO_backup_base:_t$25, _IO_buf_base:_t$26, _IO_buf_end:_t$27, _IO_read_base:_t$28, _IO_read_end:_t$29, _IO_read_ptr:_t$30, _IO_save_base:_t$31, _IO_save_end:_t$32, _IO_write_base:_t$33, _IO_write_end:_t$34, _IO_write_ptr:_t$35, __pad1:_t$36, __pad2:_t$37, __pad3:_t$38, __pad4:_t$39, __pad5:_t$40, _chain:_t$41, _cur_column:_t$42, _fileno:_t$43, _flags:_t$44, _flags2:_t$45, _lock:_t$46, _markers:_t$47, _mode:_t$48, _offset:_t$49, _old_offset:_t$50, _shortbuf:[1|], _unused2:[20|], _vtable_offset:_t$51}:
+	FOOTPRINT PI: @f$3 != 0 ;  @f$2 != 0
+	FOOTPRINT SIGMA: &file|->@f$0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+
+POST:
+	PI: (0 < _t$24) ;  (_t$24 <= 1024) ;  n$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  CLOSED<fclose:267>(n$4) ;  DANGL<UNINIT>(_t$24)
+	SIGMA: &sb|->{__glibc_reserved:[3|], __pad0:_t$0, st_atim:{tv_nsec:_t$1, tv_sec:_t$2}, st_atime:_t$3, st_atimensec:_t$4, st_blksize:_t$5, st_blocks:_t$6, st_ctim:{tv_nsec:_t$7, tv_sec:_t$8}, st_ctime:_t$9, st_ctimensec:_t$10, st_dev:_t$11, st_gid:_t$12, st_ino:_t$13, st_mode:_t$14, st_mtim:{tv_nsec:_t$15, tv_sec:_t$16}, st_mtime:_t$17, st_mtimensec:_t$18, st_nlink:_t$19, st_rdev:_t$20, st_size:_t$21, st_uid:_t$22}: ; 
+&return|->_t$23: ; 
+&ret|->_t$24: ; 
+&rand_err|->0: ; 
+&out|->n$4: ; 
+&n|->0: ; 
+&i|->0: ; 
+&old_file|->@f$0: ; 
+&file|->0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+&buf|->[1024|]: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$16|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$0|->_t$25: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+	FOOTPRINT PI: @f$3 != 0 ;  @f$2 != 0
+	FOOTPRINT SIGMA: &file|->@f$0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+@.	PI: (0 < _t$24) ;  (_t$24 <= 1024) ;  n$4 != 0 ;  @f$3 != 0 ;  @f$2 != 0 ;  CLOSED<fclose:267>(n$4) ;  DANGL<UNINIT>(_t$24)
+	SIGMA: &sb|->{__glibc_reserved:[3|], __pad0:_t$0, st_atim:{tv_nsec:_t$1, tv_sec:_t$2}, st_atime:_t$3, st_atimensec:_t$4, st_blksize:_t$5, st_blocks:_t$6, st_ctim:{tv_nsec:_t$7, tv_sec:_t$8}, st_ctime:_t$9, st_ctimensec:_t$10, st_dev:_t$11, st_gid:_t$12, st_ino:_t$13, st_mode:_t$14, st_mtim:{tv_nsec:_t$15, tv_sec:_t$16}, st_mtime:_t$17, st_mtimensec:_t$18, st_nlink:_t$19, st_rdev:_t$20, st_size:_t$21, st_uid:_t$22}: ; 
+&return|->_t$23: ; 
+&ret|->_t$24: ; 
+&rand_err|->0: ; 
+&out|->n$4: ; 
+&n|->0: ; 
+&i|->0: ; 
+&old_file|->@f$0: ; 
+&file|->0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+&buf|->[1024|]: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$16|->0: ; 
+&0$?%__sil_tmpSIL_temp_conditional___n$0|->_t$25: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+	FOOTPRINT PI: @f$3 != 0 ;  @f$2 != 0
+	FOOTPRINT SIGMA: &file|->@f$0: ; 
+&#GB$default_RAND_meth|->@f$2: ; 
+@f$0|->[@f$1|]:[@f$1] ; 
+@f$2|->{bytes:@f$3}:
+
+SIL INSN:n$5=_fun_fclose(n$4:) [line 267]
