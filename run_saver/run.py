@@ -128,11 +128,12 @@ def setup_all(progs):
 
 
 def saver_pre(prog):
+    indiv_pre_log = pjoin(results_dir, "%s.pre.log" % prog.name)
     src_dir = pjoin(prog.subject_dir, "src")
     cmd_compile = "%s -g --headers --check-nullable-only -- make -j4" % SAVER
     # pgm_dir = '%s/%s' % (BENCH_DIR, pgm)
     cmd_compile = "%s -g --headers --check-nullable-only -- make -j4" % SAVER
-    cmd_preanal = "%s saver --pre-analysis-only" % SAVER
+    cmd_preanal = "%s saver --pre-analysis-only > %s" % (SAVER, indiv_pre_log)
 
     clean_project(src_dir)
     time_compile, rc_compile, _ = run_process(cmd_compile, src_dir)
@@ -205,6 +206,23 @@ def saver_patch_all(bugs):
     # next do real patching
     for bug in bugs:
         saver_patch(bug)
+
+
+def saver_run(progs, bugs):
+    global logfile
+    logpath = pjoin(results_dir, "saver.pre.patch.results")
+    logfile = open(logpath, "w")
+
+    err_report_dir = pjoin(results_dir, "error_reports")
+    os.makedirs(err_report_dir, exist_ok=True)
+
+    for prog in progs:
+        print("\033[34mRunning pre-analysis for %s\033[0m" % prog.name)
+        saver_pre(prog)
+        for bug in bugs:
+            if bug.program.name == prog.name:
+                bug.to_error_report(err_report_dir)
+                saver_patch(bug)
 
 
 if __name__ == "__main__":
@@ -290,5 +308,6 @@ if __name__ == "__main__":
         logfile = open(logpath, "w")
         setup_all(progs)
     else:
+        saver_run(progs, bugs)
         saver_pre_analysis_all(progs)
         saver_patch_all(bugs)
