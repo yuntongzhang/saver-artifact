@@ -156,7 +156,9 @@ def saver_pre(prog):
     cmd_preanal = "%s saver --pre-analysis-only" % SAVER
 
     clean_project(src_dir)
+    print(cmd_compile)
     time_compile, rc_compile, _ = run_process(cmd_compile, src_dir)
+    print(cmd_preanal)
     time_pre, rc_pre, _ = run_process(cmd_preanal, src_dir)
 
     time = float(time_compile) + float(time_pre)
