@@ -171,7 +171,7 @@ def saver_patch(bug: Bug):
     patch_log = open(patch_log_path, "w")
     time_patch, rc_patch, stderr = run_process(cmd_patch, src_dir, timeout=3600)
     status_str = get_status_string(rc_patch)
-    logstr = "%-15s, %2d, %2s, %36s, %3s sec.\n" % (
+    logstr = "%s, %s, %2s, %36s, %s sec.\n" % (
         bug.program.name,
         bug.bug_id,
         status_str[0],
