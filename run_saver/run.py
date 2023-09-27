@@ -151,9 +151,8 @@ def setup_all(progs):
 def saver_pre(prog):
     # indiv_pre_log = pjoin(results_dir, "%s.pre.log" % prog.name)
     src_dir = pjoin(prog.subject_dir, "src")
-    cmd_compile = "%s -g --headers --check-nullable-only -- make -j4" % SAVER
     # pgm_dir = '%s/%s' % (BENCH_DIR, pgm)
-    cmd_compile = "%s -g --headers --check-nullable-only -- make -j4" % SAVER
+    cmd_compile = "%s -g --headers --check-nullable-only -- %s" % (SAVER, prog.build_cmd)
     cmd_preanal = "%s saver --pre-analysis-only" % SAVER
 
     clean_project(src_dir)
