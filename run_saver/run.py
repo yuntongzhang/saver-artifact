@@ -32,7 +32,7 @@ class Bug(object):
         sink_proc,
         sink_line,
     ):
-        self.program: Program = program
+        self.program = program
         self.bug_id = bug_id
         if error_type == "Memory Leak":
             self.error_type = "MEMORY_LEAK"
