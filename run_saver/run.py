@@ -169,7 +169,7 @@ def saver_patch(bug: Bug):
     os.makedirs(indiv_result_dir, exist_ok=True)
     patch_log_path = pjoin(indiv_result_dir, "patch.log")
     patch_log = open(patch_log_path, "w")
-    time_patch, rc_patch, stderr = run_process(cmd_patch, src_dir, timeout=3600)
+    time_patch, rc_patch, err_content = run_process(cmd_patch, src_dir, timeout=3600)
     status_str = get_status_string(rc_patch)
     logstr = "%s, %s, %2s, %36s, %s sec.\n" % (
         bug.program.name,
@@ -179,7 +179,7 @@ def saver_patch(bug: Bug):
         str(time_patch),
     )
     log_result(logstr)
-    patch_log.writelines(stderr)
+    patch_log.writelines(str(err_content))
     patch_log.close()
 
 
