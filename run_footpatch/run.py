@@ -153,10 +153,12 @@ if __name__ == "__main__":
         progs.append(new_prog)
 
     if do_setup:
-        logfile = open("setup.results", "w")
+        # clone, and config each subject
+        logpath = pjoin(results_dir, "setup.results")
+        logfile = open(logpath, "w")
         setup_all(progs)
     else:
-        logpath = "footpatch.repair.results"
+        logpath = pjoin(results_dir, "footpatch.repair.results")
         logfile = open(logpath, "w")
         repair_all(progs)
         shutil.move(logpath, results_dir)
