@@ -305,7 +305,7 @@ if __name__ == "__main__":
         #     continue
 
         # temp
-        if "openssl-1" or "openssl-3" not in subject:
+        if "openssl-1" not in subject and "openssl-3" not in subject:
             continue
         config_cmd = meta_entry["config_command"]
         build_cmd = meta_entry["build_command"]
