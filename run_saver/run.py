@@ -104,6 +104,25 @@ def clean_project(dir):
     shutil.rmtree("%s/infer-out" % dir, ignore_errors=True)
 
 
+def saver_infer_detection(prog, indiv_result_dir):
+    detection_log = pjoin(indiv_result_dir, "%s.saver.detect.log" % prog.name)
+    src_dir = pjoin(prog.subject_dir, "src")
+    cmd_detect = "%s -j 20 --headers --no-filtering -- %s > %s" % (SAVER, prog.build_cmd, detection_log)
+    clean_project(src_dir)
+    time_detect, rc_detect, _ = run_process(cmd_detect, src_dir)
+    logstr = "SAVER-infer detection: %-15s: %4s sec.\n" % (prog.name, time_detect)
+    log_result(logstr)
+    # 4 move results
+    shutil.move("%s/infer-out/" % src_dir, indiv_result_dir)
+
+
+def detect_all(progs):
+    for prog in progs:
+        print("Running Infer detection on %s" % prog.name)
+        indiv_result_dir = pjoin(results_dir, prog.name)
+        os.makedirs(indiv_result_dir, exist_ok=True)
+        saver_infer_detection(prog, indiv_result_dir)
+
 def setup_all(progs):
     for prog in progs:
         print("Setting up %s" % prog.name)
@@ -127,13 +146,15 @@ def setup_all(progs):
         log_result(logstr)
 
 
+
+
 def saver_pre(prog):
-    indiv_pre_log = pjoin(results_dir, "%s.pre.log" % prog.name)
+    # indiv_pre_log = pjoin(results_dir, "%s.pre.log" % prog.name)
     src_dir = pjoin(prog.subject_dir, "src")
     cmd_compile = "%s -g --headers --check-nullable-only -- make -j4" % SAVER
     # pgm_dir = '%s/%s' % (BENCH_DIR, pgm)
     cmd_compile = "%s -g --headers --check-nullable-only -- make -j4" % SAVER
-    cmd_preanal = "%s saver --pre-analysis-only > %s" % (SAVER, indiv_pre_log)
+    cmd_preanal = "%s saver --pre-analysis-only" % SAVER
 
     clean_project(src_dir)
     time_compile, rc_compile, _ = run_process(cmd_compile, src_dir)
@@ -230,9 +251,7 @@ if __name__ == "__main__":
     global logfile
 
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    results_dir = pjoin(script_dir, "results")
-    if os.path.isdir(results_dir):
-        shutil.rmtree(results_dir)
+    
     if os.path.isfile("log"):
         os.remove("log")
 
@@ -248,11 +267,24 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--setup", action="store_true", help="Do set up or run.")
+    parser.add_argument("--detect", action="store_true", help="Use SAVER version of Infer to do bug detection.")
     parser.add_argument("--bench", required=True, help="Path to the benchmark dir.")
     args = parser.parse_args()
 
     do_setup = args.setup
+    do_detect = args.detect
     bench = args.bench
+
+    if do_setup:
+        results_dir = pjoin(script_dir, "setup_results")
+    elif do_detect:
+        results_dir = pjoin(script_dir, "detect_results")
+    else:
+        results_dir = pjoin(script_dir, "results")
+
+    if os.path.isdir(results_dir):
+        shutil.rmtree(results_dir)
+    os.makedirs(results_dir)
 
     file_meta = pjoin(bench, "meta-data.json")
     with open(file_meta) as f:
@@ -273,7 +305,7 @@ if __name__ == "__main__":
         #     continue
 
         # temp
-        if "openssl-1" not in subject:
+        if "openssl-1" or "openssl-3" not in subject:
             continue
         config_cmd = meta_entry["config_command"]
         build_cmd = meta_entry["build_command"]
@@ -315,12 +347,16 @@ if __name__ == "__main__":
         bugs.append(new_bug)
 
     # do real work
-    os.makedirs(results_dir)
     if do_setup:
         # clone, and config each subject
-        logpath = pjoin(results_dir, "setup.results")  # will be removed anw
+        logpath = pjoin(results_dir, "setup.results")
         logfile = open(logpath, "w")
         setup_all(progs)
+    elif do_detect:
+        # run detection run each prog
+        logpath = pjoin(results_dir, "detect.results")
+        logfile = open(logpath, "w")
+        detect_all(progs)
     else:
         saver_run(progs, bugs)
         # saver_pre_analysis_all(progs)
