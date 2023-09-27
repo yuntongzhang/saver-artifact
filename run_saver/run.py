@@ -263,10 +263,17 @@ if __name__ == "__main__":
     # collect progs and bugs
     for meta_entry in meta:
         subject = meta_entry["subject"]
-        if "linux" in subject:
-            continue
-        if "snort" in subject:
-            # we already have results for this
+        # if "linux" in subject:
+        #     continue
+        # if "snort" in subject:
+        #     # we already have results for this
+        #     continue
+        # if "openssl-3" in subject:
+        #     # openssl-3 does not have memory leaks
+        #     continue
+
+        # temp
+        if "openssl-1" not in subject:
             continue
         config_cmd = meta_entry["config_command"]
         build_cmd = meta_entry["build_command"]
@@ -316,5 +323,5 @@ if __name__ == "__main__":
         setup_all(progs)
     else:
         saver_run(progs, bugs)
-        saver_pre_analysis_all(progs)
-        saver_patch_all(bugs)
+        # saver_pre_analysis_all(progs)
+        # saver_patch_all(bugs)
