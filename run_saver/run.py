@@ -155,7 +155,6 @@ def saver_pre(prog):
     cmd_compile = "%s -g --headers --check-nullable-only -- %s" % (SAVER, prog.build_cmd)
     cmd_preanal = "%s saver --pre-analysis-only" % SAVER
 
-    clean_project(src_dir)
     print(cmd_compile)
     time_compile, rc_compile, _ = run_process(cmd_compile, src_dir)
     print(cmd_preanal)
